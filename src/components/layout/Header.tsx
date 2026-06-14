@@ -92,10 +92,15 @@ export default function Header() {
           <nav className="hidden lg:flex items-center gap-1 ml-2" aria-label="Main navigation">
             <DropdownMenu>
               <DropdownMenuTrigger>
-                <Button variant="ghost" size="sm" className="text-sm font-medium gap-1">
+                <span
+                  role="button"
+                  tabIndex={0}
+                  aria-haspopup="menu"
+                  className="group/button inline-flex shrink-0 items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 h-7 gap-1 rounded-[min(var(--radius-md),12px)] px-2.5 text-[0.8rem] focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:translate-y-px disabled:pointer-events-none disabled:opacity-50 font-medium cursor-pointer"
+                >
                   Categories
                   <ChevronDown className="w-3.5 h-3.5 opacity-50" />
-                </Button>
+                </span>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="start" className="w-[280px] p-2">
                 {categories.map((cat) => (

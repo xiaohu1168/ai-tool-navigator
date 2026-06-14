@@ -84,7 +84,8 @@ export default async function Home() {
             </p>
             <Link
               href="/search"
-              className="inline-flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-xl font-semibold hover:bg-primary-hover transition-colors shadow-sm text-sm md:text-base justify-center"
+              className="inline-flex items-center gap-2 bg-[#0b5fff] text-white px-8 py-3 rounded-xl font-semibold hover:bg-[#0947d6] transition-colors shadow-sm text-base justify-center cursor-pointer !text-white"
+              style={{ minHeight: "48px" }}
             >
               <Search className="w-4 h-4" />
               Browse All Tools
@@ -110,28 +111,31 @@ export default async function Home() {
         </div>
 
         {/* Top Picks by Category — All 12 */}
-        <section className="max-w-7xl mx-auto px-4 md:px-6 py-10 md:py-16">
-          <div className="flex items-center justify-between mb-6">
-            <h2 className="text-xl md:text-2xl font-bold">Top Picks by Category</h2>
-            <Link href="/search" className="text-sm text-primary hover:underline flex items-center gap-1">
-              View all <ArrowRight className="w-3.5 h-3.5" />
-            </Link>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+        <section className="py-10 md:py-16 bg-gradient-to-b from-white to-transparent">
+          <div className="max-w-7xl mx-auto px-4 md:px-6">
+            <div className="flex items-center justify-between mb-6">
+              <div>
+                <h2 className="text-xl md:text-2xl font-bold">Top Picks by Category</h2>
+                <p className="text-sm text-muted-foreground mt-1">Browse tools by your workflow</p>
+              </div>
+              <Link href="/search" className="text-sm text-primary hover:underline flex items-center gap-1">
+                View all <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 md:gap-3">
             {categories.slice(0, 12).map((cat: Category) => {
               const iconInfo = categoryGuideIcons[cat.id] || { emoji: "📁", gradient: "from-gray-50 to-gray-100 border-gray-200 hover:border-gray-400" };
               return (
                 <Link key={cat.id} href={`/best/${cat.id}`}>
-                  <Card className="border-border/60 hover:shadow-md transition-all hover:border-primary/30 overflow-hidden group">
-                    <CardContent className="p-4 md:p-5 flex flex-col items-center text-center gap-1">
-                      <div className="text-2xl mb-1">{iconInfo.emoji}</div>
-                      <h3 className="font-semibold text-sm group-hover:text-primary transition-colors">{cat.name}</h3>
-                      <p className="text-xs text-muted-foreground">{cat.count} tools</p>
-                    </CardContent>
-                  </Card>
+                  <div className="rounded-xl border border-border/60 hover:border-primary/30 hover:shadow-md transition-all p-3 md:p-4 flex flex-col items-center text-center group cursor-pointer bg-card hover:bg-primary/[0.02]">
+                    <div className="text-xl md:text-2xl mb-1.5">{iconInfo.emoji}</div>
+                    <h3 className="font-medium text-xs md:text-sm group-hover:text-primary transition-colors leading-tight">{cat.name}</h3>
+                    <p className="text-[11px] text-muted-foreground mt-0.5">{cat.count}</p>
+                  </div>
                 </Link>
               );
             })}
+          </div>
           </div>
         </section>
 

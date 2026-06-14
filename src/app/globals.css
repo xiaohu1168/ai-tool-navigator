@@ -133,14 +133,14 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* Link styles */
-a {
+/* Link styles — only apply when the anchor doesn't have an explicit color utility */
+a:not([class*="text-"]):not(.btn-primary):not(.btn-solid) {
   color: var(--primary);
   text-decoration: none;
   transition: color 0.15s ease;
 }
 
-a:hover {
+a:not([class*="text-"]):not(.btn-primary):not(.btn-solid):hover {
   text-decoration: underline;
 }
 

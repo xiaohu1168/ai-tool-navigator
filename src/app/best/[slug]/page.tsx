@@ -72,8 +72,8 @@ export default async function BestOfPage({ params }: { params: Promise<{ slug: s
                     </div>
                   </div>
                   <div className="flex items-center gap-3 mt-2">
-                    <Link href={'/tools/' + tool.slug} className="text-xs text-blue-600 hover:underline">Read Review</Link>
-                    <a href={tool.url} target="_blank" rel="noopener noreferrer" className="text-xs bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 inline-flex items-center gap-1">Try Free &rarr;</a>
+                    <Link href={'/tools/' + tool.slug} className="text-xs text-blue-600 hover:underline !text-blue-600">Read Review</Link>
+                    <a href={tool.url} target="_blank" rel="noopener noreferrer" className="text-xs bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 inline-flex items-center gap-1 !text-white">Try Free &rarr;</a>
                     <span className="text-xs text-muted-foreground ml-auto">{tool.price}</span>
                   </div>
                 </div>
