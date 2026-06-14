@@ -1,6 +1,6 @@
 ﻿import Link from "next/link";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 import ToolCard from "@/components/ToolCard";
 import CategoryCard from "@/components/CategoryCard";
 import AdBanner from "@/components/AdBanner";
@@ -35,25 +35,25 @@ export default async function Home() {
 
 
         <section className="max-w-7xl mx-auto px-3 md:px-4 py-4 md:py-8">
-          <h2 className="text-xl md:text-2xl font-bold mb-5 md:mb-6">💻 Top Picks by Category</h2>
+          <h2 className="text-xl md:text-2xl font-bold mb-5 md:mb-6">Top Picks by Category</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
             <Link href="/best/coding" className="bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-4 text-center hover:shadow-md transition-shadow hover:border-blue-400">
-              <div className="text-2xl mb-1">馃捇</div>
+              <div className="text-2xl mb-1">💻</div>
               <h3 className="font-semibold text-sm">Best Coding Tools</h3>
               <p className="text-xs text-gray-500 mt-0.5">Ranked &amp; reviewed</p>
             </Link>
             <Link href="/best/writing" className="bg-gradient-to-br from-purple-50 to-pink-50 border border-purple-200 rounded-xl p-4 text-center hover:shadow-md transition-shadow hover:border-purple-400">
-              <div className="text-2xl mb-1">鉁嶏笍</div>
+              <div className="text-2xl mb-1">✍️</div>
               <h3 className="font-semibold text-sm">Best Writing Tools</h3>
               <p className="text-xs text-gray-500 mt-0.5">Ranked &amp; reviewed</p>
             </Link>
             <Link href="/best/design" className="bg-gradient-to-br from-orange-50 to-red-50 border border-orange-200 rounded-xl p-4 text-center hover:shadow-md transition-shadow hover:border-orange-400">
-              <div className="text-2xl mb-1">馃帹</div>
+              <div className="text-2xl mb-1">🎨</div>
               <h3 className="font-semibold text-sm">Best Design Tools</h3>
               <p className="text-xs text-gray-500 mt-0.5">Ranked &amp; reviewed</p>
             </Link>
             <Link href="/best/seo" className="bg-gradient-to-br from-green-50 to-teal-50 border border-green-200 rounded-xl p-4 text-center hover:shadow-md transition-shadow hover:border-green-400">
-              <div className="text-2xl mb-1">馃攳</div>
+              <div className="text-2xl mb-1">🔍</div>
               <h3 className="font-semibold text-sm">Best SEO Tools</h3>
               <p className="text-xs text-gray-500 mt-0.5">Ranked &amp; reviewed</p>
             </Link>
