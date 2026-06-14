@@ -2,12 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import {
   LayoutDashboard,
   Monitor,
   Inbox,
   FolderOpen,
-  FileText,
   BarChart3,
   Settings,
   LogOut,
@@ -38,6 +38,7 @@ interface AdminLayoutProps {
   children: React.ReactNode;
   pendingSubmissions?: number;
   onLogout?: () => void;
+  onSectionChange?: (section: string) => void;
 }
 
 const navItems = (pendingSubmissions?: number): AdminNavItem[] => [
@@ -45,16 +46,27 @@ const navItems = (pendingSubmissions?: number): AdminNavItem[] => [
   { id: "tools", label: "Tools", icon: <Monitor className="w-4 h-4" />, href: "/admin#tools" },
   { id: "submissions", label: "Submissions", icon: <Inbox className="w-4 h-4" />, href: "/admin#submissions", badge: pendingSubmissions },
   { id: "categories", label: "Categories", icon: <FolderOpen className="w-4 h-4" />, href: "/admin#categories" },
-  { id: "blog", label: "Blog", icon: <FileText className="w-4 h-4" />, href: "/admin#blog" },
   { id: "analytics", label: "Analytics", icon: <BarChart3 className="w-4 h-4" />, href: "/admin#analytics" },
 ];
 
-export default function AdminLayout({ children, pendingSubmissions, onLogout }: AdminLayoutProps) {
+export default function AdminLayout({ children, pendingSubmissions, onLogout, onSectionChange }: AdminLayoutProps) {
   const pathname = usePathname();
   const items = navItems(pendingSubmissions);
-  const activeNav = items.find((item) =>
-    pathname === item.href || (pathname === "/admin" && item.id === "overview")
-  );
+
+  // Derive active nav from pathname — hash is stripped by usePathname()
+  // so /admin#tools → pathname="/admin", match via hash
+  const [activeNav, setActiveNav] = useState<AdminNavItem | undefined>(undefined);
+
+  useEffect(() => {
+    const hash = window.location.hash.replace("#", "");
+    // Find item whose href ends with this hash
+    if (hash) {
+      const found = items.find((i) => i.href === `/admin#${hash}`);
+      if (found) { setActiveNav(found); return; }
+    }
+    // Fallback: match by pathname
+    setActiveNav(items.find((i) => pathname === i.href || (pathname === "/admin" && i.id === "overview")));
+  }, [pathname, items]);
 
   return (
     <div className="min-h-screen bg-muted/30 flex">
@@ -77,6 +89,13 @@ export default function AdminLayout({ children, pendingSubmissions, onLogout }: 
             <Link
               key={item.id}
               href={item.href}
+              onClick={(e) => {
+                if (onSectionChange && item.href.startsWith("/admin#")) {
+                  e.preventDefault();
+                  const section = item.href.replace("/admin#", "");
+                  onSectionChange(section);
+                }
+              }}
               className={cn(
                 "flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm transition-colors",
                 activeNav?.id === item.id

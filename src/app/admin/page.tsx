@@ -79,6 +79,28 @@ export default function AdminPage() {
   const [stats, setStats] = useState<PageStats | null>(null);
   const [activeSection, setActiveSection] = useState<"overview" | "tools" | "submissions" | "categories" | "analytics">("overview");
 
+  // Sync activeSection from URL hash on mount and hash change
+  useEffect(() => {
+    const fromHash = (): "overview" | "tools" | "submissions" | "categories" | "analytics" => {
+      const hash = window.location.hash.replace("#", "") as typeof activeSection;
+      if (["tools", "submissions", "categories", "analytics"].includes(hash)) return hash;
+      return "overview";
+    };
+    setActiveSection(fromHash());
+
+    const handler = () => setActiveSection(fromHash());
+    window.addEventListener("hashchange", handler);
+    return () => window.removeEventListener("hashchange", handler);
+  }, []);
+
+  // Update URL hash when activeSection changes (for deep-linking / sidebar nav)
+  useEffect(() => {
+    const hash = activeSection === "overview" ? "" : `#${activeSection}`;
+    if (window.location.hash !== hash) {
+      history.replaceState(null, "", hash || "/admin");
+    }
+  }, [activeSection]);
+
   const fetchData = useCallback(async () => {
     setLoading(true);
     try {
@@ -176,6 +198,9 @@ export default function AdminPage() {
     <AdminLayout
       pendingSubmissions={pendingCount}
       onLogout={handleLogout}
+      onSectionChange={(section) => {
+        setActiveSection(section as typeof activeSection);
+      }}
     >
       {activeSection === "overview" && (
         <AdminDashboard
