@@ -1,0 +1,136 @@
+// Prisma schema for AI Tool Navigator - PostgreSQL
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Tool {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  name        String
+  description String
+  url         String
+  affiliate_url String  @default("")
+  price       String
+  price_type  String   @default("Free")
+  rating      Float    @default(4.0)
+  featured    Boolean  @default(false)
+  tags        String[]
+  pros        String[]
+  cons        String[]
+  for_whom    String
+  not_for     String
+  alternatives String
+  privacy     String?
+  updated     String?
+  category_id String
+  category    Category @relation(fields: [category_id], references: [id])
+  click_count Int      @default(0)
+  affiliate_links AffiliateLink[]
+  prompts     Prompt[]
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+}
+
+model Category {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  name      String
+  icon      String
+  description String
+  count     Int      @default(0)
+  tools     Tool[]
+}
+
+model Submission {
+  id          String   @id @default(cuid())
+  name        String
+  url         String
+  description String
+  category_id String
+  price       String?
+  tags        String?
+  status      String   @default("pending")
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+}
+
+model BlogPost {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  title     String
+  content   String
+  category  String
+  date      String
+  views     Int      @default(0)
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}
+
+model SearchQuery {
+  id        String   @id @default(cuid())
+  query     String
+  results   Int      @default(0)
+  timestamp DateTime @default(now())
+}
+
+model PageView {
+  id         String   @id @default(cuid())
+  path       String
+  referrer   String?
+  ip         String?
+  user_agent String?
+  timestamp  DateTime @default(now())
+}
+
+model AdPerformance {
+  id         String   @id @default(cuid())
+  slot       String
+  impressions Int     @default(0)
+  clicks     Int     @default(0)
+  date       String
+  created_at DateTime @default(now())
+  @@unique([slot, date])
+}
+
+model AffiliateLink {
+  id          String   @id @default(cuid())
+  tool_id     String
+  tool        Tool     @relation(fields: [tool_id], references: [id])
+  label       String
+  url         String
+  network     String
+  click_count Int      @default(0)
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+}
+
+model Prompt {
+  id          String   @id @default(cuid())
+  tool_id     String
+  tool        Tool     @relation(fields: [tool_id], references: [id])
+  title       String
+  prompt_text String
+  use_case    String
+  best_model  String?
+  copy_count  Int      @default(0)
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+}
+
+model ComparePage {
+  id         String   @id @default(cuid())
+  slug       String   @unique
+  tool1_id   String
+  tool2_id   String
+  title      String
+  content    String
+  views      Int      @default(0)
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}

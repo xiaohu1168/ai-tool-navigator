@@ -1,0 +1,234 @@
+﻿[
+    {
+        "for_whom":  "Product teams",
+        "id":  "mixpanel",
+        "cons":  [
+                     "Expensive at scale",
+                     "Complex setup"
+                 ],
+        "not_for":  "Simple web analytics",
+        "tags":  [
+                     "analytics",
+                     "product",
+                     "insights"
+                 ],
+        "name":  "Mixpanel",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "Product analytics with AI-powered insights.",
+        "pros":  [
+                     "Great event tracking",
+                     "AI insights",
+                     "Strong free tier"
+                 ],
+        "slug":  "mixpanel",
+        "url":  "https://mixpanel.com",
+        "rating":  4.3,
+        "alternatives":  "Amplitude, GA4",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Product teams, enterprises",
+        "id":  "amplitude",
+        "cons":  [
+                     "Expensive",
+                     "Complex"
+                 ],
+        "not_for":  "Simple analytics",
+        "tags":  [
+                     "analytics",
+                     "product",
+                     "decisioning"
+                 ],
+        "name":  "Amplitude",
+        "featured":  false,
+        "price":  "Free / Contact",
+        "description":  "Product analytics platform with AI-powered decisioning.",
+        "pros":  [
+                     "Deep product analytics",
+                     "AI decisioning",
+                     "Great visualization"
+                 ],
+        "slug":  "amplitude",
+        "url":  "https://amplitude.com",
+        "rating":  4.3,
+        "alternatives":  "Mixpanel, GA4",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Everyone with a website",
+        "id":  "google-analytics",
+        "cons":  [
+                     "Complex interface",
+                     "Data privacy concerns"
+                 ],
+        "not_for":  "Advanced product analytics",
+        "tags":  [
+                     "analytics",
+                     "web",
+                     "free"
+                 ],
+        "name":  "Google Analytics 4",
+        "featured":  true,
+        "price":  "Free",
+        "description":  "Free web analytics with AI-powered insights.",
+        "pros":  [
+                     "Completely free",
+                     "Huge ecosystem",
+                     "AI insights included"
+                 ],
+        "slug":  "google-analytics",
+        "url":  "https://analytics.google.com",
+        "rating":  4.2,
+        "alternatives":  "Mixpanel, Plausible",
+        "price_type":  "free",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Privacy-focused sites",
+        "id":  "plausible",
+        "cons":  [
+                     "Less features than GA",
+                     "Paid only"
+                 ],
+        "not_for":  "Complex event tracking",
+        "tags":  [
+                     "analytics",
+                     "privacy",
+                     "lightweight"
+                 ],
+        "name":  "Plausible",
+        "featured":  false,
+        "price":  "/month",
+        "description":  "Privacy-friendly, lightweight web analytics.",
+        "pros":  [
+                     "GDPR compliant",
+                     "Simple dashboard",
+                     "No cookies needed"
+                 ],
+        "slug":  "plausible",
+        "url":  "https://plausible.io",
+        "rating":  4.5,
+        "alternatives":  "GA4, Fathom",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Bloggers, small sites",
+        "id":  "fathom",
+        "cons":  [
+                     "Limited features",
+                     "Expensive for basic"
+                 ],
+        "not_for":  "E-commerce analytics",
+        "tags":  [
+                     "analytics",
+                     "privacy",
+                     "simple"
+                 ],
+        "name":  "Fathom",
+        "featured":  false,
+        "price":  "/month",
+        "description":  "Simple, privacy-friendly website analytics.",
+        "pros":  [
+                     "Very simple",
+                     "GDPR compliant",
+                     "Fast loading"
+                 ],
+        "slug":  "fathom",
+        "url":  "https://usefathom.com",
+        "rating":  4.4,
+        "alternatives":  "Plausible, GA4",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Marketers, analysts",
+        "id":  "looker-studio",
+        "cons":  [
+                     "Can be slow",
+                     "Limited custom viz"
+                 ],
+        "not_for":  "Real-time dashboards",
+        "tags":  [
+                     "visualization",
+                     "reporting",
+                     "free"
+                 ],
+        "name":  "Looker Studio",
+        "featured":  false,
+        "price":  "Free",
+        "description":  "Free data visualization and reporting by Google.",
+        "pros":  [
+                     "Free",
+                     "Great templates",
+                     "Google ecosystem"
+                 ],
+        "slug":  "looker-studio",
+        "url":  "https://lookerstudio.google.com",
+        "rating":  4.1,
+        "alternatives":  "Tableau, Power BI",
+        "price_type":  "free",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Enterprises, analysts",
+        "id":  "tableau",
+        "cons":  [
+                     "Expensive",
+                     "Learning curve"
+                 ],
+        "not_for":  "Simple reports",
+        "tags":  [
+                     "visualization",
+                     "bi",
+                     "enterprise"
+                 ],
+        "name":  "Tableau",
+        "featured":  false,
+        "price":  "/month",
+        "description":  "Leading data visualization and business intelligence platform.",
+        "pros":  [
+                     "Industry leader",
+                     "Deep analytics",
+                     "Great viz"
+                 ],
+        "slug":  "tableau",
+        "url":  "https://tableau.com",
+        "rating":  4.4,
+        "alternatives":  "Power BI, Looker Studio",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Microsoft users, enterprises",
+        "id":  "microsoft-power-bi",
+        "cons":  [
+                     "Microsoft ecosystem lock-in",
+                     "Complex for beginners"
+                 ],
+        "not_for":  "Non-Microsoft shops",
+        "tags":  [
+                     "bi",
+                     "visualization",
+                     "microsoft"
+                 ],
+        "name":  "Power BI",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "Microsoft\u0027s business intelligence and data visualization platform.",
+        "pros":  [
+                     "Great Excel integration",
+                     "Powerful features",
+                     "Free tier"
+                 ],
+        "slug":  "power-bi",
+        "url":  "https://powerbi.com",
+        "rating":  4.3,
+        "alternatives":  "Tableau, Looker Studio",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    }
+]

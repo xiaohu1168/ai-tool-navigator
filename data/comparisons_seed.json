@@ -1,0 +1,962 @@
+[
+  {
+    "slug": "plausible-vs-fathom",
+    "tool1_id": "plausible",
+    "tool2_id": "fathom",
+    "title": "Plausible vs Fathom: Which AI Tool Is Better?",
+    "content": "# Plausible vs Fathom\n\nPrivacy-friendly, lightweight web analytics.\n\n## Plausible\n\nRating: 4.5/5\nPrice: /month\n\n## Fathom\n\nRating: 4.4/5\nPrice: /month",
+    "category": "analytics"
+  },
+  {
+    "slug": "plausible-vs-tableau",
+    "tool1_id": "plausible",
+    "tool2_id": "tableau",
+    "title": "Plausible vs Tableau: Which AI Tool Is Better?",
+    "content": "# Plausible vs Tableau\n\nPrivacy-friendly, lightweight web analytics.\n\n## Plausible\n\nRating: 4.5/5\nPrice: /month\n\n## Tableau\n\nRating: 4.4/5\nPrice: /month",
+    "category": "analytics"
+  },
+  {
+    "slug": "plausible-vs-mixpanel",
+    "tool1_id": "plausible",
+    "tool2_id": "mixpanel",
+    "title": "Plausible vs Mixpanel: Which AI Tool Is Better?",
+    "content": "# Plausible vs Mixpanel\n\nPrivacy-friendly, lightweight web analytics.\n\n## Plausible\n\nRating: 4.5/5\nPrice: /month\n\n## Mixpanel\n\nRating: 4.3/5\nPrice: Free / /month",
+    "category": "analytics"
+  },
+  {
+    "slug": "plausible-vs-amplitude",
+    "tool1_id": "plausible",
+    "tool2_id": "amplitude",
+    "title": "Plausible vs Amplitude: Which AI Tool Is Better?",
+    "content": "# Plausible vs Amplitude\n\nPrivacy-friendly, lightweight web analytics.\n\n## Plausible\n\nRating: 4.5/5\nPrice: /month\n\n## Amplitude\n\nRating: 4.3/5\nPrice: Free / Contact",
+    "category": "analytics"
+  },
+  {
+    "slug": "fathom-vs-tableau",
+    "tool1_id": "fathom",
+    "tool2_id": "tableau",
+    "title": "Fathom vs Tableau: Which AI Tool Is Better?",
+    "content": "# Fathom vs Tableau\n\nSimple, privacy-friendly website analytics.\n\n## Fathom\n\nRating: 4.4/5\nPrice: /month\n\n## Tableau\n\nRating: 4.4/5\nPrice: /month",
+    "category": "analytics"
+  },
+  {
+    "slug": "fathom-vs-mixpanel",
+    "tool1_id": "fathom",
+    "tool2_id": "mixpanel",
+    "title": "Fathom vs Mixpanel: Which AI Tool Is Better?",
+    "content": "# Fathom vs Mixpanel\n\nSimple, privacy-friendly website analytics.\n\n## Fathom\n\nRating: 4.4/5\nPrice: /month\n\n## Mixpanel\n\nRating: 4.3/5\nPrice: Free / /month",
+    "category": "analytics"
+  },
+  {
+    "slug": "fathom-vs-amplitude",
+    "tool1_id": "fathom",
+    "tool2_id": "amplitude",
+    "title": "Fathom vs Amplitude: Which AI Tool Is Better?",
+    "content": "# Fathom vs Amplitude\n\nSimple, privacy-friendly website analytics.\n\n## Fathom\n\nRating: 4.4/5\nPrice: /month\n\n## Amplitude\n\nRating: 4.3/5\nPrice: Free / Contact",
+    "category": "analytics"
+  },
+  {
+    "slug": "tableau-vs-mixpanel",
+    "tool1_id": "tableau",
+    "tool2_id": "mixpanel",
+    "title": "Tableau vs Mixpanel: Which AI Tool Is Better?",
+    "content": "# Tableau vs Mixpanel\n\nLeading data visualization and business intelligence platform.\n\n## Tableau\n\nRating: 4.4/5\nPrice: /month\n\n## Mixpanel\n\nRating: 4.3/5\nPrice: Free / /month",
+    "category": "analytics"
+  },
+  {
+    "slug": "tableau-vs-amplitude",
+    "tool1_id": "tableau",
+    "tool2_id": "amplitude",
+    "title": "Tableau vs Amplitude: Which AI Tool Is Better?",
+    "content": "# Tableau vs Amplitude\n\nLeading data visualization and business intelligence platform.\n\n## Tableau\n\nRating: 4.4/5\nPrice: /month\n\n## Amplitude\n\nRating: 4.3/5\nPrice: Free / Contact",
+    "category": "analytics"
+  },
+  {
+    "slug": "mixpanel-vs-amplitude",
+    "tool1_id": "mixpanel",
+    "tool2_id": "amplitude",
+    "title": "Mixpanel vs Amplitude: Which AI Tool Is Better?",
+    "content": "# Mixpanel vs Amplitude\n\nProduct analytics with AI-powered insights.\n\n## Mixpanel\n\nRating: 4.3/5\nPrice: Free / /month\n\n## Amplitude\n\nRating: 4.3/5\nPrice: Free / Contact",
+    "category": "analytics"
+  },
+  {
+    "slug": "cursor-vs-github-copilot",
+    "tool1_id": "cursor",
+    "tool2_id": "github-copilot",
+    "title": "Cursor vs GitHub Copilot: Which AI Tool Is Better?",
+    "content": "# Cursor vs GitHub Copilot\n\nAI-native code editor based on VS Code fork with multi-file editing and codebase awareness.\n\n## Cursor\n\nRating: 4.7/5\nPrice: Free / /month\n\n## GitHub Copilot\n\nRating: 4.5/5\nPrice: /month",
+    "category": "coding"
+  },
+  {
+    "slug": "cursor-vs-v0",
+    "tool1_id": "cursor",
+    "tool2_id": "v0",
+    "title": "Cursor vs v0 by Vercel: Which AI Tool Is Better?",
+    "content": "# Cursor vs v0 by Vercel\n\nAI-native code editor based on VS Code fork with multi-file editing and codebase awareness.\n\n## Cursor\n\nRating: 4.7/5\nPrice: Free / /month\n\n## v0 by Vercel\n\nRating: 4.5/5\nPrice: Free / /month",
+    "category": "coding"
+  },
+  {
+    "slug": "cursor-vs-windsurf",
+    "tool1_id": "cursor",
+    "tool2_id": "windsurf",
+    "title": "Cursor vs Windsurf: Which AI Tool Is Better?",
+    "content": "# Cursor vs Windsurf\n\nAI-native code editor based on VS Code fork with multi-file editing and codebase awareness.\n\n## Cursor\n\nRating: 4.7/5\nPrice: Free / /month\n\n## Windsurf\n\nRating: 4.4/5\nPrice: Free / /month",
+    "category": "coding"
+  },
+  {
+    "slug": "cursor-vs-codex-cli",
+    "tool1_id": "cursor",
+    "tool2_id": "codex-cli",
+    "title": "Cursor vs OpenAI Codex CLI: Which AI Tool Is Better?",
+    "content": "# Cursor vs OpenAI Codex CLI\n\nAI-native code editor based on VS Code fork with multi-file editing and codebase awareness.\n\n## Cursor\n\nRating: 4.7/5\nPrice: Free / /month\n\n## OpenAI Codex CLI\n\nRating: 4.4/5\nPrice: ChatGPT Plus / Team",
+    "category": "coding"
+  },
+  {
+    "slug": "github-copilot-vs-v0",
+    "tool1_id": "github-copilot",
+    "tool2_id": "v0",
+    "title": "GitHub Copilot vs v0 by Vercel: Which AI Tool Is Better?",
+    "content": "# GitHub Copilot vs v0 by Vercel\n\nAI pair programmer for VS Code and JetBrains IDEs that provides intelligent code completions, chat assistance, and terminal suggestions.\n\n## GitHub Copilot\n\nRating: 4.5/5\nPrice: /month\n\n## v0 by Vercel\n\nRating: 4.5/5\nPrice: Free / /month",
+    "category": "coding"
+  },
+  {
+    "slug": "github-copilot-vs-windsurf",
+    "tool1_id": "github-copilot",
+    "tool2_id": "windsurf",
+    "title": "GitHub Copilot vs Windsurf: Which AI Tool Is Better?",
+    "content": "# GitHub Copilot vs Windsurf\n\nAI pair programmer for VS Code and JetBrains IDEs that provides intelligent code completions, chat assistance, and terminal suggestions.\n\n## GitHub Copilot\n\nRating: 4.5/5\nPrice: /month\n\n## Windsurf\n\nRating: 4.4/5\nPrice: Free / /month",
+    "category": "coding"
+  },
+  {
+    "slug": "github-copilot-vs-codex-cli",
+    "tool1_id": "github-copilot",
+    "tool2_id": "codex-cli",
+    "title": "GitHub Copilot vs OpenAI Codex CLI: Which AI Tool Is Better?",
+    "content": "# GitHub Copilot vs OpenAI Codex CLI\n\nAI pair programmer for VS Code and JetBrains IDEs that provides intelligent code completions, chat assistance, and terminal suggestions.\n\n## GitHub Copilot\n\nRating: 4.5/5\nPrice: /month\n\n## OpenAI Codex CLI\n\nRating: 4.4/5\nPrice: ChatGPT Plus / Team",
+    "category": "coding"
+  },
+  {
+    "slug": "v0-vs-windsurf",
+    "tool1_id": "v0",
+    "tool2_id": "windsurf",
+    "title": "v0 by Vercel vs Windsurf: Which AI Tool Is Better?",
+    "content": "# v0 by Vercel vs Windsurf\n\nGenerate UI components from text prompts. Produces production-ready Tailwind + React code.\n\n## v0 by Vercel\n\nRating: 4.5/5\nPrice: Free / /month\n\n## Windsurf\n\nRating: 4.4/5\nPrice: Free / /month",
+    "category": "coding"
+  },
+  {
+    "slug": "v0-vs-codex-cli",
+    "tool1_id": "v0",
+    "tool2_id": "codex-cli",
+    "title": "v0 by Vercel vs OpenAI Codex CLI: Which AI Tool Is Better?",
+    "content": "# v0 by Vercel vs OpenAI Codex CLI\n\nGenerate UI components from text prompts. Produces production-ready Tailwind + React code.\n\n## v0 by Vercel\n\nRating: 4.5/5\nPrice: Free / /month\n\n## OpenAI Codex CLI\n\nRating: 4.4/5\nPrice: ChatGPT Plus / Team",
+    "category": "coding"
+  },
+  {
+    "slug": "windsurf-vs-codex-cli",
+    "tool1_id": "windsurf",
+    "tool2_id": "codex-cli",
+    "title": "Windsurf vs OpenAI Codex CLI: Which AI Tool Is Better?",
+    "content": "# Windsurf vs OpenAI Codex CLI\n\nAI IDE by Codeium with multi-file editing and agent mode.\n\n## Windsurf\n\nRating: 4.4/5\nPrice: Free / /month\n\n## OpenAI Codex CLI\n\nRating: 4.4/5\nPrice: ChatGPT Plus / Team",
+    "category": "coding"
+  },
+  {
+    "slug": "intercom-ai-vs-zendesk-ai",
+    "tool1_id": "intercom-ai",
+    "tool2_id": "zendesk-ai",
+    "title": "Intercom AI vs Zendesk AI: Which AI Tool Is Better?",
+    "content": "# Intercom AI vs Zendesk AI\n\nAI-powered customer messaging and support platform.\n\n## Intercom AI\n\nRating: 4.4/5\nPrice: Free / /month\n\n## Zendesk AI\n\nRating: 4.3/5\nPrice: /month",
+    "category": "customer_service"
+  },
+  {
+    "slug": "intercom-ai-vs-drift",
+    "tool1_id": "intercom-ai",
+    "tool2_id": "drift",
+    "title": "Intercom AI vs Drift: Which AI Tool Is Better?",
+    "content": "# Intercom AI vs Drift\n\nAI-powered customer messaging and support platform.\n\n## Intercom AI\n\nRating: 4.4/5\nPrice: Free / /month\n\n## Drift\n\nRating: 4.2/5\nPrice: Contact for pricing",
+    "category": "customer_service"
+  },
+  {
+    "slug": "intercom-ai-vs-freshdesk",
+    "tool1_id": "intercom-ai",
+    "tool2_id": "freshdesk",
+    "title": "Intercom AI vs Freshdesk: Which AI Tool Is Better?",
+    "content": "# Intercom AI vs Freshdesk\n\nAI-powered customer messaging and support platform.\n\n## Intercom AI\n\nRating: 4.4/5\nPrice: Free / /month\n\n## Freshdesk\n\nRating: 4.2/5\nPrice: Free / /month",
+    "category": "customer_service"
+  },
+  {
+    "slug": "intercom-ai-vs-crisp",
+    "tool1_id": "intercom-ai",
+    "tool2_id": "crisp",
+    "title": "Intercom AI vs Crisp: Which AI Tool Is Better?",
+    "content": "# Intercom AI vs Crisp\n\nAI-powered customer messaging and support platform.\n\n## Intercom AI\n\nRating: 4.4/5\nPrice: Free / /month\n\n## Crisp\n\nRating: 4.1/5\nPrice: Free / /month",
+    "category": "customer_service"
+  },
+  {
+    "slug": "zendesk-ai-vs-drift",
+    "tool1_id": "zendesk-ai",
+    "tool2_id": "drift",
+    "title": "Zendesk AI vs Drift: Which AI Tool Is Better?",
+    "content": "# Zendesk AI vs Drift\n\nEnterprise customer service platform with AI features.\n\n## Zendesk AI\n\nRating: 4.3/5\nPrice: /month\n\n## Drift\n\nRating: 4.2/5\nPrice: Contact for pricing",
+    "category": "customer_service"
+  },
+  {
+    "slug": "zendesk-ai-vs-freshdesk",
+    "tool1_id": "zendesk-ai",
+    "tool2_id": "freshdesk",
+    "title": "Zendesk AI vs Freshdesk: Which AI Tool Is Better?",
+    "content": "# Zendesk AI vs Freshdesk\n\nEnterprise customer service platform with AI features.\n\n## Zendesk AI\n\nRating: 4.3/5\nPrice: /month\n\n## Freshdesk\n\nRating: 4.2/5\nPrice: Free / /month",
+    "category": "customer_service"
+  },
+  {
+    "slug": "zendesk-ai-vs-crisp",
+    "tool1_id": "zendesk-ai",
+    "tool2_id": "crisp",
+    "title": "Zendesk AI vs Crisp: Which AI Tool Is Better?",
+    "content": "# Zendesk AI vs Crisp\n\nEnterprise customer service platform with AI features.\n\n## Zendesk AI\n\nRating: 4.3/5\nPrice: /month\n\n## Crisp\n\nRating: 4.1/5\nPrice: Free / /month",
+    "category": "customer_service"
+  },
+  {
+    "slug": "drift-vs-freshdesk",
+    "tool1_id": "drift",
+    "tool2_id": "freshdesk",
+    "title": "Drift vs Freshdesk: Which AI Tool Is Better?",
+    "content": "# Drift vs Freshdesk\n\nAI-powered conversational marketing and sales platform.\n\n## Drift\n\nRating: 4.2/5\nPrice: Contact for pricing\n\n## Freshdesk\n\nRating: 4.2/5\nPrice: Free / /month",
+    "category": "customer_service"
+  },
+  {
+    "slug": "drift-vs-crisp",
+    "tool1_id": "drift",
+    "tool2_id": "crisp",
+    "title": "Drift vs Crisp: Which AI Tool Is Better?",
+    "content": "# Drift vs Crisp\n\nAI-powered conversational marketing and sales platform.\n\n## Drift\n\nRating: 4.2/5\nPrice: Contact for pricing\n\n## Crisp\n\nRating: 4.1/5\nPrice: Free / /month",
+    "category": "customer_service"
+  },
+  {
+    "slug": "freshdesk-vs-crisp",
+    "tool1_id": "freshdesk",
+    "tool2_id": "crisp",
+    "title": "Freshdesk vs Crisp: Which AI Tool Is Better?",
+    "content": "# Freshdesk vs Crisp\n\nAI-powered customer support ticketing system.\n\n## Freshdesk\n\nRating: 4.2/5\nPrice: Free / /month\n\n## Crisp\n\nRating: 4.1/5\nPrice: Free / /month",
+    "category": "customer_service"
+  },
+  {
+    "slug": "midjourney-vs-elevenlabs",
+    "tool1_id": "midjourney",
+    "tool2_id": "elevenlabs",
+    "title": "Midjourney vs ElevenLabs: Which AI Tool Is Better?",
+    "content": "# Midjourney vs ElevenLabs\n\nThe highest quality AI image generation tool, accessible via Discord or Web.\n\n## Midjourney\n\nRating: 4.8/5\nPrice: /month\n\n## ElevenLabs\n\nRating: 4.7/5\nPrice: Free / /month",
+    "category": "design"
+  },
+  {
+    "slug": "midjourney-vs-canva-ai",
+    "tool1_id": "midjourney",
+    "tool2_id": "canva-ai",
+    "title": "Midjourney vs Canva AI (Magic Studio): Which AI Tool Is Better?",
+    "content": "# Midjourney vs Canva AI (Magic Studio)\n\nThe highest quality AI image generation tool, accessible via Discord or Web.\n\n## Midjourney\n\nRating: 4.8/5\nPrice: /month\n\n## Canva AI (Magic Studio)\n\nRating: 4.5/5\nPrice: Free / .99/month",
+    "category": "design"
+  },
+  {
+    "slug": "midjourney-vs-runway",
+    "tool1_id": "midjourney",
+    "tool2_id": "runway",
+    "title": "Midjourney vs Runway ML: Which AI Tool Is Better?",
+    "content": "# Midjourney vs Runway ML\n\nThe highest quality AI image generation tool, accessible via Discord or Web.\n\n## Midjourney\n\nRating: 4.8/5\nPrice: /month\n\n## Runway ML\n\nRating: 4.5/5\nPrice: Free / /month",
+    "category": "design"
+  },
+  {
+    "slug": "midjourney-vs-stable-diffusion",
+    "tool1_id": "midjourney",
+    "tool2_id": "stable-diffusion",
+    "title": "Midjourney vs Stable Diffusion: Which AI Tool Is Better?",
+    "content": "# Midjourney vs Stable Diffusion\n\nThe highest quality AI image generation tool, accessible via Discord or Web.\n\n## Midjourney\n\nRating: 4.8/5\nPrice: /month\n\n## Stable Diffusion\n\nRating: 4.4/5\nPrice: Free (local) / API pricing",
+    "category": "design"
+  },
+  {
+    "slug": "elevenlabs-vs-canva-ai",
+    "tool1_id": "elevenlabs",
+    "tool2_id": "canva-ai",
+    "title": "ElevenLabs vs Canva AI (Magic Studio): Which AI Tool Is Better?",
+    "content": "# ElevenLabs vs Canva AI (Magic Studio)\n\nBest-in-class AI voice generation and cloning.\n\n## ElevenLabs\n\nRating: 4.7/5\nPrice: Free / /month\n\n## Canva AI (Magic Studio)\n\nRating: 4.5/5\nPrice: Free / .99/month",
+    "category": "design"
+  },
+  {
+    "slug": "elevenlabs-vs-runway",
+    "tool1_id": "elevenlabs",
+    "tool2_id": "runway",
+    "title": "ElevenLabs vs Runway ML: Which AI Tool Is Better?",
+    "content": "# ElevenLabs vs Runway ML\n\nBest-in-class AI voice generation and cloning.\n\n## ElevenLabs\n\nRating: 4.7/5\nPrice: Free / /month\n\n## Runway ML\n\nRating: 4.5/5\nPrice: Free / /month",
+    "category": "design"
+  },
+  {
+    "slug": "elevenlabs-vs-stable-diffusion",
+    "tool1_id": "elevenlabs",
+    "tool2_id": "stable-diffusion",
+    "title": "ElevenLabs vs Stable Diffusion: Which AI Tool Is Better?",
+    "content": "# ElevenLabs vs Stable Diffusion\n\nBest-in-class AI voice generation and cloning.\n\n## ElevenLabs\n\nRating: 4.7/5\nPrice: Free / /month\n\n## Stable Diffusion\n\nRating: 4.4/5\nPrice: Free (local) / API pricing",
+    "category": "design"
+  },
+  {
+    "slug": "canva-ai-vs-runway",
+    "tool1_id": "canva-ai",
+    "tool2_id": "runway",
+    "title": "Canva AI (Magic Studio) vs Runway ML: Which AI Tool Is Better?",
+    "content": "# Canva AI (Magic Studio) vs Runway ML\n\nAI-powered design platform for non-designers.\n\n## Canva AI (Magic Studio)\n\nRating: 4.5/5\nPrice: Free / .99/month\n\n## Runway ML\n\nRating: 4.5/5\nPrice: Free / /month",
+    "category": "design"
+  },
+  {
+    "slug": "canva-ai-vs-stable-diffusion",
+    "tool1_id": "canva-ai",
+    "tool2_id": "stable-diffusion",
+    "title": "Canva AI (Magic Studio) vs Stable Diffusion: Which AI Tool Is Better?",
+    "content": "# Canva AI (Magic Studio) vs Stable Diffusion\n\nAI-powered design platform for non-designers.\n\n## Canva AI (Magic Studio)\n\nRating: 4.5/5\nPrice: Free / .99/month\n\n## Stable Diffusion\n\nRating: 4.4/5\nPrice: Free (local) / API pricing",
+    "category": "design"
+  },
+  {
+    "slug": "runway-vs-stable-diffusion",
+    "tool1_id": "runway",
+    "tool2_id": "stable-diffusion",
+    "title": "Runway ML vs Stable Diffusion: Which AI Tool Is Better?",
+    "content": "# Runway ML vs Stable Diffusion\n\nAI video generation and editing platform.\n\n## Runway ML\n\nRating: 4.5/5\nPrice: Free / /month\n\n## Stable Diffusion\n\nRating: 4.4/5\nPrice: Free (local) / API pricing",
+    "category": "design"
+  },
+  {
+    "slug": "vercel-vs-supabase",
+    "tool1_id": "vercel",
+    "tool2_id": "supabase",
+    "title": "Vercel vs Supabase: Which AI Tool Is Better?",
+    "content": "# Vercel vs Supabase\n\nDeploy web apps with AI-powered previews and Edge functions.\n\n## Vercel\n\nRating: 4.6/5\nPrice: Free / /month\n\n## Supabase\n\nRating: 4.5/5\nPrice: Free / /month",
+    "category": "devops"
+  },
+  {
+    "slug": "vercel-vs-railway",
+    "tool1_id": "vercel",
+    "tool2_id": "railway",
+    "title": "Vercel vs Railway: Which AI Tool Is Better?",
+    "content": "# Vercel vs Railway\n\nDeploy web apps with AI-powered previews and Edge functions.\n\n## Vercel\n\nRating: 4.6/5\nPrice: Free / /month\n\n## Railway\n\nRating: 4.4/5\nPrice: Pay as you go",
+    "category": "devops"
+  },
+  {
+    "slug": "vercel-vs-cloudflare-ai",
+    "tool1_id": "vercel",
+    "tool2_id": "cloudflare-ai",
+    "title": "Vercel vs Cloudflare AI: Which AI Tool Is Better?",
+    "content": "# Vercel vs Cloudflare AI\n\nDeploy web apps with AI-powered previews and Edge functions.\n\n## Vercel\n\nRating: 4.6/5\nPrice: Free / /month\n\n## Cloudflare AI\n\nRating: 4.3/5\nPrice: Free tier / Pay as you go",
+    "category": "devops"
+  },
+  {
+    "slug": "vercel-vs-fly-io",
+    "tool1_id": "vercel",
+    "tool2_id": "fly-io",
+    "title": "Vercel vs Fly.io: Which AI Tool Is Better?",
+    "content": "# Vercel vs Fly.io\n\nDeploy web apps with AI-powered previews and Edge functions.\n\n## Vercel\n\nRating: 4.6/5\nPrice: Free / /month\n\n## Fly.io\n\nRating: 4.2/5\nPrice: Pay as you go",
+    "category": "devops"
+  },
+  {
+    "slug": "supabase-vs-railway",
+    "tool1_id": "supabase",
+    "tool2_id": "railway",
+    "title": "Supabase vs Railway: Which AI Tool Is Better?",
+    "content": "# Supabase vs Railway\n\nOpen-source Firebase alternative with AI features.\n\n## Supabase\n\nRating: 4.5/5\nPrice: Free / /month\n\n## Railway\n\nRating: 4.4/5\nPrice: Pay as you go",
+    "category": "devops"
+  },
+  {
+    "slug": "supabase-vs-cloudflare-ai",
+    "tool1_id": "supabase",
+    "tool2_id": "cloudflare-ai",
+    "title": "Supabase vs Cloudflare AI: Which AI Tool Is Better?",
+    "content": "# Supabase vs Cloudflare AI\n\nOpen-source Firebase alternative with AI features.\n\n## Supabase\n\nRating: 4.5/5\nPrice: Free / /month\n\n## Cloudflare AI\n\nRating: 4.3/5\nPrice: Free tier / Pay as you go",
+    "category": "devops"
+  },
+  {
+    "slug": "supabase-vs-fly-io",
+    "tool1_id": "supabase",
+    "tool2_id": "fly-io",
+    "title": "Supabase vs Fly.io: Which AI Tool Is Better?",
+    "content": "# Supabase vs Fly.io\n\nOpen-source Firebase alternative with AI features.\n\n## Supabase\n\nRating: 4.5/5\nPrice: Free / /month\n\n## Fly.io\n\nRating: 4.2/5\nPrice: Pay as you go",
+    "category": "devops"
+  },
+  {
+    "slug": "railway-vs-cloudflare-ai",
+    "tool1_id": "railway",
+    "tool2_id": "cloudflare-ai",
+    "title": "Railway vs Cloudflare AI: Which AI Tool Is Better?",
+    "content": "# Railway vs Cloudflare AI\n\nDeploy apps and databases in seconds with AI assistance.\n\n## Railway\n\nRating: 4.4/5\nPrice: Pay as you go\n\n## Cloudflare AI\n\nRating: 4.3/5\nPrice: Free tier / Pay as you go",
+    "category": "devops"
+  },
+  {
+    "slug": "railway-vs-fly-io",
+    "tool1_id": "railway",
+    "tool2_id": "fly-io",
+    "title": "Railway vs Fly.io: Which AI Tool Is Better?",
+    "content": "# Railway vs Fly.io\n\nDeploy apps and databases in seconds with AI assistance.\n\n## Railway\n\nRating: 4.4/5\nPrice: Pay as you go\n\n## Fly.io\n\nRating: 4.2/5\nPrice: Pay as you go",
+    "category": "devops"
+  },
+  {
+    "slug": "cloudflare-ai-vs-fly-io",
+    "tool1_id": "cloudflare-ai",
+    "tool2_id": "fly-io",
+    "title": "Cloudflare AI vs Fly.io: Which AI Tool Is Better?",
+    "content": "# Cloudflare AI vs Fly.io\n\nEdge AI computing platform with Workers AI.\n\n## Cloudflare AI\n\nRating: 4.3/5\nPrice: Free tier / Pay as you go\n\n## Fly.io\n\nRating: 4.2/5\nPrice: Pay as you go",
+    "category": "devops"
+  },
+  {
+    "slug": "claude-vs-khan-mastery",
+    "tool1_id": "claude",
+    "tool2_id": "khan-mastery",
+    "title": "Anthropic Claude vs Khan Academy (AI): Which AI Tool Is Better?",
+    "content": "# Anthropic Claude vs Khan Academy (AI)\n\nAI assistant focused on safe and helpful reasoning.\n\n## Anthropic Claude\n\nRating: 4.7/5\nPrice: Free / /month\n\n## Khan Academy (AI)\n\nRating: 4.4/5\nPrice: Free",
+    "category": "education"
+  },
+  {
+    "slug": "claude-vs-duolingo-max",
+    "tool1_id": "claude",
+    "tool2_id": "duolingo-max",
+    "title": "Anthropic Claude vs Duolingo Max (AI): Which AI Tool Is Better?",
+    "content": "# Anthropic Claude vs Duolingo Max (AI)\n\nAI assistant focused on safe and helpful reasoning.\n\n## Anthropic Claude\n\nRating: 4.7/5\nPrice: Free / /month\n\n## Duolingo Max (AI)\n\nRating: 4.3/5\nPrice: .99/month",
+    "category": "education"
+  },
+  {
+    "slug": "claude-vs-gamma",
+    "tool1_id": "claude",
+    "tool2_id": "gamma",
+    "title": "Anthropic Claude vs Gamma: Which AI Tool Is Better?",
+    "content": "# Anthropic Claude vs Gamma\n\nAI assistant focused on safe and helpful reasoning.\n\n## Anthropic Claude\n\nRating: 4.7/5\nPrice: Free / /month\n\n## Gamma\n\nRating: 4.3/5\nPrice: Free / /month",
+    "category": "education"
+  },
+  {
+    "slug": "claude-vs-quizlet-ai",
+    "tool1_id": "claude",
+    "tool2_id": "quizlet-ai",
+    "title": "Anthropic Claude vs Quizlet: Which AI Tool Is Better?",
+    "content": "# Anthropic Claude vs Quizlet\n\nAI assistant focused on safe and helpful reasoning.\n\n## Anthropic Claude\n\nRating: 4.7/5\nPrice: Free / /month\n\n## Quizlet\n\nRating: 4.2/5\nPrice: Free / .99/year",
+    "category": "education"
+  },
+  {
+    "slug": "khan-mastery-vs-duolingo-max",
+    "tool1_id": "khan-mastery",
+    "tool2_id": "duolingo-max",
+    "title": "Khan Academy (AI) vs Duolingo Max (AI): Which AI Tool Is Better?",
+    "content": "# Khan Academy (AI) vs Duolingo Max (AI)\n\nFree education platform with AI tutoring.\n\n## Khan Academy (AI)\n\nRating: 4.4/5\nPrice: Free\n\n## Duolingo Max (AI)\n\nRating: 4.3/5\nPrice: .99/month",
+    "category": "education"
+  },
+  {
+    "slug": "khan-mastery-vs-gamma",
+    "tool1_id": "khan-mastery",
+    "tool2_id": "gamma",
+    "title": "Khan Academy (AI) vs Gamma: Which AI Tool Is Better?",
+    "content": "# Khan Academy (AI) vs Gamma\n\nFree education platform with AI tutoring.\n\n## Khan Academy (AI)\n\nRating: 4.4/5\nPrice: Free\n\n## Gamma\n\nRating: 4.3/5\nPrice: Free / /month",
+    "category": "education"
+  },
+  {
+    "slug": "khan-mastery-vs-quizlet-ai",
+    "tool1_id": "khan-mastery",
+    "tool2_id": "quizlet-ai",
+    "title": "Khan Academy (AI) vs Quizlet: Which AI Tool Is Better?",
+    "content": "# Khan Academy (AI) vs Quizlet\n\nFree education platform with AI tutoring.\n\n## Khan Academy (AI)\n\nRating: 4.4/5\nPrice: Free\n\n## Quizlet\n\nRating: 4.2/5\nPrice: Free / .99/year",
+    "category": "education"
+  },
+  {
+    "slug": "duolingo-max-vs-gamma",
+    "tool1_id": "duolingo-max",
+    "tool2_id": "gamma",
+    "title": "Duolingo Max (AI) vs Gamma: Which AI Tool Is Better?",
+    "content": "# Duolingo Max (AI) vs Gamma\n\nAI-powered language learning with character interaction.\n\n## Duolingo Max (AI)\n\nRating: 4.3/5\nPrice: .99/month\n\n## Gamma\n\nRating: 4.3/5\nPrice: Free / /month",
+    "category": "education"
+  },
+  {
+    "slug": "duolingo-max-vs-quizlet-ai",
+    "tool1_id": "duolingo-max",
+    "tool2_id": "quizlet-ai",
+    "title": "Duolingo Max (AI) vs Quizlet: Which AI Tool Is Better?",
+    "content": "# Duolingo Max (AI) vs Quizlet\n\nAI-powered language learning with character interaction.\n\n## Duolingo Max (AI)\n\nRating: 4.3/5\nPrice: .99/month\n\n## Quizlet\n\nRating: 4.2/5\nPrice: Free / .99/year",
+    "category": "education"
+  },
+  {
+    "slug": "gamma-vs-quizlet-ai",
+    "tool1_id": "gamma",
+    "tool2_id": "quizlet-ai",
+    "title": "Gamma vs Quizlet: Which AI Tool Is Better?",
+    "content": "# Gamma vs Quizlet\n\nAI presentation and document creation tool.\n\n## Gamma\n\nRating: 4.3/5\nPrice: Free / /month\n\n## Quizlet\n\nRating: 4.2/5\nPrice: Free / .99/year",
+    "category": "education"
+  },
+  {
+    "slug": "hubspot-ai-vs-activecampaign",
+    "tool1_id": "hubspot-ai",
+    "tool2_id": "activecampaign",
+    "title": "HubSpot AI vs ActiveCampaign: Which AI Tool Is Better?",
+    "content": "# HubSpot AI vs ActiveCampaign\n\nAI-powered CRM and marketing automation tools.\n\n## HubSpot AI\n\nRating: 4.4/5\nPrice: Free / /month\n\n## ActiveCampaign\n\nRating: 4.4/5\nPrice: /month",
+    "category": "marketing"
+  },
+  {
+    "slug": "hubspot-ai-vs-convertkit-ai",
+    "tool1_id": "hubspot-ai",
+    "tool2_id": "convertkit-ai",
+    "title": "HubSpot AI vs ConvertKit AI: Which AI Tool Is Better?",
+    "content": "# HubSpot AI vs ConvertKit AI\n\nAI-powered CRM and marketing automation tools.\n\n## HubSpot AI\n\nRating: 4.4/5\nPrice: Free / /month\n\n## ConvertKit AI\n\nRating: 4.3/5\nPrice: Free / /month",
+    "category": "marketing"
+  },
+  {
+    "slug": "hubspot-ai-vs-hotjar",
+    "tool1_id": "hubspot-ai",
+    "tool2_id": "hotjar",
+    "title": "HubSpot AI vs Hotjar: Which AI Tool Is Better?",
+    "content": "# HubSpot AI vs Hotjar\n\nAI-powered CRM and marketing automation tools.\n\n## HubSpot AI\n\nRating: 4.4/5\nPrice: Free / /month\n\n## Hotjar\n\nRating: 4.3/5\nPrice: Free / /month",
+    "category": "marketing"
+  },
+  {
+    "slug": "hubspot-ai-vs-buffer-ai",
+    "tool1_id": "hubspot-ai",
+    "tool2_id": "buffer-ai",
+    "title": "HubSpot AI vs Buffer AI: Which AI Tool Is Better?",
+    "content": "# HubSpot AI vs Buffer AI\n\nAI-powered CRM and marketing automation tools.\n\n## HubSpot AI\n\nRating: 4.4/5\nPrice: Free / /month\n\n## Buffer AI\n\nRating: 4.1/5\nPrice: Free / /month",
+    "category": "marketing"
+  },
+  {
+    "slug": "activecampaign-vs-convertkit-ai",
+    "tool1_id": "activecampaign",
+    "tool2_id": "convertkit-ai",
+    "title": "ActiveCampaign vs ConvertKit AI: Which AI Tool Is Better?",
+    "content": "# ActiveCampaign vs ConvertKit AI\n\nMarketing automation with AI-powered email personalization.\n\n## ActiveCampaign\n\nRating: 4.4/5\nPrice: /month\n\n## ConvertKit AI\n\nRating: 4.3/5\nPrice: Free / /month",
+    "category": "marketing"
+  },
+  {
+    "slug": "activecampaign-vs-hotjar",
+    "tool1_id": "activecampaign",
+    "tool2_id": "hotjar",
+    "title": "ActiveCampaign vs Hotjar: Which AI Tool Is Better?",
+    "content": "# ActiveCampaign vs Hotjar\n\nMarketing automation with AI-powered email personalization.\n\n## ActiveCampaign\n\nRating: 4.4/5\nPrice: /month\n\n## Hotjar\n\nRating: 4.3/5\nPrice: Free / /month",
+    "category": "marketing"
+  },
+  {
+    "slug": "activecampaign-vs-buffer-ai",
+    "tool1_id": "activecampaign",
+    "tool2_id": "buffer-ai",
+    "title": "ActiveCampaign vs Buffer AI: Which AI Tool Is Better?",
+    "content": "# ActiveCampaign vs Buffer AI\n\nMarketing automation with AI-powered email personalization.\n\n## ActiveCampaign\n\nRating: 4.4/5\nPrice: /month\n\n## Buffer AI\n\nRating: 4.1/5\nPrice: Free / /month",
+    "category": "marketing"
+  },
+  {
+    "slug": "convertkit-ai-vs-hotjar",
+    "tool1_id": "convertkit-ai",
+    "tool2_id": "hotjar",
+    "title": "ConvertKit AI vs Hotjar: Which AI Tool Is Better?",
+    "content": "# ConvertKit AI vs Hotjar\n\nEmail marketing for creators with AI writing tools.\n\n## ConvertKit AI\n\nRating: 4.3/5\nPrice: Free / /month\n\n## Hotjar\n\nRating: 4.3/5\nPrice: Free / /month",
+    "category": "marketing"
+  },
+  {
+    "slug": "convertkit-ai-vs-buffer-ai",
+    "tool1_id": "convertkit-ai",
+    "tool2_id": "buffer-ai",
+    "title": "ConvertKit AI vs Buffer AI: Which AI Tool Is Better?",
+    "content": "# ConvertKit AI vs Buffer AI\n\nEmail marketing for creators with AI writing tools.\n\n## ConvertKit AI\n\nRating: 4.3/5\nPrice: Free / /month\n\n## Buffer AI\n\nRating: 4.1/5\nPrice: Free / /month",
+    "category": "marketing"
+  },
+  {
+    "slug": "hotjar-vs-buffer-ai",
+    "tool1_id": "hotjar",
+    "tool2_id": "buffer-ai",
+    "title": "Hotjar vs Buffer AI: Which AI Tool Is Better?",
+    "content": "# Hotjar vs Buffer AI\n\nBehavior analytics and user feedback tools with AI.\n\n## Hotjar\n\nRating: 4.3/5\nPrice: Free / /month\n\n## Buffer AI\n\nRating: 4.1/5\nPrice: Free / /month",
+    "category": "marketing"
+  },
+  {
+    "slug": "superhuman-vs-obsidian-ai",
+    "tool1_id": "superhuman",
+    "tool2_id": "obsidian-ai",
+    "title": "Superhuman vs Obsidian: Which AI Tool Is Better?",
+    "content": "# Superhuman vs Obsidian\n\nFastest email client with AI compose and rewrite.\n\n## Superhuman\n\nRating: 4.6/5\nPrice: /month\n\n## Obsidian\n\nRating: 4.5/5\nPrice: Free",
+    "category": "productivity"
+  },
+  {
+    "slug": "superhuman-vs-notion-ai",
+    "tool1_id": "superhuman",
+    "tool2_id": "notion-ai",
+    "title": "Superhuman vs Notion AI: Which AI Tool Is Better?",
+    "content": "# Superhuman vs Notion AI\n\nFastest email client with AI compose and rewrite.\n\n## Superhuman\n\nRating: 4.6/5\nPrice: /month\n\n## Notion AI\n\nRating: 4.4/5\nPrice: Free / /month",
+    "category": "productivity"
+  },
+  {
+    "slug": "superhuman-vs-google-gemini",
+    "tool1_id": "superhuman",
+    "tool2_id": "google-gemini",
+    "title": "Superhuman vs Google Gemini: Which AI Tool Is Better?",
+    "content": "# Superhuman vs Google Gemini\n\nFastest email client with AI compose and rewrite.\n\n## Superhuman\n\nRating: 4.6/5\nPrice: /month\n\n## Google Gemini\n\nRating: 4.4/5\nPrice: Free / /month",
+    "category": "productivity"
+  },
+  {
+    "slug": "superhuman-vs-craft",
+    "tool1_id": "superhuman",
+    "tool2_id": "craft",
+    "title": "Superhuman vs Craft: Which AI Tool Is Better?",
+    "content": "# Superhuman vs Craft\n\nFastest email client with AI compose and rewrite.\n\n## Superhuman\n\nRating: 4.6/5\nPrice: /month\n\n## Craft\n\nRating: 4.3/5\nPrice: Free / /month",
+    "category": "productivity"
+  },
+  {
+    "slug": "obsidian-ai-vs-notion-ai",
+    "tool1_id": "obsidian-ai",
+    "tool2_id": "notion-ai",
+    "title": "Obsidian vs Notion AI: Which AI Tool Is Better?",
+    "content": "# Obsidian vs Notion AI\n\nLocal-first knowledge base with AI plugins.\n\n## Obsidian\n\nRating: 4.5/5\nPrice: Free\n\n## Notion AI\n\nRating: 4.4/5\nPrice: Free / /month",
+    "category": "productivity"
+  },
+  {
+    "slug": "obsidian-ai-vs-google-gemini",
+    "tool1_id": "obsidian-ai",
+    "tool2_id": "google-gemini",
+    "title": "Obsidian vs Google Gemini: Which AI Tool Is Better?",
+    "content": "# Obsidian vs Google Gemini\n\nLocal-first knowledge base with AI plugins.\n\n## Obsidian\n\nRating: 4.5/5\nPrice: Free\n\n## Google Gemini\n\nRating: 4.4/5\nPrice: Free / /month",
+    "category": "productivity"
+  },
+  {
+    "slug": "obsidian-ai-vs-craft",
+    "tool1_id": "obsidian-ai",
+    "tool2_id": "craft",
+    "title": "Obsidian vs Craft: Which AI Tool Is Better?",
+    "content": "# Obsidian vs Craft\n\nLocal-first knowledge base with AI plugins.\n\n## Obsidian\n\nRating: 4.5/5\nPrice: Free\n\n## Craft\n\nRating: 4.3/5\nPrice: Free / /month",
+    "category": "productivity"
+  },
+  {
+    "slug": "notion-ai-vs-google-gemini",
+    "tool1_id": "notion-ai",
+    "tool2_id": "google-gemini",
+    "title": "Notion AI vs Google Gemini: Which AI Tool Is Better?",
+    "content": "# Notion AI vs Google Gemini\n\nAI features in the popular all-in-one workspace.\n\n## Notion AI\n\nRating: 4.4/5\nPrice: Free / /month\n\n## Google Gemini\n\nRating: 4.4/5\nPrice: Free / /month",
+    "category": "productivity"
+  },
+  {
+    "slug": "notion-ai-vs-craft",
+    "tool1_id": "notion-ai",
+    "tool2_id": "craft",
+    "title": "Notion AI vs Craft: Which AI Tool Is Better?",
+    "content": "# Notion AI vs Craft\n\nAI features in the popular all-in-one workspace.\n\n## Notion AI\n\nRating: 4.4/5\nPrice: Free / /month\n\n## Craft\n\nRating: 4.3/5\nPrice: Free / /month",
+    "category": "productivity"
+  },
+  {
+    "slug": "google-gemini-vs-craft",
+    "tool1_id": "google-gemini",
+    "tool2_id": "craft",
+    "title": "Google Gemini vs Craft: Which AI Tool Is Better?",
+    "content": "# Google Gemini vs Craft\n\nGoogle's AI assistant with deep Google Workspace integration.\n\n## Google Gemini\n\nRating: 4.4/5\nPrice: Free / /month\n\n## Craft\n\nRating: 4.3/5\nPrice: Free / /month",
+    "category": "productivity"
+  },
+  {
+    "slug": "ahrefs-vs-semrush-ai",
+    "tool1_id": "ahrefs",
+    "tool2_id": "semrush-ai",
+    "title": "Ahrefs vs Semrush AI: Which AI Tool Is Better?",
+    "content": "# Ahrefs vs Semrush AI\n\nSEO toolkit with AI-powered content explorer and keyword research.\n\n## Ahrefs\n\nRating: 4.7/5\nPrice: /month\n\n## Semrush AI\n\nRating: 4.6/5\nPrice: /month",
+    "category": "seo"
+  },
+  {
+    "slug": "ahrefs-vs-surfer-seo",
+    "tool1_id": "ahrefs",
+    "tool2_id": "surfer-seo",
+    "title": "Ahrefs vs Surfer SEO: Which AI Tool Is Better?",
+    "content": "# Ahrefs vs Surfer SEO\n\nSEO toolkit with AI-powered content explorer and keyword research.\n\n## Ahrefs\n\nRating: 4.7/5\nPrice: /month\n\n## Surfer SEO\n\nRating: 4.4/5\nPrice: /month",
+    "category": "seo"
+  },
+  {
+    "slug": "ahrefs-vs-frase",
+    "tool1_id": "ahrefs",
+    "tool2_id": "frase",
+    "title": "Ahrefs vs Frase: Which AI Tool Is Better?",
+    "content": "# Ahrefs vs Frase\n\nSEO toolkit with AI-powered content explorer and keyword research.\n\n## Ahrefs\n\nRating: 4.7/5\nPrice: /month\n\n## Frase\n\nRating: 4.2/5\nPrice: .50/month",
+    "category": "seo"
+  },
+  {
+    "slug": "ahrefs-vs-rankranger",
+    "tool1_id": "ahrefs",
+    "tool2_id": "rankranger",
+    "title": "Ahrefs vs Rank Ranger: Which AI Tool Is Better?",
+    "content": "# Ahrefs vs Rank Ranger\n\nSEO toolkit with AI-powered content explorer and keyword research.\n\n## Ahrefs\n\nRating: 4.7/5\nPrice: /month\n\n## Rank Ranger\n\nRating: 4.2/5\nPrice: /month",
+    "category": "seo"
+  },
+  {
+    "slug": "semrush-ai-vs-surfer-seo",
+    "tool1_id": "semrush-ai",
+    "tool2_id": "surfer-seo",
+    "title": "Semrush AI vs Surfer SEO: Which AI Tool Is Better?",
+    "content": "# Semrush AI vs Surfer SEO\n\nAll-in-one SEO toolkit with AI-powered features.\n\n## Semrush AI\n\nRating: 4.6/5\nPrice: /month\n\n## Surfer SEO\n\nRating: 4.4/5\nPrice: /month",
+    "category": "seo"
+  },
+  {
+    "slug": "semrush-ai-vs-frase",
+    "tool1_id": "semrush-ai",
+    "tool2_id": "frase",
+    "title": "Semrush AI vs Frase: Which AI Tool Is Better?",
+    "content": "# Semrush AI vs Frase\n\nAll-in-one SEO toolkit with AI-powered features.\n\n## Semrush AI\n\nRating: 4.6/5\nPrice: /month\n\n## Frase\n\nRating: 4.2/5\nPrice: .50/month",
+    "category": "seo"
+  },
+  {
+    "slug": "semrush-ai-vs-rankranger",
+    "tool1_id": "semrush-ai",
+    "tool2_id": "rankranger",
+    "title": "Semrush AI vs Rank Ranger: Which AI Tool Is Better?",
+    "content": "# Semrush AI vs Rank Ranger\n\nAll-in-one SEO toolkit with AI-powered features.\n\n## Semrush AI\n\nRating: 4.6/5\nPrice: /month\n\n## Rank Ranger\n\nRating: 4.2/5\nPrice: /month",
+    "category": "seo"
+  },
+  {
+    "slug": "surfer-seo-vs-frase",
+    "tool1_id": "surfer-seo",
+    "tool2_id": "frase",
+    "title": "Surfer SEO vs Frase: Which AI Tool Is Better?",
+    "content": "# Surfer SEO vs Frase\n\nAI-powered SEO optimization tool for content and on-page factors.\n\n## Surfer SEO\n\nRating: 4.4/5\nPrice: /month\n\n## Frase\n\nRating: 4.2/5\nPrice: .50/month",
+    "category": "seo"
+  },
+  {
+    "slug": "surfer-seo-vs-rankranger",
+    "tool1_id": "surfer-seo",
+    "tool2_id": "rankranger",
+    "title": "Surfer SEO vs Rank Ranger: Which AI Tool Is Better?",
+    "content": "# Surfer SEO vs Rank Ranger\n\nAI-powered SEO optimization tool for content and on-page factors.\n\n## Surfer SEO\n\nRating: 4.4/5\nPrice: /month\n\n## Rank Ranger\n\nRating: 4.2/5\nPrice: /month",
+    "category": "seo"
+  },
+  {
+    "slug": "frase-vs-rankranger",
+    "tool1_id": "frase",
+    "tool2_id": "rankranger",
+    "title": "Frase vs Rank Ranger: Which AI Tool Is Better?",
+    "content": "# Frase vs Rank Ranger\n\nAI content optimizer that analyzes top-ranking pages.\n\n## Frase\n\nRating: 4.2/5\nPrice: .50/month\n\n## Rank Ranger\n\nRating: 4.2/5\nPrice: /month",
+    "category": "seo"
+  },
+  {
+    "slug": "sora-vs-runway",
+    "tool1_id": "sora",
+    "tool2_id": "runway",
+    "title": "Sora vs Runway ML: Which AI Tool Is Better?",
+    "content": "# Sora vs Runway ML\n\nOpenAI's text-to-video generation model.\n\n## Sora\n\nRating: 4.6/5\nPrice: ChatGPT Plus / Enterprise\n\n## Runway ML\n\nRating: 4.5/5\nPrice: Free / /month",
+    "category": "video"
+  },
+  {
+    "slug": "sora-vs-kling",
+    "tool1_id": "sora",
+    "tool2_id": "kling",
+    "title": "Sora vs Kling AI: Which AI Tool Is Better?",
+    "content": "# Sora vs Kling AI\n\nOpenAI's text-to-video generation model.\n\n## Sora\n\nRating: 4.6/5\nPrice: ChatGPT Plus / Enterprise\n\n## Kling AI\n\nRating: 4.4/5\nPrice: Free tier available",
+    "category": "video"
+  },
+  {
+    "slug": "sora-vs-capcut",
+    "tool1_id": "sora",
+    "tool2_id": "capcut",
+    "title": "Sora vs CapCut: Which AI Tool Is Better?",
+    "content": "# Sora vs CapCut\n\nOpenAI's text-to-video generation model.\n\n## Sora\n\nRating: 4.6/5\nPrice: ChatGPT Plus / Enterprise\n\n## CapCut\n\nRating: 4.3/5\nPrice: Free",
+    "category": "video"
+  },
+  {
+    "slug": "sora-vs-synthesia",
+    "tool1_id": "sora",
+    "tool2_id": "synthesia",
+    "title": "Sora vs Synthesia: Which AI Tool Is Better?",
+    "content": "# Sora vs Synthesia\n\nOpenAI's text-to-video generation model.\n\n## Sora\n\nRating: 4.6/5\nPrice: ChatGPT Plus / Enterprise\n\n## Synthesia\n\nRating: 4.3/5\nPrice: /month",
+    "category": "video"
+  },
+  {
+    "slug": "runway-vs-kling",
+    "tool1_id": "runway",
+    "tool2_id": "kling",
+    "title": "Runway ML vs Kling AI: Which AI Tool Is Better?",
+    "content": "# Runway ML vs Kling AI\n\nIndustry-leading AI video generation and editing platform.\n\n## Runway ML\n\nRating: 4.5/5\nPrice: Free / /month\n\n## Kling AI\n\nRating: 4.4/5\nPrice: Free tier available",
+    "category": "video"
+  },
+  {
+    "slug": "runway-vs-capcut",
+    "tool1_id": "runway",
+    "tool2_id": "capcut",
+    "title": "Runway ML vs CapCut: Which AI Tool Is Better?",
+    "content": "# Runway ML vs CapCut\n\nIndustry-leading AI video generation and editing platform.\n\n## Runway ML\n\nRating: 4.5/5\nPrice: Free / /month\n\n## CapCut\n\nRating: 4.3/5\nPrice: Free",
+    "category": "video"
+  },
+  {
+    "slug": "runway-vs-synthesia",
+    "tool1_id": "runway",
+    "tool2_id": "synthesia",
+    "title": "Runway ML vs Synthesia: Which AI Tool Is Better?",
+    "content": "# Runway ML vs Synthesia\n\nIndustry-leading AI video generation and editing platform.\n\n## Runway ML\n\nRating: 4.5/5\nPrice: Free / /month\n\n## Synthesia\n\nRating: 4.3/5\nPrice: /month",
+    "category": "video"
+  },
+  {
+    "slug": "kling-vs-capcut",
+    "tool1_id": "kling",
+    "tool2_id": "capcut",
+    "title": "Kling AI vs CapCut: Which AI Tool Is Better?",
+    "content": "# Kling AI vs CapCut\n\nAdvanced AI video generation model.\n\n## Kling AI\n\nRating: 4.4/5\nPrice: Free tier available\n\n## CapCut\n\nRating: 4.3/5\nPrice: Free",
+    "category": "video"
+  },
+  {
+    "slug": "kling-vs-synthesia",
+    "tool1_id": "kling",
+    "tool2_id": "synthesia",
+    "title": "Kling AI vs Synthesia: Which AI Tool Is Better?",
+    "content": "# Kling AI vs Synthesia\n\nAdvanced AI video generation model.\n\n## Kling AI\n\nRating: 4.4/5\nPrice: Free tier available\n\n## Synthesia\n\nRating: 4.3/5\nPrice: /month",
+    "category": "video"
+  },
+  {
+    "slug": "capcut-vs-synthesia",
+    "tool1_id": "capcut",
+    "tool2_id": "synthesia",
+    "title": "CapCut vs Synthesia: Which AI Tool Is Better?",
+    "content": "# CapCut vs Synthesia\n\nFree video editor with AI features.\n\n## CapCut\n\nRating: 4.3/5\nPrice: Free\n\n## Synthesia\n\nRating: 4.3/5\nPrice: /month",
+    "category": "video"
+  },
+  {
+    "slug": "elevenlabs-vs-speechify",
+    "tool1_id": "elevenlabs",
+    "tool2_id": "speechify",
+    "title": "ElevenLabs vs Speechify: Which AI Tool Is Better?",
+    "content": "# ElevenLabs vs Speechify\n\nBest-in-class AI voice generation and voice cloning.\n\n## ElevenLabs\n\nRating: 4.7/5\nPrice: Free / /month\n\n## Speechify\n\nRating: 4.3/5\nPrice: Free / /year",
+    "category": "voice"
+  },
+  {
+    "slug": "elevenlabs-vs-murf",
+    "tool1_id": "elevenlabs",
+    "tool2_id": "murf",
+    "title": "ElevenLabs vs Murf AI: Which AI Tool Is Better?",
+    "content": "# ElevenLabs vs Murf AI\n\nBest-in-class AI voice generation and voice cloning.\n\n## ElevenLabs\n\nRating: 4.7/5\nPrice: Free / /month\n\n## Murf AI\n\nRating: 4.2/5\nPrice: /month",
+    "category": "voice"
+  },
+  {
+    "slug": "elevenlabs-vs-playht",
+    "tool1_id": "elevenlabs",
+    "tool2_id": "playht",
+    "title": "ElevenLabs vs PlayHT: Which AI Tool Is Better?",
+    "content": "# ElevenLabs vs PlayHT\n\nBest-in-class AI voice generation and voice cloning.\n\n## ElevenLabs\n\nRating: 4.7/5\nPrice: Free / /month\n\n## PlayHT\n\nRating: 4.2/5\nPrice: Free / /month",
+    "category": "voice"
+  },
+  {
+    "slug": "elevenlabs-vs-naturalreader",
+    "tool1_id": "elevenlabs",
+    "tool2_id": "naturalreader",
+    "title": "ElevenLabs vs NaturalReader: Which AI Tool Is Better?",
+    "content": "# ElevenLabs vs NaturalReader\n\nBest-in-class AI voice generation and voice cloning.\n\n## ElevenLabs\n\nRating: 4.7/5\nPrice: Free / /month\n\n## NaturalReader\n\nRating: 4.1/5\nPrice: Free / .99/year",
+    "category": "voice"
+  },
+  {
+    "slug": "speechify-vs-murf",
+    "tool1_id": "speechify",
+    "tool2_id": "murf",
+    "title": "Speechify vs Murf AI: Which AI Tool Is Better?",
+    "content": "# Speechify vs Murf AI\n\nAI-powered text-to-speech reader.\n\n## Speechify\n\nRating: 4.3/5\nPrice: Free / /year\n\n## Murf AI\n\nRating: 4.2/5\nPrice: /month",
+    "category": "voice"
+  },
+  {
+    "slug": "speechify-vs-playht",
+    "tool1_id": "speechify",
+    "tool2_id": "playht",
+    "title": "Speechify vs PlayHT: Which AI Tool Is Better?",
+    "content": "# Speechify vs PlayHT\n\nAI-powered text-to-speech reader.\n\n## Speechify\n\nRating: 4.3/5\nPrice: Free / /year\n\n## PlayHT\n\nRating: 4.2/5\nPrice: Free / /month",
+    "category": "voice"
+  },
+  {
+    "slug": "speechify-vs-naturalreader",
+    "tool1_id": "speechify",
+    "tool2_id": "naturalreader",
+    "title": "Speechify vs NaturalReader: Which AI Tool Is Better?",
+    "content": "# Speechify vs NaturalReader\n\nAI-powered text-to-speech reader.\n\n## Speechify\n\nRating: 4.3/5\nPrice: Free / /year\n\n## NaturalReader\n\nRating: 4.1/5\nPrice: Free / .99/year",
+    "category": "voice"
+  },
+  {
+    "slug": "murf-vs-playht",
+    "tool1_id": "murf",
+    "tool2_id": "playht",
+    "title": "Murf AI vs PlayHT: Which AI Tool Is Better?",
+    "content": "# Murf AI vs PlayHT\n\nAI studio for voiceovers and narration.\n\n## Murf AI\n\nRating: 4.2/5\nPrice: /month\n\n## PlayHT\n\nRating: 4.2/5\nPrice: Free / /month",
+    "category": "voice"
+  },
+  {
+    "slug": "murf-vs-naturalreader",
+    "tool1_id": "murf",
+    "tool2_id": "naturalreader",
+    "title": "Murf AI vs NaturalReader: Which AI Tool Is Better?",
+    "content": "# Murf AI vs NaturalReader\n\nAI studio for voiceovers and narration.\n\n## Murf AI\n\nRating: 4.2/5\nPrice: /month\n\n## NaturalReader\n\nRating: 4.1/5\nPrice: Free / .99/year",
+    "category": "voice"
+  },
+  {
+    "slug": "playht-vs-naturalreader",
+    "tool1_id": "playht",
+    "tool2_id": "naturalreader",
+    "title": "PlayHT vs NaturalReader: Which AI Tool Is Better?",
+    "content": "# PlayHT vs NaturalReader\n\nAI voice generator with voice cloning.\n\n## PlayHT\n\nRating: 4.2/5\nPrice: Free / /month\n\n## NaturalReader\n\nRating: 4.1/5\nPrice: Free / .99/year",
+    "category": "voice"
+  },
+  {
+    "slug": "chatgpt-vs-claude",
+    "tool1_id": "chatgpt",
+    "tool2_id": "claude",
+    "title": "ChatGPT vs Claude: Which AI Tool Is Better?",
+    "content": "# ChatGPT vs Claude\n\nOpenAI's general-purpose AI assistant for writing, reasoning, and more.\n\n## ChatGPT\n\nRating: 4.8/5\nPrice: Free / /month\n\n## Claude\n\nRating: 4.7/5\nPrice: Free / /month",
+    "category": "writing"
+  },
+  {
+    "slug": "chatgpt-vs-perplexity",
+    "tool1_id": "chatgpt",
+    "tool2_id": "perplexity",
+    "title": "ChatGPT vs Perplexity AI: Which AI Tool Is Better?",
+    "content": "# ChatGPT vs Perplexity AI\n\nOpenAI's general-purpose AI assistant for writing, reasoning, and more.\n\n## ChatGPT\n\nRating: 4.8/5\nPrice: Free / /month\n\n## Perplexity AI\n\nRating: 4.6/5\nPrice: Free / /month",
+    "category": "writing"
+  },
+  {
+    "slug": "chatgpt-vs-quillbot",
+    "tool1_id": "chatgpt",
+    "tool2_id": "quillbot",
+    "title": "ChatGPT vs QuillBot: Which AI Tool Is Better?",
+    "content": "# ChatGPT vs QuillBot\n\nOpenAI's general-purpose AI assistant for writing, reasoning, and more.\n\n## ChatGPT\n\nRating: 4.8/5\nPrice: Free / /month\n\n## QuillBot\n\nRating: 4.3/5\nPrice: Free / .95/month",
+    "category": "writing"
+  },
+  {
+    "slug": "chatgpt-vs-grammarly",
+    "tool1_id": "chatgpt",
+    "tool2_id": "grammarly",
+    "title": "ChatGPT vs Grammarly: Which AI Tool Is Better?",
+    "content": "# ChatGPT vs Grammarly\n\nOpenAI's general-purpose AI assistant for writing, reasoning, and more.\n\n## ChatGPT\n\nRating: 4.8/5\nPrice: Free / /month\n\n## Grammarly\n\nRating: 4.3/5\nPrice: Free / /month",
+    "category": "writing"
+  },
+  {
+    "slug": "claude-vs-perplexity",
+    "tool1_id": "claude",
+    "tool2_id": "perplexity",
+    "title": "Claude vs Perplexity AI: Which AI Tool Is Better?",
+    "content": "# Claude vs Perplexity AI\n\nAnthropic's AI assistant known for long-context and reasoning.\n\n## Claude\n\nRating: 4.7/5\nPrice: Free / /month\n\n## Perplexity AI\n\nRating: 4.6/5\nPrice: Free / /month",
+    "category": "writing"
+  },
+  {
+    "slug": "claude-vs-quillbot",
+    "tool1_id": "claude",
+    "tool2_id": "quillbot",
+    "title": "Claude vs QuillBot: Which AI Tool Is Better?",
+    "content": "# Claude vs QuillBot\n\nAnthropic's AI assistant known for long-context and reasoning.\n\n## Claude\n\nRating: 4.7/5\nPrice: Free / /month\n\n## QuillBot\n\nRating: 4.3/5\nPrice: Free / .95/month",
+    "category": "writing"
+  },
+  {
+    "slug": "claude-vs-grammarly",
+    "tool1_id": "claude",
+    "tool2_id": "grammarly",
+    "title": "Claude vs Grammarly: Which AI Tool Is Better?",
+    "content": "# Claude vs Grammarly\n\nAnthropic's AI assistant known for long-context and reasoning.\n\n## Claude\n\nRating: 4.7/5\nPrice: Free / /month\n\n## Grammarly\n\nRating: 4.3/5\nPrice: Free / /month",
+    "category": "writing"
+  },
+  {
+    "slug": "perplexity-vs-quillbot",
+    "tool1_id": "perplexity",
+    "tool2_id": "quillbot",
+    "title": "Perplexity AI vs QuillBot: Which AI Tool Is Better?",
+    "content": "# Perplexity AI vs QuillBot\n\nAI-powered search engine with cited answers.\n\n## Perplexity AI\n\nRating: 4.6/5\nPrice: Free / /month\n\n## QuillBot\n\nRating: 4.3/5\nPrice: Free / .95/month",
+    "category": "writing"
+  },
+  {
+    "slug": "perplexity-vs-grammarly",
+    "tool1_id": "perplexity",
+    "tool2_id": "grammarly",
+    "title": "Perplexity AI vs Grammarly: Which AI Tool Is Better?",
+    "content": "# Perplexity AI vs Grammarly\n\nAI-powered search engine with cited answers.\n\n## Perplexity AI\n\nRating: 4.6/5\nPrice: Free / /month\n\n## Grammarly\n\nRating: 4.3/5\nPrice: Free / /month",
+    "category": "writing"
+  },
+  {
+    "slug": "quillbot-vs-grammarly",
+    "tool1_id": "quillbot",
+    "tool2_id": "grammarly",
+    "title": "QuillBot vs Grammarly: Which AI Tool Is Better?",
+    "content": "# QuillBot vs Grammarly\n\nAI paraphraser and grammar checker.\n\n## QuillBot\n\nRating: 4.3/5\nPrice: Free / .95/month\n\n## Grammarly\n\nRating: 4.3/5\nPrice: Free / /month",
+    "category": "writing"
+  }
+]

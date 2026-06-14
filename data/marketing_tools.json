@@ -1,0 +1,290 @@
+﻿[
+    {
+        "for_whom":  "Small to medium businesses",
+        "id":  "hubspot-ai",
+        "cons":  [
+                     "Expensive at higher tiers",
+                     "Can be complex"
+                 ],
+        "not_for":  "Enterprise-only needs",
+        "tags":  [
+                     "crm",
+                     "marketing",
+                     "automation"
+                 ],
+        "name":  "HubSpot AI",
+        "featured":  true,
+        "price":  "Free / /month",
+        "description":  "AI-powered CRM and marketing automation tools.",
+        "pros":  [
+                     "All-in-one platform",
+                     "Great free tier",
+                     "Strong email tools"
+                 ],
+        "slug":  "hubspot-ai",
+        "url":  "https://hubspot.com",
+        "rating":  4.4,
+        "alternatives":  "Salesforce, Marketo",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Social media managers",
+        "id":  "hootsuite-ai",
+        "cons":  [
+                     "Expensive",
+                     "Complex UI"
+                 ],
+        "not_for":  "Solo creators",
+        "tags":  [
+                     "social-media",
+                     "scheduling",
+                     "ai"
+                 ],
+        "name":  "Hootsuite AI",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "Social media management with AI content suggestions.",
+        "pros":  [
+                     "Multi-platform management",
+                     "AI content suggestions",
+                     "Analytics"
+                 ],
+        "slug":  "hootsuite-ai",
+        "url":  "https://hootsuite.com",
+        "rating":  4,
+        "alternatives":  "Buffer, Later",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Small businesses, solo creators",
+        "id":  "buffer-ai",
+        "cons":  [
+                     "Fewer features than Hootsuite",
+                     "Limited analytics"
+                 ],
+        "not_for":  "Enterprise social teams",
+        "tags":  [
+                     "social-media",
+                     "scheduling",
+                     "simple"
+                 ],
+        "name":  "Buffer AI",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "Simplified social media scheduling with AI writing.",
+        "pros":  [
+                     "Simple and affordable",
+                     "AI copy suggestions",
+                     "Good free tier"
+                 ],
+        "slug":  "buffer-ai",
+        "url":  "https://buffer.com",
+        "rating":  4.1,
+        "alternatives":  "Hootsuite, Later",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Bloggers, course creators",
+        "id":  "convertkit-ai",
+        "cons":  [
+                     "Limited design options",
+                     "Higher tiers pricey"
+                 ],
+        "not_for":  "E-commerce email",
+        "tags":  [
+                     "email",
+                     "creators",
+                     "automation"
+                 ],
+        "name":  "ConvertKit AI",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "Email marketing for creators with AI writing tools.",
+        "pros":  [
+                     "Creator-focused",
+                     "AI writing assistant",
+                     "Tagging system"
+                 ],
+        "slug":  "convertkit-ai",
+        "url":  "https://convertkit.com",
+        "rating":  4.3,
+        "alternatives":  "Mailchimp, ConvertKit",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Growing businesses",
+        "id":  "activecampaign",
+        "cons":  [
+                     "No free tier",
+                     "Expensive"
+                 ],
+        "not_for":  "Simple email lists",
+        "tags":  [
+                     "email",
+                     "automation",
+                     "personalization"
+                 ],
+        "name":  "ActiveCampaign",
+        "featured":  false,
+        "price":  "/month",
+        "description":  "Marketing automation with AI-powered email personalization.",
+        "pros":  [
+                     "Best-in-class automation",
+                     "AI personalization",
+                     "CRM included"
+                 ],
+        "slug":  "activecampaign",
+        "url":  "https://activecampaign.com",
+        "rating":  4.4,
+        "alternatives":  "HubSpot, Klaviyo",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Small businesses, startups",
+        "id":  "mailchimp-ai",
+        "cons":  [
+                     "Pricing jumps quickly",
+                     "Less powerful than competitors"
+                 ],
+        "not_for":  "Complex automation needs",
+        "tags":  [
+                     "email",
+                     "design",
+                     "automation"
+                 ],
+        "name":  "Mailchimp AI",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "Email marketing platform with AI content and design tools.",
+        "pros":  [
+                     "Easy to use",
+                     "Good free tier",
+                     "Drag-and-drop builder"
+                 ],
+        "slug":  "mailchimp-ai",
+        "url":  "https://mailchimp.com",
+        "rating":  4,
+        "alternatives":  "ConvertKit, ActiveCampaign",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Webmasters, marketers",
+        "id":  "crazyegg",
+        "cons":  [
+                     "Less known",
+                     "Expensive for features"
+                 ],
+        "not_for":  "E-commerce analytics",
+        "tags":  [
+                     "analytics",
+                     "heatmaps",
+                     "behavior"
+                 ],
+        "name":  "Crazy Egg",
+        "featured":  false,
+        "price":  "/month",
+        "description":  "Heatmap and user behavior analytics tool.",
+        "pros":  [
+                     "Visual heatmaps",
+                     "A/B testing",
+                     "Session recordings"
+                 ],
+        "slug":  "crazyegg",
+        "url":  "https://crazyegg.com",
+        "rating":  4.1,
+        "alternatives":  "Hotjar, Microsoft Clarity",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Product teams, marketers",
+        "id":  "hotjar",
+        "cons":  [
+                     "Limited plans",
+                     "No predictive AI yet"
+                 ],
+        "not_for":  "Enterprise needs",
+        "tags":  [
+                     "analytics",
+                     "heatmaps",
+                     "feedback"
+                 ],
+        "name":  "Hotjar",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "Behavior analytics and user feedback tools with AI.",
+        "pros":  [
+                     "Free tier great",
+                     "Heatmaps + surveys",
+                     "Easy setup"
+                 ],
+        "slug":  "hotjar",
+        "url":  "https://hotjar.com",
+        "rating":  4.3,
+        "alternatives":  "Crazy Egg, Microsoft Clarity",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Email marketers",
+        "id":  "joe-robot",
+        "cons":  [
+                     "Niche tool",
+                     "Less known"
+                 ],
+        "not_for":  "General marketing",
+        "tags":  [
+                     "email",
+                     "copy",
+                     "automation"
+                 ],
+        "name":  "Joe Robot",
+        "featured":  false,
+        "price":  "/month",
+        "description":  "AI writing for email marketing campaigns.",
+        "pros":  [
+                     "Specialized for email",
+                     "Good templates"
+                 ],
+        "slug":  "joe-robot",
+        "url":  "https://joerobot.com",
+        "rating":  4,
+        "alternatives":  "Jasper, Writesonic",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Paid ad marketers",
+        "id":  "surfer-ads",
+        "cons":  [
+                     "Newer platform",
+                     "Quality varies"
+                 ],
+        "not_for":  "Organic marketing",
+        "tags":  [
+                     "ads",
+                     "creative",
+                     "optimization"
+                 ],
+        "name":  "Surfer Ads",
+        "featured":  false,
+        "price":  "/month",
+        "description":  "AI-powered ad creation and optimization platform.",
+        "pros":  [
+                     "AI ad generation",
+                     "Multi-platform"
+                 ],
+        "slug":  "surfer-ads",
+        "url":  "https://surferads.com",
+        "rating":  3.8,
+        "alternatives":  "AdCreative.ai, AdRoll",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    }
+]

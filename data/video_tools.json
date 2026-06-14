@@ -1,0 +1,292 @@
+﻿[
+    {
+        "for_whom":  "Video creators, filmmakers",
+        "id":  "runway-ml",
+        "cons":  [
+                     "Expensive",
+                     "Learning curve"
+                 ],
+        "not_for":  "Simple video editing",
+        "tags":  [
+                     "video",
+                     "gen-2",
+                     "editing"
+                 ],
+        "name":  "Runway ML",
+        "featured":  true,
+        "price":  "Free / /month",
+        "description":  "Industry-leading AI video generation and editing platform.",
+        "pros":  [
+                     "Industry-leading AI video",
+                     "Creative tools",
+                     "Active community"
+                 ],
+        "slug":  "runway",
+        "url":  "https://runwayml.com",
+        "rating":  4.5,
+        "alternatives":  "Pika, Kling",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Social media creators",
+        "id":  "pika-main",
+        "cons":  [
+                     "Shorter clips",
+                     "Limited control"
+                 ],
+        "not_for":  "Professional production",
+        "tags":  [
+                     "video",
+                     "animation",
+                     "text-to-video"
+                 ],
+        "name":  "Pika",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "AI video generation from text and image prompts.",
+        "pros":  [
+                     "Easy to use",
+                     "Good quality",
+                     "Discord community"
+                 ],
+        "slug":  "pika",
+        "url":  "https://pika.art",
+        "rating":  4.2,
+        "alternatives":  "Runway, Kling",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Chinese market creators",
+        "id":  "kling",
+        "cons":  [
+                     "China-based",
+                     "Language barrier"
+                 ],
+        "not_for":  "Non-Chinese users",
+        "tags":  [
+                     "video",
+                     "generation",
+                     "chinese"
+                 ],
+        "name":  "Kling AI",
+        "featured":  false,
+        "price":  "Free tier available",
+        "description":  "Advanced AI video generation model.",
+        "pros":  [
+                     "Excellent quality",
+                     "Longer clips",
+                     "Free tier"
+                 ],
+        "slug":  "kling",
+        "url":  "https://klingai.com",
+        "rating":  4.4,
+        "alternatives":  "Runway, Pika",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Creators wanting best quality",
+        "id":  "sora",
+        "cons":  [
+                     "Not widely available",
+                     "Expensive"
+                 ],
+        "not_for":  "Quick social media",
+        "tags":  [
+                     "video",
+                     "openai",
+                     "text-to-video"
+                 ],
+        "name":  "Sora",
+        "featured":  true,
+        "price":  "ChatGPT Plus / Enterprise",
+        "description":  "OpenAI\u0027s text-to-video generation model.",
+        "pros":  [
+                     "Highest quality video",
+                     "OpenAI research",
+                     "Long clips"
+                 ],
+        "slug":  "sora",
+        "url":  "https://openai.com/sora",
+        "rating":  4.6,
+        "alternatives":  "Runway, Pika",
+        "price_type":  "subscription",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Social media creators",
+        "id":  "capcut",
+        "cons":  [
+                     "TikTok owned",
+                     "Less professional"
+                 ],
+        "not_for":  "Professional filmmaking",
+        "tags":  [
+                     "video",
+                     "free",
+                     "social"
+                 ],
+        "name":  "CapCut",
+        "featured":  false,
+        "price":  "Free",
+        "description":  "Free video editor with AI features.",
+        "pros":  [
+                     "Completely free",
+                     "Great for social media",
+                     "AI features included"
+                 ],
+        "slug":  "capcut",
+        "url":  "https://capcut.com",
+        "rating":  4.3,
+        "alternatives":  "DaVinci Resolve, Premiere",
+        "price_type":  "free",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Content repurposers",
+        "id":  "opus_clip",
+        "cons":  [
+                     "Subscription needed",
+                     "Limited free tier"
+                 ],
+        "not_for":  "Original video creation",
+        "tags":  [
+                     "video",
+                     "repurpose",
+                     "shorts"
+                 ],
+        "name":  "Opus Clip",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "AI video repurposing tool for long-form to short clips.",
+        "pros":  [
+                     "Auto-creates shorts",
+                     "AI captions",
+                     "Good quality"
+                 ],
+        "slug":  "opus-clip",
+        "url":  "https://opus.pro",
+        "rating":  4.2,
+        "alternatives":  "Munch, Vizard",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "YouTubers, podcasters",
+        "id":  "vizard",
+        "cons":  [
+                     "Less known",
+                     "Watermark on free"
+                 ],
+        "not_for":  "Professional editing",
+        "tags":  [
+                     "video",
+                     "repurpose",
+                     "ai"
+                 ],
+        "name":  "Vizard",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "AI video editor that automatically creates shorts.",
+        "pros":  [
+                     "Auto-captioning",
+                     "Good AI editing",
+                     "Easy to use"
+                 ],
+        "slug":  "vizard",
+        "url":  "https://vizard.ai",
+        "rating":  4,
+        "alternatives":  "Opus Clip, Descript",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Marketers, YouTubers",
+        "id":  "invideo",
+        "cons":  [
+                     "Watermark on free",
+                     "Stock footage limited"
+                 ],
+        "not_for":  "Professional filmmaking",
+        "tags":  [
+                     "video",
+                     "templates",
+                     "text-to-video"
+                 ],
+        "name":  "InVideo AI",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "AI video creation from text prompts.",
+        "pros":  [
+                     "Text-to-video",
+                     "Large template library",
+                     "Easy to use"
+                 ],
+        "slug":  "invideo",
+        "url":  "https://invideo.io",
+        "rating":  4.1,
+        "alternatives":  "Pictory, Synthesia",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Bloggers, marketers",
+        "id":  "pictory",
+        "cons":  [
+                     "Template quality varies",
+                     "Expensive"
+                 ],
+        "not_for":  "Custom video",
+        "tags":  [
+                     "video",
+                     "blog",
+                     "automation"
+                 ],
+        "name":  "Pictory",
+        "featured":  false,
+        "price":  "/month",
+        "description":  "AI video creation from blog posts and articles.",
+        "pros":  [
+                     "Blog-to-video",
+                     "Good for marketers",
+                     "Auto captions"
+                 ],
+        "slug":  "pictory",
+        "url":  "https://pictory.ai",
+        "rating":  4,
+        "alternatives":  "InVideo, Lumen5",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Corporate training, educators",
+        "id":  "synthesia",
+        "cons":  [
+                     "Avatars feel robotic",
+                     "Expensive for features"
+                 ],
+        "not_for":  "Creative content",
+        "tags":  [
+                     "avatar",
+                     "training",
+                     "presentation"
+                 ],
+        "name":  "Synthesia",
+        "featured":  false,
+        "price":  "/month",
+        "description":  "AI avatar video generator for presentations and training.",
+        "pros":  [
+                     "Realistic AI avatars",
+                     "No camera needed",
+                     "Multi-language"
+                 ],
+        "slug":  "synthesia",
+        "url":  "https://synthesia.io",
+        "rating":  4.3,
+        "alternatives":  "D-ID, HeyGen",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    }
+]

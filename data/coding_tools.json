@@ -1,0 +1,453 @@
+﻿[
+    {
+        "rating":  4.5,
+        "updated":  "2026-06-08",
+        "not_for":  "Casual script writers;Absolute beginners",
+        "price_type":  "freemium",
+        "cons":  [
+                     "Inconsistent with new frameworks",
+                     "/mo is steep for casual users"
+                 ],
+        "alternatives":  "Cursor, Codeium",
+        "tags":  [
+                     "code-generation",
+                     "ide",
+                     "autocomplete",
+                     "chat"
+                 ],
+        "for_whom":  "Full-time developers writing code daily",
+        "description":  "AI pair programmer for VS Code and JetBrains IDEs that provides intelligent code completions, chat assistance, and terminal suggestions.",
+        "slug":  "github-copilot",
+        "url":  "https://github.com/features/copilot",
+        "pros":  [
+                     "Deep IDE integration",
+                     "Codebase-aware completions",
+                     "Free for students"
+                 ],
+        "price":  "/month",
+        "privacy":  "Code snippets may be used for model training. Enterprise plans support code privacy.",
+        "featured":  true,
+        "name":  "GitHub Copilot",
+        "id":  "github-copilot"
+    },
+    {
+        "rating":  4.7,
+        "updated":  "2026-06-08",
+        "not_for":  "Enterprise compliance scenarios",
+        "price_type":  "freemium",
+        "cons":  [
+                     "Editor less stable than vanilla VS Code",
+                     "Learning curve for AI features"
+                 ],
+        "alternatives":  "GitHub Copilot, Windsurf",
+        "tags":  [
+                     "editor",
+                     "code-generation",
+                     "multi-file"
+                 ],
+        "for_whom":  "Indie developers, full-stack devs",
+        "description":  "AI-native code editor based on VS Code fork with multi-file editing and codebase awareness.",
+        "slug":  "cursor",
+        "url":  "https://cursor.com",
+        "pros":  [
+                     "Multi-file editing is killer feature",
+                     "Flexible model selection",
+                     "Free tier available"
+                 ],
+        "price":  "Free / /month",
+        "privacy":  "Code sent to third-party AI models",
+        "featured":  true,
+        "name":  "Cursor",
+        "id":  "cursor"
+    },
+    {
+        "rating":  4.4,
+        "updated":  "2026-06-08",
+        "not_for":  "Those locked into VS Code only",
+        "price_type":  "freemium",
+        "cons":  [
+                     "Newer ecosystem than Copilot",
+                     "Fewer extensions available"
+                 ],
+        "alternatives":  "Cursor, GitHub Copilot",
+        "tags":  [
+                     "editor",
+                     "code-generation",
+                     "agent"
+                 ],
+        "for_whom":  "Developers wanting AI-first IDE",
+        "description":  "AI IDE by Codeium with multi-file editing and agent mode.",
+        "slug":  "windsurf",
+        "url":  "https://windsurf.ai",
+        "pros":  [
+                     "Strong multi-file editing",
+                     "Agent mode for complex tasks",
+                     "Good VS Code compatibility"
+                 ],
+        "price":  "Free / /month",
+        "privacy":  "Variable based on model choice",
+        "featured":  false,
+        "name":  "Windsurf",
+        "id":  "windsurf"
+    },
+    {
+        "rating":  4.3,
+        "updated":  "2026-06-08",
+        "not_for":  "Complex production codebases",
+        "price_type":  "freemium",
+        "cons":  [
+                     "Less powerful than local IDEs",
+                     "Free tier has limits"
+                 ],
+        "alternatives":  "GitHub Codespaces, Gitpod",
+        "tags":  [
+                     "browser-ide",
+                     "build",
+                     "deploy"
+                 ],
+        "for_whom":  "Beginners, prototyping",
+        "description":  "Browser-based IDE with AI build and deployment. Build full-stack apps entirely in the browser.",
+        "slug":  "replit",
+        "url":  "https://replit.com",
+        "pros":  [
+                     "Run code in browser instantly",
+                     "AI builds full apps from prompt",
+                     "Built-in hosting"
+                 ],
+        "price":  "Free / /month",
+        "privacy":  "Code runs on Replit infrastructure",
+        "featured":  false,
+        "name":  "Replit",
+        "id":  "replit"
+    },
+    {
+        "rating":  4.2,
+        "updated":  "2026-06-08",
+        "not_for":  "Teams needing enterprise features",
+        "price_type":  "free",
+        "cons":  [
+                     "Slightly less accurate than Copilot",
+                     "Fewer advanced features"
+                 ],
+        "alternatives":  "GitHub Copilot, Tabnine",
+        "tags":  [
+                     "autocomplete",
+                     "code-search",
+                     "free"
+                 ],
+        "for_whom":  "Budget-conscious developers",
+        "description":  "Free AI code completion and search across 70+ IDEs.",
+        "slug":  "codeium",
+        "url":  "https://codeium.com",
+        "pros":  [
+                     "Completely free for individuals",
+                     "Works in 70+ IDEs",
+                     "Built-in chat"
+                 ],
+        "price":  "Free",
+        "privacy":  "Code not used for training on free plan",
+        "featured":  false,
+        "name":  "Codeium",
+        "id":  "codeium"
+    },
+    {
+        "rating":  4,
+        "updated":  "2026-06-08",
+        "not_for":  "Solo hobby developers",
+        "price_type":  "freemium",
+        "cons":  [
+                     "Less features than Copilot",
+                     "Pricing can be complex"
+                 ],
+        "alternatives":  "GitHub Copilot, Codeium",
+        "tags":  [
+                     "autocomplete",
+                     "enterprise",
+                     "security"
+                 ],
+        "for_whom":  "Enterprise teams",
+        "description":  "AI code completion focused on enterprise security and privacy.",
+        "slug":  "tabnine",
+        "url":  "https://tabnine.com",
+        "pros":  [
+                     "Strong privacy guarantees",
+                     "Custom model training",
+                     "Enterprise SSO"
+                 ],
+        "price":  "Free / /month",
+        "privacy":  "Enterprise plan keeps code 100% private",
+        "featured":  false,
+        "name":  "Tabnine",
+        "id":  "tabnine"
+    },
+    {
+        "rating":  4.1,
+        "updated":  "2026-06-08",
+        "not_for":  "Small single-repo projects",
+        "price_type":  "freemium",
+        "cons":  [
+                     "UI feels more like a tool than IDE",
+                     "Smaller community"
+                 ],
+        "alternatives":  "GitHub Copilot Workspace",
+        "tags":  [
+                     "codebase",
+                     "search",
+                     "chat"
+                 ],
+        "for_whom":  "Large codebase maintainers",
+        "description":  "AI coding assistant with deep codebase understanding and multi-repo search.",
+        "slug":  "sourcegraph-cody",
+        "url":  "https://sourcegraph.com/cody",
+        "pros":  [
+                     "Best-in-class codebase search",
+                     "Multi-repo awareness",
+                     "Free tier generous"
+                 ],
+        "price":  "Free / /month",
+        "privacy":  "On-premise deployment available",
+        "featured":  false,
+        "name":  "Sourcegraph Cody",
+        "id":  "sourcegraph-cody"
+    },
+    {
+        "rating":  4.3,
+        "updated":  "2026-06-08",
+        "not_for":  "Users wanting zero-setup",
+        "price_type":  "free",
+        "cons":  [
+                     "Requires setup",
+                     "Smaller community"
+                 ],
+        "alternatives":  "Codeium, Tabnine",
+        "tags":  [
+                     "open-source",
+                     "free",
+                     "customizable"
+                 ],
+        "for_whom":  "Privacy-conscious devs",
+        "description":  "Open-source AI code autocomplete for VS Code. Bring your own API keys.",
+        "slug":  "continue",
+        "url":  "https://continue.dev",
+        "pros":  [
+                     "100% free and open-source",
+                     "Use your own API keys",
+                     "Fully customizable"
+                 ],
+        "price":  "Free",
+        "privacy":  "100% local if you use local models",
+        "featured":  false,
+        "name":  "Continue",
+        "id":  "continue"
+    },
+    {
+        "rating":  4.2,
+        "updated":  "2026-06-08",
+        "not_for":  "GUI-loving developers",
+        "price_type":  "freemium",
+        "cons":  [
+                     "Terminal-only, not GUI",
+                     "Steeper learning curve"
+                 ],
+        "alternatives":  "Cursor, Claude Code",
+        "tags":  [
+                     "cli",
+                     "terminal",
+                     "git"
+                 ],
+        "for_whom":  "CLI enthusiasts",
+        "description":  "CLI-based AI coding assistant that edits code in your terminal with git awareness.",
+        "slug":  "aider",
+        "url":  "https://aider.chat",
+        "pros":  [
+                     "Works entirely in terminal",
+                     "Git-aware editing",
+                     "Supports many models"
+                 ],
+        "price":  "Free / /month",
+        "privacy":  "You choose which models to use",
+        "featured":  false,
+        "name":  "Aider",
+        "id":  "aider"
+    },
+    {
+        "rating":  4.5,
+        "updated":  "2026-06-08",
+        "not_for":  "Backend developers",
+        "price_type":  "freemium",
+        "cons":  [
+                     "Limited to frontend UI",
+                     "Not a full coding tool"
+                 ],
+        "alternatives":  "Relume, Galileo AI",
+        "tags":  [
+                     "ui-generation",
+                     "tailwind",
+                     "shadcn"
+                 ],
+        "for_whom":  "Frontend developers",
+        "description":  "Generate UI components from text prompts. Produces production-ready Tailwind + React code.",
+        "slug":  "v0",
+        "url":  "https://v0.dev",
+        "pros":  [
+                     "Instant UI from prompts",
+                     "Production-ready code",
+                     "Integrates with Next.js"
+                 ],
+        "price":  "Free / /month",
+        "privacy":  "Code not used for training",
+        "featured":  true,
+        "name":  "v0 by Vercel",
+        "id":  "v0"
+    },
+    {
+        "rating":  4.1,
+        "updated":  "2026-06-08",
+        "not_for":  "Non-web projects",
+        "price_type":  "freemium",
+        "cons":  [
+                     "Limited to web projects",
+                     "Browser performance"
+                 ],
+        "alternatives":  "Replit, Lovable",
+        "tags":  [
+                     "full-stack",
+                     "web-apps",
+                     "browser"
+                 ],
+        "for_whom":  "Frontend devs, prototypers",
+        "description":  "Full-stack web app generator. Build complete apps in the browser using AI.",
+        "slug":  "bolt",
+        "url":  "https://bolt.new",
+        "pros":  [
+                     "Build complete apps in browser",
+                     "Handles dependencies automatically",
+                     "Quick prototyping"
+                 ],
+        "price":  "Free tier",
+        "privacy":  "Cloud-hosted",
+        "featured":  false,
+        "name":  "bolt.new",
+        "id":  "bolt"
+    },
+    {
+        "rating":  4.2,
+        "updated":  "2026-06-08",
+        "not_for":  "Custom enterprise apps",
+        "price_type":  "freemium",
+        "cons":  [
+                     "Newer platform",
+                     "Limited to specific tech stack"
+                 ],
+        "alternatives":  "bolt.new, Replit",
+        "tags":  [
+                     "full-stack",
+                     "real-time",
+                     "builder"
+                 ],
+        "for_whom":  "Non-tech founders, quick builders",
+        "description":  "AI-powered full-stack app builder with real-time collaborative preview.",
+        "slug":  "lovable",
+        "url":  "https://lovable.dev",
+        "pros":  [
+                     "Real-time collaborative preview",
+                     "Good UX",
+                     "Easy to use"
+                 ],
+        "price":  "Free / /month",
+        "privacy":  "Cloud-based",
+        "featured":  false,
+        "name":  "Lovable",
+        "id":  "lovable"
+    },
+    {
+        "rating":  4.3,
+        "updated":  "2026-06-08",
+        "not_for":  "Teams needing full AI assistant",
+        "price_type":  "freemium",
+        "cons":  [
+                     "Newer community",
+                     "Less features beyond autocomplete"
+                 ],
+        "alternatives":  "GitHub Copilot, Codeium",
+        "tags":  [
+                     "autocomplete",
+                     "fast",
+                     "context"
+                 ],
+        "for_whom":  "Developers wanting speed",
+        "description":  "Fast AI code completion with 1M token context window.",
+        "slug":  "supermaven",
+        "url":  "https://supermaven.com",
+        "pros":  [
+                     "1M token context window",
+                     "Very fast completions",
+                     "VS Code and JetBrains"
+                 ],
+        "price":  "Free / /month",
+        "privacy":  "Optional privacy plan",
+        "featured":  false,
+        "name":  "Supermaven",
+        "id":  "supermaven"
+    },
+    {
+        "rating":  4,
+        "updated":  "2026-06-08",
+        "not_for":  "Those who hate time tracking",
+        "price_type":  "paid",
+        "cons":  [
+                     "Subscription cost",
+                     "Privacy concerns"
+                 ],
+        "alternatives":  "Timing, Clockify",
+        "tags":  [
+                     "time-tracking",
+                     "productivity",
+                     "insights"
+                 ],
+        "for_whom":  "Freelancers, agency devs",
+        "description":  "AI-powered time tracking and productivity analytics for developers.",
+        "slug":  "rize",
+        "url":  "https://rize.io",
+        "pros":  [
+                     "Automatic time tracking",
+                     "Developer-focused insights",
+                     "Slack integration"
+                 ],
+        "price":  "/month",
+        "privacy":  "Data stored on servers",
+        "featured":  false,
+        "name":  "Rize",
+        "id":  "rize"
+    },
+    {
+        "rating":  4.4,
+        "updated":  "2026-06-08",
+        "not_for":  "Non-OpenAI users",
+        "price_type":  "subscription",
+        "cons":  [
+                     "Requires OpenAI subscription",
+                     "Linux/macOS only"
+                 ],
+        "alternatives":  "Claude Code, Cursor",
+        "tags":  [
+                     "cli",
+                     "agent",
+                     "openai"
+                 ],
+        "for_whom":  "OpenAI users",
+        "description":  "OpenAI\u0027s command-line AI coding agent. Runs in your terminal.",
+        "slug":  "codex-cli",
+        "url":  "https://openai.com",
+        "pros":  [
+                     "Uses GPT-4o",
+                     "Can write and run code",
+                     "Terminal-native"
+                 ],
+        "price":  "ChatGPT Plus / Team",
+        "privacy":  "Data goes through OpenAI",
+        "featured":  false,
+        "name":  "OpenAI Codex CLI",
+        "id":  "codex-cli"
+    }
+]

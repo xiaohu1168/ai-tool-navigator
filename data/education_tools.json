@@ -1,0 +1,176 @@
+﻿[
+    {
+        "for_whom":  "Researchers, writers",
+        "id":  "anthropic-claude",
+        "cons":  [
+                     "Slower at peak",
+                     "File upload limited"
+                 ],
+        "not_for":  "Need image generation",
+        "tags":  [
+                     "chat",
+                     "reasoning",
+                     "safe"
+                 ],
+        "name":  "Anthropic Claude",
+        "featured":  true,
+        "price":  "Free / /month",
+        "description":  "AI assistant focused on safe and helpful reasoning.",
+        "pros":  [
+                     "Safe and helpful",
+                     "200K context",
+                     "Excellent reasoning"
+                 ],
+        "slug":  "claude",
+        "url":  "https://claude.ai",
+        "rating":  4.7,
+        "alternatives":  "ChatGPT, Gemini",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Language learners",
+        "id":  "duolingo-max",
+        "cons":  [
+                     "Expensive",
+                     "Limited to Duolingo content"
+                 ],
+        "not_for":  "Advanced academics",
+        "tags":  [
+                     "language",
+                     "learning",
+                     "ai"
+                 ],
+        "name":  "Duolingo Max (AI)",
+        "featured":  false,
+        "price":  ".99/month",
+        "description":  "AI-powered language learning with character interaction.",
+        "pros":  [
+                     "AI characters for practice",
+                     "Engaging",
+                     "Fun approach"
+                 ],
+        "slug":  "duolingo-max",
+        "url":  "https://duolingo.com",
+        "rating":  4.3,
+        "alternatives":  "Babbel, Memrise",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Students",
+        "id":  "quizlet-ai",
+        "cons":  [
+                     "Less effective learning",
+                     "Ads on free"
+                 ],
+        "not_for":  "Professional development",
+        "tags":  [
+                     "flashcards",
+                     "study",
+                     "ai"
+                 ],
+        "name":  "Quizlet",
+        "featured":  false,
+        "price":  "Free / .99/year",
+        "description":  "AI-powered flashcards and study tools.",
+        "pros":  [
+                     "Great flashcards",
+                     "AI study modes",
+                     "Free tier good"
+                 ],
+        "slug":  "quizlet-ai",
+        "url":  "https://quizlet.com",
+        "rating":  4.2,
+        "alternatives":  "Anki, Brainscape",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Students, parents",
+        "id":  "khan-mastery",
+        "cons":  [
+                     "Basic AI features",
+                     "K-12 focus"
+                 ],
+        "not_for":  "Professional learning",
+        "tags":  [
+                     "education",
+                     "free",
+                     "k12"
+                 ],
+        "name":  "Khan Academy (AI)",
+        "featured":  false,
+        "price":  "Free",
+        "description":  "Free education platform with AI tutoring.",
+        "pros":  [
+                     "Completely free",
+                     "Quality content",
+                     "AI tutoring"
+                 ],
+        "slug":  "khan-mastery",
+        "url":  "https://khanacademy.org",
+        "rating":  4.4,
+        "alternatives":  "Coursera, Udemy",
+        "price_type":  "free",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Presenters, marketers",
+        "id":  "tome",
+        "cons":  [
+                     "Limited export options",
+                     "Newer platform"
+                 ],
+        "not_for":  "Complex slides",
+        "tags":  [
+                     "presentations",
+                     "storytelling",
+                     "ai"
+                 ],
+        "name":  "Tome",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "AI-powered presentation and storytelling tool.",
+        "pros":  [
+                     "Beautiful presentations",
+                     "AI-generated",
+                     "Easy to use"
+                 ],
+        "slug":  "tome",
+        "url":  "https://tome.so",
+        "rating":  4.2,
+        "alternatives":  "Gamma, Beautiful.ai",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Presenters, educators",
+        "id":  "gamma",
+        "cons":  [
+                     "Export limitations",
+                     "Newer tool"
+                 ],
+        "not_for":  "PowerPoint replacement",
+        "tags":  [
+                     "presentations",
+                     "docs",
+                     "ai"
+                 ],
+        "name":  "Gamma",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "AI presentation and document creation tool.",
+        "pros":  [
+                     "Fast creation",
+                     "Beautiful templates",
+                     "Web-based"
+                 ],
+        "slug":  "gamma",
+        "url":  "https://gamma.app",
+        "rating":  4.3,
+        "alternatives":  "Tome, Beautiful.ai",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    }
+]

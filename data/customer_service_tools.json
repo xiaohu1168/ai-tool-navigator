@@ -1,0 +1,234 @@
+﻿[
+    {
+        "for_whom":  "SaaS companies, startups",
+        "id":  "intercom-ai",
+        "cons":  [
+                     "Expensive",
+                     "Complex setup"
+                 ],
+        "not_for":  "Simple websites",
+        "tags":  [
+                     "chatbot",
+                     "support",
+                     "messaging"
+                 ],
+        "name":  "Intercom AI",
+        "featured":  true,
+        "price":  "Free / /month",
+        "description":  "AI-powered customer messaging and support platform.",
+        "pros":  [
+                     "Great AI assistant",
+                     "Good analytics",
+                     "Multi-channel"
+                 ],
+        "slug":  "intercom-ai",
+        "url":  "https://intercom.com",
+        "rating":  4.4,
+        "alternatives":  "Crisp, Tidio",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "B2B companies",
+        "id":  "drift",
+        "cons":  [
+                     "Expensive",
+                     "Complex setup"
+                 ],
+        "not_for":  "B2C ecommerce",
+        "tags":  [
+                     "chat",
+                     "sales",
+                     "conversational"
+                 ],
+        "name":  "Drift",
+        "featured":  false,
+        "price":  "Contact for pricing",
+        "description":  "AI-powered conversational marketing and sales platform.",
+        "pros":  [
+                     "Conversational approach",
+                     "Good for B2B",
+                     "AI routing"
+                 ],
+        "slug":  "drift",
+        "url":  "https://drift.com",
+        "rating":  4.2,
+        "alternatives":  "Intercom, HubSpot",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Small businesses",
+        "id":  "tawk",
+        "cons":  [
+                     "Basic AI features",
+                     "Limited customization"
+                 ],
+        "not_for":  "Enterprise needs",
+        "tags":  [
+                     "chat",
+                     "free",
+                     "support"
+                 ],
+        "name":  "Tawk.to",
+        "featured":  false,
+        "price":  "Free",
+        "description":  "Free live chat and helpdesk.",
+        "pros":  [
+                     "Completely free",
+                     "Unlimited agents",
+                     "Mobile app"
+                 ],
+        "slug":  "tawk",
+        "url":  "https://tawk.to",
+        "rating":  4,
+        "alternatives":  "Intercom, Crisp",
+        "price_type":  "free",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Small to medium businesses",
+        "id":  "crisp",
+        "cons":  [
+                     "Limited on free tier",
+                     "Less powerful than Intercom"
+                 ],
+        "not_for":  "Enterprise",
+        "tags":  [
+                     "chat",
+                     "helpdesk",
+                     "support"
+                 ],
+        "name":  "Crisp",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "Modern customer chat and helpdesk tool.",
+        "pros":  [
+                     "Beautiful UI",
+                     "Good free tier",
+                     "Quick setup"
+                 ],
+        "slug":  "crisp",
+        "url":  "https://crisp.chat",
+        "rating":  4.1,
+        "alternatives":  "Intercom, Tidio",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Enterprise support teams",
+        "id":  "zendesk-ai",
+        "cons":  [
+                     "Expensive",
+                     "Complex"
+                 ],
+        "not_for":  "Small teams",
+        "tags":  [
+                     "helpdesk",
+                     "enterprise",
+                     "ai"
+                 ],
+        "name":  "Zendesk AI",
+        "featured":  false,
+        "price":  "/month",
+        "description":  "Enterprise customer service platform with AI features.",
+        "pros":  [
+                     "Industry standard",
+                     "AI features",
+                     "Enterprise features"
+                 ],
+        "slug":  "zendesk-ai",
+        "url":  "https://zendesk.com",
+        "rating":  4.3,
+        "alternatives":  "Intercom, Freshdesk",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Small to medium teams",
+        "id":  "freshdesk",
+        "cons":  [
+                     "Can feel cluttered",
+                     "Premium is pricey"
+                 ],
+        "not_for":  "Enterprise-only",
+        "tags":  [
+                     "ticketing",
+                     "support",
+                     "ai"
+                 ],
+        "name":  "Freshdesk",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "AI-powered customer support ticketing system.",
+        "pros":  [
+                     "Good free tier",
+                     "AI features",
+                     "Multi-channel"
+                 ],
+        "slug":  "freshdesk",
+        "url":  "https://freshdesk.com",
+        "rating":  4.2,
+        "alternatives":  "Zendesk, Freshdesk",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Dev teams",
+        "id":  "huly",
+        "cons":  [
+                     "Newer platform",
+                     "Limited integrations"
+                 ],
+        "not_for":  "Non-technical teams",
+        "tags":  [
+                     "project-management",
+                     "open-source",
+                     "ai"
+                 ],
+        "name":  "Huly",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "AI project management and issue tracker.",
+        "pros":  [
+                     "Open-source",
+                     "Affordable",
+                     "Good UI"
+                 ],
+        "slug":  "huly",
+        "url":  "https://huly.io",
+        "rating":  4,
+        "alternatives":  "Linear, ClickUp",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Website owners, SaaS",
+        "id":  "chatbase",
+        "cons":  [
+                     "Limited customization",
+                     "Monthly cost"
+                 ],
+        "not_for":  "Complex enterprise chat",
+        "tags":  [
+                     "chatbot",
+                     "custom",
+                     "website"
+                 ],
+        "name":  "Chatbase",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "Create custom AI chatbots for your website.",
+        "pros":  [
+                     "Easy to set up",
+                     "Train on your docs",
+                     "Good free tier"
+                 ],
+        "slug":  "chatbase",
+        "url":  "https://chatbase.co",
+        "rating":  4.1,
+        "alternatives":  "Botpress, Landbot",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    }
+]

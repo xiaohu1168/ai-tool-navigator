@@ -1,0 +1,350 @@
+﻿[
+    {
+        "for_whom":  "Teams, individuals",
+        "id":  "notion-ai",
+        "cons":  [
+                     "Slower than dedicated tools",
+                     "Offline access limited"
+                 ],
+        "not_for":  "Heavy data work",
+        "tags":  [
+                     "notes",
+                     "docs",
+                     "workspace"
+                 ],
+        "name":  "Notion AI",
+        "featured":  true,
+        "price":  "Free / /month",
+        "description":  "AI features in the popular all-in-one workspace.",
+        "pros":  [
+                     "All-in-one workspace",
+                     "AI writing assistant",
+                     "Template library"
+                 ],
+        "slug":  "notion-ai",
+        "url":  "https://notion.so",
+        "rating":  4.4,
+        "alternatives":  "Craft, Craft",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Knowledge workers",
+        "id":  "mem-ai",
+        "cons":  [
+                     "Less mature than Notion",
+                     "Learning curve"
+                 ],
+        "not_for":  "Team collaboration",
+        "tags":  [
+                     "notes",
+                     "auto-organize",
+                     "ai"
+                 ],
+        "name":  "Mem AI",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "AI-first workspace that organizes itself.",
+        "pros":  [
+                     "Self-organizing",
+                     "AI suggestions",
+                     "Great search"
+                 ],
+        "slug":  "mem-ai",
+        "url":  "https://mem.ai",
+        "rating":  4.2,
+        "alternatives":  "Notion, Craft",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Designers, individuals",
+        "id":  "craft",
+        "cons":  [
+                     "Mac/iOS only",
+                     "Limited collaboration"
+                 ],
+        "not_for":  "Cross-platform teams",
+        "tags":  [
+                     "notes",
+                     "docs",
+                     "design"
+                 ],
+        "name":  "Craft",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "Beautiful docs and notes app for Mac/iOS.",
+        "pros":  [
+                     "Stunning design",
+                     "Fast and smooth",
+                     "Blocks-based editing"
+                 ],
+        "slug":  "craft",
+        "url":  "https://craft.do",
+        "rating":  4.3,
+        "alternatives":  "Notion, Obsidian",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Researchers, writers",
+        "id":  "obsidian-ai",
+        "cons":  [
+                     "Not AI-native",
+                     "Sync costs extra"
+                 ],
+        "not_for":  "Non-technical users",
+        "tags":  [
+                     "notes",
+                     "knowledge",
+                     "local"
+                 ],
+        "name":  "Obsidian",
+        "featured":  false,
+        "price":  "Free",
+        "description":  "Local-first knowledge base with AI plugins.",
+        "pros":  [
+                     "100% local",
+                     "Markdown-based",
+                     "Huge plugin ecosystem"
+                 ],
+        "slug":  "obsidian-ai",
+        "url":  "https://obsidian.md",
+        "rating":  4.5,
+        "alternatives":  "Notion, Craft",
+        "price_type":  "free",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Professionals who need recall",
+        "id":  "rewind",
+        "cons":  [
+                     "Expensive",
+                     "Mac only"
+                 ],
+        "not_for":  "Windows users",
+        "tags":  [
+                     "recording",
+                     "search",
+                     "privacy"
+                 ],
+        "name":  "Rewind AI",
+        "featured":  false,
+        "price":  "/month",
+        "description":  "Mac app that records your screen and searches everything.",
+        "pros":  [
+                     "Search anything you\u0027ve seen",
+                     "AI summaries",
+                     "Local processing"
+                 ],
+        "slug":  "rewind",
+        "url":  "https://rewind.ai",
+        "rating":  4.2,
+        "alternatives":  "Microsoft Recall",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Email-heavy executives",
+        "id":  "superhuman",
+        "cons":  [
+                     "Very expensive",
+                     "Gmail only"
+                 ],
+        "not_for":  "Multi-mail users",
+        "tags":  [
+                     "email",
+                     "speed",
+                     "ai"
+                 ],
+        "name":  "Superhuman",
+        "featured":  false,
+        "price":  "/month",
+        "description":  "Fastest email client with AI compose and rewrite.",
+        "pros":  [
+                     "Blazingly fast",
+                     "AI compose is excellent",
+                     "Keyboard shortcuts"
+                 ],
+        "slug":  "superhuman",
+        "url":  "https://superhuman.com",
+        "rating":  4.6,
+        "alternatives":  "Gmail, Spark",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Project managers, teams",
+        "id":  "motion",
+        "cons":  [
+                     "Expensive",
+                     "Limited free tier"
+                 ],
+        "not_for":  "Simple todo lists",
+        "tags":  [
+                     "project-management",
+                     "scheduling",
+                     "ai"
+                 ],
+        "name":  "Motion",
+        "featured":  false,
+        "price":  "/month",
+        "description":  "AI-powered project management and scheduling.",
+        "pros":  [
+                     "Auto-scheduling",
+                     "Great for teams",
+                     "Calendar integration"
+                 ],
+        "slug":  "motion",
+        "url":  "https://motionapp.com",
+        "rating":  4.3,
+        "alternatives":  "Todoist, ClickUp",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Freelancers, teams",
+        "id":  "clockify",
+        "cons":  [
+                     "Basic AI features",
+                     "UI feels dated"
+                 ],
+        "not_for":  "Advanced analytics",
+        "tags":  [
+                     "time-tracking",
+                     "free",
+                     "timesheet"
+                 ],
+        "name":  "Clockify",
+        "featured":  false,
+        "price":  "Free",
+        "description":  "Free time tracking and timesheet app.",
+        "pros":  [
+                     "Completely free",
+                     "Unlimited users",
+                     "Good reports"
+                 ],
+        "slug":  "clockify",
+        "url":  "https://clockify.me",
+        "rating":  4.1,
+        "alternatives":  "Toggl, Harvest",
+        "price_type":  "free",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Microsoft 365 users",
+        "id":  "microsoft-copilot",
+        "cons":  [
+                     "Quality varies",
+                     "Requires Microsoft account"
+                 ],
+        "not_for":  "Non-Microsoft users",
+        "tags":  [
+                     "office",
+                     "general",
+                     "ai"
+                 ],
+        "name":  "Microsoft Copilot",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "AI assistant integrated across Microsoft 365.",
+        "pros":  [
+                     "Integrated with Office",
+                     "Free tier available",
+                     "Multi-modal"
+                 ],
+        "slug":  "microsoft-copilot",
+        "url":  "https://copilot.microsoft.com",
+        "rating":  4.3,
+        "alternatives":  "ChatGPT, Claude",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Google Workspace users",
+        "id":  "google-gemini",
+        "cons":  [
+                     "Less creative than Claude",
+                     "Google tracking concerns"
+                 ],
+        "not_for":  "Privacy-first users",
+        "tags":  [
+                     "google",
+                     "workspace",
+                     "ai"
+                 ],
+        "name":  "Google Gemini",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "Google\u0027s AI assistant with deep Google Workspace integration.",
+        "pros":  [
+                     "Free tier great",
+                     "Google Workspace integration",
+                     "Long context"
+                 ],
+        "slug":  "google-gemini",
+        "url":  "https://gemini.google.com",
+        "rating":  4.4,
+        "alternatives":  "ChatGPT, Claude",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Privacy-conscious users",
+        "id":  "anytype",
+        "cons":  [
+                     "Still beta",
+                     "Slower syncing"
+                 ],
+        "not_for":  "Teams needing sync",
+        "tags":  [
+                     "notes",
+                     "privacy",
+                     "local"
+                 ],
+        "name":  "Anytype",
+        "featured":  false,
+        "price":  "Free",
+        "description":  "Local-first, privacy-focused productivity suite.",
+        "pros":  [
+                     "100% private",
+                     "Local-first",
+                     "Block-based"
+                 ],
+        "slug":  "anytype",
+        "url":  "https://anytype.io",
+        "rating":  4,
+        "alternatives":  "Obsidian, Logseq",
+        "price_type":  "free",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Professional designers",
+        "id":  "affinity",
+        "cons":  [
+                     "No subscription AI features",
+                     "Less known"
+                 ],
+        "not_for":  "Beginners",
+        "tags":  [
+                     "design",
+                     "photo",
+                     "publish"
+                 ],
+        "name":  "Affinity AI",
+        "featured":  false,
+        "price":  ".99",
+        "description":  "Affinity design suite with AI-powered features.",
+        "pros":  [
+                     "One-time purchase",
+                     "Professional quality",
+                     "Fast performance"
+                 ],
+        "slug":  "affinity",
+        "url":  "https://affinity.serif.com",
+        "rating":  4.2,
+        "alternatives":  "Adobe Creative Suite",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    }
+]

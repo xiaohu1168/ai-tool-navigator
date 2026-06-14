@@ -1,0 +1,19 @@
+{
+  "total_views": 0,
+  "search_queries": [
+    {
+      "query": "coding tools",
+      "count": 1
+    },
+    {
+      "query": "best ai coding",
+      "count": 1
+    }
+  ],
+  "tool_clicks": [
+    {
+      "slug": "cursor",
+      "count": 2
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+﻿[
+    {
+        "for_whom":  "Companies needing autonomous coding",
+        "id":  " Devin",
+        "cons":  [
+                     "Limited availability",
+                     "Very expensive"
+                 ],
+        "not_for":  "Individual developers",
+        "tags":  [
+                     "code-generation",
+                     "autonomous",
+                     "software-engineer"
+                 ],
+        "name":  "Devin",
+        "featured":  true,
+        "price":  "Contact for pricing",
+        "description":  "AI software engineer by Cognition Labs.",
+        "pros":  [
+                     "Autonomous coding",
+                     "Can complete full tasks",
+                     " impressive demo"
+                 ],
+        "slug":  "devin",
+        "url":  "https://cognition.ai",
+        "rating":  4.3,
+        "alternatives":  "Cursor, Windsurf",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "X/Twitter users",
+        "id":  "grok",
+        "cons":  [
+                     "Less capable than GPT-4/Claude",
+                     "X subscription needed"
+                 ],
+        "not_for":  "Professional use",
+        "tags":  [
+                     "chat",
+                     "realtime",
+                     "xai"
+                 ],
+        "name":  "Grok",
+        "featured":  false,
+        "price":  "/month (X Premium+)",
+        "description":  "xAI\u0027s conversational AI with real-time knowledge.",
+        "pros":  [
+                     "Real-time X data",
+                     "Fun personality",
+                     "X integration"
+                 ],
+        "slug":  "grok",
+        "url":  "https://x.ai",
+        "rating":  4.1,
+        "alternatives":  "ChatGPT, Claude",
+        "price_type":  "subscription",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Developers searching for code solutions",
+        "id":  "phind",
+        "cons":  [
+                     "Niche focus",
+                     "Less versatile"
+                 ],
+        "not_for":  "General research",
+        "tags":  [
+                     "search",
+                     "developers",
+                     "code"
+                 ],
+        "name":  "Phind",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "AI search engine built for developers.",
+        "pros":  [
+                     "Developer-focused",
+                     "Code-aware answers",
+                     "Free tier good"
+                 ],
+        "slug":  "phind",
+        "url":  "https://phind.com",
+        "rating":  4.3,
+        "alternatives":  "Perplexity, StackOverflow",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    }
+]

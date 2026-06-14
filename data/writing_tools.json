@@ -1,0 +1,362 @@
+﻿[
+    {
+        "rating":  4.8,
+        "updated":  "2026-06-08",
+        "not_for":  "Need domain-specific expertise",
+        "price_type":  "freemium",
+        "cons":  [
+                     "Generic output needs editing",
+                     "Rate limits on free tier"
+                 ],
+        "alternatives":  "Claude, Gemini",
+        "tags":  [
+                     "chat",
+                     "general",
+                     "writing"
+                 ],
+        "for_whom":  "Everyone",
+        "description":  "OpenAI\u0027s general-purpose AI assistant for writing, reasoning, and more.",
+        "slug":  "chatgpt",
+        "url":  "https://chatgpt.com",
+        "pros":  [
+                     "Most versatile AI",
+                     "Strong reasoning",
+                     "Free tier excellent"
+                 ],
+        "price":  "Free / /month",
+        "privacy":  "Training data opt-out available",
+        "featured":  true,
+        "name":  "ChatGPT",
+        "id":  "chatgpt"
+    },
+    {
+        "rating":  4.7,
+        "updated":  "2026-06-08",
+        "not_for":  "Need image generation",
+        "price_type":  "freemium",
+        "cons":  [
+                     "File upload limited on free tier",
+                     "Slower at peak times"
+                 ],
+        "alternatives":  "ChatGPT, Gemini",
+        "tags":  [
+                     "chat",
+                     "reasoning",
+                     "long-context"
+                 ],
+        "for_whom":  "Researchers, writers",
+        "description":  "Anthropic\u0027s AI assistant known for long-context and reasoning.",
+        "slug":  "claude",
+        "url":  "https://claude.ai",
+        "pros":  [
+                     "200K context window",
+                     "Excellent reasoning",
+                     "Clean UI"
+                 ],
+        "price":  "Free / /month",
+        "privacy":  "Does not train on user data",
+        "featured":  true,
+        "name":  "Claude",
+        "id":  "claude"
+    },
+    {
+        "rating":  4.2,
+        "updated":  "2026-06-08",
+        "not_for":  "Budget-conscious solo creators",
+        "price_type":  "paid",
+        "cons":  [
+                     "Expensive for individuals",
+                     "Output needs refinement"
+                 ],
+        "alternatives":  "Writesonic, Copy.ai",
+        "tags":  [
+                     "marketing",
+                     "copy",
+                     "templates"
+                 ],
+        "for_whom":  "Marketing teams, agencies",
+        "description":  "AI content platform for marketing copy and campaigns.",
+        "slug":  "jasper",
+        "url":  "https://jasper.ai",
+        "pros":  [
+                     "Best brand tone-of-voice",
+                     "Comprehensive marketing templates",
+                     "Team collaboration"
+                 ],
+        "price":  "/month",
+        "privacy":  "Enterprise: no training",
+        "featured":  false,
+        "name":  "Jasper",
+        "id":  "jasper"
+    },
+    {
+        "rating":  4,
+        "updated":  "2026-06-08",
+        "not_for":  "Academic writing",
+        "price_type":  "freemium",
+        "cons":  [
+                     "Less powerful for long-form",
+                     "Limited free tier"
+                 ],
+        "alternatives":  "Jasper, Writesonic",
+        "tags":  [
+                     "social-media",
+                     "ads",
+                     "copy"
+                 ],
+        "for_whom":  "Social media managers",
+        "description":  "AI copywriting for social media, ads, and product descriptions.",
+        "slug":  "copy-ai",
+        "url":  "https://copy.ai",
+        "pros":  [
+                     "Great for social media",
+                     "Lots of templates",
+                     "Easy to use"
+                 ],
+        "price":  "Free / /month",
+        "privacy":  "Data encrypted",
+        "featured":  false,
+        "name":  "Copy.ai",
+        "id":  "copyai"
+    },
+    {
+        "rating":  4.1,
+        "updated":  "2026-06-08",
+        "not_for":  "Premium agency work",
+        "price_type":  "freemium",
+        "cons":  [
+                     "Quality varies by template",
+                     "Limited free tier"
+                 ],
+        "alternatives":  "Copy.ai, Jasper",
+        "tags":  [
+                     "seo",
+                     "articles",
+                     "ads"
+                 ],
+        "for_whom":  "SEO writers, bloggers",
+        "description":  "AI writing assistant for SEO content, ads, and articles.",
+        "slug":  "writesonic",
+        "url":  "https://writesonic.com",
+        "pros":  [
+                     "Great value for price",
+                     "Built-in SEO features",
+                     "Article writer powerful"
+                 ],
+        "price":  "Free / /month",
+        "privacy":  "Standard cloud processing",
+        "featured":  false,
+        "name":  "Writesonic",
+        "id":  "writesonic"
+    },
+    {
+        "rating":  4.3,
+        "updated":  "2026-06-08",
+        "not_for":  "Creating content from scratch",
+        "price_type":  "freemium",
+        "cons":  [
+                     "Not for content creation",
+                     "Premium is pricey"
+                 ],
+        "alternatives":  "Wordtune, Grammarly",
+        "tags":  [
+                     "paraphrase",
+                     "grammar",
+                     "rewrite"
+                 ],
+        "for_whom":  "Students, editors",
+        "description":  "AI paraphraser and grammar checker.",
+        "slug":  "quillbot",
+        "url":  "https://quillbot.com",
+        "pros":  [
+                     "Excellent paraphrasing",
+                     "Good grammar checking",
+                     "Free tier usable"
+                 ],
+        "price":  "Free / .95/month",
+        "privacy":  "Text processed on servers",
+        "featured":  false,
+        "name":  "QuillBot",
+        "id":  "quillbot"
+    },
+    {
+        "rating":  4.1,
+        "updated":  "2026-06-08",
+        "not_for":  "Long document writing",
+        "price_type":  "freemium",
+        "cons":  [
+                     "Free tier very limited",
+                     "Not for long-form"
+                 ],
+        "alternatives":  "QuillBot",
+        "tags":  [
+                     "rephrase",
+                     "tone",
+                     "chat"
+                 ],
+        "for_whom":  "Email-heavy professionals",
+        "description":  "AI writing companion for rephrasing and tone adjustment.",
+        "slug":  "wordtune",
+        "url":  "https://wordtune.com",
+        "pros":  [
+                     "Beautiful UI",
+                     "Great for email rewrites",
+                     "Multiple tone options"
+                 ],
+        "price":  "Free / .99/month",
+        "privacy":  "Data encrypted at rest",
+        "featured":  false,
+        "name":  "Wordtune",
+        "id":  "wordtune"
+    },
+    {
+        "rating":  4.2,
+        "updated":  "2026-06-08",
+        "not_for":  "Marketing or business writing",
+        "price_type":  "paid",
+        "cons":  [
+                     "Expensive",
+                     "Niche use case"
+                 ],
+        "alternatives":  "Novel AI",
+        "tags":  [
+                     "creative-writing",
+                     "fiction",
+                     "story"
+                 ],
+        "for_whom":  "Fiction writers",
+        "description":  "AI writing tool for creative fiction and storytelling.",
+        "slug":  "sudowrite",
+        "url":  "https://sudowrite.com",
+        "pros":  [
+                     "Tailored for creative writing",
+                     "Story brainstorming",
+                     "Character development"
+                 ],
+        "price":  "/month",
+        "privacy":  "Stories not used for training",
+        "featured":  false,
+        "name":  "Sudowrite",
+        "id":  "sudowrite"
+    },
+    {
+        "rating":  3.9,
+        "updated":  "2026-06-08",
+        "not_for":  "Premium quality needs",
+        "price_type":  "freemium",
+        "cons":  [
+                     "Quality below premium tools",
+                     "Less polished output"
+                 ],
+        "alternatives":  "Writesonic",
+        "tags":  [
+                     "affordable",
+                     "templates",
+                     "multi-language"
+                 ],
+        "for_whom":  "Budget-conscious creators",
+        "description":  "Affordable AI writing assistant for any content.",
+        "slug":  "rytr",
+        "url":  "https://rytr.me",
+        "pros":  [
+                     "Very affordable",
+                     "40+ languages",
+                     "40+ templates"
+                 ],
+        "price":  "Free / /month",
+        "privacy":  "Standard cloud processing",
+        "featured":  false,
+        "name":  "Rytr",
+        "id":  "rytr"
+    },
+    {
+        "rating":  4.6,
+        "updated":  "2026-06-08",
+        "not_for":  "Content generation at scale",
+        "price_type":  "freemium",
+        "cons":  [
+                     "Not traditional writing tool",
+                     "Subscription needed"
+                 ],
+        "alternatives":  "You.com, Gemini",
+        "tags":  [
+                     "search",
+                     "research",
+                     "citations"
+                 ],
+        "for_whom":  "Researchers, writers",
+        "description":  "AI-powered search engine with cited answers.",
+        "slug":  "perplexity",
+        "url":  "https://perplexity.ai",
+        "pros":  [
+                     "Answers with citations",
+                     "Great for research",
+                     "Follow-up questions"
+                 ],
+        "price":  "Free / /month",
+        "privacy":  "No data retention on Pro",
+        "featured":  true,
+        "name":  "Perplexity AI",
+        "id":  "perplexity"
+    },
+    {
+        "rating":  4.3,
+        "updated":  "2026-06-08",
+        "not_for":  "Code or technical writing",
+        "price_type":  "freemium",
+        "cons":  [
+                     "Advanced features expensive",
+                     "Can be too aggressive"
+                 ],
+        "alternatives":  "QuillBot, Hemingway",
+        "tags":  [
+                     "grammar",
+                     "proofreading",
+                     "clarity"
+                 ],
+        "for_whom":  "Everyone who writes emails",
+        "description":  "AI-powered writing assistant for grammar, tone, and clarity.",
+        "slug":  "grammarly",
+        "url":  "https://grammarly.com",
+        "pros":  [
+                     "Best-in-class grammar",
+                     "Browser extension everywhere",
+                     "Clear suggestions"
+                 ],
+        "price":  "Free / /month",
+        "privacy":  "Text processed on servers",
+        "featured":  false,
+        "name":  "Grammarly",
+        "id":  "grammarly"
+    },
+    {
+        "rating":  4,
+        "updated":  "2026-06-08",
+        "not_for":  "Marketing content",
+        "price_type":  "freemium",
+        "cons":  [
+                     "Less versatile",
+                     "Niche focused"
+                 ],
+        "alternatives":  "QuillBot, Writesonic",
+        "tags":  [
+                     "academic",
+                     "research",
+                     "citations"
+                 ],
+        "for_whom":  "Academics, researchers",
+        "description":  "AI writing assistant for academic and professional content.",
+        "slug":  "jenni",
+        "url":  "https://jenni.ai",
+        "pros":  [
+                     "Auto-citations",
+                     "Academic focus",
+                     "Good for papers"
+                 ],
+        "price":  "Free / /month",
+        "privacy":  "Standard cloud processing",
+        "featured":  false,
+        "name":  "Jenni AI",
+        "id":  "jenni"
+    }
+]

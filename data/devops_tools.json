@@ -1,0 +1,176 @@
+﻿[
+    {
+        "for_whom":  "Frontend developers, Next.js",
+        "id":  "vercel-ai",
+        "cons":  [
+                     "Vendor lock-in",
+                     "Expensive at scale"
+                 ],
+        "not_for":  "Backend-heavy apps",
+        "tags":  [
+                     "deploy",
+                     "edge",
+                     "nextjs"
+                 ],
+        "name":  "Vercel",
+        "featured":  true,
+        "price":  "Free / /month",
+        "description":  "Deploy web apps with AI-powered previews and Edge functions.",
+        "pros":  [
+                     "Zero-config deployment",
+                     "AI-powered previews",
+                     "Incredible DX"
+                 ],
+        "slug":  "vercel",
+        "url":  "https://vercel.com",
+        "rating":  4.6,
+        "alternatives":  "Netlify, Railway",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Full-stack developers",
+        "id":  "railway",
+        "cons":  [
+                     "Can get expensive",
+                     "Less known than Vercel"
+                 ],
+        "not_for":  "Enterprise needs",
+        "tags":  [
+                     "deploy",
+                     "database",
+                     "cloud"
+                 ],
+        "name":  "Railway",
+        "featured":  false,
+        "price":  "Pay as you go",
+        "description":  "Deploy apps and databases in seconds with AI assistance.",
+        "pros":  [
+                     "Easy deployment",
+                     "Good pricing",
+                     "AI assist"
+                 ],
+        "slug":  "railway",
+        "url":  "https://railway.app",
+        "rating":  4.4,
+        "alternatives":  "Vercel, Fly.io",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Backend developers",
+        "id":  "fly-io",
+        "cons":  [
+                     "Complex pricing",
+                     "Steeper learning curve"
+                 ],
+        "not_for":  "Frontend-only",
+        "tags":  [
+                     "deploy",
+                     "edge",
+                     "docker"
+                 ],
+        "name":  "Fly.io",
+        "featured":  false,
+        "price":  "Pay as you go",
+        "description":  "Deploy apps close to users with Edge computing.",
+        "pros":  [
+                     "Global deployment",
+                     "Docker-native",
+                     "Good free tier"
+                 ],
+        "slug":  "fly-io",
+        "url":  "https://fly.io",
+        "rating":  4.2,
+        "alternatives":  "Railway, Render",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Full-stack devs, startups",
+        "id":  "supabase",
+        "cons":  [
+                     "Not as mature as Firebase",
+                     "Complex at scale"
+                 ],
+        "not_for":  "Enterprise compliance",
+        "tags":  [
+                     "database",
+                     "backend",
+                     "open-source"
+                 ],
+        "name":  "Supabase",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "Open-source Firebase alternative with AI features.",
+        "pros":  [
+                     "Open-source",
+                     "PostgreSQL-based",
+                     "Free tier generous"
+                 ],
+        "slug":  "supabase",
+        "url":  "https://supabase.com",
+        "rating":  4.5,
+        "alternatives":  "Firebase, Appwrite",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Startups, indie devs",
+        "id":  "render",
+        "cons":  [
+                     "Slower cold starts",
+                     "Less known"
+                 ],
+        "not_for":  "Large-scale apps",
+        "tags":  [
+                     "deploy",
+                     "static",
+                     "backend"
+                 ],
+        "name":  "Render",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "Unified cloud for building and running all apps and sites.",
+        "pros":  [
+                     "Simple UI",
+                     "Good free tier",
+                     "Multi-service"
+                 ],
+        "slug":  "render",
+        "url":  "https://render.com",
+        "rating":  4.2,
+        "alternatives":  "Vercel, Railway",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Backend developers, API makers",
+        "id":  "cloudflare-ai",
+        "cons":  [
+                     "Complex setup",
+                     "Not beginner-friendly"
+                 ],
+        "not_for":  "Frontend-only",
+        "tags":  [
+                     "edge",
+                     "ai-compute",
+                     "cloudflare"
+                 ],
+        "name":  "Cloudflare AI",
+        "featured":  false,
+        "price":  "Free tier / Pay as you go",
+        "description":  "Edge AI computing platform with Workers AI.",
+        "pros":  [
+                     "Global edge network",
+                     "Workers AI included",
+                     "Very fast"
+                 ],
+        "slug":  "cloudflare-ai",
+        "url":  "https://cloudflare.com",
+        "rating":  4.3,
+        "alternatives":  "Vercel, Fly.io",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    }
+]

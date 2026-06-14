@@ -1,0 +1,14 @@
+﻿[
+  {"id":"coding","name":"Coding","icon":"💻","description":"AI-powered code generation, review, and debugging tools","count":0},
+  {"id":"writing","name":"Writing","icon":"✍️","description":"AI writing tools for copy, blog posts, email, and marketing content","count":0},
+  {"id":"seo","name":"SEO","icon":"🔍","description":"AI tools for keyword research, site analysis, and ranking optimization","count":0},
+  {"id":"devops","name":"DevOps","icon":"🚀","description":"AI deployment, CI/CD, monitoring, and performance tools","count":0},
+  {"id":"design","name":"Design","icon":"🎨","description":"UI/UX design, image generation, video editing, and logo tools","count":0},
+  {"id":"marketing","name":"Marketing","icon":"📣","description":"Social media, email marketing, A/B testing, and analytics","count":0},
+  {"id":"productivity","name":"Productivity","icon":"⚡","description":"Project management, meeting notes, docs, and workflow automation","count":0},
+  {"id":"voice","name":"Voice","icon":"🎙️","description":"Text-to-speech, speech recognition, podcast, and audio tools","count":0},
+  {"id":"video","name":"Video","icon":"🎬","description":"AI video generation, editing, and enhancement tools","count":0},
+  {"id":"analytics","name":"Analytics","icon":"📊","description":"BI, data visualization, and AI-powered insights","count":0},
+  {"id":"education","name":"Education","icon":"📚","description":"AI learning platforms, tutoring, and course creation tools","count":0},
+  {"id":"customer-service","name":"Customer Service","icon":"🤝","description":"Chatbots, helpdesk, and AI customer support tools","count":0}
+]

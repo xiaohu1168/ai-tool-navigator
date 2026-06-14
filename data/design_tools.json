@@ -1,0 +1,436 @@
+﻿[
+    {
+        "for_whom":  "Visual creators, designers",
+        "id":  "midjourney",
+        "cons":  [
+                     "No free tier",
+                     "Learning curve for prompts"
+                 ],
+        "not_for":  "Need precise control",
+        "tags":  [
+                     "image-generation",
+                     "art",
+                     "illustration"
+                 ],
+        "name":  "Midjourney",
+        "featured":  true,
+        "price":  "/month",
+        "description":  "The highest quality AI image generation tool, accessible via Discord or Web.",
+        "pros":  [
+                     "Best image quality",
+                     "Strong community",
+                     "Regular model updates"
+                 ],
+        "slug":  "midjourney",
+        "url":  "https://midjourney.com",
+        "rating":  4.8,
+        "alternatives":  "DALL-E 3, Stable Diffusion",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "ChatGPT users, marketers",
+        "id":  "dall-e-3",
+        "cons":  [
+                     "Less artistic than MJ",
+                     "Limited customization"
+                 ],
+        "not_for":  "Professional art",
+        "tags":  [
+                     "image-generation",
+                     "chat",
+                     "text-to-image"
+                 ],
+        "name":  "DALL-E 3",
+        "featured":  false,
+        "price":  "/month (ChatGPT Plus)",
+        "description":  "OpenAI\u0027s image generation model through ChatGPT.",
+        "pros":  [
+                     "Integrated with ChatGPT",
+                     "Natural conversation",
+                     "Good text rendering"
+                 ],
+        "slug":  "dall-e-3",
+        "url":  "https://openai.com/dall-e",
+        "rating":  4.3,
+        "alternatives":  "Midjourney, Stable Diffusion",
+        "price_type":  "subscription",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Tech-savvy users, privacy-focused",
+        "id":  "stable-diffusion",
+        "cons":  [
+                     "Needs GPU",
+                     "Complex setup"
+                 ],
+        "not_for":  "Non-technical users",
+        "tags":  [
+                     "open-source",
+                     "local",
+                     "image-generation"
+                 ],
+        "name":  "Stable Diffusion",
+        "featured":  false,
+        "price":  "Free (local) / API pricing",
+        "description":  "Open-source AI image generation you can run locally.",
+        "pros":  [
+                     "Completely free if local",
+                     "Total control",
+                     "No data leaving your machine"
+                 ],
+        "slug":  "stable-diffusion",
+        "url":  "https://stability.ai",
+        "rating":  4.4,
+        "alternatives":  "Midjourney, DALL-E",
+        "price_type":  "free",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Non-designers, marketers",
+        "id":  "canva-ai",
+        "cons":  [
+                     "Less control than professional tools",
+                     "Free tier limited"
+                 ],
+        "not_for":  "Professional graphic designers",
+        "tags":  [
+                     "design",
+                     "templates",
+                     "easy"
+                 ],
+        "name":  "Canva AI (Magic Studio)",
+        "featured":  true,
+        "price":  "Free / .99/month",
+        "description":  "AI-powered design platform for non-designers.",
+        "pros":  [
+                     "Incredibly easy to use",
+                     "Huge template library",
+                     "Magic Write AI"
+                 ],
+        "slug":  "canva-ai",
+        "url":  "https://canva.com",
+        "rating":  4.5,
+        "alternatives":  "Figma AI, Adobe Firefly",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "UI/UX designers",
+        "id":  "figma-ai",
+        "cons":  [
+                     "AI features still maturing",
+                     "Complex for beginners"
+                 ],
+        "not_for":  "Non-designers",
+        "tags":  [
+                     "ui-design",
+                     "ux",
+                     "prototyping"
+                 ],
+        "name":  "Figma AI",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "AI features in the leading UI/UX design tool.",
+        "pros":  [
+                     "Industry-standard design tool",
+                     "AI-powered wireframes",
+                     "Great collaboration"
+                 ],
+        "slug":  "figma-ai",
+        "url":  "https://figma.com",
+        "rating":  4.4,
+        "alternatives":  "Adobe XD, Sketch",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Creative Cloud users",
+        "id":  "adobe-firefly",
+        "cons":  [
+                     "Requires Adobe subscription",
+                     "Less creative than MJ"
+                 ],
+        "not_for":  "Standalone image gen",
+        "tags":  [
+                     "image-generation",
+                     "photoshop",
+                     "generative"
+                 ],
+        "name":  "Adobe Firefly",
+        "featured":  false,
+        "price":  "Free / .99/month",
+        "description":  "Adobe\u0027s generative AI for images, text effects, and more.",
+        "pros":  [
+                     "Trained on Adobe stock",
+                     "Integrates with Creative Cloud",
+                     "Commercial-safe"
+                 ],
+        "slug":  "adobe-firefly",
+        "url":  "https://firefly.adobe.com",
+        "rating":  4.3,
+        "alternatives":  "Midjourney, DALL-E",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Game devs, illustrators",
+        "id":  "leonardo-ai",
+        "cons":  [
+                     "Less known than MJ",
+                     "Slower updates"
+                 ],
+        "not_for":  "Photorealistic needs",
+        "tags":  [
+                     "image-generation",
+                     "game-assets",
+                     "models"
+                 ],
+        "name":  "Leonardo AI",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "AI image generation platform with fine-tuned models.",
+        "pros":  [
+                     "Great free tier",
+                     "Fine-tuned models",
+                     "Game asset generation"
+                 ],
+        "slug":  "leonardo-ai",
+        "url":  "https://leonardo.ai",
+        "rating":  4.4,
+        "alternatives":  "Midjourney, Stable Diffusion",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Designers needing text in images",
+        "id":  "ideogram",
+        "cons":  [
+                     "Newer platform",
+                     "Less model variety"
+                 ],
+        "not_for":  "General art",
+        "tags":  [
+                     "image-generation",
+                     "text",
+                     "design"
+                 ],
+        "name":  "Ideogram",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "AI image generator specializing in text-in-image rendering.",
+        "pros":  [
+                     "Best text rendering",
+                     "Clean UI",
+                     "Good free tier"
+                 ],
+        "slug":  "ideogram",
+        "url":  "https://ideogram.ai",
+        "rating":  4.3,
+        "alternatives":  "Midjourney, DALL-E",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Logo designers, icon creators",
+        "id":  "recraft",
+        "cons":  [
+                     "Less known",
+                     "Fewer models"
+                 ],
+        "not_for":  "Photorealistic art",
+        "tags":  [
+                     "vector",
+                     "svg",
+                     "design"
+                 ],
+        "name":  "Recraft",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "AI design tool for producing scalable vector and raster graphics.",
+        "pros":  [
+                     "Generates SVG output",
+                     "Great for icons/logos",
+                     "Style consistency"
+                 ],
+        "slug":  "recraft",
+        "url":  "https://recraft.ai",
+        "rating":  4.2,
+        "alternatives":  "Midjourney, Leonardo",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Merch designers, Print-on-Demand",
+        "id":  "kittl",
+        "cons":  [
+                     "Smaller community",
+                     "Less flexible"
+                 ],
+        "not_for":  "UI/UX work",
+        "tags":  [
+                     "posters",
+                     "merch",
+                     "templates"
+                 ],
+        "name":  "Kittl",
+        "featured":  false,
+        "price":  "Free / .99/month",
+        "description":  "AI-powered design platform for posters, logos, and merch.",
+        "pros":  [
+                     "Great for merch design",
+                     "Excellent templates",
+                     "AI text effects"
+                 ],
+        "slug":  "kittl",
+        "url":  "https://kittl.com",
+        "rating":  4.1,
+        "alternatives":  "Canva, Figma",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "E-commerce sellers, photographers",
+        "id":  "photoroom",
+        "cons":  [
+                     "Limited to photo editing"
+                 ],
+        "not_for":  "Creative art",
+        "tags":  [
+                     "photo-editing",
+                     "background",
+                     "ecommerce"
+                 ],
+        "name":  "PhotoRoom",
+        "featured":  false,
+        "price":  "Free / .99/month",
+        "description":  "AI background remover and product photo editor.",
+        "pros":  [
+                     "Excellent background removal",
+                     "Great for products",
+                     "Mobile app"
+                 ],
+        "slug":  "photoroom",
+        "url":  "https://photoroom.com",
+        "rating":  4.3,
+        "alternatives":  "Remove.bg, Canva",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Video creators, filmmakers",
+        "id":  "runway",
+        "cons":  [
+                     "Expensive",
+                     "Learning curve"
+                 ],
+        "not_for":  "Simple video editing",
+        "tags":  [
+                     "video",
+                     "gen-2",
+                     "editing"
+                 ],
+        "name":  "Runway ML",
+        "featured":  true,
+        "price":  "Free / /month",
+        "description":  "AI video generation and editing platform.",
+        "pros":  [
+                     "Industry-leading AI video",
+                     "Creative tools",
+                     "Active community"
+                 ],
+        "slug":  "runway",
+        "url":  "https://runwayml.com",
+        "rating":  4.5,
+        "alternatives":  "Pika, Kling",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Social media creators",
+        "id":  "pika",
+        "cons":  [
+                     "Shorter clips",
+                     "Limited control"
+                 ],
+        "not_for":  "Professional video production",
+        "tags":  [
+                     "video",
+                     "animation",
+                     "text-to-video"
+                 ],
+        "name":  "Pika",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "AI video generation from text and image prompts.",
+        "pros":  [
+                     "Easy to use",
+                     "Good quality",
+                     "Discord community"
+                 ],
+        "slug":  "pika",
+        "url":  "https://pika.art",
+        "rating":  4.2,
+        "alternatives":  "Runway, Kling",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Content creators, podcasters",
+        "id":  "elevenlabs",
+        "cons":  [
+                     "Pricing scales with usage",
+                     "Ethical concerns with cloning"
+                 ],
+        "not_for":  "Privacy-sensitive use",
+        "tags":  [
+                     "voice",
+                     "tts",
+                     "cloning"
+                 ],
+        "name":  "ElevenLabs",
+        "featured":  true,
+        "price":  "Free / /month",
+        "description":  "Best-in-class AI voice generation and cloning.",
+        "pros":  [
+                     "Most realistic voices",
+                     "Voice cloning",
+                     "Multi-language"
+                 ],
+        "slug":  "elevenlabs",
+        "url":  "https://elevenlabs.io",
+        "rating":  4.7,
+        "alternatives":  "Murf AI, Speechify",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Podcasters, video creators",
+        "id":  "descript",
+        "cons":  [
+                     "Subscription needed for best features",
+                     "Learning curve"
+                 ],
+        "not_for":  "Professional filmmakers",
+        "tags":  [
+                     "video-editing",
+                     "podcast",
+                     "text-based"
+                 ],
+        "name":  "Descript",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "All-in-one audio/video editor that works like a word processor.",
+        "pros":  [
+                     "Edit video by editing text",
+                     "Studio Sound AI",
+                     "Overdub AI voices"
+                 ],
+        "slug":  "descript",
+        "url":  "https://descript.com",
+        "rating":  4.4,
+        "alternatives":  "CapCut, Premiere Pro",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    }
+]

@@ -1,0 +1,234 @@
+﻿[
+    {
+        "for_whom":  "Content creators, podcasters",
+        "id":  "elevenlabs-main",
+        "cons":  [
+                     "Pricing scales with usage",
+                     "Ethical concerns"
+                 ],
+        "not_for":  "Privacy-sensitive use",
+        "tags":  [
+                     "voice",
+                     "tts",
+                     "cloning"
+                 ],
+        "name":  "ElevenLabs",
+        "featured":  true,
+        "price":  "Free / /month",
+        "description":  "Best-in-class AI voice generation and voice cloning.",
+        "pros":  [
+                     "Most realistic voices",
+                     "Voice cloning",
+                     "Multi-language"
+                 ],
+        "slug":  "elevenlabs",
+        "url":  "https://elevenlabs.io",
+        "rating":  4.7,
+        "alternatives":  "Murf AI, Speechify",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Video creators, educators",
+        "id":  "murf",
+        "cons":  [
+                     "Expensive",
+                     "No free tier beyond trial"
+                 ],
+        "not_for":  "Quick casual use",
+        "tags":  [
+                     "voice",
+                     "voiceover",
+                     "narration"
+                 ],
+        "name":  "Murf AI",
+        "featured":  false,
+        "price":  "/month",
+        "description":  "AI studio for voiceovers and narration.",
+        "pros":  [
+                     "Studio-quality voices",
+                     "Voice designer",
+                     "Multi-language"
+                 ],
+        "slug":  "murf",
+        "url":  "https://murf.ai",
+        "rating":  4.2,
+        "alternatives":  "ElevenLabs, Speechify",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Readers, students, dyslexic users",
+        "id":  "speechify",
+        "cons":  [
+                     "Expensive for premium",
+                     "Limited customization"
+                 ],
+        "not_for":  "Voice generation",
+        "tags":  [
+                     "tts",
+                     "reading",
+                     "accessibility"
+                 ],
+        "name":  "Speechify",
+        "featured":  false,
+        "price":  "Free / /year",
+        "description":  "AI-powered text-to-speech reader.",
+        "pros":  [
+                     "Celebrity voices",
+                     "Reads everything",
+                     "Great mobile app"
+                 ],
+        "slug":  "speechify",
+        "url":  "https://speechify.com",
+        "rating":  4.3,
+        "alternatives":  "ElevenLabs, NaturalReader",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Students, professionals",
+        "id":  "naturalreader",
+        "cons":  [
+                     "Less realistic than ElevenLabs",
+                     "Premium features limited"
+                 ],
+        "not_for":  "Voice cloning",
+        "tags":  [
+                     "tts",
+                     "reading",
+                     "free"
+                 ],
+        "name":  "NaturalReader",
+        "featured":  false,
+        "price":  "Free / .99/year",
+        "description":  "Natural-sounding text-to-speech reader.",
+        "pros":  [
+                     "Good free tier",
+                     "Natural voices",
+                     "Works on any text"
+                 ],
+        "slug":  "naturalreader",
+        "url":  "https://naturalreader.com",
+        "rating":  4.1,
+        "alternatives":  "Speechify, Murf",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Content creators, developers",
+        "id":  "playht",
+        "cons":  [
+                     "Quality varies by voice",
+                     "Expensive at scale"
+                 ],
+        "not_for":  "Casual users",
+        "tags":  [
+                     "voice",
+                     "tts",
+                     "cloning"
+                 ],
+        "name":  "PlayHT",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "AI voice generator with voice cloning.",
+        "pros":  [
+                     "Wide voice selection",
+                     "Voice cloning",
+                     "API available"
+                 ],
+        "slug":  "playht",
+        "url":  "https://play.ht",
+        "rating":  4.2,
+        "alternatives":  "ElevenLabs, Murf",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Enterprises, game devs",
+        "id":  "resemble",
+        "cons":  [
+                     "Enterprise pricing",
+                     "Complex setup"
+                 ],
+        "not_for":  "Individual creators",
+        "tags":  [
+                     "voice",
+                     "cloning",
+                     "enterprise"
+                 ],
+        "name":  "Resemble AI",
+        "featured":  false,
+        "price":  "Custom pricing",
+        "description":  "AI voice cloning and voice generation platform.",
+        "pros":  [
+                     "Real-time cloning",
+                     "Deepfake detection",
+                     "Enterprise features"
+                 ],
+        "slug":  "resemble",
+        "url":  "https://resemble.ai",
+        "rating":  4,
+        "alternatives":  "ElevenLabs, PlayHT",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Gamers, streamers",
+        "id":  "voicemod",
+        "cons":  [
+                     "Less realistic than ElevenLabs",
+                     "Windows only"
+                 ],
+        "not_for":  "Professional narration",
+        "tags":  [
+                     "voice",
+                     "realtime",
+                     "gaming"
+                 ],
+        "name":  "VoiceMod",
+        "featured":  false,
+        "price":  "Free / .99/month",
+        "description":  "Real-time voice changer and AI voice effects.",
+        "pros":  [
+                     "Real-time changing",
+                     "Great for streaming",
+                     "Huge voice library"
+                 ],
+        "slug":  "voicemod",
+        "url":  "https://voicemod.net",
+        "rating":  4.1,
+        "alternatives":  "Voicemod AI, Clownfish",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Podcasters",
+        "id":  "podcastle",
+        "cons":  [
+                     "Smaller community",
+                     "Less polished"
+                 ],
+        "not_for":  "Music production",
+        "tags":  [
+                     "podcast",
+                     "audio",
+                     "editing"
+                 ],
+        "name":  "Podcastle",
+        "featured":  false,
+        "price":  "Free / /month",
+        "description":  "AI podcast production studio.",
+        "pros":  [
+                     "All-in-one podcast tool",
+                     "AI noise removal",
+                     "Multi-track editing"
+                 ],
+        "slug":  "podcastle",
+        "url":  "https://podcastle.ai",
+        "rating":  4,
+        "alternatives":  "Descript, Audacity",
+        "price_type":  "freemium",
+        "updated":  "2026-06-08"
+    }
+]

@@ -1,0 +1,288 @@
+﻿[
+    {
+        "rating":  4.4,
+        "updated":  "2026-06-08",
+        "not_for":  "Complete beginners",
+        "price_type":  "paid",
+        "cons":  [
+                     "Expensive",
+                     "Steep learning curve"
+                 ],
+        "alternatives":  "Frase, Clearscope",
+        "tags":  [
+                     "content-optimization",
+                     "on-page",
+                     "seo"
+                 ],
+        "for_whom":  "SEO professionals, agencies",
+        "description":  "AI-powered SEO optimization tool for content and on-page factors.",
+        "slug":  "surfer-seo",
+        "url":  "https://surferseo.com",
+        "pros":  [
+                     "Real-time content scoring",
+                     "Great SERP analysis",
+                     "Auto-optimizes content"
+                 ],
+        "price":  "/month",
+        "privacy":  "Cloud-based",
+        "featured":  true,
+        "name":  "Surfer SEO",
+        "id":  "surfer-seo"
+    },
+    {
+        "for_whom":  "Content marketers",
+        "id":  "frase",
+        "cons":  [
+                     "UI feels dated",
+                     "Less polished than Surfer"
+                 ],
+        "not_for":  "Technical SEO",
+        "tags":  [
+                     "content-optimization",
+                     "research",
+                     "automation"
+                 ],
+        "name":  "Frase",
+        "featured":  false,
+        "price":  ".50/month",
+        "description":  "AI content optimizer that analyzes top-ranking pages.",
+        "pros":  [
+                     "Strong research features",
+                     "Content bot for briefs",
+                     "Good value"
+                 ],
+        "slug":  "frase",
+        "url":  "https://frase.io",
+        "rating":  4.2,
+        "alternatives":  "Surfer SEO, Clearscope",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Enterprise SEO teams",
+        "id":  "clearscope",
+        "cons":  [
+                     "Very expensive",
+                     "No free tier"
+                 ],
+        "not_for":  "Small businesses",
+        "tags":  [
+                     "content-optimization",
+                     "keywords",
+                     "ranking"
+                 ],
+        "name":  "Clearscope",
+        "featured":  false,
+        "price":  "/month",
+        "description":  "Content optimization platform backed by keyword research.",
+        "pros":  [
+                     "High-quality keyword suggestions",
+                     "Content grading excellent"
+                 ],
+        "slug":  "clearscope",
+        "url":  "https://clearscope.io",
+        "rating":  4.1,
+        "alternatives":  "Surfer SEO, Frase",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "SEO professionals, agencies",
+        "id":  "semrush-ai",
+        "cons":  [
+                     "Expensive",
+                     "Feature overload for beginners"
+                 ],
+        "not_for":  "Complete beginners on budget",
+        "tags":  [
+                     "keyword-research",
+                     "seo-audit",
+                     "ai"
+                 ],
+        "name":  "Semrush AI",
+        "featured":  true,
+        "price":  "/month",
+        "description":  "All-in-one SEO toolkit with AI-powered features.",
+        "pros":  [
+                     "Industry standard toolkit",
+                     "Huge keyword database",
+                     "AI content tools"
+                 ],
+        "slug":  "semrush-ai",
+        "url":  "https://semrush.com",
+        "rating":  4.6,
+        "alternatives":  "Ahrefs, Moz",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "SEO professionals",
+        "id":  "ahrefs",
+        "cons":  [
+                     "No free tier",
+                     "Expensive"
+                 ],
+        "not_for":  "Budget users",
+        "tags":  [
+                     "backlinks",
+                     "keyword-research",
+                     "seo"
+                 ],
+        "name":  "Ahrefs",
+        "featured":  false,
+        "price":  "/month",
+        "description":  "SEO toolkit with AI-powered content explorer and keyword research.",
+        "pros":  [
+                     "Best backlink data",
+                     "Excellent keyword explorer",
+                     "Very accurate data"
+                 ],
+        "slug":  "ahrefs",
+        "url":  "https://ahrefs.com",
+        "rating":  4.7,
+        "alternatives":  "Semrush, Moz",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Content farms, agencies",
+        "id":  "content-at-scale",
+        "cons":  [
+                     "Quality needs human editing",
+                     "Less polished"
+                 ],
+        "not_for":  "Premium content brands",
+        "tags":  [
+                     "content-generation",
+                     "seo",
+                     "automation"
+                 ],
+        "name":  "Content at Scale",
+        "featured":  false,
+        "price":  "/month",
+        "description":  "AI content platform for SEO articles and optimization.",
+        "pros":  [
+                     "Affordable",
+                     "Bulk content creation",
+                     "SEO tools included"
+                 ],
+        "slug":  "content-at-scale",
+        "url":  "https://contentatscale.ai",
+        "rating":  4,
+        "alternatives":  "Writesonic, Jasper",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Enterprise content teams",
+        "id":  "marketmuse",
+        "cons":  [
+                     "Very expensive",
+                     "Complex to set up"
+                 ],
+        "not_for":  "Small teams",
+        "tags":  [
+                     "content-strategy",
+                     "ai",
+                     "optimization"
+                 ],
+        "name":  "MarketMuse",
+        "featured":  false,
+        "price":  "/month",
+        "description":  "AI-powered content strategy and optimization platform.",
+        "pros":  [
+                     "Deep content analysis",
+                     "Topic modeling excellent"
+                 ],
+        "slug":  "marketmuse",
+        "url":  "https://marketmuse.com",
+        "rating":  4.1,
+        "alternatives":  "Surfer SEO, Frase",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "SEO teams",
+        "id":  "outranking",
+        "cons":  [
+                     "Newer platform",
+                     "Less established"
+                 ],
+        "not_for":  "Complete beginners",
+        "tags":  [
+                     "seo",
+                     "content",
+                     "serp"
+                 ],
+        "name":  "Outranking",
+        "featured":  false,
+        "price":  "/month",
+        "description":  "AI-powered SEO content platform with SERP analysis.",
+        "pros":  [
+                     "Strong SERP analysis",
+                     "Good content briefs"
+                 ],
+        "slug":  "outranking",
+        "url":  "https:// outranking.io",
+        "rating":  4,
+        "alternatives":  "Surfer SEO, Content at Scale",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "Small SEO teams",
+        "id":  "neuronizer",
+        "cons":  [
+                     "Less mature",
+                     "Fewer features"
+                 ],
+        "not_for":  "Enterprise needs",
+        "tags":  [
+                     "seo",
+                     "writing",
+                     "keywords"
+                 ],
+        "name":  "Neuronizer",
+        "featured":  false,
+        "price":  "/month",
+        "description":  "AI SEO writing assistant with keyword intelligence.",
+        "pros":  [
+                     "Affordable",
+                     "AI-powered suggestions"
+                 ],
+        "slug":  "neuronizer",
+        "url":  "https://neuronizer.io",
+        "rating":  3.8,
+        "alternatives":  "Writesonic, Frase",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    },
+    {
+        "for_whom":  "SEO agencies",
+        "id":  "rankranger",
+        "cons":  [
+                     "Complex setup",
+                     "Expensive"
+                 ],
+        "not_for":  "Solo users",
+        "tags":  [
+                     "rank-tracking",
+                     "seo",
+                     "content"
+                 ],
+        "name":  "Rank Ranger",
+        "featured":  false,
+        "price":  "/month",
+        "description":  "SEO platform with AI-powered keyword and content tools.",
+        "pros":  [
+                     "Comprehensive platform",
+                     "Good for agencies"
+                 ],
+        "slug":  "rankranger",
+        "url":  "https://rankranger.com",
+        "rating":  4.2,
+        "alternatives":  "Semrush, Ahrefs",
+        "price_type":  "paid",
+        "updated":  "2026-06-08"
+    }
+]

@@ -1,0 +1,1325 @@
+[
+  {
+    "tool_id": "mixpanel",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Mixpanel to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Mixpanel"
+  },
+  {
+    "tool_id": "amplitude",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Amplitude to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Amplitude"
+  },
+  {
+    "tool_id": "google-analytics",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Google Analytics 4 to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Google Analytics 4"
+  },
+  {
+    "tool_id": "plausible",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Plausible to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Plausible"
+  },
+  {
+    "tool_id": "fathom",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Fathom to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Fathom"
+  },
+  {
+    "tool_id": "looker-studio",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Looker Studio to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Looker Studio"
+  },
+  {
+    "tool_id": "tableau",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Tableau to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Tableau"
+  },
+  {
+    "tool_id": "power-bi",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Power BI to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Power BI"
+  },
+  {
+    "tool_id": "github-copilot",
+    "title": "Code Review Assistant",
+    "prompt_text": "Review the following code for potential bugs, security issues, and performance optimizations. Suggest specific improvements:\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Review code for bugs and improvements",
+    "best_model": "GitHub Copilot"
+  },
+  {
+    "tool_id": "github-copilot",
+    "title": "Generate Unit Tests",
+    "prompt_text": "Generate comprehensive unit tests for the following function. Include edge cases and error handling:\n\n`javascript\\n[FUNCTION CODE]\\n`",
+    "use_case": "Auto-generate unit tests",
+    "best_model": "GitHub Copilot"
+  },
+  {
+    "tool_id": "github-copilot",
+    "title": "Explain Code",
+    "prompt_text": "Explain what this code does in simple terms:\\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Understand complex code",
+    "best_model": "GitHub Copilot"
+  },
+  {
+    "tool_id": "cursor",
+    "title": "Code Review Assistant",
+    "prompt_text": "Review the following code for potential bugs, security issues, and performance optimizations. Suggest specific improvements:\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Review code for bugs and improvements",
+    "best_model": "Cursor"
+  },
+  {
+    "tool_id": "cursor",
+    "title": "Generate Unit Tests",
+    "prompt_text": "Generate comprehensive unit tests for the following function. Include edge cases and error handling:\n\n`javascript\\n[FUNCTION CODE]\\n`",
+    "use_case": "Auto-generate unit tests",
+    "best_model": "Cursor"
+  },
+  {
+    "tool_id": "cursor",
+    "title": "Explain Code",
+    "prompt_text": "Explain what this code does in simple terms:\\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Understand complex code",
+    "best_model": "Cursor"
+  },
+  {
+    "tool_id": "windsurf",
+    "title": "Code Review Assistant",
+    "prompt_text": "Review the following code for potential bugs, security issues, and performance optimizations. Suggest specific improvements:\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Review code for bugs and improvements",
+    "best_model": "Windsurf"
+  },
+  {
+    "tool_id": "windsurf",
+    "title": "Generate Unit Tests",
+    "prompt_text": "Generate comprehensive unit tests for the following function. Include edge cases and error handling:\n\n`javascript\\n[FUNCTION CODE]\\n`",
+    "use_case": "Auto-generate unit tests",
+    "best_model": "Windsurf"
+  },
+  {
+    "tool_id": "windsurf",
+    "title": "Explain Code",
+    "prompt_text": "Explain what this code does in simple terms:\\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Understand complex code",
+    "best_model": "Windsurf"
+  },
+  {
+    "tool_id": "replit",
+    "title": "Code Review Assistant",
+    "prompt_text": "Review the following code for potential bugs, security issues, and performance optimizations. Suggest specific improvements:\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Review code for bugs and improvements",
+    "best_model": "Replit"
+  },
+  {
+    "tool_id": "replit",
+    "title": "Generate Unit Tests",
+    "prompt_text": "Generate comprehensive unit tests for the following function. Include edge cases and error handling:\n\n`javascript\\n[FUNCTION CODE]\\n`",
+    "use_case": "Auto-generate unit tests",
+    "best_model": "Replit"
+  },
+  {
+    "tool_id": "replit",
+    "title": "Explain Code",
+    "prompt_text": "Explain what this code does in simple terms:\\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Understand complex code",
+    "best_model": "Replit"
+  },
+  {
+    "tool_id": "codeium",
+    "title": "Code Review Assistant",
+    "prompt_text": "Review the following code for potential bugs, security issues, and performance optimizations. Suggest specific improvements:\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Review code for bugs and improvements",
+    "best_model": "Codeium"
+  },
+  {
+    "tool_id": "codeium",
+    "title": "Generate Unit Tests",
+    "prompt_text": "Generate comprehensive unit tests for the following function. Include edge cases and error handling:\n\n`javascript\\n[FUNCTION CODE]\\n`",
+    "use_case": "Auto-generate unit tests",
+    "best_model": "Codeium"
+  },
+  {
+    "tool_id": "codeium",
+    "title": "Explain Code",
+    "prompt_text": "Explain what this code does in simple terms:\\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Understand complex code",
+    "best_model": "Codeium"
+  },
+  {
+    "tool_id": "tabnine",
+    "title": "Code Review Assistant",
+    "prompt_text": "Review the following code for potential bugs, security issues, and performance optimizations. Suggest specific improvements:\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Review code for bugs and improvements",
+    "best_model": "Tabnine"
+  },
+  {
+    "tool_id": "tabnine",
+    "title": "Generate Unit Tests",
+    "prompt_text": "Generate comprehensive unit tests for the following function. Include edge cases and error handling:\n\n`javascript\\n[FUNCTION CODE]\\n`",
+    "use_case": "Auto-generate unit tests",
+    "best_model": "Tabnine"
+  },
+  {
+    "tool_id": "tabnine",
+    "title": "Explain Code",
+    "prompt_text": "Explain what this code does in simple terms:\\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Understand complex code",
+    "best_model": "Tabnine"
+  },
+  {
+    "tool_id": "sourcegraph-cody",
+    "title": "Code Review Assistant",
+    "prompt_text": "Review the following code for potential bugs, security issues, and performance optimizations. Suggest specific improvements:\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Review code for bugs and improvements",
+    "best_model": "Sourcegraph Cody"
+  },
+  {
+    "tool_id": "sourcegraph-cody",
+    "title": "Generate Unit Tests",
+    "prompt_text": "Generate comprehensive unit tests for the following function. Include edge cases and error handling:\n\n`javascript\\n[FUNCTION CODE]\\n`",
+    "use_case": "Auto-generate unit tests",
+    "best_model": "Sourcegraph Cody"
+  },
+  {
+    "tool_id": "sourcegraph-cody",
+    "title": "Explain Code",
+    "prompt_text": "Explain what this code does in simple terms:\\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Understand complex code",
+    "best_model": "Sourcegraph Cody"
+  },
+  {
+    "tool_id": "continue",
+    "title": "Code Review Assistant",
+    "prompt_text": "Review the following code for potential bugs, security issues, and performance optimizations. Suggest specific improvements:\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Review code for bugs and improvements",
+    "best_model": "Continue"
+  },
+  {
+    "tool_id": "continue",
+    "title": "Generate Unit Tests",
+    "prompt_text": "Generate comprehensive unit tests for the following function. Include edge cases and error handling:\n\n`javascript\\n[FUNCTION CODE]\\n`",
+    "use_case": "Auto-generate unit tests",
+    "best_model": "Continue"
+  },
+  {
+    "tool_id": "continue",
+    "title": "Explain Code",
+    "prompt_text": "Explain what this code does in simple terms:\\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Understand complex code",
+    "best_model": "Continue"
+  },
+  {
+    "tool_id": "aider",
+    "title": "Code Review Assistant",
+    "prompt_text": "Review the following code for potential bugs, security issues, and performance optimizations. Suggest specific improvements:\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Review code for bugs and improvements",
+    "best_model": "Aider"
+  },
+  {
+    "tool_id": "aider",
+    "title": "Generate Unit Tests",
+    "prompt_text": "Generate comprehensive unit tests for the following function. Include edge cases and error handling:\n\n`javascript\\n[FUNCTION CODE]\\n`",
+    "use_case": "Auto-generate unit tests",
+    "best_model": "Aider"
+  },
+  {
+    "tool_id": "aider",
+    "title": "Explain Code",
+    "prompt_text": "Explain what this code does in simple terms:\\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Understand complex code",
+    "best_model": "Aider"
+  },
+  {
+    "tool_id": "v0",
+    "title": "Code Review Assistant",
+    "prompt_text": "Review the following code for potential bugs, security issues, and performance optimizations. Suggest specific improvements:\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Review code for bugs and improvements",
+    "best_model": "v0 by Vercel"
+  },
+  {
+    "tool_id": "v0",
+    "title": "Generate Unit Tests",
+    "prompt_text": "Generate comprehensive unit tests for the following function. Include edge cases and error handling:\n\n`javascript\\n[FUNCTION CODE]\\n`",
+    "use_case": "Auto-generate unit tests",
+    "best_model": "v0 by Vercel"
+  },
+  {
+    "tool_id": "v0",
+    "title": "Explain Code",
+    "prompt_text": "Explain what this code does in simple terms:\\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Understand complex code",
+    "best_model": "v0 by Vercel"
+  },
+  {
+    "tool_id": "bolt",
+    "title": "Code Review Assistant",
+    "prompt_text": "Review the following code for potential bugs, security issues, and performance optimizations. Suggest specific improvements:\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Review code for bugs and improvements",
+    "best_model": "bolt.new"
+  },
+  {
+    "tool_id": "bolt",
+    "title": "Generate Unit Tests",
+    "prompt_text": "Generate comprehensive unit tests for the following function. Include edge cases and error handling:\n\n`javascript\\n[FUNCTION CODE]\\n`",
+    "use_case": "Auto-generate unit tests",
+    "best_model": "bolt.new"
+  },
+  {
+    "tool_id": "bolt",
+    "title": "Explain Code",
+    "prompt_text": "Explain what this code does in simple terms:\\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Understand complex code",
+    "best_model": "bolt.new"
+  },
+  {
+    "tool_id": "lovable",
+    "title": "Code Review Assistant",
+    "prompt_text": "Review the following code for potential bugs, security issues, and performance optimizations. Suggest specific improvements:\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Review code for bugs and improvements",
+    "best_model": "Lovable"
+  },
+  {
+    "tool_id": "lovable",
+    "title": "Generate Unit Tests",
+    "prompt_text": "Generate comprehensive unit tests for the following function. Include edge cases and error handling:\n\n`javascript\\n[FUNCTION CODE]\\n`",
+    "use_case": "Auto-generate unit tests",
+    "best_model": "Lovable"
+  },
+  {
+    "tool_id": "lovable",
+    "title": "Explain Code",
+    "prompt_text": "Explain what this code does in simple terms:\\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Understand complex code",
+    "best_model": "Lovable"
+  },
+  {
+    "tool_id": "supermaven",
+    "title": "Code Review Assistant",
+    "prompt_text": "Review the following code for potential bugs, security issues, and performance optimizations. Suggest specific improvements:\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Review code for bugs and improvements",
+    "best_model": "Supermaven"
+  },
+  {
+    "tool_id": "supermaven",
+    "title": "Generate Unit Tests",
+    "prompt_text": "Generate comprehensive unit tests for the following function. Include edge cases and error handling:\n\n`javascript\\n[FUNCTION CODE]\\n`",
+    "use_case": "Auto-generate unit tests",
+    "best_model": "Supermaven"
+  },
+  {
+    "tool_id": "supermaven",
+    "title": "Explain Code",
+    "prompt_text": "Explain what this code does in simple terms:\\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Understand complex code",
+    "best_model": "Supermaven"
+  },
+  {
+    "tool_id": "rize",
+    "title": "Code Review Assistant",
+    "prompt_text": "Review the following code for potential bugs, security issues, and performance optimizations. Suggest specific improvements:\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Review code for bugs and improvements",
+    "best_model": "Rize"
+  },
+  {
+    "tool_id": "rize",
+    "title": "Generate Unit Tests",
+    "prompt_text": "Generate comprehensive unit tests for the following function. Include edge cases and error handling:\n\n`javascript\\n[FUNCTION CODE]\\n`",
+    "use_case": "Auto-generate unit tests",
+    "best_model": "Rize"
+  },
+  {
+    "tool_id": "rize",
+    "title": "Explain Code",
+    "prompt_text": "Explain what this code does in simple terms:\\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Understand complex code",
+    "best_model": "Rize"
+  },
+  {
+    "tool_id": "codex-cli",
+    "title": "Code Review Assistant",
+    "prompt_text": "Review the following code for potential bugs, security issues, and performance optimizations. Suggest specific improvements:\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Review code for bugs and improvements",
+    "best_model": "OpenAI Codex CLI"
+  },
+  {
+    "tool_id": "codex-cli",
+    "title": "Generate Unit Tests",
+    "prompt_text": "Generate comprehensive unit tests for the following function. Include edge cases and error handling:\n\n`javascript\\n[FUNCTION CODE]\\n`",
+    "use_case": "Auto-generate unit tests",
+    "best_model": "OpenAI Codex CLI"
+  },
+  {
+    "tool_id": "codex-cli",
+    "title": "Explain Code",
+    "prompt_text": "Explain what this code does in simple terms:\\n\n`\\n[CODE HERE]\\n`",
+    "use_case": "Understand complex code",
+    "best_model": "OpenAI Codex CLI"
+  },
+  {
+    "tool_id": "intercom-ai",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Intercom AI to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Intercom AI"
+  },
+  {
+    "tool_id": "drift",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Drift to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Drift"
+  },
+  {
+    "tool_id": "tawk",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Tawk.to to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Tawk.to"
+  },
+  {
+    "tool_id": "crisp",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Crisp to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Crisp"
+  },
+  {
+    "tool_id": "zendesk-ai",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Zendesk AI to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Zendesk AI"
+  },
+  {
+    "tool_id": "freshdesk",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Freshdesk to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Freshdesk"
+  },
+  {
+    "tool_id": "huly",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Huly to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Huly"
+  },
+  {
+    "tool_id": "chatbase",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Chatbase to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Chatbase"
+  },
+  {
+    "tool_id": "midjourney",
+    "title": "Image Prompt Generator",
+    "prompt_text": "Create a detailed image generation prompt for: [SUBJECT]. Include style, lighting, composition, and mood.",
+    "use_case": "Generate image prompts",
+    "best_model": "Midjourney"
+  },
+  {
+    "tool_id": "midjourney",
+    "title": "Color Palette",
+    "prompt_text": "Generate a 5-color color palette for a [INDUSTRY] website. Mood should be [MOOD]. Provide hex codes.",
+    "use_case": "Generate color palettes",
+    "best_model": "Midjourney"
+  },
+  {
+    "tool_id": "dall-e-3",
+    "title": "Image Prompt Generator",
+    "prompt_text": "Create a detailed image generation prompt for: [SUBJECT]. Include style, lighting, composition, and mood.",
+    "use_case": "Generate image prompts",
+    "best_model": "DALL-E 3"
+  },
+  {
+    "tool_id": "dall-e-3",
+    "title": "Color Palette",
+    "prompt_text": "Generate a 5-color color palette for a [INDUSTRY] website. Mood should be [MOOD]. Provide hex codes.",
+    "use_case": "Generate color palettes",
+    "best_model": "DALL-E 3"
+  },
+  {
+    "tool_id": "stable-diffusion",
+    "title": "Image Prompt Generator",
+    "prompt_text": "Create a detailed image generation prompt for: [SUBJECT]. Include style, lighting, composition, and mood.",
+    "use_case": "Generate image prompts",
+    "best_model": "Stable Diffusion"
+  },
+  {
+    "tool_id": "stable-diffusion",
+    "title": "Color Palette",
+    "prompt_text": "Generate a 5-color color palette for a [INDUSTRY] website. Mood should be [MOOD]. Provide hex codes.",
+    "use_case": "Generate color palettes",
+    "best_model": "Stable Diffusion"
+  },
+  {
+    "tool_id": "canva-ai",
+    "title": "Image Prompt Generator",
+    "prompt_text": "Create a detailed image generation prompt for: [SUBJECT]. Include style, lighting, composition, and mood.",
+    "use_case": "Generate image prompts",
+    "best_model": "Canva AI (Magic Studio)"
+  },
+  {
+    "tool_id": "canva-ai",
+    "title": "Color Palette",
+    "prompt_text": "Generate a 5-color color palette for a [INDUSTRY] website. Mood should be [MOOD]. Provide hex codes.",
+    "use_case": "Generate color palettes",
+    "best_model": "Canva AI (Magic Studio)"
+  },
+  {
+    "tool_id": "figma-ai",
+    "title": "Image Prompt Generator",
+    "prompt_text": "Create a detailed image generation prompt for: [SUBJECT]. Include style, lighting, composition, and mood.",
+    "use_case": "Generate image prompts",
+    "best_model": "Figma AI"
+  },
+  {
+    "tool_id": "figma-ai",
+    "title": "Color Palette",
+    "prompt_text": "Generate a 5-color color palette for a [INDUSTRY] website. Mood should be [MOOD]. Provide hex codes.",
+    "use_case": "Generate color palettes",
+    "best_model": "Figma AI"
+  },
+  {
+    "tool_id": "adobe-firefly",
+    "title": "Image Prompt Generator",
+    "prompt_text": "Create a detailed image generation prompt for: [SUBJECT]. Include style, lighting, composition, and mood.",
+    "use_case": "Generate image prompts",
+    "best_model": "Adobe Firefly"
+  },
+  {
+    "tool_id": "adobe-firefly",
+    "title": "Color Palette",
+    "prompt_text": "Generate a 5-color color palette for a [INDUSTRY] website. Mood should be [MOOD]. Provide hex codes.",
+    "use_case": "Generate color palettes",
+    "best_model": "Adobe Firefly"
+  },
+  {
+    "tool_id": "leonardo-ai",
+    "title": "Image Prompt Generator",
+    "prompt_text": "Create a detailed image generation prompt for: [SUBJECT]. Include style, lighting, composition, and mood.",
+    "use_case": "Generate image prompts",
+    "best_model": "Leonardo AI"
+  },
+  {
+    "tool_id": "leonardo-ai",
+    "title": "Color Palette",
+    "prompt_text": "Generate a 5-color color palette for a [INDUSTRY] website. Mood should be [MOOD]. Provide hex codes.",
+    "use_case": "Generate color palettes",
+    "best_model": "Leonardo AI"
+  },
+  {
+    "tool_id": "ideogram",
+    "title": "Image Prompt Generator",
+    "prompt_text": "Create a detailed image generation prompt for: [SUBJECT]. Include style, lighting, composition, and mood.",
+    "use_case": "Generate image prompts",
+    "best_model": "Ideogram"
+  },
+  {
+    "tool_id": "ideogram",
+    "title": "Color Palette",
+    "prompt_text": "Generate a 5-color color palette for a [INDUSTRY] website. Mood should be [MOOD]. Provide hex codes.",
+    "use_case": "Generate color palettes",
+    "best_model": "Ideogram"
+  },
+  {
+    "tool_id": "recraft",
+    "title": "Image Prompt Generator",
+    "prompt_text": "Create a detailed image generation prompt for: [SUBJECT]. Include style, lighting, composition, and mood.",
+    "use_case": "Generate image prompts",
+    "best_model": "Recraft"
+  },
+  {
+    "tool_id": "recraft",
+    "title": "Color Palette",
+    "prompt_text": "Generate a 5-color color palette for a [INDUSTRY] website. Mood should be [MOOD]. Provide hex codes.",
+    "use_case": "Generate color palettes",
+    "best_model": "Recraft"
+  },
+  {
+    "tool_id": "kittl",
+    "title": "Image Prompt Generator",
+    "prompt_text": "Create a detailed image generation prompt for: [SUBJECT]. Include style, lighting, composition, and mood.",
+    "use_case": "Generate image prompts",
+    "best_model": "Kittl"
+  },
+  {
+    "tool_id": "kittl",
+    "title": "Color Palette",
+    "prompt_text": "Generate a 5-color color palette for a [INDUSTRY] website. Mood should be [MOOD]. Provide hex codes.",
+    "use_case": "Generate color palettes",
+    "best_model": "Kittl"
+  },
+  {
+    "tool_id": "photoroom",
+    "title": "Image Prompt Generator",
+    "prompt_text": "Create a detailed image generation prompt for: [SUBJECT]. Include style, lighting, composition, and mood.",
+    "use_case": "Generate image prompts",
+    "best_model": "PhotoRoom"
+  },
+  {
+    "tool_id": "photoroom",
+    "title": "Color Palette",
+    "prompt_text": "Generate a 5-color color palette for a [INDUSTRY] website. Mood should be [MOOD]. Provide hex codes.",
+    "use_case": "Generate color palettes",
+    "best_model": "PhotoRoom"
+  },
+  {
+    "tool_id": "runway",
+    "title": "Image Prompt Generator",
+    "prompt_text": "Create a detailed image generation prompt for: [SUBJECT]. Include style, lighting, composition, and mood.",
+    "use_case": "Generate image prompts",
+    "best_model": "Runway ML"
+  },
+  {
+    "tool_id": "runway",
+    "title": "Color Palette",
+    "prompt_text": "Generate a 5-color color palette for a [INDUSTRY] website. Mood should be [MOOD]. Provide hex codes.",
+    "use_case": "Generate color palettes",
+    "best_model": "Runway ML"
+  },
+  {
+    "tool_id": "pika",
+    "title": "Image Prompt Generator",
+    "prompt_text": "Create a detailed image generation prompt for: [SUBJECT]. Include style, lighting, composition, and mood.",
+    "use_case": "Generate image prompts",
+    "best_model": "Pika"
+  },
+  {
+    "tool_id": "pika",
+    "title": "Color Palette",
+    "prompt_text": "Generate a 5-color color palette for a [INDUSTRY] website. Mood should be [MOOD]. Provide hex codes.",
+    "use_case": "Generate color palettes",
+    "best_model": "Pika"
+  },
+  {
+    "tool_id": "elevenlabs",
+    "title": "Image Prompt Generator",
+    "prompt_text": "Create a detailed image generation prompt for: [SUBJECT]. Include style, lighting, composition, and mood.",
+    "use_case": "Generate image prompts",
+    "best_model": "ElevenLabs"
+  },
+  {
+    "tool_id": "elevenlabs",
+    "title": "Color Palette",
+    "prompt_text": "Generate a 5-color color palette for a [INDUSTRY] website. Mood should be [MOOD]. Provide hex codes.",
+    "use_case": "Generate color palettes",
+    "best_model": "ElevenLabs"
+  },
+  {
+    "tool_id": "descript",
+    "title": "Image Prompt Generator",
+    "prompt_text": "Create a detailed image generation prompt for: [SUBJECT]. Include style, lighting, composition, and mood.",
+    "use_case": "Generate image prompts",
+    "best_model": "Descript"
+  },
+  {
+    "tool_id": "descript",
+    "title": "Color Palette",
+    "prompt_text": "Generate a 5-color color palette for a [INDUSTRY] website. Mood should be [MOOD]. Provide hex codes.",
+    "use_case": "Generate color palettes",
+    "best_model": "Descript"
+  },
+  {
+    "tool_id": "vercel",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Vercel to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Vercel"
+  },
+  {
+    "tool_id": "railway",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Railway to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Railway"
+  },
+  {
+    "tool_id": "fly-io",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Fly.io to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Fly.io"
+  },
+  {
+    "tool_id": "supabase",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Supabase to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Supabase"
+  },
+  {
+    "tool_id": "render",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Render to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Render"
+  },
+  {
+    "tool_id": "cloudflare-ai",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Cloudflare AI to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Cloudflare AI"
+  },
+  {
+    "tool_id": "claude",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Anthropic Claude to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Anthropic Claude"
+  },
+  {
+    "tool_id": "duolingo-max",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Duolingo Max (AI) to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Duolingo Max (AI)"
+  },
+  {
+    "tool_id": "quizlet-ai",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Quizlet to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Quizlet"
+  },
+  {
+    "tool_id": "khan-mastery",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Khan Academy (AI) to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Khan Academy (AI)"
+  },
+  {
+    "tool_id": "tome",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Tome to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Tome"
+  },
+  {
+    "tool_id": "gamma",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Gamma to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Gamma"
+  },
+  {
+    "tool_id": "hubspot-ai",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using HubSpot AI to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "HubSpot AI"
+  },
+  {
+    "tool_id": "hootsuite-ai",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Hootsuite AI to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Hootsuite AI"
+  },
+  {
+    "tool_id": "buffer-ai",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Buffer AI to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Buffer AI"
+  },
+  {
+    "tool_id": "convertkit-ai",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using ConvertKit AI to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "ConvertKit AI"
+  },
+  {
+    "tool_id": "activecampaign",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using ActiveCampaign to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "ActiveCampaign"
+  },
+  {
+    "tool_id": "mailchimp-ai",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Mailchimp AI to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Mailchimp AI"
+  },
+  {
+    "tool_id": "crazyegg",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Crazy Egg to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Crazy Egg"
+  },
+  {
+    "tool_id": "hotjar",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Hotjar to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Hotjar"
+  },
+  {
+    "tool_id": "joe-robot",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Joe Robot to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Joe Robot"
+  },
+  {
+    "tool_id": "surfer-ads",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Surfer Ads to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Surfer Ads"
+  },
+  {
+    "tool_id": "notion-ai",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Notion AI to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Notion AI"
+  },
+  {
+    "tool_id": "mem-ai",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Mem AI to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Mem AI"
+  },
+  {
+    "tool_id": "craft",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Craft to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Craft"
+  },
+  {
+    "tool_id": "obsidian-ai",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Obsidian to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Obsidian"
+  },
+  {
+    "tool_id": "rewind",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Rewind AI to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Rewind AI"
+  },
+  {
+    "tool_id": "superhuman",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Superhuman to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Superhuman"
+  },
+  {
+    "tool_id": "motion",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Motion to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Motion"
+  },
+  {
+    "tool_id": "clockify",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Clockify to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Clockify"
+  },
+  {
+    "tool_id": "microsoft-copilot",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Microsoft Copilot to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Microsoft Copilot"
+  },
+  {
+    "tool_id": "google-gemini",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Google Gemini to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Google Gemini"
+  },
+  {
+    "tool_id": "anytype",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Anytype to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Anytype"
+  },
+  {
+    "tool_id": "affinity",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Affinity AI to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Affinity AI"
+  },
+  {
+    "tool_id": "surfer-seo",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Surfer SEO to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Surfer SEO"
+  },
+  {
+    "tool_id": "frase",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Frase to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Frase"
+  },
+  {
+    "tool_id": "clearscope",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Clearscope to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Clearscope"
+  },
+  {
+    "tool_id": "semrush-ai",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Semrush AI to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Semrush AI"
+  },
+  {
+    "tool_id": "ahrefs",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Ahrefs to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Ahrefs"
+  },
+  {
+    "tool_id": "content-at-scale",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Content at Scale to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Content at Scale"
+  },
+  {
+    "tool_id": "marketmuse",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using MarketMuse to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "MarketMuse"
+  },
+  {
+    "tool_id": "outranking",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Outranking to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Outranking"
+  },
+  {
+    "tool_id": "neuronizer",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Neuronizer to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Neuronizer"
+  },
+  {
+    "tool_id": "rankranger",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Rank Ranger to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Rank Ranger"
+  },
+  {
+    "tool_id": "runway",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Runway ML to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Runway ML"
+  },
+  {
+    "tool_id": "pika",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Pika to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Pika"
+  },
+  {
+    "tool_id": "kling",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Kling AI to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Kling AI"
+  },
+  {
+    "tool_id": "sora",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Sora to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Sora"
+  },
+  {
+    "tool_id": "capcut",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using CapCut to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "CapCut"
+  },
+  {
+    "tool_id": "opus-clip",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Opus Clip to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Opus Clip"
+  },
+  {
+    "tool_id": "vizard",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Vizard to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Vizard"
+  },
+  {
+    "tool_id": "invideo",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using InVideo AI to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "InVideo AI"
+  },
+  {
+    "tool_id": "pictory",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Pictory to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Pictory"
+  },
+  {
+    "tool_id": "synthesia",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Synthesia to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Synthesia"
+  },
+  {
+    "tool_id": "elevenlabs",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using ElevenLabs to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "ElevenLabs"
+  },
+  {
+    "tool_id": "murf",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Murf AI to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Murf AI"
+  },
+  {
+    "tool_id": "speechify",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Speechify to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Speechify"
+  },
+  {
+    "tool_id": "naturalreader",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using NaturalReader to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "NaturalReader"
+  },
+  {
+    "tool_id": "playht",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using PlayHT to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "PlayHT"
+  },
+  {
+    "tool_id": "resemble",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Resemble AI to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Resemble AI"
+  },
+  {
+    "tool_id": "voicemod",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using VoiceMod to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "VoiceMod"
+  },
+  {
+    "tool_id": "podcastle",
+    "title": "Best Use Prompt",
+    "prompt_text": "What are the best practices and optimal prompts for using Podcastle to achieve General optimal usage? Provide step-by-step instructions with examples.",
+    "use_case": "General optimal usage",
+    "best_model": "Podcastle"
+  },
+  {
+    "tool_id": "chatgpt",
+    "title": "Blog Post Outline",
+    "prompt_text": "Create a detailed blog post outline for the topic: [TOPIC]. Include introduction, 5-7 main sections, and conclusion.",
+    "use_case": "Generate blog post outline",
+    "best_model": "ChatGPT"
+  },
+  {
+    "tool_id": "chatgpt",
+    "title": "SEO Meta Description",
+    "prompt_text": "Write a compelling meta description (150-160 characters) for: [TOPIC]. Include primary keyword and call to action.",
+    "use_case": "Write meta descriptions",
+    "best_model": "ChatGPT"
+  },
+  {
+    "tool_id": "chatgpt",
+    "title": "Social Media Captions",
+    "prompt_text": "Write 5 engaging social media captions for [PRODUCT/TOPIC]. Vary the tone.",
+    "use_case": "Generate social captions",
+    "best_model": "ChatGPT"
+  },
+  {
+    "tool_id": "claude",
+    "title": "Blog Post Outline",
+    "prompt_text": "Create a detailed blog post outline for the topic: [TOPIC]. Include introduction, 5-7 main sections, and conclusion.",
+    "use_case": "Generate blog post outline",
+    "best_model": "Claude"
+  },
+  {
+    "tool_id": "claude",
+    "title": "SEO Meta Description",
+    "prompt_text": "Write a compelling meta description (150-160 characters) for: [TOPIC]. Include primary keyword and call to action.",
+    "use_case": "Write meta descriptions",
+    "best_model": "Claude"
+  },
+  {
+    "tool_id": "claude",
+    "title": "Social Media Captions",
+    "prompt_text": "Write 5 engaging social media captions for [PRODUCT/TOPIC]. Vary the tone.",
+    "use_case": "Generate social captions",
+    "best_model": "Claude"
+  },
+  {
+    "tool_id": "jasper",
+    "title": "Blog Post Outline",
+    "prompt_text": "Create a detailed blog post outline for the topic: [TOPIC]. Include introduction, 5-7 main sections, and conclusion.",
+    "use_case": "Generate blog post outline",
+    "best_model": "Jasper"
+  },
+  {
+    "tool_id": "jasper",
+    "title": "SEO Meta Description",
+    "prompt_text": "Write a compelling meta description (150-160 characters) for: [TOPIC]. Include primary keyword and call to action.",
+    "use_case": "Write meta descriptions",
+    "best_model": "Jasper"
+  },
+  {
+    "tool_id": "jasper",
+    "title": "Social Media Captions",
+    "prompt_text": "Write 5 engaging social media captions for [PRODUCT/TOPIC]. Vary the tone.",
+    "use_case": "Generate social captions",
+    "best_model": "Jasper"
+  },
+  {
+    "tool_id": "copy-ai",
+    "title": "Blog Post Outline",
+    "prompt_text": "Create a detailed blog post outline for the topic: [TOPIC]. Include introduction, 5-7 main sections, and conclusion.",
+    "use_case": "Generate blog post outline",
+    "best_model": "Copy.ai"
+  },
+  {
+    "tool_id": "copy-ai",
+    "title": "SEO Meta Description",
+    "prompt_text": "Write a compelling meta description (150-160 characters) for: [TOPIC]. Include primary keyword and call to action.",
+    "use_case": "Write meta descriptions",
+    "best_model": "Copy.ai"
+  },
+  {
+    "tool_id": "copy-ai",
+    "title": "Social Media Captions",
+    "prompt_text": "Write 5 engaging social media captions for [PRODUCT/TOPIC]. Vary the tone.",
+    "use_case": "Generate social captions",
+    "best_model": "Copy.ai"
+  },
+  {
+    "tool_id": "writesonic",
+    "title": "Blog Post Outline",
+    "prompt_text": "Create a detailed blog post outline for the topic: [TOPIC]. Include introduction, 5-7 main sections, and conclusion.",
+    "use_case": "Generate blog post outline",
+    "best_model": "Writesonic"
+  },
+  {
+    "tool_id": "writesonic",
+    "title": "SEO Meta Description",
+    "prompt_text": "Write a compelling meta description (150-160 characters) for: [TOPIC]. Include primary keyword and call to action.",
+    "use_case": "Write meta descriptions",
+    "best_model": "Writesonic"
+  },
+  {
+    "tool_id": "writesonic",
+    "title": "Social Media Captions",
+    "prompt_text": "Write 5 engaging social media captions for [PRODUCT/TOPIC]. Vary the tone.",
+    "use_case": "Generate social captions",
+    "best_model": "Writesonic"
+  },
+  {
+    "tool_id": "quillbot",
+    "title": "Blog Post Outline",
+    "prompt_text": "Create a detailed blog post outline for the topic: [TOPIC]. Include introduction, 5-7 main sections, and conclusion.",
+    "use_case": "Generate blog post outline",
+    "best_model": "QuillBot"
+  },
+  {
+    "tool_id": "quillbot",
+    "title": "SEO Meta Description",
+    "prompt_text": "Write a compelling meta description (150-160 characters) for: [TOPIC]. Include primary keyword and call to action.",
+    "use_case": "Write meta descriptions",
+    "best_model": "QuillBot"
+  },
+  {
+    "tool_id": "quillbot",
+    "title": "Social Media Captions",
+    "prompt_text": "Write 5 engaging social media captions for [PRODUCT/TOPIC]. Vary the tone.",
+    "use_case": "Generate social captions",
+    "best_model": "QuillBot"
+  },
+  {
+    "tool_id": "wordtune",
+    "title": "Blog Post Outline",
+    "prompt_text": "Create a detailed blog post outline for the topic: [TOPIC]. Include introduction, 5-7 main sections, and conclusion.",
+    "use_case": "Generate blog post outline",
+    "best_model": "Wordtune"
+  },
+  {
+    "tool_id": "wordtune",
+    "title": "SEO Meta Description",
+    "prompt_text": "Write a compelling meta description (150-160 characters) for: [TOPIC]. Include primary keyword and call to action.",
+    "use_case": "Write meta descriptions",
+    "best_model": "Wordtune"
+  },
+  {
+    "tool_id": "wordtune",
+    "title": "Social Media Captions",
+    "prompt_text": "Write 5 engaging social media captions for [PRODUCT/TOPIC]. Vary the tone.",
+    "use_case": "Generate social captions",
+    "best_model": "Wordtune"
+  },
+  {
+    "tool_id": "sudowrite",
+    "title": "Blog Post Outline",
+    "prompt_text": "Create a detailed blog post outline for the topic: [TOPIC]. Include introduction, 5-7 main sections, and conclusion.",
+    "use_case": "Generate blog post outline",
+    "best_model": "Sudowrite"
+  },
+  {
+    "tool_id": "sudowrite",
+    "title": "SEO Meta Description",
+    "prompt_text": "Write a compelling meta description (150-160 characters) for: [TOPIC]. Include primary keyword and call to action.",
+    "use_case": "Write meta descriptions",
+    "best_model": "Sudowrite"
+  },
+  {
+    "tool_id": "sudowrite",
+    "title": "Social Media Captions",
+    "prompt_text": "Write 5 engaging social media captions for [PRODUCT/TOPIC]. Vary the tone.",
+    "use_case": "Generate social captions",
+    "best_model": "Sudowrite"
+  },
+  {
+    "tool_id": "rytr",
+    "title": "Blog Post Outline",
+    "prompt_text": "Create a detailed blog post outline for the topic: [TOPIC]. Include introduction, 5-7 main sections, and conclusion.",
+    "use_case": "Generate blog post outline",
+    "best_model": "Rytr"
+  },
+  {
+    "tool_id": "rytr",
+    "title": "SEO Meta Description",
+    "prompt_text": "Write a compelling meta description (150-160 characters) for: [TOPIC]. Include primary keyword and call to action.",
+    "use_case": "Write meta descriptions",
+    "best_model": "Rytr"
+  },
+  {
+    "tool_id": "rytr",
+    "title": "Social Media Captions",
+    "prompt_text": "Write 5 engaging social media captions for [PRODUCT/TOPIC]. Vary the tone.",
+    "use_case": "Generate social captions",
+    "best_model": "Rytr"
+  },
+  {
+    "tool_id": "perplexity",
+    "title": "Blog Post Outline",
+    "prompt_text": "Create a detailed blog post outline for the topic: [TOPIC]. Include introduction, 5-7 main sections, and conclusion.",
+    "use_case": "Generate blog post outline",
+    "best_model": "Perplexity AI"
+  },
+  {
+    "tool_id": "perplexity",
+    "title": "SEO Meta Description",
+    "prompt_text": "Write a compelling meta description (150-160 characters) for: [TOPIC]. Include primary keyword and call to action.",
+    "use_case": "Write meta descriptions",
+    "best_model": "Perplexity AI"
+  },
+  {
+    "tool_id": "perplexity",
+    "title": "Social Media Captions",
+    "prompt_text": "Write 5 engaging social media captions for [PRODUCT/TOPIC]. Vary the tone.",
+    "use_case": "Generate social captions",
+    "best_model": "Perplexity AI"
+  },
+  {
+    "tool_id": "grammarly",
+    "title": "Blog Post Outline",
+    "prompt_text": "Create a detailed blog post outline for the topic: [TOPIC]. Include introduction, 5-7 main sections, and conclusion.",
+    "use_case": "Generate blog post outline",
+    "best_model": "Grammarly"
+  },
+  {
+    "tool_id": "grammarly",
+    "title": "SEO Meta Description",
+    "prompt_text": "Write a compelling meta description (150-160 characters) for: [TOPIC]. Include primary keyword and call to action.",
+    "use_case": "Write meta descriptions",
+    "best_model": "Grammarly"
+  },
+  {
+    "tool_id": "grammarly",
+    "title": "Social Media Captions",
+    "prompt_text": "Write 5 engaging social media captions for [PRODUCT/TOPIC]. Vary the tone.",
+    "use_case": "Generate social captions",
+    "best_model": "Grammarly"
+  },
+  {
+    "tool_id": "jenni",
+    "title": "Blog Post Outline",
+    "prompt_text": "Create a detailed blog post outline for the topic: [TOPIC]. Include introduction, 5-7 main sections, and conclusion.",
+    "use_case": "Generate blog post outline",
+    "best_model": "Jenni AI"
+  },
+  {
+    "tool_id": "jenni",
+    "title": "SEO Meta Description",
+    "prompt_text": "Write a compelling meta description (150-160 characters) for: [TOPIC]. Include primary keyword and call to action.",
+    "use_case": "Write meta descriptions",
+    "best_model": "Jenni AI"
+  },
+  {
+    "tool_id": "jenni",
+    "title": "Social Media Captions",
+    "prompt_text": "Write 5 engaging social media captions for [PRODUCT/TOPIC]. Vary the tone.",
+    "use_case": "Generate social captions",
+    "best_model": "Jenni AI"
+  }
+]

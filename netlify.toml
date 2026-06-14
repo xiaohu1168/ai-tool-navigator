@@ -1,0 +1,25 @@
+# Hey AI Hub - Deployed on Netlify
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NEXT_RUNTIME = "nodejs"
+  NODE_VERSION = "20"
+
+# Next.js API routes and admin pages must NOT be redirected to index.html
+[[redirects]]
+  from = "/api/*"
+  to = "/api/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/:splat"
+  status = 200
+
+# SPA fallback for client-side routes
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
