@@ -42,14 +42,14 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
         </div>
         <div className='mb-5 md:mb-8'>
           <h1 className='text-2xl md:text-3xl font-bold mb-2'>{category.icon} {category.name}</h1>
-          <p className='text-sm md:text-base text-gray-600'>{category.description}</p>
+          <p className='text-sm md:text-base text-muted-foreground'>{category.description}</p>
         </div>
-        <div className='bg-gray-50 rounded-xl p-4 md:p-6 mb-5 md:mb-8 border border-gray-200'>
+        <div className='bg-gray-50 rounded-xl p-4 md:p-6 mb-5 md:mb-8 border border-border'>
           <h2 className='font-semibold mb-3 text-base md:text-lg'>About {category.name} Tools</h2>
-          <p className='text-xs md:text-sm text-gray-700 leading-relaxed'>{guide}</p>
+          <p className='text-xs md:text-sm text-foreground leading-relaxed'>{guide}</p>
         </div>
         <div className='flex items-center justify-between mb-3 md:mb-4 text-xs md:text-sm'>
-          <span className='text-gray-600'>{tools.length} tools</span>
+          <span className='text-muted-foreground'>{tools.length} tools</span>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5'>
           {tools.map((tool) => <ToolCard key={tool.id} tool={tool} />)}

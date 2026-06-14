@@ -46,15 +46,15 @@ export default function FaqPage() {
       <Header />
       <main className="flex-1 max-w-3xl mx-auto px-4 py-12">
         <h1 className="text-3xl font-bold mb-4">Frequently Asked Questions</h1>
-        <p className="text-gray-600 mb-8">Everything you need to know about Hey AI Hub.</p>
+        <p className="text-muted-foreground mb-8">Everything you need to know about Hey AI Hub.</p>
         <div className="space-y-4">
           {faqs.map((item, i) => (
             <details
               key={i}
-              className="bg-white rounded-xl border border-gray-200 p-5 group open:bg-gray-50 transition-colors"
+              className="bg-white rounded-xl border border-border p-5 group open:bg-muted/30 transition-colors"
             >
-              <summary className="font-semibold cursor-pointer text-gray-900">{item.q}</summary>
-              <p className="text-sm text-gray-600 mt-3 leading-relaxed">{item.a}</p>
+              <summary className="font-semibold cursor-pointer text-foreground">{item.q}</summary>
+              <p className="text-sm text-muted-foreground mt-3 leading-relaxed">{item.a}</p>
             </details>
           ))}
         </div>

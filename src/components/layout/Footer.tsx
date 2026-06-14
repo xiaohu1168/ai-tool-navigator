@@ -80,7 +80,9 @@ export default function Footer() {
             <form
               onSubmit={(e) => {
                 e.preventDefault();
-                // TODO: connect to email service
+                // TODO: connect to email service (Mailchimp, Resend, etc.)
+                const btn = e.currentTarget.querySelector("button");
+                if (btn) btn.textContent = "Subscribed!";
               }}
               className="flex max-w-sm mx-auto gap-2"
             >

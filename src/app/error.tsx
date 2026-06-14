@@ -1,8 +1,7 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { AlertTriangle, ArrowLeft, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -13,26 +12,30 @@ export default function Error({
   error: Error & { digest?: string };
   reset: () => void;
 }) {
+  const [mounted, setMounted] = useState(false);
+
   useEffect(() => {
+    setMounted(true);
     console.error("Application error:", error);
   }, [error]);
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-red-50 via-white to-orange-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 px-4">
       <div className="text-center max-w-lg">
-        <motion.div
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ type: "spring", stiffness: 200, damping: 15 }}
-          className="w-20 h-20 mx-auto mb-6 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center"
+        <div
+          className={mounted ? "w-20 h-20 mx-auto mb-6 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center" : "opacity-0"}
+          style={{
+            animation: mounted ? "popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) both" : "none",
+          }}
         >
           <AlertTriangle className="w-10 h-10 text-red-500" />
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
+        <div
+          className={mounted ? "" : "opacity-0"}
+          style={{
+            animation: mounted ? "fadeInUp 0.3s ease-out 0.1s both" : "none",
+          }}
         >
           <h1 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
             Something Went Wrong
@@ -58,7 +61,18 @@ export default function Error({
               </Button>
             </Link>
           </div>
-        </motion.div>
+        </div>
+
+        <style jsx>{`
+          @keyframes popIn {
+            from { transform: scale(0); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+          }
+          @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+          }
+        `}</style>
       </div>
     </div>
   );

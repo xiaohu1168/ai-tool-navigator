@@ -3,7 +3,7 @@ import { getAllTools, getCategories } from '@/lib/tools';
 export default async function sitemap() {
   const categories = await getCategories();
   const tools = await getAllTools();
-  const baseUrl = 'https://heyaihub.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://heyaihub.com';
 
   const categoryPages = categories.map((cat) => ({ url: baseUrl + '/category/' + cat.id, lastModified: new Date('2026-06-08'), changeFrequency: 'weekly' as const, priority: 0.8 }));
 

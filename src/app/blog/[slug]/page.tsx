@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     if (!res.ok) return { title: "Post Not Found" };
     const post: BlogPost = await res.json();
     return {
-      title: `${post.title} | AI Tool Navigator`,
+      title: `${post.title} | Hey AI Hub`,
       description: post.content.substring(0, 160),
     };
   } catch {

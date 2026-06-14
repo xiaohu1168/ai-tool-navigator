@@ -123,12 +123,9 @@ export async function getAllTools(): Promise<Tool[]> {
 }
 
 export async function getToolsByCategory(categoryId: string): Promise<Tool[]> {
-  console.log("[tools.ts] getToolsByCategory called with:", categoryId);
   try {
     const result = await dbGetByCat(categoryId);
-    console.log("[tools.ts] dbGetByCat result type:", typeof result, Array.isArray(result) ? "array" : "not-array", "length:", result?.length);
     const tools = result.map(toTool).filter(Boolean) as Tool[];
-    console.log("[tools.ts] tools after map:", tools.length);
     return tools;
   } catch (err) {
     console.error("[tools.ts] getToolsByCategory error:", err);

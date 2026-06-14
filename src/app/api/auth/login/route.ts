@@ -48,12 +48,6 @@ export async function POST(request: Request) {
     const adminPasswordHash = env.ADMIN_PASSWORD || "";
     const adminSalt = env.ADMIN_SALT || "";
 
-    console.log("ENV_DEBUG:", {
-      hashLength: adminPasswordHash?.length,
-      hashStart: adminPasswordHash?.substring(0, 10),
-      hashEnd: adminPasswordHash?.substring(adminPasswordHash.length - 5),
-    });
-
     if (!adminPasswordHash || !adminSalt) {
       console.error("Missing env vars");
       return NextResponse.json({ error: "Server configuration error" }, { status: 500 });
@@ -68,7 +62,6 @@ export async function POST(request: Request) {
     }
 
     const isValidPassword = verifyPassword(password, adminPasswordHash);
-    console.log("BCRYPT_RESULT:", isValidPassword);
 
     if (username !== adminUsername || !isValidPassword) {
       recordFailedAttempt(username);

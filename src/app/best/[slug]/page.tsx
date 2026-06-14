@@ -35,7 +35,7 @@ export default async function BestOfPage({ params }: { params: Promise<{ slug: s
     return (
       <div className="min-h-screen flex flex-col">
         <Header />
-        <main className="flex-1 flex items-center justify-center"><p className="text-gray-500">Category not found</p></main>
+        <main className="flex-1 flex items-center justify-center"><p className="text-muted-foreground">Category not found</p></main>
         <Footer />
       </div>
     );
@@ -49,22 +49,22 @@ export default async function BestOfPage({ params }: { params: Promise<{ slug: s
       <main className="flex-1 max-w-7xl mx-auto px-3 md:px-4 py-5 md:py-8 w-full">
         <div className="mb-5 md:mb-8">
           <h1 className="text-2xl md:text-3xl font-bold mb-2">{guide.title}</h1>
-          <p className="text-sm text-gray-500 mb-4">Ranked by ratings and quality</p>
-          <div className="bg-blue-50 rounded-xl p-4 md:p-5 border border-blue-200">
+          <p className="text-sm text-muted-foreground mb-4">Ranked by ratings and quality</p>
+          <div className="bg-blue-50 rounded-xl p-4 md:p-5 border border-primary/20">
             <p className="text-sm text-blue-800 leading-relaxed">{guide.intro}</p>
           </div>
         </div>
 
         <div className="space-y-4 md:space-y-6 mb-6 md:mb-8">
           {categoryTools.map((tool, index) => (
-            <div key={tool.id} className="border border-gray-200 rounded-xl p-4 md:p-5 hover:shadow-md transition-shadow bg-white">
+            <div key={tool.id} className="border border-border rounded-xl p-4 md:p-5 hover:shadow-md transition-shadow bg-white">
               <div className="flex items-start gap-3 md:gap-4">
                 <div className="flex-shrink-0 w-8 h-8 md:w-10 md:h-10 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-sm md:text-base">{index + 1}</div>
                 <div className="flex-1">
                   <div className="flex items-start justify-between mb-1">
                     <div>
                       <h3 className="font-semibold text-base md:text-lg"><Link href={'/tools/' + tool.slug} className="hover:text-blue-600">{tool.name}</Link></h3>
-                      <p className="text-xs md:text-sm text-gray-600 mt-0.5">{tool.description}</p>
+                      <p className="text-xs md:text-sm text-muted-foreground mt-0.5">{tool.description}</p>
                     </div>
                     <div className="flex items-center gap-1 ml-3 flex-shrink-0">
                       <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
@@ -74,7 +74,7 @@ export default async function BestOfPage({ params }: { params: Promise<{ slug: s
                   <div className="flex items-center gap-3 mt-2">
                     <Link href={'/tools/' + tool.slug} className="text-xs text-blue-600 hover:underline">Read Review</Link>
                     <a href={tool.url} target="_blank" rel="noopener noreferrer" className="text-xs bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 inline-flex items-center gap-1">Try Free &rarr;</a>
-                    <span className="text-xs text-gray-500 ml-auto">{tool.price}</span>
+                    <span className="text-xs text-muted-foreground ml-auto">{tool.price}</span>
                   </div>
                 </div>
               </div>
@@ -84,9 +84,9 @@ export default async function BestOfPage({ params }: { params: Promise<{ slug: s
 
         <AdInContent />
 
-        <div className="bg-gray-50 rounded-xl p-4 md:p-5 mb-5 md:mb-8 border border-gray-200">
+        <div className="bg-gray-50 rounded-xl p-4 md:p-5 mb-5 md:mb-8 border border-border">
           <h2 className="font-semibold mb-3 text-sm">How We Ranked These AI Tools</h2>
-          <ul className="text-xs text-gray-700 space-y-1.5 list-disc list-inside">
+          <ul className="text-xs text-foreground space-y-1.5 list-disc list-inside">
             <li><strong>Rating</strong>: Based on overall user satisfaction and feature quality</li>
             <li><strong>Pricing value</strong>: Considering free tiers and cost-effectiveness</li>
             <li><strong>Ease of use</strong>: How quickly users can get value</li>

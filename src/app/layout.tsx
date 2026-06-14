@@ -29,6 +29,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Hey AI Hub",
+    images: [
+      {
+        url: process.env.NEXT_PUBLIC_SITE_URL
+          ? `${process.env.NEXT_PUBLIC_SITE_URL}/og-image.png`
+          : "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Hey AI Hub — Discover the Best AI Tools",
+      },
+    ],
   },
   robots: {
     index: true,

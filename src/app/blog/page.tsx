@@ -18,9 +18,12 @@ interface BlogPost {
 
 async function getBlogPosts(): Promise<BlogPost[]> {
   try {
-    const res = await fetch("http://localhost:3000/api/blog", {
-      next: { revalidate: 300 },
-    });
+    const res = await fetch(
+      process.env.NEXT_PUBLIC_SITE_URL
+        ? `${process.env.NEXT_PUBLIC_SITE_URL}/api/blog`
+        : "http://localhost:3000/api/blog",
+      { next: { revalidate: 300 } }
+    );
     if (!res.ok) return [];
     const data = await res.json();
     return Array.isArray(data) ? data : [];
