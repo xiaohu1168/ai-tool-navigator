@@ -12,7 +12,7 @@ export default function ToolCard({ tool }: ToolCardProps) {
   const hasValidUrl = tool.url && (tool.url.startsWith("http://") || tool.url.startsWith("https://"));
 
   return (
-    <div className="group relative border border-border/60 rounded-xl overflow-hidden hover:shadow-lg hover:border-primary/20 transition-all duration-200 bg-card">
+    <article className="group relative border border-border/60 rounded-xl overflow-hidden hover:shadow-lg hover:border-primary/20 transition-all duration-200 bg-card" role="article" aria-label={`Tool: ${tool.name}`}>
       {/* Top accent line */}
       <div className="h-0.5 bg-gradient-to-r from-primary/0 via-primary/60 to-primary/0 opacity-0 group-hover:opacity-100 transition-opacity" />
 
@@ -23,20 +23,21 @@ export default function ToolCard({ tool }: ToolCardProps) {
             <Link href={`/tools/${tool.slug}`}>{tool.name}</Link>
           </h3>
           {tool.featured && (
-            <Badge variant="secondary" className="bg-yellow-50 text-yellow-700 border-yellow-200 text-[10px] px-1.5 py-0 h-5">
+            <Badge variant="secondary" className="bg-yellow-50 text-yellow-700 border-yellow-200 text-[10px] px-1.5 py-0 h-5" aria-label="Featured tool">
               Featured
             </Badge>
           )}
         </div>
 
         {/* Description */}
-        <p className="text-sm text-muted-foreground mb-3 line-clamp-2 leading-relaxed">
+        <p className="text-sm text-muted-foreground mb-3 line-clamp-2 leading-relaxed" aria-describedby={`desc-${tool.slug}`}>
           {tool.description}
         </p>
+        <span id={`desc-${tool.slug}`} className="sr-only">{tool.description}</span>
 
         {/* Rating */}
-        <div className="flex items-center gap-1.5 mb-3">
-          <div className="flex">
+        <div className="flex items-center gap-1.5 mb-3" aria-label={`Rating: ${tool.rating} out of 5 stars`}>
+          <div className="flex" aria-hidden="true">
             {[1, 2, 3, 4, 5].map((star) => (
               <Star
                 key={star}
@@ -48,7 +49,7 @@ export default function ToolCard({ tool }: ToolCardProps) {
         </div>
 
         {/* Tags */}
-        <div className="flex flex-wrap gap-1.5 mb-4">
+        <div className="flex flex-wrap gap-1.5 mb-4" aria-label="Tags">
           {tool.tags.slice(0, 3).map((tag: string) => (
             <span key={tag} className="text-[11px] bg-muted text-muted-foreground px-2 py-0.5 rounded-md">
               {tag}
@@ -63,6 +64,7 @@ export default function ToolCard({ tool }: ToolCardProps) {
             <Link
               href={`/tools/${tool.slug}`}
               className="text-xs font-medium text-primary hover:underline"
+              aria-label={`Read full review of ${tool.name}`}
             >
               Review
             </Link>
@@ -72,6 +74,7 @@ export default function ToolCard({ tool }: ToolCardProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1 text-xs font-medium text-primary hover:underline"
+                aria-label={`Visit ${tool.name} website`}
               >
                 Visit <ExternalLink className="w-3 h-3" />
               </a>
@@ -79,6 +82,7 @@ export default function ToolCard({ tool }: ToolCardProps) {
               <Link
                 href={`/tools/${tool.slug}`}
                 className="flex items-center gap-1 text-xs font-medium text-muted-foreground"
+                aria-label={`View details for ${tool.name}`}
               >
                 Details <ExternalLink className="w-3 h-3" />
               </Link>
@@ -86,6 +90,6 @@ export default function ToolCard({ tool }: ToolCardProps) {
           </div>
         </div>
       </div>
-    </div>
+    </article>
   );
 }

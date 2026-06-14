@@ -34,7 +34,12 @@ const categories: CategoryItem[] = [
   { id: "video", name: "Video", icon: "🎬", href: "/category/video" },
   { id: "analytics", name: "Analytics", icon: "📊", href: "/category/analytics" },
   { id: "education", name: "Education", icon: "📚", href: "/category/education" },
-  { id: "customer-service", name: "Customer Service", icon: "🤖", href: "/category/customer-service" },
+  {
+    id: "customer-service",
+    name: "Customer Service",
+    icon: "🤖",
+    href: "/category/customer-service",
+  },
 ];
 
 export default function Header() {
@@ -56,19 +61,25 @@ export default function Header() {
     if (q) router.push(`/search?q=${encodeURIComponent(q)}`);
   };
 
+  const toggleTheme = () => setTheme(theme === "dark" ? "light" : "dark");
+
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 w-full border-b transition-all duration-200",
+        "sticky top-0 z-50 w-full border-b transition-all duration-300",
         scrolled
-          ? "bg-white/80 backdrop-blur-lg border-gray-200 shadow-sm"
-          : "bg-white border-gray-200"
+          ? "bg-background/80 backdrop-blur-lg shadow-sm"
+          : "bg-background"
       )}
     >
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="flex h-14 items-center gap-3 md:gap-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 flex-shrink-0">
+          <Link
+            href="/"
+            className="flex items-center gap-2 flex-shrink-0"
+            aria-label="Hey AI Hub Home"
+          >
             <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
               <span className="text-white font-bold text-sm">H</span>
             </div>
@@ -78,7 +89,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-1 ml-2">
+          <nav className="hidden lg:flex items-center gap-1 ml-2" aria-label="Main navigation">
             <DropdownMenu>
               <DropdownMenuTrigger>
                 <Button variant="ghost" size="sm" className="text-sm font-medium gap-1">
@@ -131,12 +142,12 @@ export default function Header() {
 
           {/* Right Actions */}
           <div className="flex items-center gap-1 flex-shrink-0">
+            {/* Theme toggle — visible on all screen sizes */}
             <Button
               variant="ghost"
               size="icon-sm"
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="hidden sm:flex"
-              aria-label="Toggle theme"
+              onClick={toggleTheme}
+              aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
             >
               {theme === "dark" ? (
                 <Sun className="w-4 h-4" />
@@ -144,6 +155,7 @@ export default function Header() {
                 <Moon className="w-4 h-4" />
               )}
             </Button>
+
             <Link href="/login">
               <Button variant="ghost" size="sm" className="text-sm hidden sm:inline-flex">
                 Sign In
@@ -163,11 +175,7 @@ export default function Header() {
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle menu"
             >
-              {mobileMenuOpen ? (
-                <X className="w-5 h-5" />
-              ) : (
-                <Menu className="w-5 h-5" />
-              )}
+              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </Button>
           </div>
         </div>
@@ -176,10 +184,7 @@ export default function Header() {
         {mobileMenuOpen && (
           <div className="lg:hidden border-t border-border py-4 space-y-1 overflow-y-auto max-h-[70vh]">
             {/* Mobile search */}
-            <form
-              onSubmit={handleSearch}
-              className="mb-3 px-1"
-            >
+            <form onSubmit={handleSearch} className="mb-3 px-1">
               <div className="relative w-full">
                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground w-4 h-4 pointer-events-none" />
                 <Input
@@ -233,8 +238,10 @@ export default function Header() {
               <Button
                 variant="ghost"
                 size="icon-sm"
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                aria-label="Toggle theme"
+                onClick={toggleTheme}
+                aria-label={
+                  theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
+                }
               >
                 {theme === "dark" ? (
                   <Sun className="w-4 h-4" />

@@ -63,10 +63,10 @@ export default async function Home() {
   const blogPosts = await getBlogPosts();
 
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <>
       <Header />
 
-      <main className="flex-1">
+      <main className="flex flex-col min-h-[calc(100vh-3.5rem)]">
         {/* Hero Section */}
         <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 py-16 md:py-20 lg:py-28">
           <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_60%_40%,rgba(11,95,255,0.08),transparent_60%)]" />
@@ -249,6 +249,6 @@ export default async function Home() {
       </main>
 
       <Footer />
-    </div>
+    </>
   );
 }
