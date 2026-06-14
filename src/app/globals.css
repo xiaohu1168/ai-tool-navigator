@@ -1,44 +1,164 @@
-﻿@import "tailwindcss";
+@import "tailwindcss";
+
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ========================================
+   Design Tokens — Hey AI Hub
+   ======================================== */
 
 :root {
-  --background: #ffffff;
-  --foreground: #0a0a0a;
-  --muted: #f5f5f5;
-  --border: #e5e5e5;
+  /* Primary */
   --primary: #0b5fff;
   --primary-fg: #ffffff;
+  --primary-hover: #0947d6;
+  --primary-active: #0735a3;
+  --primary-fg-hover: #e8f0ff;
+
+  /* Secondary */
+  --secondary: #6366f1;
+  --secondary-fg: #ffffff;
+
+  /* Success / Warning / Danger */
+  --success: #10b981;
+  --success-fg: #ffffff;
+  --warning: #f59e0b;
+  --warning-fg: #1e293b;
+  --danger: #ef4444;
+  --danger-fg: #ffffff;
+
+  /* Neutral palette */
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --muted: #f1f5f9;
+  --muted-fg: #64748b;
+  --accent: #f8fafc;
+  --accent-fg: #0f172a;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --input-bg: #ffffff;
+  --ring: #0b5fff;
+  --destructive: #ef4444;
+  --destructive-fg: #ffffff;
+
+  /* Radius */
+  --radius: 0.625rem; /* 10px */
+  --radius-sm: 0.375rem; /* 6px */
+  --radius-md: 0.5rem; /* 8px */
+  --radius-lg: 0.75rem; /* 12px */
+  --radius-xl: 1rem; /* 16px */
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+
+  /* Spacing scale */
+  --space-xs: 0.25rem; /* 4px */
+  --space-sm: 0.5rem; /* 8px */
+  --space-md: 1rem; /* 16px */
+  --space-lg: 1.5rem; /* 24px */
+  --space-xl: 2rem; /* 32px */
+  --space-2xl: 3rem; /* 48px */
+
+  /* Z-index scale */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-overlay: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
 }
+
+.dark {
+  --background: #0f172a;
+  --foreground: #f1f5f9;
+  --muted: #1e293b;
+  --muted-fg: #94a3b8;
+  --accent: #1e293b;
+  --accent-fg: #f1f5f9;
+  --border: #1e293b;
+  --input: #1e293b;
+  --input-bg: #0f172a;
+  --ring: #3b82f6;
+  --primary: #3b82f6;
+  --primary-hover: #60a5fa;
+  --primary-active: #93c5fd;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.2);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-fg);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-fg);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-fg);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-fg);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-fg);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-fg);
+  --color-danger: var(--danger);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-fg);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+}
+
+/* ========================================
+   Base Styles
+   ======================================== */
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
+/* Link styles */
 a {
   color: var(--primary);
   text-decoration: none;
+  transition: color 0.15s ease;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-/* Primary button helper to ensure high contrast on anchors used as buttons */
-.btn-primary {
+/* Button helper: ensure high contrast on anchor buttons */
+.btn-primary,
+a.btn-primary {
   color: var(--primary-fg) !important;
   font-weight: 600;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.btn-primary:hover {
-  background-color: #094abf;
+.btn-primary:hover,
+a.btn-primary:hover {
+  background-color: var(--primary-hover);
 }
 
-/* Fix: ensure text-white works on anchor buttons by using !important on text color */
+/* Fix anchor buttons used as solid buttons */
 a.btn-solid {
   color: var(--primary-fg) !important;
   text-decoration: none !important;
@@ -46,4 +166,35 @@ a.btn-solid {
 
 a.btn-solid:hover {
   text-decoration: none !important;
+}
+
+/* ========================================
+   Scrollbar
+   ======================================== */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--muted-fg);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--foreground);
+}
+
+/* ========================================
+   Selection
+   ======================================== */
+
+::selection {
+  background: color-mix(in srgb, var(--primary) 20%, transparent);
+  color: var(--foreground);
 }
