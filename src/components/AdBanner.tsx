@@ -52,9 +52,9 @@ function AdSlot({
   return (
     <div className={`flex flex-col items-center ${className}`}>
       {!isEnabled && (
-        <div className="w-full max-w-2xl bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-8 text-center my-6">
-          <div className="text-xs uppercase tracking-wider text-gray-400 mb-2">Advertisement</div>
-          <div className="text-xs text-gray-300">Google AdSense — Replace pub-ID in .env.local</div>
+        <div className="w-full max-w-2xl bg-muted/50 border-2 border-dashed border-border rounded-lg p-8 text-center my-6">
+          <div className="text-xs uppercase tracking-wider text-muted-foreground mb-2">Advertisement</div>
+          <div className="text-xs text-muted-foreground/40">Google AdSense — Replace pub-ID in .env.local</div>
         </div>
       )}
       <ins

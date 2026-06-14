@@ -68,7 +68,7 @@ export default async function Home() {
 
       <main className="flex flex-col min-h-[calc(100vh-3.5rem)]">
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 py-16 md:py-20 lg:py-28">
+        <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 py-16 md:py-24 lg:py-32">
           <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_60%_40%,rgba(11,95,255,0.08),transparent_60%)]" />
           <div className="relative max-w-4xl mx-auto px-4 text-center">
             <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full px-4 py-1.5 text-xs font-medium mb-6">
@@ -79,12 +79,12 @@ export default async function Home() {
               Find the Perfect{" "}
               <span className="text-primary">AI Tool</span> for Your Workflow
             </h1>
-            <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
               Discover, compare, and choose the best AI tools for coding, writing, design, SEO, and more.
             </p>
             <Link
               href="/search"
-              className="inline-flex items-center gap-2 bg-primary text-white px-6 md:px-8 py-3 rounded-lg font-semibold hover:bg-primary-hover transition-colors shadow-sm text-sm md:text-base"
+              className="inline-flex items-center gap-2 bg-primary text-white px-8 md:px-10 py-3.5 rounded-xl font-semibold hover:bg-primary-hover transition-colors shadow-sm text-sm md:text-base"
             >
               <Search className="w-4 h-4" />
               Browse All Tools
@@ -110,7 +110,7 @@ export default async function Home() {
         </div>
 
         {/* Top Picks by Category — All 12 */}
-        <section className="max-w-7xl mx-auto px-4 md:px-6 py-8 md:py-12">
+        <section className="max-w-7xl mx-auto px-4 md:px-6 py-10 md:py-16">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-xl md:text-2xl font-bold">Top Picks by Category</h2>
             <Link href="/search" className="text-sm text-primary hover:underline flex items-center gap-1">
@@ -137,7 +137,7 @@ export default async function Home() {
 
         {/* Featured Tools */}
         <section className="bg-muted/30 dark:bg-slate-900/50">
-          <div className="max-w-7xl mx-auto px-4 md:px-6 py-8 md:py-12">
+          <div className="max-w-7xl mx-auto px-4 md:px-6 py-10 md:py-16">
             <div className="flex items-center justify-between mb-6">
               <div>
                 <h2 className="text-xl md:text-2xl font-bold">Featured Tools</h2>
@@ -156,7 +156,7 @@ export default async function Home() {
         </section>
 
         {/* Latest Tools */}
-        <section className="max-w-7xl mx-auto px-4 md:px-6 py-8 md:py-12">
+        <section className="max-w-7xl mx-auto px-4 md:px-6 py-10 md:py-16">
           <div className="flex items-center justify-between mb-6">
             <div>
               <h2 className="text-xl md:text-2xl font-bold">Latest Additions</h2>
@@ -176,7 +176,7 @@ export default async function Home() {
         {/* Blog Preview */}
         {blogPosts.length > 0 && (
           <section className="bg-muted/30 dark:bg-slate-900/50">
-            <div className="max-w-7xl mx-auto px-4 md:px-6 py-8 md:py-12">
+            <div className="max-w-7xl mx-auto px-4 md:px-6 py-10 md:py-16">
               <div className="flex items-center justify-between mb-6">
                 <div>
                   <h2 className="text-xl md:text-2xl font-bold">From Our Blog</h2>
@@ -214,7 +214,7 @@ export default async function Home() {
         )}
 
         {/* FAQ */}
-        <section className="max-w-4xl mx-auto px-4 md:px-6 py-8 md:py-12">
+        <section className="max-w-4xl mx-auto px-4 md:px-6 py-10 md:py-16">
           <div className="text-center mb-8">
             <h2 className="text-xl md:text-2xl font-bold">Frequently Asked Questions</h2>
             <p className="text-sm text-muted-foreground mt-2">Everything you need to know</p>
