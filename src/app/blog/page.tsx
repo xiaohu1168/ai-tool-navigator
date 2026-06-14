@@ -1,58 +1,92 @@
-"use client";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import AdInContent from "@/components/AdBanner";
+import { Eye } from "lucide-react";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import AdBanner from "@/components/AdBanner";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 interface BlogPost {
-  id: string; slug: string; title: string; content: string;
-  category: string; date: string; views: number;
-  created_at: string; updated_at: string;
+  id: string;
+  slug: string;
+  title: string;
+  content: string;
+  category: string;
+  date: string;
+  views: number;
 }
 
-const categoryColors: Record<string, string> = {
-  "Best Of": "bg-blue-100 text-blue-800",
-  Comparison: "bg-purple-100 text-purple-800",
-  "How-To": "bg-green-100 text-green-800",
-  News: "bg-orange-100 text-orange-800",
+async function getBlogPosts(): Promise<BlogPost[]> {
+  try {
+    const res = await fetch("http://localhost:3000/api/blog", {
+      next: { revalidate: 300 },
+    });
+    if (!res.ok) return [];
+    const data = await res.json();
+    return Array.isArray(data) ? data : [];
+  } catch {
+    return [];
+  }
+}
+
+const categoryBadge: Record<string, string> = {
+  "Best Of": "bg-blue-100 text-blue-700",
+  Comparison: "bg-purple-100 text-purple-700",
+  "How-To": "bg-green-100 text-green-700",
+  News: "bg-orange-100 text-orange-700",
 };
 
-export default function BlogPage() {
-  const [posts, setPosts] = useState<BlogPost[]>([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    fetch("/api/blog").then(r => r.json()).then((data) => {
-      setPosts(Array.isArray(data) ? data : []);
-      setLoading(false);
-    }).catch(() => { setPosts([]); setLoading(false); });
-  }, []);
+export default async function BlogPage() {
+  const posts = await getBlogPosts();
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-background">
       <Header />
-      <main className="flex-1 max-w-3xl mx-auto px-3 md:px-4 py-5 md:py-12">
-        <h1 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4">Blog</h1>
-        <p className="text-sm md:text-base text-gray-600 mb-5 md:mb-8">Insights, rankings, and comparisons for the AI tool landscape.</p>
-        {loading && <p className="text-gray-500 text-center py-12">Loading...</p>}
-        {!loading && posts.length === 0 && <p className="text-gray-500 text-center py-12">No articles yet.</p>}
-        <div className="space-y-4 md:space-y-6">
+
+      <main className="flex-1 max-w-4xl mx-auto px-4 md:px-6 py-8 md:py-12">
+        <div className="mb-8">
+          <h1 className="text-3xl md:text-4xl font-bold mb-2">Blog</h1>
+          <p className="text-muted-foreground">Insights, rankings, and comparisons for the AI tool landscape.</p>
+        </div>
+
+        {posts.length === 0 && (
+          <div className="text-center py-16">
+            <p className="text-muted-foreground text-lg">No articles yet. Check back soon!</p>
+          </div>
+        )}
+
+        <div className="space-y-4">
           {posts.map((post) => (
-            <article key={post.slug} className="border border-gray-200 rounded-xl p-4 md:p-6 hover:shadow-md transition-shadow">
-              <div className="flex items-center gap-3 mb-2">
-                <span className={"text-xs px-2 py-1 rounded-full font-medium " + (categoryColors[post.category] || "bg-gray-100 text-gray-700")}>{post.category}</span>
-                <span className="text-xs text-gray-400">{post.date}</span>
-                <span className="text-xs text-gray-400"> {post.views}</span>
-              </div>
-              <h2 className="text-lg md:text-xl font-semibold mb-2"><Link href={`/blog/${post.slug}`} className="hover:text-blue-600">{post.title}</Link></h2>
-              <p className="text-xs md:text-sm text-gray-600 leading-relaxed line-clamp-2">{post.content.substring(0, 150)}...</p>
-              <Link href={`/blog/${post.slug}`} className="text-xs md:text-sm text-blue-600 hover:underline mt-2 md:mt-3 inline-block">Read more →</Link>
-            </article>
+            <Link key={post.slug} href={`/blog/${post.slug}`} className="block group">
+              <Card className="border-border/60 hover:shadow-md transition-all hover:border-primary/20 h-full">
+                <CardContent className="p-5 md:p-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    <Badge variant="secondary" className={categoryBadge[post.category] || "bg-muted text-muted-foreground"}>
+                      {post.category}
+                    </Badge>
+                    <span className="text-xs text-muted-foreground">{post.date}</span>
+                    <span className="text-xs text-muted-foreground flex items-center gap-1 ml-auto">
+                      <Eye className="w-3 h-3" /> {post.views}
+                    </span>
+                  </div>
+                  <h2 className="text-lg md:text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
+                    {post.title}
+                  </h2>
+                  <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2">
+                    {post.content.substring(0, 200)}...
+                  </p>
+                  <span className="text-sm text-primary font-medium mt-3 inline-block group-hover:underline">
+                    Read more →
+                  </span>
+                </CardContent>
+              </Card>
+            </Link>
           ))}
         </div>
-        <AdInContent />
+
+        <AdBanner />
       </main>
+
       <Footer />
     </div>
   );

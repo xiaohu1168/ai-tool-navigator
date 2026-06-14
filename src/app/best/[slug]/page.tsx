@@ -1,7 +1,7 @@
 ﻿import Link from 'next/link';
 import { getAllTools, getCategories, type Tool, type Category } from '@/lib/tools';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 import ToolCard from '@/components/ToolCard';
 import AdInContent from '@/components/AdBanner';
 import { Star } from 'lucide-react';

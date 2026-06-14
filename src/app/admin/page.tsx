@@ -1,7 +1,7 @@
 ﻿"use client";
 import { useState, useEffect } from 'react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 
 // Cookie 自动由浏览器附带，authFetch 不再手动附加 token
 function authFetch(url: string, options: RequestInit = {}): Promise<Response> {

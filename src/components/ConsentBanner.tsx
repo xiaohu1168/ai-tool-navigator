@@ -1,66 +1,80 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState } from "react";
+import { Button } from "@/components/ui/button";
+import { X } from "lucide-react";
 
 export default function ConsentBanner() {
   const [consent, setConsent] = useState<string | null>(null);
-  const [mounted, setMounted] = useState(false);
+  const [show, setShow] = useState(false);
+  const [exiting, setExiting] = useState(false);
 
   useEffect(() => {
     try {
       const stored = localStorage.getItem("consent_ads");
       setConsent(stored);
-      console.log("ConsentBanner loaded, consent:", stored);
-    } catch (e) {
-      console.error("localStorage error:", e);
+      if (!stored) setShow(true);
+    } catch {
+      setShow(true);
     }
-    setMounted(true);
   }, []);
 
-  if (consent === "yes") return null;
-
-  const accept = () => {
-    console.log("User clicked Accept");
-    try {
-      localStorage.setItem("consent_ads", "yes");
-      console.log("Consent saved: yes");
-    } catch (e) {
-      console.error("Failed to save consent:", e);
-    }
-    setConsent("yes");
+  const handleAction = (value: string) => {
+    setExiting(true);
+    setTimeout(() => {
+      try {
+        localStorage.setItem("consent_ads", value);
+      } catch { /* ignore */ }
+      setShow(false);
+      setConsent(value);
+    }, 300);
   };
 
-  const reject = () => {
-    console.log("User clicked Decline");
-    try {
-      localStorage.setItem("consent_ads", "no");
-      console.log("Consent saved: no");
-    } catch (e) {
-      console.error("Failed to save consent:", e);
-    }
-    setConsent("no");
-  };
-
-  if (!mounted) return null;
+  if (!show) return null;
 
   return (
-    <div className="fixed bottom-4 left-4 right-4 md:left-auto md:right-8 md:bottom-8 z-50">
-      <div className="max-w-3xl mx-auto bg-white border shadow-lg rounded-lg p-4 flex items-center justify-between gap-4">
-        <div className="text-sm text-gray-700">
-          We use Google Ads to support this site. By accepting, you allow personalized ads.
-        </div>
-        <div className="flex items-center gap-2">
+    <div
+      className={`fixed bottom-4 left-4 right-4 md:left-auto md:right-8 md:bottom-8 z-50 transition-all duration-300 ${
+        exiting ? "opacity-0 translate-y-4 pointer-events-none" : "opacity-100 translate-y-0"
+      }`}
+    >
+      <div className="max-w-sm md:max-w-md bg-card border border-border rounded-xl shadow-xl p-5">
+        <div className="flex items-start gap-3">
+          <div className="flex-1">
+            <h4 className="text-sm font-semibold mb-1">Cookie & Ad Preferences</h4>
+            <p className="text-xs text-muted-foreground leading-relaxed">
+              We use cookies and ad tracking to support this site and improve your experience.
+            </p>
+            <div className="flex items-center gap-2 mt-3">
+              <Button
+                size="sm"
+                className="h-7 px-3 text-xs bg-primary hover:bg-primary/90"
+                onClick={() => handleAction("yes")}
+              >
+                Accept
+              </Button>
+              <Button
+                variant="outline"
+                size="sm"
+                className="h-7 px-3 text-xs"
+                onClick={() => handleAction("no")}
+              >
+                Decline
+              </Button>
+            </div>
+          </div>
           <button
-            onClick={reject}
-            className="px-3 py-1 text-sm border rounded text-gray-600 hover:bg-gray-100 transition-colors cursor-pointer"
+            onClick={() => {
+              setExiting(true);
+              setTimeout(() => {
+                setShow(false);
+                try { localStorage.setItem("consent_ads", "no"); } catch { /* ignore */ }
+              }, 300);
+            }}
+            className="text-muted-foreground hover:text-foreground transition-colors"
+            aria-label="Close banner"
           >
-            Decline
-          </button>
-          <button
-            onClick={accept}
-            className="px-3 py-1 bg-blue-600 text-white rounded text-sm hover:bg-blue-700 transition-colors cursor-pointer"
-          >
-            Accept
+            <X className="w-4 h-4" />
           </button>
         </div>
       </div>

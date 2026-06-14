@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { getToolBySlug, getCategories, type Category, getAffiliateLinksByToolSlug, getPromptsByToolSlug, type AffiliateLink, type Prompt } from '@/lib/tools';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 import AdInContent from '@/components/AdBanner';
 import { CopyButton, PromptSection } from '@/components/PromptSection';
 import { Star, ExternalLink } from 'lucide-react';

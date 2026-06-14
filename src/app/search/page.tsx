@@ -1,8 +1,8 @@
 import { Suspense } from "react";
 import { searchTools } from "@/lib/tools";
 import ToolCard from "@/components/ToolCard";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 import AdInContent from "@/components/AdBanner";
 
 async function SearchResults({ query }: { query: string }) {

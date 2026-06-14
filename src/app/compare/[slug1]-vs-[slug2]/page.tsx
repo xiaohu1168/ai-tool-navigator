@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { getComparePageBySlug, getToolBySlug, type ComparePage, type Tool } from '@/lib/tools';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 import Link from 'next/link';
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {

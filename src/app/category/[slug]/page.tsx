@@ -2,8 +2,8 @@
 import Link from 'next/link';
 import { getCategories, getToolsByCategory, type Category, type Tool } from '@/lib/tools';
 import ToolCard from '@/components/ToolCard';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 import AdSidebar, { AdInContent } from '@/components/AdBanner';
 
 type CategoryKey = 'coding' | 'writing' | 'seo' | 'design' | 'marketing' | 'devops' | 'productivity' | 'voice' | 'video' | 'analytics' | 'education' | 'customer-service';
