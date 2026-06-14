@@ -84,7 +84,7 @@ export default async function Home() {
             </p>
             <Link
               href="/search"
-              className="inline-flex items-center gap-2 bg-primary text-white px-6 md:px-10 py-3 md:py-3.5 rounded-lg md:rounded-xl font-semibold hover:bg-primary-hover transition-colors shadow-sm text-sm md:text-base min-w-[200px] justify-center"
+              className="inline-flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-xl font-semibold hover:bg-primary-hover transition-colors shadow-sm text-sm md:text-base justify-center"
             >
               <Search className="w-4 h-4" />
               Browse All Tools
