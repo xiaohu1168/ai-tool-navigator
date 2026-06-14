@@ -34,18 +34,25 @@ interface AdminNavItem {
   badge?: number;
 }
 
-const navItems: AdminNavItem[] = [
+interface AdminLayoutProps {
+  children: React.ReactNode;
+  pendingSubmissions?: number;
+  onLogout?: () => void;
+}
+
+const navItems = (pendingSubmissions?: number): AdminNavItem[] => [
   { id: "overview", label: "Overview", icon: <LayoutDashboard className="w-4 h-4" />, href: "/admin" },
   { id: "tools", label: "Tools", icon: <Monitor className="w-4 h-4" />, href: "/admin#tools" },
-  { id: "submissions", label: "Submissions", icon: <Inbox className="w-4 h-4" />, href: "/admin#submissions", badge: 0 },
+  { id: "submissions", label: "Submissions", icon: <Inbox className="w-4 h-4" />, href: "/admin#submissions", badge: pendingSubmissions },
   { id: "categories", label: "Categories", icon: <FolderOpen className="w-4 h-4" />, href: "/admin#categories" },
   { id: "blog", label: "Blog", icon: <FileText className="w-4 h-4" />, href: "/admin#blog" },
   { id: "analytics", label: "Analytics", icon: <BarChart3 className="w-4 h-4" />, href: "/admin#analytics" },
 ];
 
-export default function AdminLayout({ children }: { children: React.ReactNode }) {
+export default function AdminLayout({ children, pendingSubmissions, onLogout }: AdminLayoutProps) {
   const pathname = usePathname();
-  const activeNav = navItems.find((item) =>
+  const items = navItems(pendingSubmissions);
+  const activeNav = items.find((item) =>
     pathname === item.href || (pathname === "/admin" && item.id === "overview")
   );
 
@@ -66,7 +73,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
 
         {/* Navigation */}
         <nav className="flex-1 overflow-y-auto px-2 py-3 space-y-0.5">
-          {navItems.map((item) => (
+          {items.map((item) => (
             <Link
               key={item.id}
               href={item.href}
@@ -98,23 +105,29 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
               <p className="text-xs font-medium truncate">Admin</p>
               <p className="text-[10px] text-muted-foreground truncate">admin@heyaihub.com</p>
             </div>
-            <DropdownMenu>
-              <DropdownMenuTrigger>
-                <Button variant="ghost" size="icon-sm" className="h-6 w-6">
-                  <ChevronDown className="w-3 h-3" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuItem>
-                  <Settings className="w-4 h-4 mr-2" />
-                  Settings
-                </DropdownMenuItem>
-                <DropdownMenuItem className="text-danger">
-                  <LogOut className="w-4 h-4 mr-2" />
-                  Sign Out
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            {onLogout ? (
+              <Button variant="ghost" size="icon-sm" className="h-6 w-6" onClick={onLogout} title="Sign out">
+                <LogOut className="w-3 h-3" />
+              </Button>
+            ) : (
+              <DropdownMenu>
+                <DropdownMenuTrigger>
+                  <Button variant="ghost" size="icon-sm" className="h-6 w-6">
+                    <ChevronDown className="w-3 h-3" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end">
+                  <DropdownMenuItem>
+                    <Settings className="w-4 h-4 mr-2" />
+                    Settings
+                  </DropdownMenuItem>
+                  <DropdownMenuItem className="text-danger" onClick={onLogout}>
+                    <LogOut className="w-4 h-4 mr-2" />
+                    Sign Out
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            )}
           </div>
         </div>
       </aside>
