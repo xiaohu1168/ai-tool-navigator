@@ -68,34 +68,34 @@ export default async function Home() {
 
       <main className="flex flex-col min-h-[calc(100vh-3.5rem)]">
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 py-16 md:py-24 lg:py-32">
+        <section className="relative bg-gradient-to-br from-blue-50 via-white to-indigo-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 pt-12 pb-10 md:pt-20 md:pb-16 lg:pt-28 lg:pb-20">
           <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_60%_40%,rgba(11,95,255,0.08),transparent_60%)]" />
-          <div className="relative max-w-4xl mx-auto px-4 text-center">
-            <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full px-4 py-1.5 text-xs font-medium mb-6">
+          <div className="relative max-w-4xl mx-auto px-4 md:px-6 text-center flex flex-col items-center">
+            <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full px-4 py-1.5 text-xs font-medium mb-5">
               <Star className="w-3 h-3 fill-current" />
               Curated directory of the best AI tools
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 tracking-tight text-foreground">
+            <h1 className="text-[1.75rem] sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4 tracking-tight text-foreground leading-tight sm:leading-tight md:leading-tight">
               Find the Perfect{" "}
               <span className="text-primary">AI Tool</span> for Your Workflow
             </h1>
-            <p className="text-base md:text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
+            <p className="text-sm md:text-lg text-muted-foreground mb-6 md:mb-10 max-w-[36rem] md:max-w-2xl mx-auto leading-relaxed">
               Discover, compare, and choose the best AI tools for coding, writing, design, SEO, and more.
             </p>
             <Link
               href="/search"
-              className="inline-flex items-center gap-2 bg-primary text-white px-8 md:px-10 py-3.5 rounded-xl font-semibold hover:bg-primary-hover transition-colors shadow-sm text-sm md:text-base"
+              className="inline-flex items-center gap-2 bg-primary text-white px-6 md:px-10 py-3 md:py-3.5 rounded-lg md:rounded-xl font-semibold hover:bg-primary-hover transition-colors shadow-sm text-sm md:text-base min-w-[200px] justify-center"
             >
               <Search className="w-4 h-4" />
               Browse All Tools
             </Link>
-            <div className="flex flex-wrap justify-center gap-3 mt-6 text-xs text-muted-foreground">
+            <div className="flex flex-wrap justify-center gap-2 md:gap-3 mt-5 md:mt-6 text-xs text-muted-foreground px-2">
               <span>Popular:</span>
               {["Cursor", "ChatGPT", "Claude", "Midjourney", "Windsurf"].map((keyword) => (
                 <Link
                   key={keyword}
                   href={`/search?q=${encodeURIComponent(keyword)}`}
-                  className="px-2.5 py-1 bg-background/80 border border-border/40 rounded-full hover:border-primary/40 hover:text-primary transition-colors"
+                  className="px-2.5 py-1 bg-background/80 border border-border/40 rounded-full hover:border-primary/40 hover:text-primary transition-colors whitespace-nowrap"
                 >
                   {keyword}
                 </Link>
