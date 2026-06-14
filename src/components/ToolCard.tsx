@@ -42,14 +42,23 @@ export default function ToolCard({ tool }: ToolCardProps) {
           >
             Review
           </Link>
-          <a
-            href={tool.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1 text-blue-600 hover:underline text-xs"
-          >
-            Visit <ExternalLink className="w-3 h-3" />
-          </a>
+          {tool.url && tool.url.startsWith('http') ? (
+            <a
+              href={tool.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 text-blue-600 hover:underline text-xs"
+            >
+              Visit <ExternalLink className="w-3 h-3" />
+            </a>
+          ) : (
+            <Link
+              href={`/tools/${tool.slug}`}
+              className="flex items-center gap-1 text-blue-600 hover:underline text-xs"
+            >
+              Details <ExternalLink className="w-3 h-3" />
+            </Link>
+          )}
         </div>
       </div>
     </div>
