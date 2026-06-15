@@ -56,6 +56,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" translate="no" suppressHydrationWarning>
       <head>
         <AdSenseScript />
+        <meta name="google-adsense-account" content="ca-pub-8677289489236814" />
       </head>
       <body className="min-h-screen bg-background antialiased font-sans text-foreground">
         <ThemeProvider
