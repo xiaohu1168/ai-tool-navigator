@@ -75,7 +75,26 @@ async function seed() {
     }
   }
   console.log('Tools seeded/updated:', tc);
-  
+
+  // Update category counts
+  const allTools = await prisma.tool.findMany();
+  for (const cat of categories) {
+    const toolCount = allTools.filter(t => t.category_id === cat.id).length;
+    await prisma.category.update({
+      where: { slug: cat.id },
+      data: { count: toolCount }
+    });
+  }
+  // Also count "other" category if it exists
+  const otherTools = await prisma.tool.findMany({ where: { category_id: 'other' } });
+  if (otherTools.length > 0) {
+    await prisma.category.upsert({
+      where: { slug: 'other' },
+      update: { count: otherTools.length },
+      create: { id: 'other', slug: 'other', name: 'Other', icon: '🛠️', description: '', count: otherTools.length }
+    });
+  }
+
   const finalCat = await prisma.category.count();
   const finalTool = await prisma.tool.count();
   console.log(`Final: ${finalCat} categories, ${finalTool} tools`);
