@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "functions": [
+    {
+      "function": "___netlify-edge-handler-middleware",
+      "name": "Next.js Middleware Handler",
+      "pattern": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/admin(.*)(\\.json|\\.rsc|\\.segments\\/.+\\.segment\\.rsc)?[\\/#\\?]?$",
+      "generator": "@netlify/plugin-nextjs@5.15.11"
+    },
+    {
+      "function": "___netlify-edge-handler-middleware",
+      "name": "Next.js Middleware Handler",
+      "pattern": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/login(\\.json|\\.rsc|\\.segments\\/.+\\.segment\\.rsc)?[\\/#\\?]?$",
+      "generator": "@netlify/plugin-nextjs@5.15.11"
+    },
+    {
+      "function": "___netlify-edge-handler-middleware",
+      "name": "Next.js Middleware Handler",
+      "pattern": "^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/((?!_next\\/static|_next\\/image|favicon.ico|.*\\.(?:css|js|png|jpeg|jpg|gif|svg|ico|webp)).*))(\\.json|\\.rsc|\\.segments\\/.+\\.segment\\.rsc)?[\\/#\\?]?$",
+      "generator": "@netlify/plugin-nextjs@5.15.11"
+    }
+  ]
+}
