@@ -73,13 +73,12 @@ interface Category {
   icon: string;
 }
 
-function parseArray(val: string): string[] {
-  try {
-    const p = JSON.parse(val);
-    return Array.isArray(p) ? p : val.split(",").map((s) => s.trim()).filter(Boolean);
-  } catch {
-    return val.split(",").map((s) => s.trim()).filter(Boolean);
+function parseArray(val: string | string[]): string[] {
+  if (Array.isArray(val)) return val.map(String);
+  if (typeof val === 'string') {
+    try { const p = JSON.parse(val); return Array.isArray(p) ? p.map(String) : val.split(",").map((s) => s.trim()).filter(Boolean); } catch { return val.split(",").map((s) => s.trim()).filter(Boolean); }
   }
+  return [];
 }
 
 export default function AdminTools({
@@ -332,20 +331,28 @@ export default function AdminTools({
                     <div className="flex items-center justify-end gap-1">
                       <TooltipProvider>
                         <Tooltip>
-                          <TooltipTrigger className="flex">
-                            <Button variant="ghost" size="icon-sm" onClick={() => openEdit(tool)}>
+                          <TooltipTrigger className="inline-flex items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none hover:bg-muted hover:text-foreground h-7 gap-1 rounded-[min(var(--radius-md),12px)] px-2.5 text-[0.8rem] size-7">
+                            <button
+                              type="button"
+                              onClick={() => openEdit(tool)}
+                              className="w-full h-full"
+                            >
                               <Edit3 className="w-3.5 h-3.5" />
-                            </Button>
+                            </button>
                           </TooltipTrigger>
                           <TooltipContent>Edit</TooltipContent>
                         </Tooltip>
                       </TooltipProvider>
                       <TooltipProvider>
                         <Tooltip>
-                          <TooltipTrigger className="flex">
-                            <Button variant="ghost" size="icon-sm" onClick={() => handleDelete(tool)} className="text-red-500 hover:text-red-600">
+                          <TooltipTrigger className="inline-flex items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none hover:bg-muted hover:text-foreground h-7 gap-1 rounded-[min(var(--radius-md),12px)] px-2.5 text-[0.8rem] size-7 text-red-500 hover:text-red-600">
+                            <button
+                              type="button"
+                              onClick={() => handleDelete(tool)}
+                              className="w-full h-full"
+                            >
                               <Trash2 className="w-3.5 h-3.5" />
-                            </Button>
+                            </button>
                           </TooltipTrigger>
                           <TooltipContent>Delete</TooltipContent>
                         </Tooltip>

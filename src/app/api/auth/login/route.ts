@@ -1,31 +1,5 @@
 import { NextResponse } from "next/server";
-import { verifyPassword, clearFailedAttempts, isRateLimited, recordFailedAttempt } from "@/lib/auth";
-import crypto from "crypto";
-import path from "path";
-import fs from "fs";
-
-function parseEnvFile(filePath: string): Record<string, string> {
-  try {
-    const content = fs.readFileSync(filePath, "utf8");
-    const env: Record<string, string> = {};
-    for (const line of content.split("\n")) {
-      const trimmed = line.trim();
-      if (!trimmed || trimmed.startsWith("#")) continue;
-      const eqIdx = trimmed.indexOf("=");
-      if (eqIdx <= 0) continue;
-      const key = trimmed.substring(0, eqIdx).trim();
-      var value = trimmed.substring(eqIdx + 1);
-      // Strip surrounding double quotes
-      if (value.length >= 2 && value.charAt(0) === '"' && value.charAt(value.length - 1) === '"') {
-        value = value.substring(1, value.length - 1);
-      }
-      env[key] = value;
-    }
-    return env;
-  } catch {
-    return {};
-  }
-}
+import { getUserByUsername, verifyPassword, recordFailedAttempt, clearFailedAttempts, isRateLimited, signToken } from "@/lib/auth";
 
 export async function POST(request: Request) {
   try {
@@ -36,54 +10,45 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Missing credentials" }, { status: 400 });
     }
 
-    // Read .env.local first (higher priority), then fall back to .env
-    const env = { ...parseEnvFile(path.join(process.cwd(), ".env.local")) };
-    if (Object.keys(env).length === 0) {
-      const envFallback = parseEnvFile(path.join(process.cwd(), ".env"));
-      for (const [k, v] of Object.entries(envFallback)) {
-        if (!(k in env)) env[k] = v;
-      }
-    }
-    const adminUsername = env.ADMIN_USERNAME || "admin";
-    const adminPasswordHash = env.ADMIN_PASSWORD || "";
-    const adminSalt = env.ADMIN_SALT || "";
-
-    if (!adminPasswordHash || !adminSalt) {
-      console.error("Missing env vars");
-      return NextResponse.json({ error: "Server configuration error" }, { status: 500 });
-    }
-
     // Rate limit check
-    if (isRateLimited(username)) {
+    if (await isRateLimited(username)) {
       return NextResponse.json(
         { error: "Too many failed attempts. Please try again in 15 minutes." },
         { status: 429 }
       );
     }
 
-    const isValidPassword = verifyPassword(password, adminPasswordHash);
-
-    if (username !== adminUsername || !isValidPassword) {
-      recordFailedAttempt(username);
+    // Look up user in database
+    const user = await getUserByUsername(username);
+    if (!user || !user.isActive) {
+      await recordFailedAttempt(username);
       return NextResponse.json({ error: "Invalid credentials" }, { status: 401 });
     }
 
-    clearFailedAttempts(username);
+    if (!await verifyPassword(password, user.passwordHash)) {
+      await recordFailedAttempt(username);
+      return NextResponse.json({ error: "Invalid credentials" }, { status: 401 });
+    }
 
-    const payload = { username: adminUsername, exp: Date.now() + 7 * 24 * 60 * 60 * 1000 };
-    const payloadJson = JSON.stringify(payload);
-    const payloadB64 = Buffer.from(payloadJson).toString("base64");
-    const signature = crypto.createHmac("sha256", adminSalt).update(payloadB64).digest("base64");
-    const token = payloadB64 + "." + signature;
+    // Success: clear failed attempts and update last login
+    await clearFailedAttempts(username);
+    await updateUserLastLogin(user.id);
 
-    const maxAge = 7 * 24 * 60 * 60;
+    // Generate JWT-like token with userId and role
+    const token = signToken({
+      userId: user.id,
+      role: user.role,
+      exp: Date.now() + 7 * 24 * 60 * 60 * 1000, // 7 days
+    });
+
+    const isProduction = process.env.NODE_ENV === "production";
     const cookieParts = [
-      "admin_token=" + token,
+      `admin_token=${token}`,
       "Path=/",
-      "Max-Age=" + maxAge,
+      "Max-Age=604800",
       "SameSite=Lax",
       "HttpOnly",
-      "Secure"
+      ...(isProduction ? ["Secure"] : []),
     ];
 
     return NextResponse.json(
@@ -93,5 +58,17 @@ export async function POST(request: Request) {
   } catch (error) {
     console.error("LOGIN_ROUTE_ERROR:", error);
     return NextResponse.json({ error: "Internal server error" }, { status: 500 });
+  }
+}
+
+async function updateUserLastLogin(id: string): Promise<void> {
+  try {
+    const { prisma } = await import("@/lib/db");
+    await prisma.user.update({
+      where: { id },
+      data: { lastLogin: new Date() },
+    });
+  } catch {
+    // non-critical
   }
 }

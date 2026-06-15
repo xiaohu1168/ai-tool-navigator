@@ -3,7 +3,7 @@ import {
   getBlogPosts, getBlogPostBySlug, addBlogPost,
   updateBlogPost, deleteBlogPost, incrementBlogPostViews
 } from "@/lib/db";
-import { verifyHMACToken } from '@/lib/auth';
+import { verifyToken } from '@/lib/auth';
 
 function extractCookieToken(request: Request): string | null {
   const cookieHeader = request.headers.get('cookie') || '';
@@ -13,7 +13,7 @@ function extractCookieToken(request: Request): string | null {
 
 function requireAuth(request: Request): Response | null {
   const token = extractCookieToken(request);
-  if (!verifyHMACToken(token)) {
+  if (!verifyToken(token ?? "")) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
   return null;
@@ -41,11 +41,26 @@ export async function POST(request: Request) {
 
   try {
     const body = await request.json();
-    const { title, content, category, date } = body;
+    const { title, content, category, date, slug: slugProp } = body;
     if (!title || !content) {
       return NextResponse.json({ error: "Missing title or content" }, { status: 400 });
     }
-    await addBlogPost({ title, content, category: category || "General", date: date || new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" }) });
+
+    // Auto-generate slug from title if not provided
+    let slug = slugProp || title
+      .toLowerCase()
+      .replace(/\s+/g, "-")
+      .replace(/[^a-z0-9-]/g, "");
+
+    // Ensure slug uniqueness
+    const existing = await getBlogPostBySlug(slug);
+    if (existing) {
+      slug = `${slug}-${Date.now()}`;
+    }
+
+    const postDate = date || new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+
+    await addBlogPost({ title, content, category: category || "General", date: postDate, slug });
     return NextResponse.json({ success: true });
   } catch (err) {
     console.error("Blog POST error:", err);

@@ -7,6 +7,8 @@ import AdminTools from "@/components/admin/AdminTools";
 import AdminSubmissions from "@/components/admin/AdminSubmissions";
 import AdminCategories from "@/components/admin/AdminCategories";
 import AdminAnalytics from "@/components/admin/AdminAnalytics";
+import AdminUsers from "@/components/admin/AdminUsers";
+import AdminBlog from "@/components/admin/AdminBlog";
 import { toast } from "sonner";
 
 // Cookie auto-included via credentials: 'include'
@@ -71,19 +73,46 @@ interface PageStats {
   search_queries: { query: string; count: number }[];
 }
 
+interface DbUser {
+  id: string;
+  username: string;
+  email: string;
+  role: string;
+  isActive: boolean;
+  lastLogin: string | null;
+  createdAt: string;
+  updatedAt: string;
+}
+
+interface BlogPost {
+  id: string;
+  slug: string;
+  title: string;
+  content: string;
+  category: string;
+  date: string;
+  views: number;
+  created_at?: string;
+  updated_at?: string;
+}
+
 export default function AdminPage() {
   const [loading, setLoading] = useState(true);
   const [tools, setTools] = useState<Tool[]>([]);
   const [subs, setSubs] = useState<Submission[]>([]);
   const [cats, setCats] = useState<Category[]>([]);
   const [stats, setStats] = useState<PageStats | null>(null);
-  const [activeSection, setActiveSection] = useState<"overview" | "tools" | "submissions" | "categories" | "analytics">("overview");
+  const [users, setUsers] = useState<DbUser[]>([]);
+  const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
+  const [currentUserId, setCurrentUserId] = useState<string | null>(null);
+  const [currentUserRole, setCurrentUserRole] = useState<string>("");
+  const [activeSection, setActiveSection] = useState<"overview" | "tools" | "submissions" | "categories" | "blog" | "analytics" | "users">("overview");
 
   // Sync activeSection from URL hash on mount and hash change
   useEffect(() => {
-    const fromHash = (): "overview" | "tools" | "submissions" | "categories" | "analytics" => {
+    const fromHash = (): "overview" | "tools" | "submissions" | "categories" | "blog" | "analytics" | "users" => {
       const hash = window.location.hash.replace("#", "") as typeof activeSection;
-      if (["tools", "submissions", "categories", "analytics"].includes(hash)) return hash;
+      if (["tools", "submissions", "categories", "blog", "analytics", "users"].includes(hash)) return hash;
       return "overview";
     };
     setActiveSection(fromHash());
@@ -104,11 +133,14 @@ export default function AdminPage() {
   const fetchData = useCallback(async () => {
     setLoading(true);
     try {
-      const [tRes, sRes, cRes, stRes] = await Promise.all([
+      const [tRes, sRes, cRes, stRes, uRes, meRes, bRes] = await Promise.all([
         authFetch("/api/tools"),
         authFetch("/api/admin-submissions"),
         authFetch("/api/categories"),
         authFetch("/api/stats"),
+        authFetch("/api/users"),
+        authFetch("/api/auth/me"),
+        authFetch("/api/blog"),
       ]);
 
       if (!tRes.ok || !sRes.ok || !cRes.ok || !stRes.ok) {
@@ -121,11 +153,19 @@ export default function AdminPage() {
         return;
       }
 
-      const [t, s, c, st] = await Promise.all([tRes.json(), sRes.json(), cRes.json(), stRes.json()]);
+      const [t, s, c, st, usersData, meData, bData] = await Promise.all([
+        tRes.json(), sRes.json(), cRes.json(), stRes.json(),
+        uRes.json(), meRes.json(), bRes.json(),
+      ]);
+
       setTools(t);
       setSubs(s);
       setCats(c);
       setStats(st as PageStats);
+      setUsers(usersData as DbUser[]);
+      setBlogPosts(bData as BlogPost[]);
+      setCurrentUserId((meData as DbUser | null)?.id ?? null);
+      setCurrentUserRole((meData as DbUser | null)?.role ?? "");
     } catch {
       toast.error("Network error. Please check your connection.");
     } finally {
@@ -148,15 +188,20 @@ export default function AdminPage() {
 
   // ── Tool CRUD handlers ──────────────────────────────
   const handleSaveTool = async (toolData: Partial<Tool>) => {
-    await authFetch("/api/tools", {
-      method: "POST",
-      body: JSON.stringify({
-        ...toolData,
-        rating: parseFloat(toolData.rating?.toString() ?? "4") || 4,
-        featured: toolData.featured ? 1 : 0,
-      }),
-    });
-    await fetchData();
+    try {
+      await authFetch("/api/tools", {
+        method: "POST",
+        body: JSON.stringify({
+          ...toolData,
+          rating: parseFloat(toolData.rating?.toString() ?? "4") || 4,
+          featured: toolData.featured ? 1 : 0,
+        }),
+      });
+      await fetchData();
+      toast.success(toolData.id ? "Tool updated" : "Tool created");
+    } catch {
+      toast.error("Failed to save tool");
+    }
   };
 
   const handleDeleteTool = async (id: string) => {
@@ -194,6 +239,38 @@ export default function AdminPage() {
 
   const pendingCount = subs.filter((s) => s.status === "pending").length;
 
+  // ── Blog CRUD handlers ────────────────────────────
+  const handleSaveBlogPost = async (postData: Partial<BlogPost>) => {
+    try {
+      const titleSlug = postData.title
+        ? postData.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
+        : `post-${Date.now()}`;
+      const method = postData.slug ? "PUT" : "POST";
+      const body = {
+        slug: postData.slug || titleSlug,
+        title: postData.title || "",
+        content: postData.content || "",
+        category: postData.category || "General",
+        date: postData.date || new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" }),
+      };
+      await authFetch("/api/blog", { method, body: JSON.stringify(body) });
+      await fetchData();
+      toast.success(postData.slug ? "Post updated" : "Post created");
+    } catch {
+      toast.error("Failed to save post");
+    }
+  };
+
+  const handleDeleteBlogPost = async (slug: string) => {
+    try {
+      await authFetch(`/api/blog?slug=${encodeURIComponent(slug)}`, { method: "DELETE" });
+      setBlogPosts((prev) => prev.filter((p) => p.slug !== slug));
+      toast.success("Post deleted");
+    } catch {
+      toast.error("Failed to delete post");
+    }
+  };
+
   return (
     <AdminLayout
       pendingSubmissions={pendingCount}
@@ -201,6 +278,7 @@ export default function AdminPage() {
       onSectionChange={(section) => {
         setActiveSection(section as typeof activeSection);
       }}
+      currentUserRole={currentUserRole}
     >
       {activeSection === "overview" && (
         <AdminDashboard
@@ -242,6 +320,24 @@ export default function AdminPage() {
       {activeSection === "analytics" && (
         <AdminAnalytics
           stats={stats}
+          loading={loading}
+        />
+      )}
+
+      {activeSection === "users" && (
+        <AdminUsers
+          users={users}
+          currentUserId={currentUserId}
+          currentUserRole={currentUserRole}
+          loading={loading}
+        />
+      )}
+
+      {activeSection === "blog" && (
+        <AdminBlog
+          posts={blogPosts}
+          onSave={handleSaveBlogPost}
+          onDelete={handleDeleteBlogPost}
           loading={loading}
         />
       )}

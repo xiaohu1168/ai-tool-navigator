@@ -1,5 +1,3 @@
-// Prisma schema for AI Tool Navigator - PostgreSQL
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -9,43 +7,68 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model User {
+  id           String    @id @default(cuid())
+  username     String    @unique
+  email        String    @unique
+  passwordHash String
+  role         String    @default("ADMIN")
+  isActive     Boolean   @default(true)
+  lastLogin    DateTime?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  @@map("User")
+}
+
+model FailedLoginAttempt {
+  id        String   @id @default(cuid())
+  username  String
+  ip        String?
+  timestamp DateTime @default(now())
+
+  @@map("FailedLoginAttempt")
+}
+
 model Tool {
-  id          String   @id @default(cuid())
-  slug        String   @unique
-  name        String
-  description String
-  url         String
-  affiliate_url String  @default("")
-  price       String
-  price_type  String   @default("Free")
-  rating      Float    @default(4.0)
-  featured    Boolean  @default(false)
-  tags        String[]
-  pros        String[]
-  cons        String[]
-  for_whom    String
-  not_for     String
-  alternatives String
-  privacy     String?
-  updated     String?
-  category_id String
-  category    Category @relation(fields: [category_id], references: [id])
-  click_count Int      @default(0)
+  id              String          @id @default(cuid())
+  slug            String          @unique
+  name            String
+  description     String
+  url             String
+  affiliate_url   String          @default("")
+  price           String
+  price_type      String          @default("Free")
+  rating          Float           @default(4.0)
+  featured        Boolean         @default(false)
+  tags            String[]
+  pros            String[]
+  cons            String[]
+  for_whom        String
+  not_for         String
+  alternatives    String
+  privacy         String?
+  updated         String?
+  category_id     String
+  click_count     Int             @default(0)
+  created_at      DateTime        @default(now())
+  updated_at      DateTime        @updatedAt
   affiliate_links AffiliateLink[]
-  prompts     Prompt[]
-  created_at  DateTime @default(now())
-  updated_at DateTime @updatedAt
+  prompts         Prompt[]
+  category        Category        @relation(fields: [category_id], references: [id])
+
   @@map("Tool")
 }
 
 model Category {
-  id        String   @id @default(cuid())
-  slug      String   @unique
-  name      String
-  icon      String
+  id          String @id @default(cuid())
+  slug        String @unique
+  name        String
+  icon        String
   description String
-  count     Int      @default(0)
-  tools     Tool[]
+  count       Int    @default(0)
+  tools       Tool[]
+
   @@map("Category")
 }
 
@@ -59,20 +82,22 @@ model Submission {
   tags        String?
   status      String   @default("pending")
   created_at  DateTime @default(now())
-  updated_at DateTime @updatedAt
+  updated_at  DateTime @updatedAt
+
   @@map("Submission")
 }
 
 model BlogPost {
-  id        String   @id @default(cuid())
-  slug      String   @unique
-  title     String
-  content   String
-  category  String
-  date      String
-  views     Int      @default(0)
+  id         String   @id @default(cuid())
+  slug       String   @unique
+  title      String
+  content    String
+  category   String
+  date       String
+  views      Int      @default(0)
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
+
   @@map("BlogPost")
 }
 
@@ -81,6 +106,7 @@ model SearchQuery {
   query     String
   results   Int      @default(0)
   timestamp DateTime @default(now())
+
   @@map("SearchQuery")
 }
 
@@ -91,16 +117,18 @@ model PageView {
   ip         String?
   user_agent String?
   timestamp  DateTime @default(now())
+
   @@map("PageView")
 }
 
 model AdPerformance {
-  id         String   @id @default(cuid())
-  slot       String
-  impressions Int     @default(0)
-  clicks     Int     @default(0)
-  date       String
-  created_at DateTime @default(now())
+  id          String   @id @default(cuid())
+  slot        String
+  impressions Int      @default(0)
+  clicks      Int      @default(0)
+  date        String
+  created_at  DateTime @default(now())
+
   @@unique([slot, date])
   @@map("AdPerformance")
 }
@@ -108,27 +136,29 @@ model AdPerformance {
 model AffiliateLink {
   id          String   @id @default(cuid())
   tool_id     String
-  tool        Tool     @relation(fields: [tool_id], references: [id])
   label       String
   url         String
   network     String
   click_count Int      @default(0)
   created_at  DateTime @default(now())
-  updated_at DateTime @updatedAt
+  updated_at  DateTime @updatedAt
+  tool        Tool     @relation(fields: [tool_id], references: [id])
+
   @@map("AffiliateLink")
 }
 
 model Prompt {
   id          String   @id @default(cuid())
   tool_id     String
-  tool        Tool     @relation(fields: [tool_id], references: [id])
   title       String
   prompt_text String
   use_case    String
   best_model  String?
   copy_count  Int      @default(0)
   created_at  DateTime @default(now())
-  updated_at DateTime @updatedAt
+  updated_at  DateTime @updatedAt
+  tool        Tool     @relation(fields: [tool_id], references: [id])
+
   @@map("Prompt")
 }
 
@@ -142,5 +172,6 @@ model ComparePage {
   views      Int      @default(0)
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
+
   @@map("ComparePage")
 }

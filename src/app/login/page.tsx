@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
@@ -17,6 +17,7 @@ export default function LoginPage() {
     try {
       const response = await fetch('/api/auth/login', {
         method: 'POST',
+        credentials: 'include',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password })
       });
@@ -24,16 +25,12 @@ export default function LoginPage() {
       const data = await response.json();
 
       if (response.ok) {
-
-
-
-
-        // 不再存储到 localStorage，Cookie 已自动设置
         router.push('/admin');
       } else {
         setError(data.error || 'Login failed');
       }
     } catch (err) {
+      console.error('Login error:', err);
       setError('Network error. Please try again.');
     } finally {
       setLoading(false);
@@ -95,8 +92,7 @@ export default function LoginPage() {
         </form>
 
         <div className='mt-4 p-3 bg-yellow-50 border border-yellow-200 rounded-lg'>
-
-          <p className='text-xs text-yellow-700'>Please set ADMIN_USERNAME, ADMIN_PASSWORD (bcrypt hash), and ADMIN_SALT in .env</p>
+          <p className='text-xs text-yellow-700'>默认账号: admin / admin123</p>
         </div>
       </div>
     </div>

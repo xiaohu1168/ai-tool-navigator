@@ -1,7 +1,7 @@
 ﻿import { NextResponse } from "next/server";
 import { getSubmissions, updateSubmissionStatus } from "@/lib/db";
 import { prisma } from "@/lib/db";
-import { verifyHMACToken } from '@/lib/auth';
+import { verifyToken } from '@/lib/auth';
 
 export async function GET(request: Request) {
   try {
@@ -11,7 +11,7 @@ export async function GET(request: Request) {
     const cookieToken = cookieMatch ? cookieMatch[1] : null;
     const token = headerToken || cookieToken;
 
-    if (!(await verifyHMACToken(token))) {
+    if (!(await verifyToken(token ?? ""))) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
@@ -31,7 +31,7 @@ export async function POST(request: Request) {
     const cookieToken = cookieMatch ? cookieMatch[1] : null;
     const token = headerToken || cookieToken;
 
-    if (!(await verifyHMACToken(token))) {
+    if (!(await verifyToken(token ?? ""))) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
   } catch (e) {

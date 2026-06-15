@@ -111,7 +111,7 @@ export default async function Home() {
         </div>
 
         {/* Top Picks by Category — All 12 */}
-        <section className="py-10 md:py-16 bg-gradient-to-b from-white to-transparent">
+        <section className="py-10 md:py-16 bg-gradient-to-b from-muted/20 to-transparent dark:from-muted/30 dark:to-transparent">
           <div className="max-w-7xl mx-auto px-4 md:px-6">
             <div className="flex items-center justify-between mb-6">
               <div>

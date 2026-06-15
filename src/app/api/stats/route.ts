@@ -1,6 +1,6 @@
 ﻿import { NextResponse } from "next/server";
 import { getPageStats, addPageView, incrementToolClick, addSearchQuery } from "@/lib/db";
-import { verifyHMACToken } from '@/lib/auth';
+import { verifyToken } from '@/lib/auth';
 
 function extractCookieToken(request: Request): string | null {
   const cookieHeader = request.headers.get('cookie') || '';
@@ -10,7 +10,7 @@ function extractCookieToken(request: Request): string | null {
 
 function requireAuth(request: Request): Response | null {
   const token = extractCookieToken(request);
-  if (!verifyHMACToken(token)) {
+  if (!verifyToken(token ?? "")) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
   return null;

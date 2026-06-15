@@ -1,73 +1,84 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-// Edge-compatible HMAC verification (no Node.js crypto import)
-async function verifyCookieToken(token: string | null): Promise<boolean> {
-  try {
-    if (!token) return false;
-    const parts = token.split('.');
-    if (parts.length !== 2) return false;
-    const [payloadB64, signatureB64] = parts;
-    const secret = process.env.ADMIN_SALT;
-    if (!secret) return false;
+// --- Base64url decode → string (Edge compatible via btoa/atob) ---
+function base64urlDecode(str: string): string {
+  let padded = str.replace(/-/g, '+').replace(/_/g, '/');
+  while (padded.length % 4) padded += '=';
+  // btoa only handles ASCII after base64 decode
+  const binary = atob(padded);
+  // Return as UTF-8 string (most JWT payloads are ASCII-safe)
+  return binary;
+}
 
-    // Web Crypto API (available in Edge Runtime)
+// --- Encode Uint8Array → base64url string (Edge compatible) ---
+function uint8ArrayToBase64url(data: Uint8Array): string {
+  let binary = '';
+  for (let i = 0; i < data.length; i++) {
+    binary += String.fromCharCode(data[i]);
+  }
+  let b64 = '';
+  for (let i = 0; i < binary.length; i += 8192) {
+    b64 += btoa(binary.substring(i, i + 8192));
+  }
+  return b64.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+
+// --- JWT verification using Web Crypto API (Edge compatible) ---
+async function verifyCookieToken(token: string | null): Promise<{ valid: boolean; userId?: string; role?: string }> {
+  try {
+    if (!token) return { valid: false };
+    const parts = token.split('.');
+    if (parts.length !== 2) return { valid: false };
+    const [payloadB64, sigB64] = parts;
+    const secret = process.env.NEXT_PUBLIC_ADMIN_SALT;
+    if (!secret) return { valid: false };
+
+    // Import key for signing (needed to compute expected signature for comparison)
     const encoder = new TextEncoder();
     const secretKey = await crypto.subtle.importKey(
       'raw',
       encoder.encode(secret),
       { name: 'HMAC', hash: 'SHA-256' },
       false,
-      ['sign', 'verify']
+      ['sign']
     );
 
-    // Verify signature
-    const sigBuf = base64UrlDecode(signatureB64);
+    // Compute expected signature
     const expectedSig = new Uint8Array(
       await crypto.subtle.sign('HMAC', secretKey, encoder.encode(payloadB64))
     );
+    const expectedSigB64 = uint8ArrayToBase64url(expectedSig);
 
-    if (expectedSig.length !== sigBuf.length) return false;
-    let equal = true;
-    for (let i = 0; i < expectedSig.length; i++) {
-      if (expectedSig[i] !== sigBuf[i]) { equal = false; break; }
-    }
-    if (!equal) return false;
+    if (expectedSigB64 !== sigB64) return { valid: false };
 
-    // Verify payload expiry
-    const payloadJson = new TextDecoder().decode(base64UrlDecode(payloadB64));
+    // Decode payload JSON
+    const payloadJson = base64urlDecode(payloadB64);
     const payload = JSON.parse(payloadJson);
-    if (!payload.exp || Date.now() > payload.exp) return false;
 
-    return true;
+    if (!payload.userId || !payload.exp || Date.now() > payload.exp) return { valid: false };
+
+    return { valid: true, userId: payload.userId, role: payload.role };
   } catch {
-    return false;
+    return { valid: false };
   }
 }
 
-function base64UrlDecode(str: string): Uint8Array {
-  // Handle standard base64 (not base64url) since we used regular base64 in login
-  const padded = str + '='.repeat((4 - str.length % 4) % 4);
-  const base64 = padded.replace(/-/g, '+').replace(/_/g, '/');
-  const binary = Buffer.from(base64, 'base64').toString('binary');
-  return new Uint8Array(binary.split('').map(c => c.charCodeAt(0)));
-}
-
+// Extract cookie token
 function extractCookieToken(request: NextRequest): string | null {
   const cookieHeader = request.headers.get('cookie') || '';
   const match = cookieHeader.match(/(?:^|; )admin_token=([^;]+)/);
   return match ? match[1] : null;
 }
 
-// Security headers middleware
+// Security headers
 function addSecurityHeaders(response: NextResponse): void {
   response.headers.set('X-Content-Type-Options', 'nosniff');
   response.headers.set('X-Frame-Options', 'DENY');
-  response.headers.set('X-XSS-Protection', '0'); // modern apps use CSP instead
+  response.headers.set('X-XSS-Protection', '0');
   response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
   response.headers.set('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
 
-  // HSTS — enforce HTTPS for 1 year (only in production)
   if (process.env.NODE_ENV === 'production') {
     response.headers.set(
       'Strict-Transport-Security',
@@ -75,7 +86,6 @@ function addSecurityHeaders(response: NextResponse): void {
     );
   }
 
-  // Basic CSP — allow inline scripts for AdSense, Next.js, and our own assets
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://heyaihub.com';
   const cspValue = [
     `default-src 'self'`,
@@ -93,19 +103,44 @@ function addSecurityHeaders(response: NextResponse): void {
   response.headers.set('Content-Security-Policy', cspValue);
 }
 
+// Role-based access control
+const PROTECTED_PATHS: Record<string, string> = {
+  '/admin': 'ADMIN',
+};
+
 export async function middleware(request: NextRequest) {
-  const protectedPaths = ['/admin'];
-  const publicPaths = ['/api/auth/login', '/api/auth/logout', '/login'];
   const { pathname } = request.nextUrl;
 
-  if (publicPaths.some(p => pathname.startsWith(p))) {
+  // Public auth paths
+  const publicAuthPaths = ['/api/auth/login', '/api/auth/logout'];
+  if (publicAuthPaths.some(p => pathname.startsWith(p))) {
     return NextResponse.next();
   }
 
-  if (protectedPaths.some(p => pathname.startsWith(p))) {
-    const token = extractCookieToken(request);
-    if (!await verifyCookieToken(token)) {
-      return NextResponse.redirect(new URL('/login', request.url));
+  // Public pages
+  const publicPages = ['/login'];
+  if (publicPages.some(p => pathname.startsWith(p))) {
+    return NextResponse.next();
+  }
+
+  // Protected paths — async verification needed
+  for (const [path, minRole] of Object.entries(PROTECTED_PATHS)) {
+    if (pathname.startsWith(path)) {
+      const token = extractCookieToken(request);
+      const result = await verifyCookieToken(token);
+
+      if (!result.valid) {
+        return NextResponse.redirect(new URL('/login', request.url));
+      }
+
+      // Role check: SUPER_ADMIN > ADMIN > EDITOR
+      const ROLE_LEVELS: Record<string, number> = { EDITOR: 1, ADMIN: 2, SUPER_ADMIN: 3 };
+      const userLevel = result.role ? (ROLE_LEVELS[result.role] ?? 0) : 0;
+      const requiredLevel = ROLE_LEVELS[minRole] || 2;
+
+      if (userLevel < requiredLevel) {
+        return NextResponse.json({ error: 'Insufficient permissions' }, { status: 403 });
+      }
     }
   }
 
@@ -115,5 +150,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/admin(.*)', '/login', '/((?!_next/static|_next/image|favicon.ico|.*\\.(?:css|js|png|jpg|jpeg|gif|svg|ico|webp)).*)'],
+  matcher: ['/admin(.*)', '/login', '/((?!_next/static|_next/image|favicon.ico|.*\\.(?:css|js|png|jpeg|jpg|gif|svg|ico|webp)).*)'],
 };

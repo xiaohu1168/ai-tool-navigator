@@ -218,8 +218,9 @@ export async function addBlogPost(data: {
   content: string;
   category: string;
   date: string;
+  slug?: string;
 }): Promise<string> {
-  const slug = data.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+  const slug = data.slug || data.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
   const post = await prisma.blogPost.create({
     data: { slug, title: data.title, content: data.content, category: data.category, date: data.date }
   });

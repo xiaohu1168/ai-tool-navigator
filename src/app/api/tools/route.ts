@@ -1,6 +1,6 @@
 ﻿import { NextResponse } from "next/server";
 import { prisma } from "@/lib/db";
-import { verifyHMACToken } from '@/lib/auth';
+import { verifyToken } from '@/lib/auth';
 import { createToolSchema, updateToolSchema, deleteToolSchema } from '@/lib/validation';
 
 function safeConvertArray(val: unknown): string[] {
@@ -19,7 +19,7 @@ function extractCookieToken(request: Request): string | null {
 
 function requireAuth(request: Request): Response | null {
   const token = extractCookieToken(request);
-  if (!verifyHMACToken(token)) {
+  if (!verifyToken(token ?? "")) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
   return null;
@@ -89,7 +89,17 @@ export async function POST(request: Request) {
     if (!slug || !name || !description || !url || !category_id) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
-    
+
+    const convertArray = (val: unknown): string[] => {
+      if (Array.isArray(val)) return val.map(String);
+      if (typeof val === 'string') {
+        if (!val.trim()) return [];
+        try { const parsed = JSON.parse(val); return Array.isArray(parsed) ? parsed.map(String) : parsed.split(',').map((s: string) => s.trim()).filter(Boolean); }
+        catch { return val.split(',').map((s: string) => s.trim()).filter(Boolean); }
+      }
+      return [];
+    };
+
     await prisma.tool.upsert({
       where: { slug },
       create: {
@@ -99,9 +109,9 @@ export async function POST(request: Request) {
         price_type: price_type ?? "Free",
         rating: rating ?? 4.0,
         featured: featured ? true : false,
-        tags: tags ?? "[]",
-        pros: pros ?? "[]",
-        cons: cons ?? "[]",
+        tags: convertArray(tags),
+        pros: convertArray(pros),
+        cons: convertArray(cons),
         for_whom: for_whom ?? "",
         not_for: not_for ?? "",
         alternatives: alternatives ?? "",
@@ -113,9 +123,9 @@ export async function POST(request: Request) {
         price_type: price_type ?? "Free",
         rating: rating ?? 4.0,
         featured: featured ? true : false,
-        tags: tags ?? "[]",
-        pros: pros ?? "[]",
-        cons: cons ?? "[]",
+        tags: convertArray(tags),
+        pros: convertArray(pros),
+        cons: convertArray(cons),
         for_whom: for_whom ?? "",
         not_for: not_for ?? "",
         alternatives: alternatives ?? "",
