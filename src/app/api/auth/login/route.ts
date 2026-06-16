@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 import { NextResponse } from "next/server";
 import { getUserByUsername, verifyPassword, recordFailedAttempt, clearFailedAttempts, isRateLimited, signToken } from "@/lib/auth";
 
