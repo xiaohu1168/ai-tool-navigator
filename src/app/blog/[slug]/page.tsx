@@ -3,6 +3,7 @@ import { Eye, ArrowLeft } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import AdBanner from "@/components/AdBanner";
+import { ArticleJsonLd } from "@/lib/jsonld";
 
 interface BlogPost {
   slug: string;
@@ -77,6 +78,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <Header />
 
       <main className="flex-1 max-w-3xl mx-auto px-4 md:px-6 py-8 md:py-12">
+        <ArticleJsonLd
+          title={post.title}
+          description={post.content.substring(0, 160)}
+          url={`https://heyaihub.com/blog/${post.slug}`}
+          date={post.date}
+          category={post.category}
+        />
         <Link href="/blog" className="text-sm text-muted-foreground hover:text-primary inline-flex items-center gap-1 mb-6">
           <ArrowLeft className="w-3.5 h-3.5" /> Back to Blog
         </Link>

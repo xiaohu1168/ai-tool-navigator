@@ -6,6 +6,7 @@ import AdInContent from '@/components/AdBanner';
 import { CopyButton, PromptSection } from '@/components/PromptSection';
 import { Star, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
+import { ToolJsonLd, BreadcrumbJsonLd } from '@/lib/jsonld';
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -32,6 +33,11 @@ export default async function ToolDetailPage({ params }: { params: Promise<{ slu
     <div className='min-h-screen flex flex-col'>
       <Header />
       <main className='flex-1 max-w-4xl mx-auto px-3 md:px-4 py-5 md:py-8 w-full'>
+        <BreadcrumbJsonLd items={[
+          { name: 'Home', url: 'https://heyaihub.com/' },
+          ...(category ? [{ name: category.name, url: 'https://heyaihub.com/category/' + category.id }] : []),
+        ]} />
+        <ToolJsonLd name={tool.name} description={tool.description} url={tool.url} rating={tool.rating} price={tool.price} category={category?.name} />
         <nav className='text-xs md:text-sm text-muted-foreground mb-4 md:mb-6'>
           <Link href='/' className='hover:text-primary transition-colors'>Home</Link> {' > '}
           {category ? <Link href={'/category/' + category.id} className='hover:text-primary transition-colors'>{category.name}</Link> : 'Tools'} {' > '}

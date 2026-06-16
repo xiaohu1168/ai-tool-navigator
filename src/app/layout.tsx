@@ -6,6 +6,7 @@ import { ThemeProvider } from "next-themes";
 import AdSenseScript from "@/components/AdSenseScript";
 import ConsentBanner from "@/components/ConsentBanner";
 import Link from "next/link";
+import { OrganizationJsonLd, WebSiteJsonLd } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: {
@@ -57,6 +58,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <AdSenseScript />
         <meta name="google-adsense-account" content="ca-pub-8677289489236814" />
+        <OrganizationJsonLd />
+        <WebSiteJsonLd />
       </head>
       <body className="min-h-screen bg-background antialiased font-sans text-foreground">
         <ThemeProvider
