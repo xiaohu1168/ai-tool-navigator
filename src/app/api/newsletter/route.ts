@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 /**
  * Newsletter subscription API route.
  * Stores subscriber email in database for future email campaigns.

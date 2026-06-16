@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 ﻿import { NextResponse } from "next/server";
 import { getSubmissions, updateSubmissionStatus } from "@/lib/db";
 import { prisma } from "@/lib/db";

@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import Link from "next/link";
 import { Eye, ArrowLeft } from "lucide-react";
 import Header from "@/components/layout/Header";

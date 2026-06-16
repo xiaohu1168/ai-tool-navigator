@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { notFound } from 'next/navigation';
 import { getToolBySlug, getCategories, type Category, getAffiliateLinksByToolSlug, getPromptsByToolSlug, type AffiliateLink, type Prompt } from '@/lib/tools';
 import Header from '@/components/layout/Header';

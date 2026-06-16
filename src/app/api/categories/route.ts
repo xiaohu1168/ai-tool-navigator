@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 ﻿import { NextResponse } from "next/server";
 import { getCategories } from "@/lib/db";
 

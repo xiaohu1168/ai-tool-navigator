@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 ﻿import Link from 'next/link';
 import { getAllTools, getCategories, type Tool, type Category } from '@/lib/tools';
 import Header from '@/components/layout/Header';

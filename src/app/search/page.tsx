@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { Suspense } from "react";
 import { searchTools } from "@/lib/tools";
 import ToolCard from "@/components/ToolCard";

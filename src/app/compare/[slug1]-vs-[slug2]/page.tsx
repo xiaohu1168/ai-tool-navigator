@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { notFound } from 'next/navigation';
 import { getComparePageBySlug, getToolBySlug, type ComparePage, type Tool } from '@/lib/tools';
 import Header from '@/components/layout/Header';
