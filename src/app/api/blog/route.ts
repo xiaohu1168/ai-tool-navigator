@@ -12,7 +12,7 @@ function extractCookieToken(request: Request): string | null {
   return match ? match[1] : null;
 }
 
-function requireAuth(request: Request): Response | null {
+async function requireAuth(request: Request): Promise<Response | null> {
   const token = extractCookieToken(request);
   if (!await verifyToken(token ?? "")) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
@@ -37,7 +37,7 @@ export async function GET(request: Request) {
 }
 
 export async function POST(request: Request) {
-  const authErr = requireAuth(request);
+  const authErr = await requireAuth(request);
   if (authErr) return authErr;
 
   try {
@@ -70,7 +70,7 @@ export async function POST(request: Request) {
 }
 
 export async function PUT(request: Request) {
-  const authErr = requireAuth(request);
+  const authErr = await requireAuth(request);
   if (authErr) return authErr;
 
   try {
