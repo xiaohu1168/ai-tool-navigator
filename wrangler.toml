@@ -2,6 +2,10 @@
 # Cloudflare Pages reads environment variables from the dashboard, not this file.
 # This file is kept for documentation and local development reference only.
 
+name = "ai-tool-navigator"
+compatibility_date = "2024-01-01"
+pages_build_output_dir = ".vercel/output"
+
 [vars]
 NEXT_PUBLIC_SITE_URL = "https://heyaihub.com"
 NODE_VERSION = "20"
