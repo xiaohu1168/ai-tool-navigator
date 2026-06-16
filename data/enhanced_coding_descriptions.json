@@ -1,0 +1,62 @@
+{
+  "github-copilot": {
+    "name": "GitHub Copilot",
+    "description": "GitHub Copilot acts as an AI pair programmer directly inside VS Code and JetBrains IDEs, offering intelligent code completions, inline chat assistance, and terminal command suggestions. Its codebase-aware completions learn your project patterns to deliver relevant code snippets as you type. While it integrates deeply with the GitHub ecosystem and offers a free tier for students, pricing may feel steep for casual users and it can struggle with newer frameworks that haven't been extensively trained on. Best for full-time developers who write code daily and want to accelerate their workflow without switching tools."
+  },
+  "cursor": {
+    "name": "Cursor",
+    "description": "Cursor is an AI-native code editor built on a VS Code fork that reimagines how developers write software. Its killer feature is multi-file editing — describe a change in natural language and Cursor plans and implements it across your entire codebase. You can choose from multiple AI models to balance speed, cost, and quality. The free tier makes it accessible for indie developers and full-stack builders, though the AI features have a steeper learning curve than traditional editors and the forked base can occasionally feel less stable than vanilla VS Code."
+  },
+  "windsurf": {
+    "name": "Windsurf",
+    "description": "Windsurf, developed by Codeium, is an AI-first IDE that combines multi-file editing with an autonomous agent mode capable of tackling complex development tasks. Built on a VS Code-compatible foundation, it offers good extension compatibility while introducing unique AI workflows that go beyond simple autocomplete. The agent mode can plan, write, and debug code across multiple files — ideal for developers who want their AI assistant to do more than suggest single lines. Being newer to the market, its ecosystem of extensions and community resources is still growing compared to established players."
+  },
+  "replit": {
+    "name": "Replit",
+    "description": "Replit lets you build, run, and deploy full-stack applications entirely from your browser with AI assistance. Simply describe what you want to build and its AI engine generates the complete application — no local setup required. Built-in hosting means your projects are instantly live, making it ideal for rapid prototyping and learning to code. While it's less powerful than a full local IDE for complex production codebases, the ability to spin up a development environment in seconds and ship apps immediately is unmatched for beginners and solo builders."
+  },
+  "codeium": {
+    "name": "Codeium",
+    "description": "Codeium provides completely free AI code completion and intelligent code search across more than 70 IDEs and editors, making it the most accessible option for budget-conscious developers. Its built-in chat feature lets you ask coding questions inline, and unlike many competitors, it doesn't lock basic features behind a paywall. While its autocomplete accuracy trails slightly behind GitHub Copilot and it lacks some advanced enterprise features, its universal IDE support and zero-cost model make it the go-to choice for individual developers who want powerful AI assistance without subscriptions."
+  },
+  "tabnine": {
+    "name": "Tabnine",
+    "description": "Tabnine focuses on enterprise-grade security and privacy for AI-powered code completion, making it the preferred choice for organizations that can't risk code leaking to third parties. Its custom model training adapts to your team's codebase patterns, and enterprise SSO integration simplifies deployment at scale. While it offers fewer features than Copilot and its pricing structure can be confusing, the strong privacy guarantees — including keeping your code 100% private on enterprise plans — make it worthwhile for companies with strict compliance requirements."
+  },
+  "sourcegraph-cody": {
+    "name": "Sourcegraph Cody",
+    "description": "Sourcegraph Cody combines best-in-class codebase search with AI-powered chat and code completion, making it uniquely powerful for teams maintaining large, complex codebases. Its multi-repo awareness means it understands your entire organization's code, not just a single project. The generous free tier lets individuals try it before committing, and on-premise deployment options satisfy enterprise security needs. While its UI feels more like a specialized tool than a full IDE and its community is smaller than Copilot's, its deep code understanding gives it an edge for large-scale development."
+  },
+  "continue": {
+    "name": "Continue",
+    "description": "Continue is a 100% free and open-source AI code autocomplete extension for VS Code that lets you bring your own API keys — giving you complete control over which models to use and how your data is handled. If you run local models, your code never leaves your machine, making it the top choice for privacy-conscious developers. Its fully customizable architecture means you can tailor it to any workflow. The tradeoff is that it requires more initial setup than plug-and-play alternatives and has a smaller community for support and extensions."
+  },
+  "aider": {
+    "name": "Aider",
+    "description": "Aider is a terminal-based AI coding assistant that works entirely within your command line, making it the perfect tool for developers who prefer a keyboard-driven workflow. It's git-aware, meaning it understands your repository history and can stage, commit, and push changes as it edits your code. It supports many AI models so you can choose the best fit for your needs. While the terminal-only interface has a steeper learning curve for GUI-loving developers, power users appreciate the speed and integration with their existing dev workflow."
+  },
+  "v0": {
+    "name": "v0 by Vercel",
+    "description": "v0 by Vercel generates production-ready UI components from simple text prompts, outputting clean Tailwind CSS and React code that integrates seamlessly with Next.js projects. Instead of spending hours building components from scratch, you describe what you want and get instant, customizable UI code. It's a standout tool for frontend developers who want to prototype interfaces rapidly while maintaining code quality. While it's limited to frontend UI generation and isn't a full-stack coding tool, its output is genuinely production-ready rather than just scaffolding."
+  },
+  "bolt": {
+    "name": "bolt.new",
+    "description": "bolt.new lets you build complete full-stack web applications directly in your browser using natural language prompts. It handles dependency installation, project setup, and deployment automatically — you just describe what you want and watch it come together. This makes it exceptionally fast for prototyping and building web apps without any local development environment. While it's optimized for web projects and browser performance can vary with complex applications, its ability to go from idea to running app in minutes is remarkable for frontend developers and rapid prototypers."
+  },
+  "lovable": {
+    "name": "Lovable",
+    "description": "Lovable is an AI-powered full-stack app builder featuring real-time collaborative preview, so you can see changes as they happen while building with your team. Its intuitive interface and smooth user experience make it accessible even to non-technical founders who want to build applications without writing code. While it's a newer platform still expanding its tech stack support and may be limited to specific frameworks, its collaborative approach and polished UX set it apart from solo builders in the AI app generation space."
+  },
+  "supermaven": {
+    "name": "Supermaven",
+    "description": "Supermaven delivers lightning-fast AI code completions with an industry-leading 1 million token context window, meaning it understands vast amounts of your codebase in a single pass. Available for both VS Code and JetBrains IDEs, it focuses on speed and accuracy for developers who can't afford lag during coding sessions. While it's a newer player with a smaller community and fewer features beyond autocomplete compared to established tools, its blazing-fast response time and massive context window make it a compelling choice for developers who prioritize speed."
+  },
+  "rize": {
+    "name": "Rize",
+    "description": "Rize is an AI-powered time tracking and productivity analytics tool designed specifically for developers and knowledge workers. It automatically tracks how you spend your time across projects and applications, providing developer-focused insights that help you identify productivity patterns and optimize your workflow. Slack integration keeps your team informed without manual reporting. While the subscription cost adds up for freelancers and solo developers, and some users have privacy concerns about continuous monitoring, the automatic tracking eliminates the friction of manual time logging."
+  },
+  "codex-cli": {
+    "name": "OpenAI Codex CLI",
+    "description": "OpenAI Codex CLI is OpenAI's command-line AI coding agent that runs directly in your terminal, leveraging GPT-4o to write, execute, and debug code. Unlike GUI-based tools, it integrates naturally into a developer's existing terminal workflow, supporting complex operations like file editing, command execution, and shell scripting. It requires a ChatGPT Plus or Team subscription and is limited to Linux and macOS, but for OpenAI users who want the most powerful AI coding agent available, it delivers unmatched capability for terminal-native development."
+  }
+}
