@@ -7,7 +7,7 @@ async function requireAuth(request: NextRequest): Promise<{ decoded: ReturnType<
   const cookieHeader = request.headers.get('cookie') || '';
   const match = cookieHeader.match(/(?:^|; )admin_token=([^;]+)/);
   const token = match ? match[1] : null;
-  const decoded = token ? verifyToken(token) : null;
+  const decoded = token ? await verifyToken(token) : null;
 
   if (!decoded) {
     return { decoded: null, response: NextResponse.json({ error: 'Unauthorized' }, { status: 401 }) };

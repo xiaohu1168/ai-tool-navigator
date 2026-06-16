@@ -1,7 +1,5 @@
 ﻿import { getAllTools as dbGetAllTools, getToolsByCategory as dbGetByCat, getToolBySlug as dbGetBySlug, searchTools as dbSearch, getFeaturedTools as dbGetFeatured, getCategories as dbGetCats } from "./db";
 import { prisma } from "./db";
-import fs from "fs";
-import path from "path";
 
 export interface Tool {
   id: string; slug: string; name: string; description: string; url: string;
@@ -95,25 +93,8 @@ export async function getCategories(): Promise<Category[]> {
     const cats = await dbGetCats();
     return cats.map((c) => ({ id: c.id, name: c.name, icon: c.icon, description: c.description, count: c.count }));
   } catch {
-    try {
-      const dataDir = path.join(process.cwd(), "data");
-      if (!fs.existsSync(dataDir)) return [];
-      const file = path.join(dataDir, "categories.json");
-      if (!fs.existsSync(file)) return [];
-      const raw = fs.readFileSync(file, "utf-8").replace(/^\uFEFF/, "");
-      const cats = JSON.parse(raw);
-      const files = fs.readdirSync(dataDir).filter((f) => f.endsWith("_tools.json") && f !== "other_tools.json");
-      files.forEach((filename) => {
-        const catId = filename.replace("_tools.json", "");
-        const toolsFile = fs.readFileSync(path.join(dataDir, filename), "utf-8");
-        const tools = JSON.parse(toolsFile.replace(/^\uFEFF/, ""));
-        const cat = cats.find((c: unknown) => (c as Record<string, unknown>).id === catId);
-        if (cat) (cat as Record<string, unknown>)['count'] = tools.length;
-      });
-      return cats;
-    } catch {
-      return [];
-    }
+    // Edge runtime: fs/path not available, fall back to empty
+    return [];
   }
 }
 

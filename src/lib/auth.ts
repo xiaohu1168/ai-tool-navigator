@@ -1,4 +1,3 @@
-import crypto from "crypto";
 import { hashSync, compareSync } from "bcryptjs";
 import { prisma } from "./db";
 
@@ -16,53 +15,78 @@ export async function verifyPassword(password: string, hashStr: string): Promise
   }
 }
 
-// --- Base64url encoding helpers ---
+// --- Base64url encoding helpers (Edge-compatible, no Buffer) ---
 function base64urlEncode(data: string): string {
-  return Buffer.from(data).toString("base64")
-    .replace(/\+/g, "-")
-    .replace(/\//g, "_")
-    .replace(/=+$/, "");
+  try {
+    return btoa(unescape(encodeURIComponent(data)))
+      .replace(/\+/g, "-")
+      .replace(/\//g, "_")
+      .replace(/=+$/, "");
+  } catch {
+    const bytes = Array.from(new TextEncoder().encode(data));
+    let binary = "";
+    bytes.forEach(b => binary += String.fromCharCode(b));
+    return btoa(binary).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+  }
 }
 
 function base64urlDecode(str: string): string {
   let padded = str.replace(/-/g, "+").replace(/_/g, "/");
   while (padded.length % 4) padded += "=";
-  return Buffer.from(padded, "base64").toString("utf8");
+  try {
+    const binary = atob(padded).split("").map(c => String.fromCharCode(c.charCodeAt(0))).join("");
+    return decodeURIComponent(binary.split("%").map(p =>
+      "%" + p.padStart(2, "0")
+    ).join(""));
+  } catch {
+    return atob(padded).split("").map(c => String.fromCharCode(c.charCodeAt(0))).join("");
+  }
 }
 
-// --- JWT-like token (HMAC-SHA256) ---
-export interface JwtPayload {
-  userId: string;
-  role: string;
-  exp: number;
+// --- HMAC-SHA256 using Web Crypto API (Edge-compatible, no node:crypto) ---
+const hmacKeyCache = new Map<string, CryptoKey>();
+
+async function getHmacKey(secret: string): Promise<CryptoKey> {
+  const cached = hmacKeyCache.get(secret);
+  if (cached) return cached;
+  const key = await crypto.subtle.importKey(
+    "raw", new TextEncoder().encode(secret), { name: "HMAC", hash: "SHA-256" }, false, ["sign"]
+  );
+  hmacKeyCache.set(secret, key);
+  return key;
 }
 
-export function signToken(payload: JwtPayload): string {
+function uint8ToBase64url(bytes: Uint8Array): string {
+  let binary = "";
+  for (let i = 0; i < bytes.length; i++) binary += String.fromCharCode(bytes[i]);
+  return btoa(binary).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+}
+
+export async function signToken(payload: JwtPayload): Promise<string> {
   const secret = process.env.NEXT_PUBLIC_ADMIN_SALT;
   if (!secret) throw new Error("ADMIN_SALT not configured");
   const payloadJson = JSON.stringify(payload);
   const payloadB64 = base64urlEncode(payloadJson);
-  const sig = crypto.createHmac("sha256", secret).update(payloadB64).digest("base64")
-    .replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
-  return `${payloadB64}.${sig}`;
+  const key = await getHmacKey(secret);
+  const sigBuffer = await crypto.subtle.sign("HMAC", key, new TextEncoder().encode(payloadB64));
+  const sigB64 = uint8ToBase64url(new Uint8Array(sigBuffer));
+  return `${payloadB64}.${sigB64}`;
 }
 
-export function verifyToken(token: string): JwtPayload | null {
+export async function verifyToken(token: string): Promise<JwtPayload | null> {
   try {
     if (!token) return null;
     const parts = token.split(".");
     if (parts.length !== 2) return null;
     const [payloadB64, sigB64] = parts;
 
-    // Verify signature
     const secret = process.env.NEXT_PUBLIC_ADMIN_SALT;
     if (!secret) return null;
-    const expectedSig = crypto.createHmac("sha256", secret)
-      .update(payloadB64).digest("base64")
-      .replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+    const key = await getHmacKey(secret);
+    const sigBuffer = await crypto.subtle.sign("HMAC", key, new TextEncoder().encode(payloadB64));
+    const expectedSig = uint8ToBase64url(new Uint8Array(sigBuffer));
     if (expectedSig !== sigB64) return null;
 
-    // Decode and validate expiry
     const payload = JSON.parse(base64urlDecode(payloadB64));
     if (!payload.userId || !payload.exp || Date.now() > payload.exp) return null;
     return payload;

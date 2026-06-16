@@ -36,7 +36,7 @@ export async function POST(request: Request) {
     await updateUserLastLogin(user.id);
 
     // Generate JWT-like token with userId and role
-    const token = signToken({
+    const token = await signToken({
       userId: user.id,
       role: user.role,
       exp: Date.now() + 7 * 24 * 60 * 60 * 1000, // 7 days

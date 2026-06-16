@@ -14,7 +14,7 @@ function extractCookieToken(request: Request): string | null {
 
 function requireAuth(request: Request): Response | null {
   const token = extractCookieToken(request);
-  if (!verifyToken(token ?? "")) {
+  if (!await verifyToken(token ?? "")) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
   return null;

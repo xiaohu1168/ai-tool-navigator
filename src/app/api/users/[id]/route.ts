@@ -21,7 +21,7 @@ export async function PATCH(
   const cookieHeader = request.headers.get('cookie') || '';
   const tokenMatch = cookieHeader.match(/(?:^|; )admin_token=([^;]+)/);
   const token = tokenMatch ? tokenMatch[1] : null;
-  const decoded = token ? verifyToken(token) : null;
+  const decoded = token ? await verifyToken(token) : null;
 
   if (!decoded) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
@@ -71,7 +71,7 @@ export async function DELETE(
   const cookieHeader = request.headers.get('cookie') || '';
   const tokenMatch = cookieHeader.match(/(?:^|; )admin_token=([^;]+)/);
   const token = tokenMatch ? tokenMatch[1] : null;
-  const decoded = token ? verifyToken(token) : null;
+  const decoded = token ? await verifyToken(token) : null;
 
   if (!decoded) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
