@@ -1,6 +1,6 @@
 # Hey AI Hub — Cloudflare Pages Configuration
-# Note: Cloudflare Pages reads env vars from the dashboard, not wrangler.toml
-# This file is kept for reference and local development.
+# Cloudflare Pages reads environment variables from the dashboard, not this file.
+# This file is kept for documentation and local development reference only.
 
 [vars]
 NEXT_PUBLIC_SITE_URL = "https://heyaihub.com"
