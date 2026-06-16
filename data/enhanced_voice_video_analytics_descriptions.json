@@ -1,0 +1,138 @@
+{
+  "voice": [
+    {
+      "name": "ElevenLabs",
+      "slug": "elevenlabs",
+      "description": "ElevenLabs produces the most realistic AI-generated voices available, with near-human quality that's indistinguishable from real recordings. Its voice cloning feature creates perfect replicas from short samples, and multi-language support covers dozens of languages while maintaining natural intonation. Content creators and podcasters use it for narration, dubbing, and voiceover work that would otherwise require expensive studio sessions. While pricing scales with usage and ethical concerns around voice cloning exist, it remains the gold standard for AI voice generation."
+    },
+    {
+      "name": "Murf AI",
+      "slug": "murf",
+      "description": "Murf AI delivers studio-quality AI voices tailored for professional video creators and educators who need reliable narration without hiring voice actors. Its interface lets you fine-tune pitch, speed, and emphasis for each sentence, giving you control over the final output. While it's less known than ElevenLabs for pure voice cloning, its presentation-focused features and multi-language support make it ideal for training videos, explainer content, and educational materials."
+    },
+    {
+      "name": "Speechify",
+      "slug": "speechify",
+      "description": "Speechify transforms text into natural-sounding speech with celebrity-voiced options, making it a favorite among readers, students, and people with dyslexia. It reads books, articles, documents, and web pages aloud at adjustable speeds, helping users consume more content in less time. While some features require a subscription and the celebrity voices are a novelty rather than a professional tool, its accessibility features and ease of use make it genuinely valuable for power readers and those who struggle with traditional reading."
+    },
+    {
+      "name": "NaturalReader",
+      "slug": "naturalreader",
+      "description": "NaturalReader converts text to speech with a good free tier that's accessible for students and professionals who need occasional text-to-speech conversion. It supports a wide range of document formats and web pages, producing natural-sounding speech across multiple languages. While its voices aren't quite as advanced as premium competitors, its generous free tier and cross-platform availability make it a practical choice for students and professionals who need reliable text-to-speech without paying for a subscription."
+    },
+    {
+      "name": "PlayHT",
+      "slug": "playht",
+      "description": "PlayHT offers an extensive selection of AI voices across dozens of languages and accents, making it a versatile choice for content creators and developers who need voice APIs. Its wide voice selection means you can find the perfect voice for any project, from audiobook narration to IVR systems. The developer-friendly API lets you integrate AI voices directly into apps and platforms, while its ready-to-use interface works for standalone content creation. Both developers and creators find value in its flexibility."
+    },
+    {
+      "name": "Resemble AI",
+      "slug": "resemble",
+      "description": "Resemble AI specializes in real-time voice cloning and generation, making it suitable for enterprises and game developers who need dynamic, interactive voice systems. Its real-time capabilities allow voices to respond instantly in gaming, virtual assistants, and interactive content. While it's targeted at professional applications rather than casual content creation, its low-latency voice synthesis and enterprise-grade security make it a powerful tool for companies building voice-driven products."
+    },
+    {
+      "name": "VoiceMod",
+      "slug": "voicemod",
+      "description": "VoiceMod enables real-time voice changing for gamers, streamers, and content creators who want to transform their voice live during broadcasts or gameplay. Its library of pre-built voice effects ranges from subtle pitch shifts to complete character transformations, and it integrates with popular platforms like Discord, Twitch, and OBS. While it's designed primarily for entertainment rather than professional voice work, its real-time capabilities and fun soundboard features make it a staple for streamers."
+    },
+    {
+      "name": "Podcastle",
+      "slug": "podcastle",
+      "description": "Podcastle is an all-in-one podcast production platform that combines AI-powered recording, editing, transcription, and enhancement tools. Podcasters use it to go from raw recording to published episode with minimal effort — its Studio Sound feature cleans up audio quality, and AI transcription generates show notes automatically. While it's specialized for podcasting rather than a general-purpose audio tool, podcast creators who want to produce professional episodes without expensive studio equipment will find it a comprehensive solution."
+    }
+  ],
+  "video": [
+    {
+      "name": "Runway ML",
+      "slug": "runway",
+      "description": "Runway ML is an industry-leading AI video platform offering a comprehensive suite of creative tools for video generation, editing, and enhancement. Its Gen-2 model creates videos from text or image prompts, while its editing toolkit includes motion tracking, green screen removal, and frame interpolation. While it has a learning curve and the subscription cost adds up, video creators and filmmakers who need professional AI video capabilities will find Runway's feature set unmatched. Its active community continuously pushes what's possible with AI video."
+    },
+    {
+      "name": "Pika",
+      "slug": "pika",
+      "description": "Pika is an AI video generation platform that makes creating short animated clips accessible through simple text and image prompts. Its user-friendly interface and Discord community make it easy to get started, and the quality of generated videos has improved dramatically. While clips are shorter in duration and you have less granular control over the output compared to Runway, Pika is ideal for social media creators who need quick, engaging video content without the complexity of professional editing tools."
+    },
+    {
+      "name": "Kling AI",
+      "slug": "kling",
+      "description": "Kling AI is an AI video generation tool that produces excellent quality videos with a focus on realistic motion and detail. While it's particularly strong in the Chinese market, its quality competes with global leaders like Sora and Runway. Creators who need high-quality AI video generation find it a compelling alternative, especially for content targeting Asian audiences. Its quality-to-price ratio makes it worth considering alongside established Western platforms."
+    },
+    {
+      "name": "Sora",
+      "slug": "sora",
+      "description": "Sora by OpenAI represents the highest quality AI video generation currently available, creating cinematic-quality videos from text prompts with remarkable realism and coherence. While it's the newest major player in AI video and access may be limited depending on your OpenAI subscription tier, its output quality consistently outperforms competitors in realism, physics understanding, and scene complexity. For creators wanting the best possible AI-generated video quality, Sora is currently the benchmark — assuming you have access."
+    },
+    {
+      "name": "CapCut",
+      "slug": "capcut",
+      "description": "CapCut is a completely free video editing platform packed with AI-powered features including auto-captions, effects, templates, and background removal. Social media creators use it to produce engaging TikToks, Reels, and Shorts without paying for expensive editing software. Its template library and AI effects keep pace with trending styles, while its free pricing means anyone can create polished videos. While it's optimized for short-form social content rather than professional filmmaking, it's the most accessible video editor available."
+    },
+    {
+      "name": "Opus Clip",
+      "slug": "opus-clip",
+      "description": "Opus Clip automatically repurposes long videos into short, viral-worthy clips optimized for TikTok, Reels, and Shorts. Content creators and marketers use it to extract the most engaging moments from podcasts, webinars, and long-form videos — saving hours of manual clipping. Its AI identifies highlight moments, adds captions automatically, and optimizes aspect ratios for each platform. For creators who produce long-form content and want to amplify reach across short-form platforms, it's a productivity multiplier."
+    },
+    {
+      "name": "Vizard",
+      "slug": "vizard",
+      "description": "Vizard converts long videos into short, platform-optimized clips with automatic captioning and formatting. YouTubers and podcasters use it to repurpose their existing content into shareable short-form videos that drive traffic back to their main channel. Its auto-captioning is accurate and styled, while its AI clipping engine identifies the most engaging segments automatically. While it's less sophisticated than full editing tools, its specialized focus on video repurposing makes it efficient for content marketers."
+    },
+    {
+      "name": "InVideo AI",
+      "slug": "invideo",
+      "description": "InVideo AI generates complete videos from text prompts — describe your topic, choose a style, and it produces a fully edited video with voiceover, stock footage, and music. Marketers and YouTubers use it to create explainer videos, product reviews, and educational content without any editing experience. While the stock footage can feel generic and you may need to customize outputs for a unique brand feel, its ability to go from idea to publishable video in minutes is unmatched for content creators."
+    },
+    {
+      "name": "Pictory",
+      "slug": "pictory",
+      "description": "Pictory specializes in converting blog posts and articles into engaging videos automatically. Bloggers and marketers use it to repurpose their written content into video format, reaching audiences who prefer video consumption. It extracts key points from your article, matches them with relevant stock footage, adds voiceover narration, and produces a shareable video. While it's limited to blog-to-video conversion rather than general video creation, this specialization makes it a powerful content repurposing tool."
+    },
+    {
+      "name": "Synthesia",
+      "slug": "synthesia",
+      "description": "Synthesia creates videos with realistic AI avatars that speak your script in multiple languages with perfect lip synchronization. Corporate trainers and educators use it to produce professional training videos, course content, and presentations without cameras, studios, or actors. While the avatar technology isn't yet perfect — subtle uncanny valley effects are still visible — its ability to generate multi-language videos from a single script makes it invaluable for global training and education at scale."
+    }
+  ],
+  "analytics": [
+    {
+      "name": "Mixpanel",
+      "slug": "mixpanel",
+      "description": "Mixpanel provides powerful event-based product analytics that help teams understand exactly how users interact with their product. Product teams use its granular event tracking to build detailed user funnels, retention cohorts, and engagement metrics. Its intuitive interface makes it easy to explore data without writing SQL, while its AI-powered insights surface patterns that might be missed in manual analysis. While it can be expensive at scale, its depth of product analytics is among the best available."
+    },
+    {
+      "name": "Amplitude",
+      "slug": "amplitude",
+      "description": "Amplitude is a deep product analytics platform used by product teams and enterprises to understand user behavior at scale. Its behavioral cohort analysis, funnel visualization, and retention tracking help teams make data-driven decisions about product development. While it has a steeper learning curve than simpler tools and its enterprise pricing targets larger organizations, its comprehensive feature set makes it the analytics platform of choice for mature product teams."
+    },
+    {
+      "name": "Google Analytics 4",
+      "slug": "google-analytics",
+      "description": "Google Analytics 4 is the completely free web analytics platform from Google, used by virtually every website owner who wants to understand their traffic. It provides comprehensive insights into visitor behavior, acquisition channels, and conversion funnels, with AI-powered anomaly detection and predictive metrics. While its interface can be overwhelming for beginners and its event-based model represents a significant change from Universal Analytics, its free pricing and deep integration with the Google ecosystem make it essential."
+    },
+    {
+      "name": "Plausible",
+      "slug": "plausible",
+      "description": "Plausible is a lightweight, GDPR-compliant web analytics solution that respects visitor privacy while providing the essential metrics you need. Privacy-focused site owners choose it over Google Analytics because it doesn't use cookies, doesn't track individuals, and is fully compliant with EU privacy regulations. While it offers fewer features than GA4, its simplicity, speed, and privacy-first approach make it ideal for bloggers and small sites that want good data without the surveillance."
+    },
+    {
+      "name": "Fathom",
+      "slug": "fathom",
+      "description": "Fathom is a beautifully simple web analytics tool that provides the essential metrics without the complexity and privacy concerns of Google Analytics. Bloggers and small site owners use it for its straightforward dashboard, cookie-less approach, and GDPR compliance — all in under 1KB of JavaScript. While it offers basic analytics without advanced features like funnel analysis or user segmentation, its simplicity and speed make it the perfect choice for those who want good data without a learning curve."
+    },
+    {
+      "name": "Looker Studio",
+      "slug": "looker-studio",
+      "description": "Looker Studio (formerly Data Studio) is a free data visualization platform that connects to dozens of data sources to create interactive dashboards and reports. Marketers and analysts use it to combine data from Google Analytics, AdWords, Sheets, and more into a single reporting view. While building complex reports requires familiarity with the tool and its data modeling capabilities are limited compared to Tableau, its free pricing and wide integrations make it accessible for teams of any size."
+    },
+    {
+      "name": "Tableau",
+      "slug": "tableau",
+      "description": "Tableau is the industry leader in data visualization and business intelligence, trusted by enterprises and data analysts worldwide. Its powerful drag-and-drop interface turns complex datasets into interactive, visually stunning dashboards that communicate insights clearly. While it requires a paid subscription and has a significant learning curve, Tableau's depth of visualization options, real-time data connections, and enterprise security features make it the gold standard for business intelligence."
+    },
+    {
+      "name": "Power BI",
+      "slug": "power-bi",
+      "description": "Power BI is Microsoft's business intelligence platform that integrates seamlessly with Excel and the Microsoft 365 ecosystem. Microsoft users leverage their existing skills to create powerful dashboards and reports, with AI-powered insights and natural language query capabilities. While its visualization options are slightly less flexible than Tableau and it works best within the Microsoft ecosystem, its Excel integration and enterprise features make it a natural choice for organizations already invested in Microsoft products."
+    }
+  ]
+}

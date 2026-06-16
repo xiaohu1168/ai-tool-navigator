@@ -1,0 +1,108 @@
+{
+  "education": [
+    {
+      "name": "Claude",
+      "slug": "claude",
+      "description": "Claude by Anthropic is an AI assistant that excels in research, analysis, and long-form writing with its massive 200,000-token context window. Researchers and writers use it to process entire documents, conduct literature reviews, and generate well-reasoned responses. Its clean interface and thoughtful responses make it a valuable study companion, though file upload limits on the free tier and slower response times during peak hours can interrupt heavy users. For academic research and deep analysis, Claude's reasoning capabilities consistently rank among the best available."
+    },
+    {
+      "name": "Duolingo Max (AI)",
+      "slug": "duolingo-max",
+      "description": "Duolingo Max brings AI-powered language learning to Duolingo's popular platform with interactive AI characters for speaking practice and Explain My Answer explanations. Language learners use it to practice conversations in a low-pressure environment, getting real-time feedback on pronunciation and grammar. While it's a premium feature on top of the free Duolingo app and its language selection is narrower than dedicated language apps, the AI characters provide speaking practice that's genuinely effective and fun — something traditional language apps have struggled to deliver."
+    },
+    {
+      "name": "Quizlet",
+      "slug": "quizlet-ai",
+      "description": "Quizlet combines AI-powered flashcards with proven spaced repetition to help students memorize information more effectively. Its AI features generate study sets from textbook chapters, create practice tests automatically, and adapt to your weak areas. While it's primarily a study tool rather than a comprehensive learning platform, its flashcard system is one of the most effective memorization tools available. The free tier provides solid value, with AI features available in paid plans."
+    },
+    {
+      "name": "Khan Academy (AI)",
+      "slug": "khan-mastery",
+      "description": "Khan Academy remains one of the best free education platforms available, offering comprehensive courses in math, science, computing, and more for students of all ages. Its AI-powered features enhance its already excellent content with personalized learning paths and adaptive practice. Parents use it to support their children's education, while students rely on it for supplemental learning. Completely free with no premium tier, it's one of the few educational platforms that truly democratizes access to quality education."
+    },
+    {
+      "name": "Tome",
+      "slug": "tome",
+      "description": "Tome is an AI-powered presentation tool that creates beautiful, narrative-driven presentations from simple text prompts. Presenters and marketers use it to go from idea to polished presentation in minutes, with AI-generated content, images, and layouts. Its storytelling-focused approach produces presentations that feel like a narrative journey rather than a slide deck. While it's specialized for presentations rather than a general design tool, its AI-assisted workflow makes professional-quality presentations accessible to anyone."
+    },
+    {
+      "name": "Gamma",
+      "slug": "gamma",
+      "description": "Gamma is an AI-powered tool for fast creation of presentations, documents, and web pages from text prompts. Presenters and educators use it to generate polished content quickly — describe your topic and get a complete, visually appealing output in seconds. Its flexible format supports everything from slide decks to interactive documents, making it versatile for different use cases. While its designs may not match the polish of hand-crafted presentations, its speed and ease of use make it ideal for quick presentations and educational materials."
+    }
+  ],
+  "customer_service": [
+    {
+      "name": "Intercom AI",
+      "slug": "intercom-ai",
+      "description": "Intercom AI combines a powerful messaging platform with AI-powered assistant capabilities to deliver intelligent customer support at scale. SaaS companies and startups use it to automate common support queries while seamlessly handing off complex issues to human agents. Its AI assistant learns from your existing knowledge base to provide accurate answers without human intervention. While it's targeted at growing companies and can be expensive for very small businesses, its combination of messaging, automation, and AI makes it one of the most comprehensive customer communication platforms available."
+    },
+    {
+      "name": "Drift",
+      "slug": "drift",
+      "description": "Drift is a conversational marketing and sales platform that uses AI chatbots to engage website visitors in real-time conversations. B2B companies use it to qualify leads, schedule demos, and answer questions 24/7 without waiting for sales reps to respond. Its conversational approach to marketing feels more natural than traditional forms and captures leads that would otherwise bounce. While it's optimized for B2B rather than e-commerce and its pricing targets mid-market companies, its AI-powered conversational engine is among the best in the market."
+    },
+    {
+      "name": "Tawk.to",
+      "slug": "tawk",
+      "description": "Tawk.to is a completely free live chat and customer support platform that provides essential chat features without any subscription cost. Small businesses use it to offer real-time customer support on their website, track visitor chats, and set up automated greeting messages. While it lacks the advanced AI features of premium platforms and its interface feels dated, its zero-cost model and core functionality make it the best starting point for businesses that need basic live chat without budget."
+    },
+    {
+      "name": "Crisp",
+      "slug": "crisp",
+      "description": "Crisp is a beautiful, modern customer communication platform that combines live chat, email, and knowledge base features in one interface. Small to medium businesses appreciate its clean design and intuitive workflow, while its AI features help automate responses and organize conversations. The free tier provides enough functionality to get started, with paid plans adding advanced features like chat routing and CRM integration. While it's less feature-rich than enterprise platforms, its balance of beauty and functionality makes it a favorite among design-conscious teams."
+    },
+    {
+      "name": "Zendesk AI",
+      "slug": "zendesk-ai",
+      "description": "Zendesk AI is the AI-powered version of the industry-standard customer support platform, trusted by enterprise support teams worldwide. It combines Zendesk's comprehensive ticketing system with AI features for automated responses, smart routing, and agent assistance. Enterprise organizations use it to manage thousands of support tickets while maintaining response quality and consistency. While it's expensive and complex to set up, its depth of features, integrations, and AI capabilities make it the enterprise choice for customer support."
+    },
+    {
+      "name": "Freshdesk",
+      "slug": "freshdesk",
+      "description": "Freshdesk is a customer support platform with a good free tier that scales well for small to medium teams. Its AI-powered features include Freddy AI for automated ticket categorization, suggested responses, and self-service knowledge base creation. Small teams appreciate its ease of setup and the breadth of features available even in the free plan. While its AI capabilities aren't as advanced as Intercom or Zendesk, its accessibility and feature completeness make it a solid choice for growing teams."
+    },
+    {
+      "name": "Huly",
+      "slug": "huly",
+      "description": "Huly is an open-source project management and team collaboration platform that combines issue tracking, sprints, and chat in one self-hosted solution. Development teams use it as a free alternative to Jira and Linear, with full control over their data since it can be self-hosted. While it's newer than established competitors and its feature set is still growing, its open-source nature and all-in-one approach appeal to teams that want flexibility without vendor lock-in."
+    },
+    {
+      "name": "Chatbase",
+      "slug": "chatbase",
+      "description": "Chatbase lets website owners and SaaS founders create a custom AI chatbot trained on their own content in minutes — no coding required. Simply paste your website URL or upload documents, and it generates a chatbot that answers questions about your product or service. Website owners use it to provide instant support and improve user experience without hiring a support team. While it's limited to simple Q&A rather than complex customer workflows, its ease of setup and AI-powered accuracy make it an accessible entry point into AI customer support."
+    }
+  ],
+  "devops": [
+    {
+      "name": "Vercel",
+      "slug": "vercel",
+      "description": "Vercel provides zero-config deployment for frontend applications, with seamless integration for Next.js and other popular frameworks. Frontend developers and Next.js teams use it to deploy globally with automatic HTTPS, edge caching, and instant rollbacks. Its developer experience is exceptional — push to git and your site deploys automatically. While it's optimized for frontend and edge computing rather than traditional backend deployment, its speed and simplicity make it the go-to deployment platform for modern web applications."
+    },
+    {
+      "name": "Railway",
+      "slug": "railway",
+      "description": "Railway makes deploying full-stack applications simple with an intuitive interface that handles databases, servers, and infrastructure automatically. Full-stack developers use it to go from local development to production in minutes, with support for any language or framework. Its visual interface abstracts away infrastructure complexity while still providing the flexibility to customize. While it's newer than some competitors and its pricing scales with resource usage, its developer experience is among the best in the deployment space."
+    },
+    {
+      "name": "Fly.io",
+      "slug": "fly-io",
+      "description": "Fly.io deploys applications close to users through its global edge network, running your code as lightweight VMs in over 30 locations worldwide. Backend developers use it to deploy full-stack applications with low latency globally, supporting Docker containers and multiple programming languages. Its global infrastructure means your application runs physically closer to your users, improving response times significantly. While its pricing model can be complex and its interface is less polished than competitors, its global deployment capabilities are unmatched for performance-sensitive applications."
+    },
+    {
+      "name": "Supabase",
+      "slug": "supabase",
+      "description": "Supabase is an open-source Firebase alternative that provides a PostgreSQL database, authentication, storage, and real-time subscriptions out of the box. Full-stack developers and startups use it as a complete backend solution without managing servers. Its open-source nature means you can self-host it, and its PostgreSQL foundation means you're not locked into a proprietary database. While it's not a traditional DevOps tool, its managed infrastructure reduces backend operational burden significantly."
+    },
+    {
+      "name": "Render",
+      "slug": "render",
+      "description": "Render offers a simple, unified platform for deploying websites, APIs, databases, and more with an intuitive interface that abstracts away infrastructure complexity. Startups and indie developers use it to deploy full applications with minimal configuration — connect your git repo and Render handles the rest. Its free tier for static sites and low-cost plans for web services make it accessible for small projects. While it offers fewer customization options than AWS or GCP, its simplicity and reliability make it ideal for teams that want to focus on building rather than managing infrastructure."
+    },
+    {
+      "name": "Cloudflare AI",
+      "slug": "cloudflare-ai",
+      "description": "Cloudflare AI extends Cloudflare's global edge network with AI inference capabilities, letting you run machine learning models close to your users at the edge. Backend developers and API makers use it to add AI features to their applications without the latency of calling distant cloud regions. Its massive global network means AI responses are delivered in milliseconds, and its Workers platform lets you run custom AI models at the edge. While it requires familiarity with Cloudflare's ecosystem and edge computing concepts, its combination of global scale and AI capability is unique."
+    }
+  ]
+}

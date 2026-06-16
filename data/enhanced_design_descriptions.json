@@ -1,0 +1,62 @@
+{
+  "midjourney": {
+    "name": "Midjourney",
+    "description": "Midjourney produces the highest quality AI-generated images in the industry, with photorealistic results and stunning artistic detail that consistently outperforms competitors. Its vibrant community shares prompts and techniques constantly, and regular model updates keep pushing the quality ceiling higher. While there's no free tier and mastering prompt crafting has a learning curve, visual creators and designers who need production-quality AI images will find it worth every penny. Accessible through Discord or its web interface, it's the go-to tool for anyone serious about AI art."
+  },
+  "dall-e-3": {
+    "name": "DALL-E 3",
+    "description": "DALL-E 3 by OpenAI generates high-quality images directly from natural language conversations within ChatGPT, making it the most accessible AI image generator for non-technical users. Its tight integration with ChatGPT means you can describe what you want in plain English and iterate through refinements conversationally. It also handles text rendering within images better than most competitors. While its artistic style doesn't quite match Midjourney's polish and customization options are limited, ChatGPT subscribers get immediate access to a capable image generator without learning new tools."
+  },
+  "stable-diffusion": {
+    "name": "Stable Diffusion",
+    "description": "Stable Diffusion is an open-source AI image generation model that you can run entirely on your own hardware, giving you complete control over every aspect of the creative process with zero data leaving your machine. If you have a capable GPU, it's completely free to use and supports an enormous ecosystem of community-trained models and extensions. The tradeoff is a complex setup process and hardware requirements that make it unsuitable for casual users, but for tech-savvy creatives and privacy-focused professionals, it offers unmatched flexibility and freedom."
+  },
+  "canva-ai": {
+    "name": "Canva AI (Magic Studio)",
+    "description": "Canva AI (Magic Studio) brings professional-level design capabilities to anyone, even with zero design experience. Its incredibly intuitive interface, massive template library, and AI-powered features like Magic Write and AI image generation let you create presentations, social media graphics, and marketing materials in minutes. While you sacrifice fine-grained control compared to professional tools like Photoshop, the speed and ease of use make it the go-to for non-designers and marketers who need quality visuals fast. The free tier is generous enough for light use."
+  },
+  "figma-ai": {
+    "name": "Figma AI",
+    "description": "Figma AI adds artificial intelligence to the world's leading UI/UX design tool, bringing AI-powered wireframe generation and design suggestions to an already powerful collaborative platform. As the industry-standard tool for interface design, Figma's AI features complement its existing strengths in real-time collaboration and prototyping. While the AI capabilities are still maturing and the platform has a steep learning curve for beginners, UI/UX designers who already use Figma will find the AI additions increasingly valuable for accelerating their workflow."
+  },
+  "adobe-firefly": {
+    "name": "Adobe Firefly",
+    "description": "Adobe Firefly is Adobe's generative AI engine integrated directly into Creative Cloud applications like Photoshop, Illustrator, and Express. Unlike most AI image generators, Firefly is trained exclusively on Adobe Stock content, which means the images it produces are commercially safe to use without copyright concerns. It excels at text effects, generative fills, and style transfers within familiar Adobe workflows. While it requires an Adobe subscription and doesn't match Midjourney's creative range, its commercial safety and Creative Cloud integration make it essential for professional designers."
+  },
+  "leonardo-ai": {
+    "name": "Leonardo AI",
+    "description": "Leonardo AI is an AI image generation platform that stands out with a generous free tier and fine-tuned models optimized for game assets, illustrations, and digital art. It offers more model variety and customization than many competitors, and its focus on game development assets makes it particularly useful for indie game creators. While it's less widely known than Midjourney and its model updates come slower, Leonardo AI provides excellent quality at a lower price point, especially for artists and game developers who need consistent visual styles."
+  },
+  "ideogram": {
+    "name": "Ideogram",
+    "description": "Ideogram specializes in AI image generation with exceptional text rendering — it can accurately place typography within generated images, solving one of the biggest pain points of AI art tools. Its clean, intuitive interface makes it easy to create professional-looking designs, and the free tier is among the most generous in the space. While it's a newer platform with less model variety than established competitors, its text-in-image capability makes it indispensable for designers who need quotes, posters, or branded graphics with accurate typography."
+  },
+  "recraft": {
+    "name": "Recraft",
+    "description": "Recraft is an AI design tool that uniquely generates scalable vector graphics (SVG) alongside raster images, making it particularly valuable for logo designers, icon creators, and anyone who needs resolution-independent artwork. Its style consistency features ensure all generated assets match your brand guidelines, and it produces clean, professional outputs suitable for commercial use. While it's less well-known than Midjourney and offers fewer model options, its vector generation capability sets it apart as the go-to AI tool for design systems and branding work."
+  },
+  "kittl": {
+    "name": "Kittl",
+    "description": "Kittl is an AI-powered design platform built around stunning templates for merchandise design, posters, logos, and print-on-demand products. Its AI text effects create eye-catching typography that stands out, and its template library is curated for commercial design use. While its smaller community means fewer tutorials and resources compared to Canva, and it's less flexible for custom designs, Kittl excels at helping creators produce professional merch and print designs quickly — especially for Etsy sellers and POD entrepreneurs."
+  },
+  "photoroom": {
+    "name": "PhotoRoom",
+    "description": "PhotoRoom is an AI-powered photo editing tool that excels at background removal and product photography enhancement, making it a favorite among e-commerce sellers and photographers. Its mobile app lets you snap a product photo and instantly get a clean, professional-looking shot with AI-generated backgrounds. While it's limited to photo editing tasks rather than full design creation, its specialization in product photography is unmatched — sellers can transform phone photos into catalog-quality images in seconds."
+  },
+  "runway": {
+    "name": "Runway ML",
+    "description": "Runway ML is an industry-leading AI video platform that offers a comprehensive suite of creative tools for video generation, editing, and enhancement. Its Gen-2 model can create videos from text or images, while its editing toolkit includes motion tracking, green screen removal, and frame interpolation. While it has a learning curve and the subscription cost adds up for casual users, video creators and filmmakers who need professional AI video capabilities will find Runway's feature set unmatched. Its active community continuously pushes what's possible with AI video."
+  },
+  "pika": {
+    "name": "Pika",
+    "description": "Pika is an AI video generation platform that makes creating short animated clips accessible to everyone through simple text and image prompts. Its user-friendly interface and Discord community make it easy to get started, and the quality of generated videos has improved dramatically. While clips are shorter in duration and you have less granular control over the output compared to Runway, Pika is ideal for social media creators who need quick, engaging video content without the complexity of professional editing tools."
+  },
+  "elevenlabs": {
+    "name": "ElevenLabs",
+    "description": "ElevenLabs produces the most realistic AI-generated voices available today, with near-human quality that's indistinguishable from real recordings in many cases. Its voice cloning feature lets you recreate any voice from a short sample, and multi-language support means you can generate content in dozens of languages. While pricing scales with usage which can get expensive for heavy users, and the voice cloning capability raises ethical considerations, content creators and podcasters who need professional-quality voiceovers will find it the best option on the market."
+  },
+  "descript": {
+    "name": "Descript",
+    "description": "Descript is an all-in-one audio and video editing tool that works like a word processor — edit your media by editing the transcript text. Its Studio Sound AI feature transforms mediocre recordings into studio-quality audio, and the Overdub feature lets you correct spoken words by typing new text in your own cloned voice. While the best features require a subscription and there's a learning curve for the unique editing paradigm, podcasters and video creators who want to edit faster than traditional tools will love Descript's text-based workflow."
+  }
+}

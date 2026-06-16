@@ -1,0 +1,50 @@
+{
+  "chatgpt": {
+    "name": "ChatGPT",
+    "description": "ChatGPT by OpenAI is the most versatile AI assistant available, capable of handling everything from creative writing and email drafting to complex reasoning and analysis. Its free tier is remarkably generous, letting you test its capabilities before committing to a paid plan. While it produces broad, useful output across any topic, the results often need some editing to hit the right tone and avoid generic phrasing. Rate limits on the free tier may interrupt heavy users during peak times, but for most people writing emails, blog posts, or brainstorming ideas, it's the best starting point in the AI assistant landscape."
+  },
+  "claude": {
+    "name": "Claude",
+    "description": "Claude by Anthropic is an AI assistant that excels in long-form writing and deep reasoning, backed by a massive 200,000-token context window that lets you paste entire documents or research papers and get coherent, well-structured responses. Its clean, distraction-free UI makes it comfortable for extended writing sessions, and its reasoning capabilities consistently rank among the best in the industry. File uploads on the free tier are limited, and response speeds can slow during peak usage, but researchers and writers who need to work with large amounts of text will find Claude's depth unmatched."
+  },
+  "jasper": {
+    "name": "Jasper",
+    "description": "Jasper is an AI content platform built specifically for marketing teams and agencies that need to produce brand-aligned copy at scale. Its best-in-class tone-of-voice feature learns your brand guidelines so every piece of content matches your voice, whether it's social posts, email campaigns, or landing pages. Comprehensive marketing templates cover dozens of use cases, and built-in team collaboration features keep everyone aligned. The subscription cost is high for individual users, and outputs still benefit from human refinement, but for teams producing content regularly, Jasper saves hours of editing time per week."
+  },
+  "copy-ai": {
+    "name": "Copy.ai",
+    "description": "Copy.ai is a copywriting tool optimized for social media managers and marketers who need to produce high volumes of social posts, ad copy, and product descriptions quickly. Its intuitive interface and extensive template library make it easy to generate content for any platform, from Instagram captions to Facebook ads. While it's not as powerful for long-form content like blog articles or whitepapers, its strength lies in short, punchy marketing copy. The free tier is limited, but its ease of use and template variety make it a favorite among social media teams."
+  },
+  "writesonic": {
+    "name": "Writesonic",
+    "description": "Writesonic is an AI writing assistant that prioritizes SEO optimization and value for money, making it ideal for bloggers and SEO-focused content creators. Its built-in SEO features help you craft content that ranks, and its article writer can generate long-form blog posts that are genuinely useful. The pricing is competitive compared to competitors like Jasper, but quality can vary depending on which template you use — some produce excellent results while others need heavy editing. The free tier is limited, but paid plans offer strong value for serious content marketers."
+  },
+  "quillbot": {
+    "name": "QuillBot",
+    "description": "QuillBot is an AI-powered paraphrasing and grammar tool that excels at rewriting existing text in different ways while preserving meaning. Its paraphrasing engine offers multiple modes — from creative to formal to concise — making it a versatile tool for editors, students, and anyone who needs to rephrase content. The free tier is usable for basic rewriting, though advanced features require a premium subscription that some find pricey. It's not designed for original content creation, but as a refinement and editing tool, it's one of the best in class."
+  },
+  "wordtune": {
+    "name": "Wordtune",
+    "description": "Wordtune is an AI writing companion with a beautiful interface that focuses on rephrasing sentences and adjusting the tone of your writing. Its standout feature is the ability to instantly rewrite any sentence in multiple tones — professional, friendly, casual, or confident — making it perfect for email-heavy professionals who need to nail the right tone every time. The free tier is quite restrictive, and it's not suited for long-form content creation, but for polishing individual sentences and emails, it's hard to beat."
+  },
+  "sudowrite": {
+    "name": "Sudowrite",
+    "description": "Sudowrite is a specialized AI writing tool designed exclusively for creative fiction and storytelling. It goes beyond generic text generation with features like story brainstorming, character development, and scene expansion that are tailored to the unique needs of fiction writers. While its niche focus means it's not useful for business writing or copywriting, for novelists and creative writers, it's a powerful collaborator that understands narrative structure. The subscription cost is on the higher side, and the limited scope means you'll need additional tools for other writing tasks."
+  },
+  "rytr": {
+    "name": "Rytr",
+    "description": "Rytr is one of the most affordable AI writing tools available, supporting over 40 languages and offering more than 40 templates for virtually any content type. It's aimed at budget-conscious creators who need quick content generation without breaking the bank. While the output quality doesn't quite match premium tools like Jasper or ChatGPT, and the results often need additional polishing, its combination of low price and broad language support makes it a solid choice for creators working across multiple languages or on tight budgets."
+  },
+  "perplexity": {
+    "name": "Perplexity AI",
+    "description": "Perplexity AI is an AI-powered search engine that delivers direct answers complete with citations from credible sources, making it invaluable for research-intensive writing projects. Unlike traditional chatbots that generate text without references, Perplexity provides sourced answers and lets you ask follow-up questions to drill deeper into any topic. While it's not a traditional writing tool — it's more of a research assistant — writers and researchers who need accurate, referenced information quickly will find it indispensable. The free tier has limits, and a subscription unlocks the full experience."
+  },
+  "grammarly": {
+    "name": "Grammarly",
+    "description": "Grammarly is the best-known AI-powered writing assistant, offering best-in-class grammar checking, tone detection, and clarity suggestions across every platform where you write. Its browser extension works everywhere — Gmail, Google Docs, social media, Slack — so you get real-time corrections wherever you type. The suggestions are clear and actionable, making it easy to improve your writing on the fly. Advanced features come at a premium price that some find steep, and the tool can be overly aggressive with suggestions that may not suit your intended tone, but for anyone who writes emails professionally, it's a no-brainer."
+  },
+  "jenni": {
+    "name": "Jenni AI",
+    "description": "Jenni AI is an AI writing assistant built specifically for academic and professional writing, with auto-citation generation as its standout feature. It helps researchers, students, and academics write papers faster by suggesting content and automatically generating citations in multiple formats. While its focused scope means it's less versatile than general-purpose tools like ChatGPT, its academic-specific features — especially citation management — save significant time for thesis writers and researchers. It's most useful for structured, research-heavy writing rather than casual content creation."
+  }
+}
