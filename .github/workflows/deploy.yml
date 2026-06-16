@@ -31,3 +31,8 @@ jobs:
           NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL }}
           NEXT_PUBLIC_ADSENSE_PUB_ID: ${{ vars.NEXT_PUBLIC_ADSENSE_PUB_ID }}
           NEXT_PUBLIC_GA_ID: ${{ vars.NEXT_PUBLIC_GA_ID }}
+
+      - name: Deploy to Cloudflare Pages
+        run: npx wrangler pages deploy .next --project-name=ai-tool-navigator
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
