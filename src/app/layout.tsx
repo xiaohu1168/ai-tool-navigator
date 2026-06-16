@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -6,7 +7,27 @@ import { ThemeProvider } from "next-themes";
 import AdSenseScript from "@/components/AdSenseScript";
 import ConsentBanner from "@/components/ConsentBanner";
 import Link from "next/link";
-import { OrganizationJsonLd, WebSiteJsonLd } from "@/lib/jsonld";
+
+const organizationJsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Hey AI Hub",
+  url: "https://heyaihub.com",
+  description: "Discover the best AI tools for developers and creators.",
+  sameAs: ["https://twitter.com/heyaihub"],
+});
+
+const websiteJsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Hey AI Hub",
+  url: "https://heyaihub.com",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://heyaihub.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
+});
 
 export const metadata: Metadata = {
   title: {
@@ -58,8 +79,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <AdSenseScript />
         <meta name="google-adsense-account" content="ca-pub-8677289489236814" />
-        <OrganizationJsonLd />
-        <WebSiteJsonLd />
+        <Script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: organizationJsonLd }}
+        />
+        <Script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: websiteJsonLd }}
+        />
       </head>
       <body className="min-h-screen bg-background antialiased font-sans text-foreground">
         <ThemeProvider

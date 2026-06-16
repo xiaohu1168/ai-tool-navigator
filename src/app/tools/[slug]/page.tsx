@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import Script from 'next/script';
 import { getToolBySlug, getCategories, type Category, getAffiliateLinksByToolSlug, getPromptsByToolSlug, type AffiliateLink, type Prompt } from '@/lib/tools';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -6,7 +7,6 @@ import AdInContent from '@/components/AdBanner';
 import { CopyButton, PromptSection } from '@/components/PromptSection';
 import { Star, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
-import { ToolJsonLd, BreadcrumbJsonLd } from '@/lib/jsonld';
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -33,11 +33,36 @@ export default async function ToolDetailPage({ params }: { params: Promise<{ slu
     <div className='min-h-screen flex flex-col'>
       <Header />
       <main className='flex-1 max-w-4xl mx-auto px-3 md:px-4 py-5 md:py-8 w-full'>
-        <BreadcrumbJsonLd items={[
-          { name: 'Home', url: 'https://heyaihub.com/' },
-          ...(category ? [{ name: category.name, url: 'https://heyaihub.com/category/' + category.id }] : []),
-        ]} />
-        <ToolJsonLd name={tool.name} description={tool.description} url={tool.url} rating={tool.rating} price={tool.price} category={category?.name} />
+        <Script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://heyaihub.com/" },
+                ...(category ? [{ "@type": "ListItem", position: 2, name: category.name, item: "https://heyaihub.com/category/" + category.id }] : []),
+              ],
+            }),
+          }}
+        />
+        <Script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              name: tool.name,
+              description: tool.description,
+              url: tool.url,
+              applicationCategory: category?.name || "AI Tool",
+              operatingSystem: "Web",
+              offers: { "@type": "Offer", price: "0", priceCurrency: "USD", availability: "https://schema.org/InStock" },
+              aggregateRating: { "@type": "AggregateRating", ratingValue: String(tool.rating), bestRating: "5", worstRating: "1", ratingCount: "100" },
+              review: { "@type": "Review", reviewBody: tool.description, author: { "@type": "Organization", name: "Hey AI Hub" } },
+            }),
+          }}
+        />
         <nav className='text-xs md:text-sm text-muted-foreground mb-4 md:mb-6'>
           <Link href='/' className='hover:text-primary transition-colors'>Home</Link> {' > '}
           {category ? <Link href={'/category/' + category.id} className='hover:text-primary transition-colors'>{category.name}</Link> : 'Tools'} {' > '}

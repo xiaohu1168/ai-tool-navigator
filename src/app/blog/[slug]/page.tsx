@@ -1,9 +1,9 @@
 import Link from "next/link";
+import Script from "next/script";
 import { Eye, ArrowLeft } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import AdBanner from "@/components/AdBanner";
-import { ArticleJsonLd } from "@/lib/jsonld";
 
 interface BlogPost {
   slug: string;
@@ -78,12 +78,22 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <Header />
 
       <main className="flex-1 max-w-3xl mx-auto px-4 md:px-6 py-8 md:py-12">
-        <ArticleJsonLd
-          title={post.title}
-          description={post.content.substring(0, 160)}
-          url={`https://heyaihub.com/blog/${post.slug}`}
-          date={post.date}
-          category={post.category}
+        <Script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              headline: post.title,
+              description: post.content.substring(0, 160),
+              url: `https://heyaihub.com/blog/${post.slug}`,
+              datePublished: post.date,
+              dateModified: post.date,
+              author: { "@type": "Organization", name: "Hey AI Hub" },
+              publisher: { "@type": "Organization", name: "Hey AI Hub", url: "https://heyaihub.com" },
+              articleSection: post.category,
+            }),
+          }}
         />
         <Link href="/blog" className="text-sm text-muted-foreground hover:text-primary inline-flex items-center gap-1 mb-6">
           <ArrowLeft className="w-3.5 h-3.5" /> Back to Blog
