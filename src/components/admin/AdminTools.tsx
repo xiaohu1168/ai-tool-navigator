@@ -331,7 +331,7 @@ export default function AdminTools({
                     <div className="flex items-center justify-end gap-1">
                       <TooltipProvider>
                         <Tooltip>
-                          <TooltipTrigger className="inline-flex items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none hover:bg-muted hover:text-foreground h-7 gap-1 rounded-[min(var(--radius-md),12px)] px-2.5 text-[0.8rem] size-7">
+                          <TooltipTrigger asChild className="inline-flex items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none hover:bg-muted hover:text-foreground h-7 gap-1 rounded-[min(var(--radius-md),12px)] px-2.5 text-[0.8rem] size-7">
                             <button
                               type="button"
                               onClick={() => openEdit(tool)}
@@ -345,7 +345,7 @@ export default function AdminTools({
                       </TooltipProvider>
                       <TooltipProvider>
                         <Tooltip>
-                          <TooltipTrigger className="inline-flex items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none hover:bg-muted hover:text-foreground h-7 gap-1 rounded-[min(var(--radius-md),12px)] px-2.5 text-[0.8rem] size-7 text-red-500 hover:text-red-600">
+                          <TooltipTrigger asChild className="inline-flex items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none hover:bg-muted hover:text-foreground h-7 gap-1 rounded-[min(var(--radius-md),12px)] px-2.5 text-[0.8rem] size-7 text-red-500 hover:text-red-600">
                             <button
                               type="button"
                               onClick={() => handleDelete(tool)}

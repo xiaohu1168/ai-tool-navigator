@@ -358,7 +358,7 @@ export default function AdminUsers({
                         {canDelete && (
                           <TooltipProvider>
                             <Tooltip>
-                              <TooltipTrigger className="flex">
+                              <TooltipTrigger asChild className="flex">
                                 <Button
                                   variant="ghost"
                                   size="icon-sm"
