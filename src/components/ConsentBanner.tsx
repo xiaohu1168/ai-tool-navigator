@@ -68,7 +68,8 @@ export default function ConsentBanner() {
               setExiting(true);
               setTimeout(() => {
                 setShow(false);
-                try { localStorage.setItem("consent_ads", "no"); } catch { /* ignore */ }
+                // Don't set consent_ads when closing without choosing
+                // This allows ads to attempt loading on next visit
               }, 300);
             }}
             className="text-muted-foreground hover:text-foreground transition-colors"

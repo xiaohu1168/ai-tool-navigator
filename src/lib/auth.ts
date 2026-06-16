@@ -1,16 +1,15 @@
 import crypto from "crypto";
+import { hashSync, compareSync } from "bcryptjs";
 import { prisma } from "./db";
 
 const SALT_ROUNDS = 12;
 
 export async function hashPassword(password: string): Promise<string> {
-  const { hashSync } = await import("@node-rs/bcrypt");
   return hashSync(password, SALT_ROUNDS);
 }
 
 export async function verifyPassword(password: string, hashStr: string): Promise<boolean> {
   try {
-    const { compareSync } = await import("@node-rs/bcrypt");
     return compareSync(password, hashStr);
   } catch {
     return false;

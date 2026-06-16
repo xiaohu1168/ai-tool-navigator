@@ -8,7 +8,7 @@
 
 ## 背景
 
-Hey AI Hub (heyaihub.com) 是一个 AI 工具发现目录网站，运行在 Netlify 上，使用 Next.js 16 App Router + Prisma + Neon PostgreSQL。
+Hey AI Hub (heyaihub.com) 是一个 AI 工具发现目录网站，运行在 Cloudflare Pages 上，使用 Next.js 16 App Router + Prisma + Neon PostgreSQL。
 目前已上线 120 个工具，覆盖 12 个分类，但尚未产生任何收入。
 
 ## 运营约束
@@ -179,7 +179,8 @@ Hey AI Hub (heyaihub.com) 是一个 AI 工具发现目录网站，运行在 Netl
 
 | 文件 | 用途 |
 |------|------|
-| `netlify.toml` | 部署配置 |
+| `wrangler.toml` | Cloudflare Pages 配置 |
+| `.env.production` | 生产环境变量参考 |
 | `.env.production` | 生产环境变量 |
 | `src/lib/tools.ts` | 工具数据层 |
 | `src/lib/db.ts` | 数据库操作 |

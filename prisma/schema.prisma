@@ -175,3 +175,11 @@ model ComparePage {
 
   @@map("ComparePage")
 }
+
+model NewsletterSubscriber {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  created_at DateTime @default(now())
+
+  @@map("NewsletterSubscriber")
+}

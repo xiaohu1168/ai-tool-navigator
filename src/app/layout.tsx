@@ -5,7 +5,10 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "next-themes";
 import AdSenseScript from "@/components/AdSenseScript";
 import ConsentBanner from "@/components/ConsentBanner";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import Link from "next/link";
+
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "";
 
 export const metadata: Metadata = {
   title: {
@@ -32,8 +35,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: process.env.NEXT_PUBLIC_SITE_URL
-          ? `${process.env.NEXT_PUBLIC_SITE_URL}/og-image.png`
-          : "/og-image.png",
+          ? `${process.env.NEXT_PUBLIC_SITE_URL}/api/og`
+          : "/api/og",
         width: 1200,
         height: 630,
         alt: "Hey AI Hub — Discover the Best AI Tools",
@@ -105,6 +108,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <TooltipProvider>{children}</TooltipProvider>
           <Toaster />
           <ConsentBanner />
+          {GA_ID && <GoogleAnalytics gaId={GA_ID} />}
         </ThemeProvider>
       </body>
     </html>

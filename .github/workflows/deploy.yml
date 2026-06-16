@@ -1,0 +1,45 @@
+# GitHub Actions — 仅用于本地验证构建
+# 实际部署通过 Cloudflare Pages GitHub 集成自动触发
+# 在 Cloudflare Pages 后台连接 GitHub 仓库后，push 到 master 会自动构建部署
+
+name: Build Verification
+
+on:
+  pull_request:
+    branches: [master]
+  # Manual run for build verification
+  workflow_dispatch:
+
+jobs:
+  verify-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Prisma generate
+        run: npx prisma generate
+
+      # Skip seed — no database in CI, just verify the file exists
+      - name: Check seed script
+        run: test -f seed_db3.js
+
+      - name: Build Next.js
+        run: npm run build
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL || 'postgresql://localhost:5432/heyaihub' }}
+          NEXT_PUBLIC_SITE_URL: 'https://heyaihub.com'
+          NEXT_PUBLIC_ADSENSE_PUB_ID: 'pub-8677289489236814'
+          NEXT_PUBLIC_GA_ID: ''
+          ADMIN_USERNAME: 'admin'
+          ADMIN_PASSWORD: 'changeme123'
+          ADMIN_SALT: 'verification-salt-for-ci-only'

@@ -6,7 +6,7 @@
  * creates a User record with role SUPER_ADMIN,
  * and prints the result.
  */
-import { hashSync } from "@node-rs/bcrypt";
+import { hashSync } from "bcryptjs";
 import { randomBytes } from "crypto";
 import { readFileSync } from "fs";
 import { join } from "path";

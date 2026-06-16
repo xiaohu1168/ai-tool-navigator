@@ -11,8 +11,13 @@
 /.next/
 /out/
 
-# Netlify
+# Netlify (deprecated — migrated to Cloudflare Pages)
 /.netlify/
+
+# Cloudflare Pages
+.wrangler/
+.pages-output/
+
 /dist/
 
 # Production

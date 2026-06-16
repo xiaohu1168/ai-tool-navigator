@@ -1,0 +1,15 @@
+# Hey AI Hub — Cloudflare Pages Configuration
+
+[vars]
+NEXT_PUBLIC_SITE_URL = "https://heyaihub.com"
+NEXT_PUBLIC_ADSENSE_PUB_ID = "pub-8677289489236814"
+NODE_VERSION = "20"
+NEXT_RUNTIME = "nodejs"
+
+[build]
+command = "npx prisma generate && node seed_db3.js && npm run build"
+output-directory = ".next"
+
+[[rules]]
+type = "JavaScript"
+ignore = ["Unprocessable"]

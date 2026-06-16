@@ -78,11 +78,37 @@ export default function Footer() {
               Get weekly updates on the latest AI tools and industry insights delivered to your inbox.
             </p>
             <form
-              onSubmit={(e) => {
+              onSubmit={async (e) => {
                 e.preventDefault();
-                // TODO: connect to email service (Mailchimp, Resend, etc.)
-                const btn = e.currentTarget.querySelector("button");
-                if (btn) btn.textContent = "Subscribed!";
+                const form = e.currentTarget;
+                const emailInput = form.querySelector("input[type='email']") as HTMLInputElement;
+                const btn = form.querySelector("button");
+                if (!emailInput || !btn) return;
+
+                btn.disabled = true;
+                btn.textContent = "Sending...";
+
+                try {
+                  const res = await fetch("/api/newsletter", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ email: emailInput.value }),
+                  });
+
+                  if (res.ok) {
+                    btn.textContent = "✓ Subscribed!";
+                    emailInput.value = "";
+                  } else {
+                    btn.textContent = "Already subscribed!";
+                  }
+                } catch {
+                  btn.textContent = "Error, try again";
+                }
+
+                setTimeout(() => {
+                  btn.textContent = "Subscribe";
+                  btn.disabled = false;
+                }, 3000);
               }}
               className="flex max-w-sm mx-auto gap-2"
             >

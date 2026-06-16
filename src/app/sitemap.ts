@@ -1,4 +1,5 @@
 import { getAllTools, getCategories } from '@/lib/tools';
+import { getBlogPosts } from '@/lib/db';
 
 export default async function sitemap() {
   const categories = await getCategories();
@@ -24,5 +25,12 @@ export default async function sitemap() {
     { url: baseUrl + '/submit', lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.3 },
   ];
 
-  return [...staticPages, ...bestOfPages, ...categoryPages, ...toolPages];
+  const blogPages = (await getBlogPosts()).map((post: any) => ({
+    url: baseUrl + '/blog/' + post.slug,
+    lastModified: new Date(post.updated_at || post.created_at),
+    changeFrequency: 'weekly' as const,
+    priority: 0.7,
+  }));
+
+  return [...staticPages, ...blogPages, ...bestOfPages, ...categoryPages, ...toolPages];
 }
