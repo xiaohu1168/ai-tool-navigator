@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Script from "next/script";
 import { Eye, ArrowLeft } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -78,7 +77,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <Header />
 
       <main className="flex-1 max-w-3xl mx-auto px-4 md:px-6 py-8 md:py-12">
-        <Script
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({

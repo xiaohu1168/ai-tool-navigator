@@ -1,5 +1,4 @@
 import { notFound } from 'next/navigation';
-import Script from 'next/script';
 import { getToolBySlug, getCategories, type Category, getAffiliateLinksByToolSlug, getPromptsByToolSlug, type AffiliateLink, type Prompt } from '@/lib/tools';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -33,7 +32,7 @@ export default async function ToolDetailPage({ params }: { params: Promise<{ slu
     <div className='min-h-screen flex flex-col'>
       <Header />
       <main className='flex-1 max-w-4xl mx-auto px-3 md:px-4 py-5 md:py-8 w-full'>
-        <Script
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
@@ -46,7 +45,7 @@ export default async function ToolDetailPage({ params }: { params: Promise<{ slu
             }),
           }}
         />
-        <Script
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
