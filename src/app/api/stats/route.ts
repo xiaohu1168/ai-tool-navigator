@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 ﻿import { NextResponse } from "next/server";
 import { getPageStats, addPageView, incrementToolClick, addSearchQuery } from "@/lib/db";
 import { verifyToken } from '@/lib/auth';

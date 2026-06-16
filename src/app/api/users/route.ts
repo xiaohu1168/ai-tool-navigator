@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyToken, getAllUsers, createUser, updateUser, deleteUser, changePassword, updateUserRole, toggleUserActive } from '@/lib/auth';
 
