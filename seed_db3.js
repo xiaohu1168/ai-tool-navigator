@@ -10,7 +10,12 @@ function safeArr(val) {
 }
 
 async function seed() {
-  await prisma.$connect();
+  try {
+    await prisma.$connect();
+  } catch (e) {
+    console.log('Seed skipped: database unavailable (expected in build environment)');
+    return;
+  }
   
   // 1. Ensure ALL categories from tool files exist
   const dataDir = path.join(__dirname, 'data');
