@@ -4,7 +4,6 @@
   publish = ".next"
 
 [build.environment]
-  NEXT_RUNTIME = "standalone"
   NODE_VERSION = "20"
   SECRETS_SCAN_ENABLED = "false"
 
@@ -13,20 +12,10 @@
   from = "/api/*"
   to = "/api/:splat"
   status = 200
-
-[[redirects]]
-  from = "/admin/*"
-  to = "/admin/:splat"
-  status = 200
+  force = true
 
 # SPA fallback for client-side routes
 [[redirects]]
   from = "/*"
   to = "/index.html"
-  status = 200
-
-# Middleware fallback — Netlify rewrites middleware-based routes via _redirects
-[[redirects]]
-  from = "/login"
-  to = "/login"
   status = 200

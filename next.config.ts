@@ -9,8 +9,7 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  // Netlify Next.js standalone output
-  output: 'standalone',
+  // Netlify Next.js runtime handles output automatically
 };
 
 export default nextConfig;
