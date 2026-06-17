@@ -92,15 +92,15 @@ export async function getCategories(): Promise<Category[]> {
   try {
     const cats = await dbGetCats();
     return cats.map((c) => ({ id: c.id, name: c.name, icon: c.icon, description: c.description, count: c.count }));
-  } catch {
-    // Edge runtime: fs/path not available, fall back to empty
+  } catch (e) {
+    console.error('[TOOLS] getCategories error:', e);
     return [];
   }
 }
 
 export async function getAllTools(): Promise<Tool[]> {
   try { const db = await dbGetAllTools(); return db.map(toTool).filter(Boolean) as Tool[]; }
-  catch { return []; }
+  catch (e) { console.error('[TOOLS] getAllTools error:', e); return []; }
 }
 
 export async function getToolsByCategory(categoryId: string): Promise<Tool[]> {

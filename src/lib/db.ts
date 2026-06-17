@@ -10,6 +10,11 @@ export const prisma = globalForPrisma.prisma ?? new PrismaClient({
   ],
 });
 
+// Debug: log if DATABASE_URL is set in production
+if (process.env.NODE_ENV === 'production' && !process.env.DATABASE_URL) {
+  console.error('[PRISM] DATABASE_URL is NOT set in production!');
+}
+
 if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma;
 
 function safeParseJsonArray(val: unknown): string[] {

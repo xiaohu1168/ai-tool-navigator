@@ -6,6 +6,7 @@
 [build.environment]
   NODE_VERSION = "20"
   SECRETS_SCAN_ENABLED = "false"
+  NEXT_RUNTIME = "nodejs"
 
 # Next.js API routes and admin pages must NOT be redirected to index.html
 [[redirects]]
