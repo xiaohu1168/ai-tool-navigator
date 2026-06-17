@@ -5,15 +5,10 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "build:cf": "npx opennextjs-cloudflare build",
     "start": "next start",
     "lint": "eslint",
     "test:env": "tsx src/test-env-variables.ts",
-    "build:verify": "node scripts/test-cloudflare-build.js",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
-    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
+    "build:verify": "node scripts/test-cloudflare-build.js"
   },
   "dependencies": {
     "@base-ui/react": "^1.5.0",

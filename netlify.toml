@@ -4,7 +4,7 @@
   publish = ".next"
 
 [build.environment]
-  NEXT_RUNTIME = "nodejs"
+  NEXT_RUNTIME = "standalone"
   NODE_VERSION = "20"
   SECRETS_SCAN_ENABLED = "false"
 
@@ -23,4 +23,10 @@
 [[redirects]]
   from = "/*"
   to = "/index.html"
+  status = 200
+
+# Middleware fallback — Netlify rewrites middleware-based routes via _redirects
+[[redirects]]
+  from = "/login"
+  to = "/login"
   status = 200
