@@ -1,6 +1,0 @@
-# Cloudflare Pages redirects for Next.js standalone output
-# This file goes in the public directory or root
-# Next.js standalone mode handles most routing automatically
-# Keep this for safety with client-side routes
-
-/*    /index.html   200
