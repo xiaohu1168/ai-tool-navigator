@@ -24,6 +24,11 @@ jobs:
       - name: Prisma generate
         run: npx prisma generate
 
+      - name: Seed database
+        run: node seed_db3.js
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+
       - name: Build Next.js
         run: npm run build
         env:
