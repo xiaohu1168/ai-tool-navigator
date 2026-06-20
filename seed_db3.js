@@ -131,13 +131,13 @@ async function seed() {
     console.log('[WARN] Best pages import skipped (non-critical)');
   }
 
-  // ── Import new blog posts (best-effort, non-blocking) ──
+  // ── Sync all blog posts (upsert: fix truncated content + import new posts) ──
   try {
-    console.log('\nImporting new blog posts...');
-    const { importNewBlogPosts } = require('./scripts/import-new-blog-posts.js');
-    await importNewBlogPosts(prisma);
+    console.log('\nSyncing all blog posts...');
+    const { syncBlogPosts } = require('./scripts/sync-blog-posts.js');
+    await syncBlogPosts(prisma);
   } catch {
-    console.log('[WARN] New blog posts import skipped (non-critical)');
+    console.log('[WARN] Blog posts sync skipped (non-critical)');
   }
 
   await prisma.$disconnect();
