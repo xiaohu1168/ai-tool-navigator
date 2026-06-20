@@ -60,6 +60,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <AdSenseScript />
         <meta name="google-adsense-account" content="ca-pub-8677289489236814" />
+        <meta name="google-site-verification" content="7WcVhuBNo1oiwSX9jEsUn2sPCsyHNN6t3uCzElkt8Dg" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
