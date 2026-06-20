@@ -131,6 +131,15 @@ async function seed() {
     console.log('[WARN] Best pages import skipped (non-critical)');
   }
 
+  // ── Import new blog posts (best-effort, non-blocking) ──
+  try {
+    console.log('\nImporting new blog posts...');
+    const { importNewBlogPosts } = require('./scripts/import-new-blog-posts.js');
+    await importNewBlogPosts(prisma);
+  } catch {
+    console.log('[WARN] New blog posts import skipped (non-critical)');
+  }
+
   await prisma.$disconnect();
   console.log('Done!');
 }
