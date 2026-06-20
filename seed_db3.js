@@ -103,7 +103,34 @@ async function seed() {
   const finalCat = await prisma.category.count();
   const finalTool = await prisma.tool.count();
   console.log(`Final: ${finalCat} categories, ${finalTool} tools`);
-  
+
+  // ── Seed affiliate links (best-effort, non-blocking) ──
+  try {
+    console.log('\nSeeding affiliate links (best-effort)...');
+    const { seed: seedAffiliate } = require('./scripts/seed-affiliate-links.js');
+    await seedAffiliate(prisma);
+  } catch {
+    console.log('[WARN] Affiliate link seeding skipped (non-critical)');
+  }
+
+  // ── Import comparison pages (best-effort, non-blocking) ──
+  try {
+    console.log('\nImporting comparison pages...');
+    const { importComparisonPages } = require('./scripts/import-comparison-pages.js');
+    await importComparisonPages(prisma);
+  } catch {
+    console.log('[WARN] Comparison pages import skipped (non-critical)');
+  }
+
+  // ── Import best pages (best-effort, non-blocking) ──
+  try {
+    console.log('\nImporting Best pages...');
+    const { importBestPages } = require('./scripts/import-best-pages.js');
+    await importBestPages(prisma);
+  } catch {
+    console.log('[WARN] Best pages import skipped (non-critical)');
+  }
+
   await prisma.$disconnect();
   console.log('Done!');
 }

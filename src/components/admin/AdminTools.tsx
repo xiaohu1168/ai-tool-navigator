@@ -9,6 +9,9 @@ import {
   Filter,
   Download,
   Pencil,
+  Link as LinkIcon,
+  X,
+  ExternalLink,
 } from "lucide-react";
 import {
   Card,
@@ -73,6 +76,15 @@ interface Category {
   icon: string;
 }
 
+interface AffiliateLink {
+  id: string;
+  tool_id: string;
+  label: string;
+  url: string;
+  network: string;
+  click_count: number;
+}
+
 function parseArray(val: string | string[]): string[] {
   if (Array.isArray(val)) return val.map(String);
   if (typeof val === 'string') {
@@ -99,6 +111,12 @@ export default function AdminTools({
   const [showForm, setShowForm] = useState(false);
   const [editing, setEditing] = useState<Tool | null>(null);
   const [saving, setSaving] = useState(false);
+  // Affiliate link management state
+  const [affiliateLinks, setAffiliateLinks] = useState<AffiliateLink[]>([]);
+  const [showAffiliateManager, setShowAffiliateManager] = useState(false);
+  const [affiliateLoading, setAffiliateLoading] = useState(false);
+  const [editingAffiliate, setEditingAffiliate] = useState<AffiliateLink | null>(null);
+  const [affFormData, setAffFormData] = useState({ label: "", url: "", network: "Direct" });
   const [formData, setFormData] = useState({
     slug: "",
     name: "",
@@ -151,6 +169,85 @@ export default function AdminTools({
     window.addEventListener("admin:addFromSubmission", handler);
     return () => window.removeEventListener("admin:addFromSubmission", handler);
   }, []);
+
+  // ── Affiliate link helpers ──────────────────────────────
+  const loadAffiliateLinks = async (toolId: string) => {
+    setAffiliateLoading(true);
+    try {
+      const res = await fetch(`/api/admin/affiliate-links?toolId=${toolId}`, { credentials: "include" });
+      if (res.ok) {
+        const links = await res.json();
+        setAffiliateLinks(links);
+        setShowAffiliateManager(true);
+      } else {
+        toast.error("Failed to load affiliate links");
+      }
+    } catch {
+      toast.error("Network error loading affiliate links");
+    } finally {
+      setAffiliateLoading(false);
+    }
+  };
+
+  const openAffiliateNew = () => {
+    setEditingAffiliate(null);
+    setAffFormData({ label: "", url: "", network: "Direct" });
+  };
+
+  const openAffiliateEdit = (link: AffiliateLink) => {
+    setEditingAffiliate(link);
+    setAffFormData({ label: link.label, url: link.url, network: link.network });
+  };
+
+  const handleSaveAffiliate = async () => {
+    if (!affFormData.label || !affFormData.url) {
+      toast.error("Label and URL are required");
+      return;
+    }
+    if (!editing) return;
+
+    try {
+      if (editingAffiliate) {
+        // Update existing
+        await fetch(`/api/admin/affiliate-links?id=${editingAffiliate.id}`, {
+          method: "PATCH",
+          credentials: "include",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(affFormData),
+        });
+        toast.success("Affiliate link updated");
+      } else {
+        // Create new
+        await fetch("/api/admin/affiliate-links", {
+          method: "POST",
+          credentials: "include",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            tool_id: editing!.id,
+            ...affFormData,
+          }),
+        });
+        toast.success("Affiliate link added");
+      }
+      // Reload links
+      await loadAffiliateLinks(editing.id);
+      setEditingAffiliate(null);
+      setAffFormData({ label: "", url: "", network: "Direct" });
+    } catch {
+      toast.error("Failed to save affiliate link");
+    }
+  };
+
+  const handleDeleteAffiliate = async (linkId: string) => {
+    if (!confirm("Delete this affiliate link?")) return;
+    try {
+      await fetch(`/api/admin/affiliate-links?id=${linkId}`, { method: "DELETE", credentials: "include" });
+      toast.success("Affiliate link deleted");
+      if (editing) await loadAffiliateLinks(editing.id);
+    } catch {
+      toast.error("Failed to delete affiliate link");
+    }
+  };
 
   const openEdit = (tool: Tool) => {
     setEditing(tool);
@@ -294,6 +391,7 @@ export default function AdminTools({
               <TableHead>Rating</TableHead>
               <TableHead className="text-right">Clicks</TableHead>
               <TableHead className="w-[120px] text-right">Actions</TableHead>
+              <TableHead className="w-[80px] text-right">Links</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -328,33 +426,46 @@ export default function AdminTools({
                   </TableCell>
                   <TableCell className="text-right text-sm">{tool.click_count}</TableCell>
                   <TableCell className="text-right">
-                      <div className="flex items-center justify-end gap-1">
-                      {/* Edit button with tooltip overlay */}
-                      <div className="relative group">
-                        <button
-                          type="button"
-                          onClick={() => openEdit(tool)}
-                          className="inline-flex items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none hover:bg-muted hover:text-foreground h-7 gap-1 rounded-[min(var(--radius-md),12px)] px-2.5 text-[0.8rem] size-7"
-                        >
-                          <Edit3 className="w-3.5 h-3.5" />
-                        </button>
-                        <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 px-2 py-1 text-xs text-background bg-foreground rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
-                          Edit
-                        </div>
+                    <div className="flex items-center justify-end gap-1">
+                    {/* Affiliate Link button with tooltip overlay */}
+                    <div className="relative group">
+                      <button
+                        type="button"
+                        onClick={() => loadAffiliateLinks(tool.id)}
+                        className="inline-flex items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none hover:bg-muted hover:text-foreground h-7 gap-1 rounded-[min(var(--radius-md),12px)] px-2.5 text-[0.8rem] size-7 text-emerald-500 hover:text-emerald-600"
+                      >
+                        <LinkIcon className="w-3.5 h-3.5" />
+                      </button>
+                      <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 px-2 py-1 text-xs text-background bg-foreground rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
+                        Manage Links
                       </div>
-                      {/* Delete button with tooltip overlay */}
-                      <div className="relative group">
-                        <button
-                          type="button"
-                          onClick={() => handleDelete(tool)}
-                          className="inline-flex items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none hover:bg-muted hover:text-foreground h-7 gap-1 rounded-[min(var(--radius-md),12px)] px-2.5 text-[0.8rem] size-7 text-red-500 hover:text-red-600"
-                        >
-                          <Trash2 className="w-3.5 h-3.5" />
-                        </button>
-                        <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 px-2 py-1 text-xs text-background bg-foreground rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
-                          Delete
-                        </div>
+                    </div>
+                    {/* Edit button with tooltip overlay */}
+                    <div className="relative group">
+                      <button
+                        type="button"
+                        onClick={() => openEdit(tool)}
+                        className="inline-flex items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none hover:bg-muted hover:text-foreground h-7 gap-1 rounded-[min(var(--radius-md),12px)] px-2.5 text-[0.8rem] size-7"
+                      >
+                        <Edit3 className="w-3.5 h-3.5" />
+                      </button>
+                      <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 px-2 py-1 text-xs text-background bg-foreground rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
+                        Edit
                       </div>
+                    </div>
+                    {/* Delete button with tooltip overlay */}
+                    <div className="relative group">
+                      <button
+                        type="button"
+                        onClick={() => handleDelete(tool)}
+                        className="inline-flex items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none hover:bg-muted hover:text-foreground h-7 gap-1 rounded-[min(var(--radius-md),12px)] px-2.5 text-[0.8rem] size-7 text-red-500 hover:text-red-600"
+                      >
+                        <Trash2 className="w-3.5 h-3.5" />
+                      </button>
+                      <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 px-2 py-1 text-xs text-background bg-foreground rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
+                        Delete
+                      </div>
+                    </div>
                     </div>
                   </TableCell>
                 </TableRow>
@@ -362,7 +473,7 @@ export default function AdminTools({
             })}
             {filtered.length === 0 && (
               <TableRow>
-                <TableCell colSpan={6} className="text-center py-12 text-muted-foreground text-sm">
+                <TableCell colSpan={7} className="text-center py-12 text-muted-foreground text-sm">
                   No tools found
                 </TableCell>
               </TableRow>
@@ -471,6 +582,120 @@ export default function AdminTools({
               {saving ? "Saving..." : "Save"}
             </Button>
           </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* Affiliate Link Manager Dialog */}
+      <Dialog open={showAffiliateManager} onOpenChange={(open) => {
+        setShowAffiliateManager(open);
+        if (!open) {
+          setEditingAffiliate(null);
+          setAffFormData({ label: "", url: "", network: "Direct" });
+        }
+      }}>
+        <DialogContent className="max-w-3xl max-h-[85vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle>
+              Manage Affiliate Links — {editing?.name ?? ""}
+            </DialogTitle>
+          </DialogHeader>
+
+          {/* Existing links list */}
+          {!editingAffiliate && (
+            <>
+              <div className="flex items-center justify-between mb-2">
+                <p className="text-sm text-muted-foreground">
+                  {affiliateLinks.length} affiliate link{affiliateLinks.length !== 1 ? "s" : ""} configured
+                </p>
+                <Button size="sm" onClick={openAffiliateNew}>
+                  <Plus className="w-3.5 h-3.5 mr-1" /> Add Link
+                </Button>
+              </div>
+
+              {affiliateLoading ? (
+                <div className="animate-pulse space-y-2">
+                  {[...Array(3)].map((_, i) => (
+                    <div key={i} className="h-12 bg-muted rounded" />
+                  ))}
+                </div>
+              ) : affiliateLinks.length === 0 ? (
+                <div className="text-center py-8 text-sm text-muted-foreground bg-muted/30 rounded-lg">
+                  No affiliate links yet. Click "Add Link" to create one.
+                </div>
+              ) : (
+                <div className="space-y-2">
+                  {affiliateLinks.map((link) => (
+                    <div
+                      key={link.id}
+                      className="flex items-center gap-3 p-3 rounded-lg border bg-card hover:bg-muted/30 transition-colors"
+                    >
+                      <LinkIcon className="w-4 h-4 text-emerald-500 flex-shrink-0" />
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center gap-2">
+                          <span className="text-sm font-medium">{link.label}</span>
+                          <Badge variant="secondary" className="text-xs">{link.network}</Badge>
+                          <span className="text-xs text-muted-foreground">{link.click_count} clicks</span>
+                        </div>
+                        <div className="text-xs text-muted-foreground truncate font-mono">{link.url}</div>
+                      </div>
+                      <div className="flex items-center gap-1 flex-shrink-0">
+                        <button
+                          onClick={() => openAffiliateEdit(link)}
+                          className="inline-flex items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none hover:bg-muted hover:text-foreground h-7 gap-1 rounded-[min(var(--radius-md),12px)] px-2.5 text-[0.8rem] size-7"
+                        >
+                          <Edit3 className="w-3.5 h-3.5" />
+                        </button>
+                        <button
+                          onClick={() => handleDeleteAffiliate(link.id)}
+                          className="inline-flex items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none hover:bg-muted hover:text-foreground h-7 gap-1 rounded-[min(var(--radius-md),12px)] px-2.5 text-[0.8rem] size-7 text-red-500 hover:text-red-600"
+                        >
+                          <Trash2 className="w-3.5 h-3.5" />
+                        </button>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </>
+          )}
+
+          {/* Add/Edit form */}
+          {editingAffiliate && (
+            <div className="space-y-4">
+              <div>
+                <Label>Label *</Label>
+                <Input
+                  value={affFormData.label}
+                  onChange={(e) => setAffFormData({ ...affFormData, label: e.target.value })}
+                  placeholder='e.g. "Try Free", "Get Discount"'
+                />
+              </div>
+              <div>
+                <Label>URL *</Label>
+                <Input
+                  value={affFormData.url}
+                  onChange={(e) => setAffFormData({ ...affFormData, url: e.target.value })}
+                  placeholder="https://..."
+                />
+              </div>
+              <div>
+                <Label>Network</Label>
+                <Input
+                  value={affFormData.network}
+                  onChange={(e) => setAffFormData({ ...affFormData, network: e.target.value })}
+                  placeholder="e.g. Direct, Impact, ShareASale"
+                />
+              </div>
+              <DialogFooter className="gap-2 sm:gap-0">
+                <Button variant="outline" onClick={() => setEditingAffiliate(null)}>
+                  Cancel
+                </Button>
+                <Button onClick={handleSaveAffiliate}>
+                  {editingAffiliate ? "Update" : "Create"}
+                </Button>
+              </DialogFooter>
+            </div>
+          )}
         </DialogContent>
       </Dialog>
     </div>

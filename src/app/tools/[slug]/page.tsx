@@ -4,6 +4,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import AdInContent from '@/components/AdBanner';
 import { CopyButton, PromptSection } from '@/components/PromptSection';
+import AffiliateLinkClickTracker from '@/components/AffiliateLinkClickTracker';
 import { Star, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 
@@ -79,7 +80,7 @@ export default async function ToolDetailPage({ params }: { params: Promise<{ slu
           {affiliateLinks.length > 0 ? (
             <>
               {affiliateLinks.map(link => (
-                <a key={link.id} href={'/api/track/affiliate?linkId=' + link.id} target='_blank' rel='noopener noreferrer' className='bg-green-600 text-white px-5 md:px-6 py-3 rounded-lg font-semibold hover:bg-green-700 flex items-center gap-2 text-sm transition-colors shadow-sm'>
+                <a key={link.id} id={'affiliate-link-' + link.id} href={'/api/track/affiliate?linkId=' + link.id} target='_blank' rel='noopener noreferrer' className='bg-green-600 text-white px-5 md:px-6 py-3 rounded-lg font-semibold hover:bg-green-700 flex items-center gap-2 text-sm transition-colors shadow-sm'>
                   {link.label} <ExternalLink className='w-4 h-4' />
                 </a>
               ))}
@@ -127,6 +128,7 @@ export default async function ToolDetailPage({ params }: { params: Promise<{ slu
             ))}
           </div>
         )}
+        <AffiliateLinkClickTracker links={affiliateLinks} toolSlug={slug} />
         <AdInContent />
       </main>
       <Footer />

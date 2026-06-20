@@ -3,15 +3,21 @@
  * Reads from data/comparison_pages_data.json and creates BlogPost entries.
  *
  * Usage: node scripts/import-comparison-pages.js
+ * Or:    const { importComparisonPages } = require('./scripts/import-comparison-pages.js')
+ *        await importComparisonPages(prismaInstance)
  */
-const { PrismaClient } = require('@prisma/client');
 const fs = require('fs');
 const path = require('path');
 
-const prisma = new PrismaClient();
 const DATA_DIR = path.join(__dirname, '..', 'data');
 
-async function main() {
+async function importComparisonPages(prisma) {
+  const shouldDisconnect = !prisma;
+  if (shouldDisconnect) {
+    const { PrismaClient } = require('@prisma/client');
+    prisma = new PrismaClient();
+  }
+
   const filePath = path.join(DATA_DIR, 'comparison_pages_data.json');
   const raw = fs.readFileSync(filePath, 'utf-8').replace(/^﻿/, '');
   const data = JSON.parse(raw);
@@ -46,10 +52,18 @@ async function main() {
   }
 
   console.log(`\nDone! Created: ${created}, Skipped: ${skipped}`);
-  await prisma.$disconnect();
+
+  if (shouldDisconnect) {
+    await prisma.$disconnect();
+  }
+
+  return { created, skipped };
 }
 
-main().catch(e => {
-  console.error(e);
-  process.exit(1);
-});
+// Auto-run when executed directly
+if (require.main === module) {
+  importComparisonPages()
+    .catch(e => { console.error(e); process.exit(1); });
+}
+
+module.exports = { importComparisonPages };

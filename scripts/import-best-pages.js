@@ -2,15 +2,21 @@
  * Import "Best X Tools" pages into the database.
  *
  * Usage: node scripts/import-best-pages.js
+ * Or:    const { importBestPages } = require('./scripts/import-best-pages.js')
+ *        await importBestPages(prismaInstance)
  */
-const { PrismaClient } = require('@prisma/client');
 const fs = require('fs');
 const path = require('path');
 
-const prisma = new PrismaClient();
 const DATA_DIR = path.join(__dirname, '..', 'data');
 
-async function main() {
+async function importBestPages(prisma) {
+  const shouldDisconnect = !prisma;
+  if (shouldDisconnect) {
+    const { PrismaClient } = require('@prisma/client');
+    prisma = new PrismaClient();
+  }
+
   const filePath = path.join(DATA_DIR, 'best_pages_data.json');
   const raw = fs.readFileSync(filePath, 'utf-8').replace(/^﻿/, '');
   const data = JSON.parse(raw);
@@ -45,10 +51,18 @@ async function main() {
   }
 
   console.log(`\nDone! Created: ${created}, Skipped: ${skipped}`);
-  await prisma.$disconnect();
+
+  if (shouldDisconnect) {
+    await prisma.$disconnect();
+  }
+
+  return { created, skipped };
 }
 
-main().catch(e => {
-  console.error(e);
-  process.exit(1);
-});
+// Auto-run when executed directly
+if (require.main === module) {
+  importBestPages()
+    .catch(e => { console.error(e); process.exit(1); });
+}
+
+module.exports = { importBestPages };
