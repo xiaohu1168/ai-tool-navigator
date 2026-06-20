@@ -1,10 +1,10 @@
 # Hey AI Hub - Deployed on Netlify
 [build]
-  command = "npm run build"
+  command = "npx prisma generate && node seed_db3.js && npm run build"
   publish = ".next"
 
 [build.environment]
-  NODE_VERSION = "20"
+  NODE_VERSION = "22"
   SECRETS_SCAN_ENABLED = "false"
 
 # Next.js API routes and admin pages must NOT be redirected to index.html
