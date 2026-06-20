@@ -1,25 +1,21 @@
 /**
- * Sync all blog posts from seed-blog.js and new_blog_posts.json into the database.
+ * Sync all blog posts from seed_blog_legacy.json and new_blog_posts.json into the database.
  * Upserts existing posts (updates content if truncated) and creates new ones.
  * Run: node scripts/sync-blog-posts.js
  */
 const fs = require('fs');
 const path = require('path');
 
-// ── Load seed-blog.js data (10 old posts with full content) ──
-const seedBlogPath = path.join(__dirname, '..', 'seed-blog.js');
-const seedBlogRaw = fs.readFileSync(seedBlogPath, 'utf-8');
+// ── Load seed blog legacy data (10 old posts with full content) ──
+const legacyPath = path.join(__dirname, '..', 'data', 'seed_blog_legacy.json');
+const legacyPosts = JSON.parse(fs.readFileSync(legacyPath, 'utf-8'));
 
-// Extract the posts array from seed-blog.js
-const postsMatch = seedBlogRaw.match(/const posts = \[([\s\S]*?)\];/);
-const seedPosts = eval(`[${postsMatch[1]}]`);
-
-// ── Load new_blog_posts.json (20 new posts with full content) ──
+// ── Load new blog posts (20 new posts with full content) ──
 const newDataPath = path.join(__dirname, '..', 'data', 'new_blog_posts.json');
 const newData = JSON.parse(fs.readFileSync(newDataPath, 'utf-8').replace(/^﻿/, ''));
 
 // Merge all posts
-const allPosts = [...seedPosts, ...newData.blog_posts];
+const allPosts = [...legacyPosts, ...newData.blog_posts];
 
 // ── Prisma sync ──
 async function syncBlogPosts(prisma) {
@@ -34,14 +30,7 @@ async function syncBlogPosts(prisma) {
   let skipped = 0;
 
   for (const post of allPosts) {
-    // Generate slug from title if not present (seed-blog.js posts don't have slug)
-    let slug = post.slug;
-    if (!slug) {
-      slug = post.title
-        .toLowerCase()
-        .replace(/\s+/g, '-')
-        .replace(/[^a-z0-9-]/g, '');
-    }
+    const slug = post.slug;
 
     const existing = await prisma.blogPost.findUnique({ where: { slug } });
 

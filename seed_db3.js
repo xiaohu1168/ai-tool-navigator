@@ -132,13 +132,9 @@ async function seed() {
   }
 
   // ── Sync all blog posts (upsert: fix truncated content + import new posts) ──
-  try {
-    console.log('\nSyncing all blog posts...');
-    const { syncBlogPosts } = require('./scripts/sync-blog-posts.js');
-    await syncBlogPosts(prisma);
-  } catch {
-    console.log('[WARN] Blog posts sync skipped (non-critical)');
-  }
+  console.log('\nSyncing all blog posts...');
+  const { syncBlogPosts } = require('./scripts/sync-blog-posts.js');
+  await syncBlogPosts(prisma);
 
   await prisma.$disconnect();
   console.log('Done!');
