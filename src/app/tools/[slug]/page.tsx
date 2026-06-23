@@ -12,7 +12,23 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const tool = await getToolBySlug(slug);
   if (!tool) return { title: 'Tool Not Found' };
-  return { title: tool.name + ' - Review & Pricing | Hey AI Hub', description: tool.description };
+  return {
+    title: tool.name + ' - Review & Pricing',
+    description: tool.description,
+    openGraph: {
+      images: [
+        {
+          url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://heyaihub.com'}/api/og?type=tool&title=${encodeURIComponent(tool.name)}`,
+          width: 1200,
+          height: 630,
+          alt: tool.name,
+        },
+      ],
+    },
+    alternates: {
+      canonical: `https://heyaihub.com/tools/${tool.slug}`,
+    },
+  };
 }
 
 export default async function ToolDetailPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -57,9 +73,8 @@ export default async function ToolDetailPage({ params }: { params: Promise<{ slu
               url: tool.url,
               applicationCategory: category?.name || "AI Tool",
               operatingSystem: "Web",
-              offers: { "@type": "Offer", price: "0", priceCurrency: "USD", availability: "https://schema.org/InStock" },
-              aggregateRating: { "@type": "AggregateRating", ratingValue: String(tool.rating), bestRating: "5", worstRating: "1", ratingCount: "100" },
-              review: { "@type": "Review", reviewBody: tool.description, author: { "@type": "Organization", name: "Hey AI Hub" } },
+              offers: { "@type": "Offer", price: tool.price || "0", priceCurrency: "USD", availability: "https://schema.org/InStock" },
+              aggregateRating: { "@type": "AggregateRating", ratingValue: String(tool.rating), bestRating: "5", worstRating: "1" },
             }),
           }}
         />

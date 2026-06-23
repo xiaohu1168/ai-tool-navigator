@@ -23,6 +23,30 @@ const categoryGuides: Record<CategoryKey, string> = {
   'customer-service': 'AI customer service tools range from chatbots to helpdesk automation.'
 };
 
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const categories = await getCategories();
+  const category = categories.find((c: any) => c.id === slug);
+  if (!category) return { title: 'Category Not Found' };
+  return {
+    title: `${category.name} AI Tools & Software`,
+    description: category.description || `Browse the best ${category.name.toLowerCase()} AI tools curated by Hey AI Hub.`,
+    openGraph: {
+      images: [
+        {
+          url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://heyaihub.com'}/api/og?type=${encodeURIComponent(category.name)}&title=${encodeURIComponent(category.name + ' AI Tools')}`,
+          width: 1200,
+          height: 630,
+          alt: category.name,
+        },
+      ],
+    },
+    alternates: {
+      canonical: `https://heyaihub.com/category/${slug}`,
+    },
+  };
+}
+
 export default async function CategoryPage({ params }: { params: Promise<{ slug: string }> }) {
   const slug = (await params).slug as CategoryKey;
   const categories = await getCategories();

@@ -5,6 +5,12 @@ import Footer from "@/components/layout/Footer";
 import AdBanner from "@/components/AdBanner";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blog — AI Tools Insights, Rankings & Comparisons",
+  description: "Expert guides, comparisons, and rankings of the best AI tools for coding, writing, design, SEO, marketing, and more.",
+};
 
 interface BlogPost {
   id: string;

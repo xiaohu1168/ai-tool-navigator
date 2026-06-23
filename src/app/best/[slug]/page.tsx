@@ -25,7 +25,20 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const guide = bestOfGuides[slug as keyof typeof bestOfGuides];
   if (!guide) return { title: 'Best AI Tools' };
-  return { title: guide.title + ' | AI Tool Navigator', description: guide.desc };
+  return {
+    title: guide.title,
+    description: guide.desc,
+    openGraph: {
+      images: [
+        {
+          url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://heyaihub.com'}/api/og?type=best&title=${encodeURIComponent(guide.title)}`,
+          width: 1200,
+          height: 630,
+          alt: guide.title,
+        },
+      ],
+    },
+  };
 }
 
 export default async function BestOfPage({ params }: { params: Promise<{ slug: string }> }) {

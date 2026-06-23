@@ -25,6 +25,19 @@ export const metadata: Metadata = {
     "AI writing tools",
     "hey ai hub",
   ],
+  twitter: {
+    card: "summary_large_image",
+    site: "@heyaihub",
+    creator: "@heyaihub",
+  },
+  alternates: {
+    canonical: process.env.NEXT_PUBLIC_SITE_URL || "https://heyaihub.com",
+    types: {
+      "application/rss+xml": [
+        { url: "/feed.xml", title: "Hey AI Hub RSS Feed" },
+      ],
+    },
+  },
   openGraph: {
     title: "Hey AI Hub — Discover the Best AI Tools for Developers and Creators",
     description:
@@ -32,6 +45,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Hey AI Hub",
+    url: process.env.NEXT_PUBLIC_SITE_URL || "https://heyaihub.com",
     images: [
       {
         url: process.env.NEXT_PUBLIC_SITE_URL
@@ -62,6 +76,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="google-adsense-account" content="ca-pub-8677289489236814" />
         <meta name="google-site-verification" content="7WcVhuBNo1oiwSX9jEsUn2sPCsyHNN6t3uCzElkt8Dg" />
         <meta name="impact-site-verification" content="c870a1b4-1728-43ac-8b3c-fac36d8c9a0a" />
+        <link
+          rel="canonical"
+          href={process.env.NEXT_PUBLIC_SITE_URL || "https://heyaihub.com"}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

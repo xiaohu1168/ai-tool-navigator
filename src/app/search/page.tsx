@@ -4,6 +4,12 @@ import ToolCard from "@/components/ToolCard";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import AdInContent from "@/components/AdBanner";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Search AI Tools — Find the Right Tool for Your Workflow",
+  description: "Search across our curated directory of AI tools. Find the best AI coding, writing, design, SEO, and productivity tools.",
+};
 
 async function SearchResults({ query }: { query: string }) {
   const results = await searchTools(query);

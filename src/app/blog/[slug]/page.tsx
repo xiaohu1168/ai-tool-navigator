@@ -26,7 +26,20 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const post: BlogPost = await res.json();
     return {
       title: `${post.title} | Hey AI Hub`,
-      description: post.content.substring(0, 160),
+      description: post.content.replace(/\*\*/g, '').replace(/#{1,6}\s/g, '').substring(0, 160).trim() + '...',
+      openGraph: {
+        images: [
+          {
+            url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://heyaihub.com'}/api/og?type=blog&title=${encodeURIComponent(post.title)}`,
+            width: 1200,
+            height: 630,
+            alt: post.title,
+          },
+        ],
+      },
+      alternates: {
+        canonical: `https://heyaihub.com/blog/${post.slug}`,
+      },
     };
   } catch {
     return { title: "Post Not Found" };
@@ -84,13 +97,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               "@context": "https://schema.org",
               "@type": "Article",
               headline: post.title,
-              description: post.content.substring(0, 160),
+              description: post.content.replace(/\*\*/g, '').substring(0, 160).trim(),
               url: `https://heyaihub.com/blog/${post.slug}`,
               datePublished: post.date,
               dateModified: post.date,
               author: { "@type": "Organization", name: "Hey AI Hub" },
               publisher: { "@type": "Organization", name: "Hey AI Hub", url: "https://heyaihub.com" },
               articleSection: post.category,
+              mainEntityOfPage: { "@type": "WebPage", "@id": `https://heyaihub.com/blog/${post.slug}` },
             }),
           }}
         />
