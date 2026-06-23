@@ -10,12 +10,16 @@ const path = require('path');
 const legacyPath = path.join(__dirname, '..', 'data', 'seed_blog_legacy.json');
 const legacyPosts = JSON.parse(fs.readFileSync(legacyPath, 'utf-8'));
 
-// ── Load new blog posts (20 new posts with full content) ──
+// ── Load new blog posts batch 1 (20 posts with full content) ──
 const newDataPath = path.join(__dirname, '..', 'data', 'new_blog_posts.json');
 const newData = JSON.parse(fs.readFileSync(newDataPath, 'utf-8').replace(/^﻿/, ''));
 
+// ── Load new blog posts batch 2 (10 posts with full content) ──
+const newData2Path = path.join(__dirname, '..', 'data', 'new_blog_posts_batch2.json');
+const newData2 = JSON.parse(fs.readFileSync(newData2Path, 'utf-8'));
+
 // Merge all posts
-const allPosts = [...legacyPosts, ...newData.blog_posts];
+const allPosts = [...legacyPosts, ...newData.blog_posts, ...newData2];
 
 // ── Prisma sync ──
 async function syncBlogPosts(prisma) {
