@@ -14,6 +14,17 @@
   status = 200
   force = true
 
+# Do not redirect sitemap and RSS feed to index.html
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap.xml"
+  status = 200
+
+[[redirects]]
+  from = "/feed.xml"
+  to = "/feed.xml"
+  status = 200
+
 # SPA fallback for client-side routes
 [[redirects]]
   from = "/*"
