@@ -302,6 +302,36 @@
     },
     {
         "rating":  4.1,
+        "updated":  "2026-06-18",
+        "not_for":  "Non-Roblox projects;General web UI generation",
+        "price_type":  "free",
+        "cons":  [
+                     "Focused on Roblox Studio workflows",
+                     "Generated Lua still needs review in Studio"
+                 ],
+        "alternatives":  "v0, Replit, Lovable",
+        "tags":  [
+                     "roblox",
+                     "ui-generation",
+                     "lua"
+                 ],
+        "for_whom":  "Roblox developers building menus, HUDs, shops, and inventory screens",
+        "description":  "Roblox GUI Maker turns a simple AI prompt into Roblox Studio GUI layouts, mobile previews, and Lua starter code for game interface prototyping.",
+        "slug":  "roblox-gui-maker",
+        "url":  "https://robloxguimaker.dev/",
+        "pros":  [
+                     "Purpose-built for Roblox GUI workflows",
+                     "Exports Lua starter code",
+                     "Useful for menus, HUDs, shops, and inventory screens"
+                 ],
+        "price":  "Free",
+        "privacy":  "Review generated code before using it in production Roblox experiences.",
+        "featured":  false,
+        "name":  "Roblox GUI Maker",
+        "id":  "roblox-gui-maker"
+    },
+    {
+        "rating":  4.1,
         "updated":  "2026-06-08",
         "not_for":  "Non-web projects",
         "price_type":  "freemium",
